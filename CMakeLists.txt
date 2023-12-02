@@ -14,20 +14,15 @@ include(KDECompilerSettings NO_POLICY_SCOPE)
 find_package(Qt${QT_MAJOR_VERSION} REQUIRED COMPONENTS
     Core
     Quick
-    Test
     Gui
     QuickControls2
-    Widgets
     Network
 )
 
 find_package(KF${QT_MAJOR_VERSION} REQUIRED COMPONENTS
     Kirigami2
     I18n
-    CoreAddons
 )
-
-find_package(QCoro${QT_MAJOR_VERSION} 0.9.0 REQUIRED COMPONENTS Core Network)
 
 add_subdirectory(src)
 
