@@ -6,5 +6,3 @@ include:
     file:
       - /gitlab-templates/linux-qt6.yml
       - /gitlab-templates/freebsd-qt6.yml
-      - /gitlab-templates/android-qt6.yml
-      - /gitlab-templates/craft-android-qt6-apks.yml
