@@ -1,0 +1,26 @@
+#include "KLLMRequest.h"
+
+KLLMRequest::KLLMRequest(QString message, QObject *parent)
+    : QObject{parent},
+      m_message{message}
+{}
+
+QString KLLMRequest::message() const
+{
+    return m_message;
+}
+
+KLLMContext *KLLMRequest::context() const
+{
+    return m_context;
+}
+
+void KLLMRequest::setMessage(const QString &message)
+{
+    m_message = message;
+}
+
+void KLLMRequest::setContext(KLLMContext *context)
+{
+    m_context = context;
+}
