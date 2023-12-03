@@ -57,6 +57,7 @@ Kirigami.ApplicationWindow {
                         text: messageDelegate.message
                         wrapMode: Controls.Label.WordWrap
                         Layout.fillWidth: true
+                        textFormat: Controls.Label.MarkdownText
                     }
                 }
             }
