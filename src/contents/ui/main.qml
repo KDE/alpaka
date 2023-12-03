@@ -9,26 +9,42 @@ Kirigami.ApplicationWindow {
 
     title: i18nc("@title:window", "Kandalf")
 
-    LLMInterface {
-        id: llm
-
-        onFinished: display.text = replyText
-    }
+    ChatModel { id: chat }
 
     pageStack.initialPage: Kirigami.Page {
         ColumnLayout {
             spacing: 10
             anchors.fill: parent
 
-            Controls.Label {
-                id: display
+            ListView {
+                id: chatView
 
-                Layout.alignment: Qt.AlignCenter
-                horizontalAlignment: Qt.AlignHCenter
                 Layout.fillWidth: true
                 Layout.fillHeight: true
-                text: i18n("<i>Awaiting message...</i>")
-                wrapMode: Controls.Label.WordWrap
+                spacing: 10
+                model: chat
+
+                delegate: ColumnLayout {
+                    id: messageDelegate
+
+                    required property string message
+                    required property var sender
+
+                    spacing: 10
+                    width: chatView.width
+
+                    Controls.Label {
+                        text: messageDelegate.sender === ChatModel.LLM ? "Kandalf" : "You"
+                        font.bold: true
+                        font.pixelSize: 15
+                    }
+
+                    Controls.Label {
+                        text: messageDelegate.message
+                        wrapMode: Controls.Label.WordWrap
+                        Layout.fillWidth: true
+                    }
+                }
             }
 
             Controls.TextField {
@@ -37,7 +53,7 @@ Kirigami.ApplicationWindow {
                 placeholderText: "Enter a message"
                 Layout.fillWidth: true
                 onAccepted: {
-                    llm.getCompletion(messageInput.text);
+                    chat.sendMessage(messageInput.text);
                     messageInput.text = "";
                 }
             }

@@ -33,5 +33,7 @@ KLLMReply::KLLMReply(QNetworkReply *netReply, QObject *parent)
 
         for (const auto &tok : completeTokens)
             m_tokens.append(QJsonDocument::fromJson(tok));
+
+        emit contentAdded();
     });
 }

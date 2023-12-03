@@ -16,6 +16,7 @@ protected:
     friend class KLLMInterface;
 
 signals:
+    void contentAdded();
     void finished();
 
 private:

@@ -6,7 +6,7 @@
 #include <QQuickStyle>
 #include <QUrl>
 
-#include "KLLMInterface.h"
+#include "ChatModel.h"
 
 int main(int argc, char *argv[])
 {
@@ -21,8 +21,7 @@ int main(int argc, char *argv[])
 
     QQmlApplicationEngine engine;
 
-    qmlRegisterType<KLLMInterface>("org.kde.kandalf", 0, 1, "LLMInterface");
-    qmlRegisterUncreatableType<KLLMReply>("org.kde.kandalf", 0, 1, "LLMReply", "");
+    qmlRegisterType<ChatModel>("org.kde.kandalf", 0, 1, "ChatModel");
 
     engine.rootContext()->setContextObject(new KLocalizedContext(&engine));
     engine.load(QUrl(QStringLiteral("qrc:/main.qml")));

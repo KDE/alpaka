@@ -1,7 +1,10 @@
-add_executable(kandalf
-    KLLMContext.h KLLMContext.cpp)
+add_executable(kandalf)
 
 target_sources(kandalf PRIVATE
+    ChatModel.cpp
+    ChatModel.h
+    KLLMContext.cpp
+    KLLMContext.h
     KLLMInterface.cpp
     KLLMInterface.h
     KLLMReply.cpp
