@@ -31,9 +31,28 @@ QVariant ChatModel::data(const QModelIndex &index, int role) const
     }
 }
 
+KLLMInterface *ChatModel::llm() const
+{
+    return m_llm;
+}
+
+QString ChatModel::model() const
+{
+    return m_model;
+}
+
+void ChatModel::setModel(const QString &model)
+{
+    if (model == m_model)
+        return;
+    m_model = model;
+    emit modelChanged();
+}
+
 void ChatModel::sendMessage(const QString &message)
 {
     KLLMRequest req{message, this};
+    req.setModel(m_model);
     auto rep = m_llm->getCompletion(req);
 
     beginInsertRows({}, m_messages.size(), m_messages.size() + 1);

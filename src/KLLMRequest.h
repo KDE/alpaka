@@ -10,11 +10,14 @@ public:
 
     QString message() const;
     KLLMContext *context() const;
+    QString model() const;
 
     void setMessage(const QString &message);
     void setContext(KLLMContext *context);
+    void setModel(const QString &model);
 
 private:
     QString m_message;
     KLLMContext *m_context;
+    QString m_model;
 };

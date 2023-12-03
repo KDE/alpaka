@@ -8,8 +8,15 @@
 class KLLMInterface : public QObject
 {
     Q_OBJECT
+
+    Q_PROPERTY(bool ready READ ready NOTIFY readyChanged FINAL)
+    Q_PROPERTY(QStringList models READ models NOTIFY modelsChanged FINAL)
+
 public:
     explicit KLLMInterface(QObject *parent = nullptr);
+
+    bool ready() const;
+    QStringList models() const;
 
 public slots:
     KLLMReply *getCompletion(const KLLMRequest &equest);
@@ -18,7 +25,11 @@ public slots:
 signals:
     void finished(const QString &replyText);
 
+    void readyChanged();
+    void modelsChanged();
+
 private:
     QNetworkAccessManager *m_manager;
     QStringList m_models;
+    bool m_ready = false;
 };

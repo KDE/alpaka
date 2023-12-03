@@ -9,6 +9,9 @@ class ChatModel : public QAbstractListModel
 {
     Q_OBJECT
 
+    Q_PROPERTY(KLLMInterface *llm READ llm CONSTANT FINAL)
+    Q_PROPERTY(QString model READ model WRITE setModel NOTIFY modelChanged FINAL)
+
 public:
     enum Roles
     {
@@ -29,8 +32,16 @@ public:
     int rowCount(const QModelIndex & = {}) const override;
     QVariant data(const QModelIndex &index, int role) const override;
 
+    KLLMInterface *llm() const;
+    QString model() const;
+
+    void setModel(const QString &model);
+
 public slots:
     void sendMessage(const QString &message);
+
+signals:
+    void modelChanged();
 
 private:
     struct ChatMessage
@@ -43,4 +54,5 @@ private:
 
     QList<ChatMessage> m_messages;
     KLLMInterface *m_llm;
+    QString m_model;
 };

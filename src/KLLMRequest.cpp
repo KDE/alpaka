@@ -15,6 +15,11 @@ KLLMContext *KLLMRequest::context() const
     return m_context;
 }
 
+QString KLLMRequest::model() const
+{
+    return m_model;
+}
+
 void KLLMRequest::setMessage(const QString &message)
 {
     m_message = message;
@@ -23,4 +28,9 @@ void KLLMRequest::setMessage(const QString &message)
 void KLLMRequest::setContext(KLLMContext *context)
 {
     m_context = context;
+}
+
+void KLLMRequest::setModel(const QString &model)
+{
+    m_model = model;
 }

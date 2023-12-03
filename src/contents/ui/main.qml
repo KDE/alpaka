@@ -16,6 +16,20 @@ Kirigami.ApplicationWindow {
             spacing: 10
             anchors.fill: parent
 
+            RowLayout {
+                Layout.fillWidth: true
+                spacing: 10
+
+                Controls.Label {
+                    text: "Model:"
+                }
+
+                Controls.ComboBox {
+                    model: chat.llm.models
+                    onCurrentTextChanged: chat.model = currentText
+                }
+            }
+
             ListView {
                 id: chatView
 
@@ -51,6 +65,7 @@ Kirigami.ApplicationWindow {
                 id: messageInput
 
                 placeholderText: "Enter a message"
+                enabled: chat.llm.ready
                 Layout.fillWidth: true
                 onAccepted: {
                     chat.sendMessage(messageInput.text);
