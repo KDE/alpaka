@@ -26,8 +26,8 @@ int main(int argc, char *argv[])
                      QStringLiteral(KANDALF_VERSION_STR),
                      i18n("Ollama client"),
                      KAboutLicense::GPL_V3,
-                     i18n("© 2023 Loren Burkholder "));
-    about.addAuthor(i18n("Loren Burkholder"), i18n("Maintainer"), QStringLiteral("loren.burkholder@kdab.com"));
+                     i18n("© 2023 Loren Burkholder"));
+    about.addAuthor(i18n("Loren Burkholder"), i18n("Maintainer"), QStringLiteral("computersemiexpert@outlook.com"));
     about.setTranslator(i18nc("NAME OF TRANSLATORS", "Your names"), i18nc("EMAIL OF TRANSLATORS", "Your emails"));
     about.setOrganizationDomain("kde.org");
 
