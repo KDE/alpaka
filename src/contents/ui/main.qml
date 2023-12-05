@@ -19,15 +19,15 @@ Kirigami.ApplicationWindow {
     SystemPalette { id: palette }
 
     pageStack.initialPage: Kirigami.Page {
-        title: "Kandalf"
-        actions {
-            main: Kirigami.Action {
-                text: "Model"
+        title: i18n("Kandalf")
+        actions: [
+            Kirigami.Action {
+                text: i18n("Model")
                 displayComponent: RowLayout {
                     spacing: 10
 
                     Controls.Label {
-                        text: "Model:"
+                        text: i18n("Model:")
                     }
 
                     Controls.ComboBox {
@@ -36,7 +36,7 @@ Kirigami.ApplicationWindow {
                     }
                 }
             }
-        }
+        ]
 
         ColumnLayout {
             spacing: 10
