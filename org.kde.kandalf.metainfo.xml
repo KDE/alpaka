@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+  <id>org.kde.kandalf</id>
+  <name>Kandalf</name>
+  <summary>An AI chat client</summary>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>GPL-3.0-or-later</project_license>
+  <supports>
+    <control>pointing</control>
+    <control>keyboard</control>
+    <control>touch</control>
+  </supports>
+  <description>
+    <p>
+      Kandalf is a client for the Ollama AI service, which lets you run LLM models such as Llama 2.
+    </p>
+  </description>
+  <project_group>KDE</project_group>
+  <launchable type="desktop-id">org.kde.kandalf.desktop</launchable>
+</component>
+
