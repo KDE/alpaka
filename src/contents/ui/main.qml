@@ -38,6 +38,7 @@ Kirigami.ApplicationWindow {
             },
             Kirigami.Action {
                 text: i18n("Start over")
+                icon.name: "view-refresh"
                 onTriggered: chat.resetConversation()
             }
         ]
