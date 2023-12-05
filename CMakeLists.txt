@@ -5,10 +5,13 @@
 cmake_minimum_required(VERSION 3.16)
 project(kandalf VERSION 0.1 LANGUAGES CXX)
 
+set(KF_MIN_VERSION "5.246.0")
+set(QT_MIN_VERSION "6.6")
+
 set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-find_package(ECM REQUIRED NO_MODULE)
+find_package(ECM ${KF_MIN_VERSION} REQUIRED NO_MODULE)
 set(CMAKE_MODULE_PATH ${ECM_MODULE_PATH})
 
 include(KDEInstallDirs)
@@ -22,7 +25,7 @@ include(KDEClangFormat)
 include(GenerateExportHeader)
 include(ECMGenerateHeaders)
 
-find_package(Qt${QT_MAJOR_VERSION} REQUIRED COMPONENTS
+find_package(Qt${QT_MAJOR_VERSION} ${QT_MIN_VERSION} REQUIRED COMPONENTS
     Core
     Quick
     Gui
@@ -31,13 +34,13 @@ find_package(Qt${QT_MAJOR_VERSION} REQUIRED COMPONENTS
     Widgets
 )
 
-find_package(KF${QT_MAJOR_VERSION} REQUIRED COMPONENTS
+find_package(KF${QT_MAJOR_VERSION} ${KF_MIN_VERSION} REQUIRED COMPONENTS
     CoreAddons
     Kirigami2
     I18n
 )
 
-ecm_set_disabled_deprecation_versions(QT 6.6  KF 5.246.0)
+ecm_set_disabled_deprecation_versions(QT ${QT_MIN_VERSION} KF ${KF_MIN_VERSION})
 
 add_subdirectory(src)
 
