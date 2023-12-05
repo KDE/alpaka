@@ -6,8 +6,8 @@
 #include "ChatModel.h"
 
 ChatModel::ChatModel(QObject *parent)
-    : QAbstractListModel{parent},
-      m_llm{new KLLMInterface{this}}
+    : QAbstractListModel{parent}
+    , m_llm{new KLLMInterface{QStringLiteral("http://0.0.0.0:11434"), this}}
 {}
 
 ChatModel::~ChatModel() = default;

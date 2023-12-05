@@ -33,9 +33,15 @@ class LIBKLLMCORE_EXPORT KLLMInterface : public QObject
 
     Q_PROPERTY(bool ready READ ready NOTIFY readyChanged FINAL)
     Q_PROPERTY(QStringList models READ models NOTIFY modelsChanged FINAL)
+    Q_PROPERTY(QString ollamaUrl READ ollamaUrl WRITE setOllamaUrl NOTIFY ollamaUrlChanged FINAL)
 
 public:
-    explicit KLLMInterface(QObject *parent = nullptr);
+    /**
+     * @brief Creates a KLLMInterface with the url set to \a ollamaUrl.
+     * @param ollamaUrl The URL to the Ollama instance.
+     * @param parent The parent QObject.
+     */
+    explicit KLLMInterface(const QString &ollamaUrl, QObject *parent = nullptr);
 
     /**
      * @brief Check whether the interface is ready.
@@ -56,6 +62,22 @@ public:
      * @return Returns a QStringList containing all valid models for this interface.
      */
     [[nodiscard]] QStringList models() const;
+
+    /**
+     * @brief Get the URL to the Ollama instance.
+     * @return The URL for the Ollama instance.
+     */
+    QString ollamaUrl() const;
+
+    /**
+     * @brief Set the URL to the Ollama instance.
+     *
+     * Since Ollama is a self-hostable service, users may wish to use different instances. Use this function to set the URL to the desired instance. It should
+     * \a not contain the \c /api portion of the URL.
+     *
+     * @param ollamaUrl The new URL for the Ollama instance.
+     */
+    void setOllamaUrl(const QString &ollamaUrl);
 
 public Q_SLOTS:
     /**
@@ -79,9 +101,13 @@ Q_SIGNALS:
 
     void readyChanged();
     void modelsChanged();
+    void ollamaUrlChanged();
 
 private:
+    void checkIfInterfaceIsValid();
+
     QNetworkAccessManager *const m_manager;
     QStringList m_models;
     bool m_ready = false;
+    QString m_ollamaUrl;
 };

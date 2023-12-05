@@ -13,26 +13,12 @@
 
 using namespace Qt::StringLiterals;
 
-KLLMInterface::KLLMInterface(QObject *parent)
-    : QObject{parent},
-      m_manager{new QNetworkAccessManager{this}}
+KLLMInterface::KLLMInterface(const QString &ollamaUrl, QObject *parent)
+    : QObject{parent}
+    , m_manager{new QNetworkAccessManager{this}}
+    , m_ollamaUrl{ollamaUrl}
 {
-    QNetworkRequest req{QUrl::fromUserInput(QStringLiteral("http://0.0.0.0:11434/api/tags"))};
-    req.setHeader(QNetworkRequest::ContentTypeHeader, QStringLiteral("application/json"));
-    auto rep = m_manager->get(req);
-    connect(rep, &QNetworkReply::finished, this, [this, rep] {
-        auto json = QJsonDocument::fromJson(rep->readAll());
-        const auto models = json["models"_L1].toArray();
-        for (const QJsonValue &model : models)
-            m_models.push_back(model["name"_L1].toString());
-        Q_EMIT modelsChanged();
-
-        if (!m_models.isEmpty())
-        {
-            m_ready = true;
-            Q_EMIT readyChanged();
-        }
-    });
+    checkIfInterfaceIsValid();
 }
 
 bool KLLMInterface::ready() const
@@ -49,7 +35,7 @@ KLLMReply *KLLMInterface::getCompletion(const KLLMRequest &request)
 {
     Q_ASSERT(m_ready);
 
-    QNetworkRequest req{QUrl::fromUserInput(QStringLiteral("http://0.0.0.0:11434/api/generate"))};
+    QNetworkRequest req{QUrl::fromUserInput(m_ollamaUrl + QStringLiteral("/api/generate"))};
     req.setHeader(QNetworkRequest::ContentTypeHeader, QStringLiteral("application/json"));
 
     QJsonObject data;
@@ -66,4 +52,39 @@ KLLMReply *KLLMInterface::getCompletion(const KLLMRequest &request)
         buf->deleteLater();
     });
     return reply;
+}
+
+void KLLMInterface::checkIfInterfaceIsValid()
+{
+    QNetworkRequest req{QUrl::fromUserInput(m_ollamaUrl + QStringLiteral("/api/tags"))};
+    req.setHeader(QNetworkRequest::ContentTypeHeader, QStringLiteral("application/json"));
+    auto rep = m_manager->get(req);
+    connect(rep, &QNetworkReply::finished, this, [this, rep] {
+        if (rep->error() != QNetworkReply::NoError)
+            return;
+
+        auto json = QJsonDocument::fromJson(rep->readAll());
+        const auto models = json["models"_L1].toArray();
+        for (const QJsonValue &model : models)
+            m_models.push_back(model["name"_L1].toString());
+        Q_EMIT modelsChanged();
+
+        if (!m_models.isEmpty()) {
+            m_ready = true;
+            Q_EMIT readyChanged();
+        }
+    });
+}
+
+QString KLLMInterface::ollamaUrl() const
+{
+    return m_ollamaUrl;
+}
+
+void KLLMInterface::setOllamaUrl(const QString &ollamaUrl)
+{
+    if (m_ollamaUrl == ollamaUrl)
+        return;
+    m_ollamaUrl = ollamaUrl;
+    Q_EMIT ollamaUrlChanged();
 }
