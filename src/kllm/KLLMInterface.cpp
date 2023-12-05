@@ -25,7 +25,8 @@ KLLMInterface::KLLMInterface(QObject *parent)
     auto rep = m_manager->get(req);
     connect(rep, &QNetworkReply::finished, this, [this, rep] {
         auto json = QJsonDocument::fromJson(rep->readAll());
-        for (const QJsonValue &model : json["models"_L1].toArray())
+        const auto models = json["models"_L1].toArray();
+        for (const QJsonValue &model : models)
             m_models.push_back(model["name"_L1].toString());
         Q_EMIT modelsChanged();
 
