@@ -6,7 +6,6 @@
 #pragma once
 
 #include "libkllmcore_export.h"
-#include <QObject>
 
 #include "KLLMContext.h"
 
@@ -16,17 +15,15 @@
  * Before calling KLLMInterface::getCompletion(), you need to create a KLLMRequest with information about the desired
  * completion.
  */
-class LIBKLLMCORE_EXPORT KLLMRequest : public QObject
+class LIBKLLMCORE_EXPORT KLLMRequest
 {
-    Q_OBJECT
-
 public:
     /**
      * @brief Creates a KLLMRequest with the message \a message.
      * @param message The message that will be sent to the LLM.
      * @param parent
      */
-    explicit KLLMRequest(const QString &message, QObject *parent = nullptr);
+    explicit KLLMRequest(const QString &message);
 
     /**
      * @brief Use this to get the message for the LLM.

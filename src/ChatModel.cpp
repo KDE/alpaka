@@ -58,7 +58,7 @@ void ChatModel::setModel(const QString &model)
 
 void ChatModel::sendMessage(const QString &message)
 {
-    KLLMRequest req{message, this};
+    KLLMRequest req{message};
     req.setModel(m_model);
     for (int i = m_messages.size() - 1; i >= 0; --i)
     {
