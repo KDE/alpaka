@@ -1,3 +1,7 @@
+// SPDX-FileCopyrightText: 2023 Loren Burkholder <computersemiexpert@outlook.com>
+//
+// SPDX-License-Identifier: GPL-2.0-only OR GPL-3.0-only OR LicenseRef-KDE-Accepted-GPL
+
 import QtQuick 2.15
 import QtQuick.Controls 2.15 as Controls
 import QtQuick.Layouts 1.15
