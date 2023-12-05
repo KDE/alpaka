@@ -1,15 +1,5 @@
 #pragma once
 
-#include <QObject>
+#include <QJsonArray>
 
-// TODO: flesh this class out to represent context in an ongoing conversation
-class KLLMContext : public QObject
-{
-    Q_OBJECT
-
-public:
-    explicit KLLMContext(QObject *parent = nullptr);
-
-signals:
-
-};
+using KLLMContext = QJsonArray;

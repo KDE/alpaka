@@ -50,6 +50,7 @@ KLLMReply *KLLMInterface::getCompletion(const KLLMRequest &request)
     QJsonObject data;
     data["model"] = request.model().isEmpty() ? m_models.first() : request.model();
     data["prompt"] = request.message();
+    data["context"] = request.context();
 
     auto buf = new QBuffer{this};
     buf->setData(QJsonDocument(data).toJson(QJsonDocument::Compact));

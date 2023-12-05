@@ -53,6 +53,14 @@ void ChatModel::sendMessage(const QString &message)
 {
     KLLMRequest req{message, this};
     req.setModel(m_model);
+    for (int i = m_messages.size() - 1; i >= 0; --i)
+    {
+        if (m_messages[i].sender == Sender::LLM)
+        {
+            req.setContext(m_messages[i].context);
+            break;
+        }
+    }
     auto rep = m_llm->getCompletion(req);
 
     beginInsertRows({}, m_messages.size(), m_messages.size() + 1);
@@ -65,6 +73,7 @@ void ChatModel::sendMessage(const QString &message)
     });
     connect(rep, &KLLMReply::finished, this, [this, i = m_messages.size() - 1] {
         auto &message = m_messages[i];
+        message.context = message.llmReply->context();
         message.llmReply = nullptr;
     });
     endInsertRows();

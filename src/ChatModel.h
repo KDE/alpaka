@@ -50,6 +50,7 @@ private:
         QString content;
         Sender sender;
         KLLMReply *llmReply;
+        KLLMContext context;
     };
 
     QList<ChatMessage> m_messages;

@@ -1,5 +1,6 @@
 #include "KLLMReply.h"
 
+#include <QJsonArray>
 #include <QJsonDocument>
 
 QString KLLMReply::readResponse() const
@@ -10,11 +11,21 @@ QString KLLMReply::readResponse() const
     return ret;
 }
 
+const KLLMContext &KLLMReply::context() const
+{
+    return m_context;
+}
+
 KLLMReply::KLLMReply(QNetworkReply *netReply, QObject *parent)
     : QObject{parent},
       m_reply{netReply}
 {
     connect(m_reply, &QNetworkReply::finished, m_reply, [this] {
+        // Normally, we could assume that the tokens will never be empty once the request finishes, but it could be possible
+        // that the request failed and we have no tokens to parse.
+        if (!m_tokens.empty())
+            m_context = m_tokens.constLast()["context"].toArray();
+
         qDebug() << "Ollama response finished";
         emit finished();
     });

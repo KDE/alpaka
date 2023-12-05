@@ -10,7 +10,7 @@ QString KLLMRequest::message() const
     return m_message;
 }
 
-KLLMContext *KLLMRequest::context() const
+const KLLMContext &KLLMRequest::context() const
 {
     return m_context;
 }
@@ -25,7 +25,7 @@ void KLLMRequest::setMessage(const QString &message)
     m_message = message;
 }
 
-void KLLMRequest::setContext(KLLMContext *context)
+void KLLMRequest::setContext(const KLLMContext &context)
 {
     m_context = context;
 }
