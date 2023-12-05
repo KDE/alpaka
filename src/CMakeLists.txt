@@ -18,6 +18,7 @@ target_sources(kandalf PRIVATE
 )
 
 target_link_libraries(kandalf
+    Qt${QT_MAJOR_VERSION}::Widgets
     Qt${QT_MAJOR_VERSION}::Quick
     Qt${QT_MAJOR_VERSION}::Qml
     Qt${QT_MAJOR_VERSION}::Gui

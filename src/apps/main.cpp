@@ -5,7 +5,7 @@
 #include <KAboutData>
 #include <KLocalizedContext>
 #include <KLocalizedString>
-#include <QGuiApplication>
+#include <QApplication>
 #include <QQmlApplicationEngine>
 #include <QQmlContext>
 #include <QQuickStyle>
@@ -15,7 +15,7 @@
 
 int main(int argc, char *argv[])
 {
-    QGuiApplication app(argc, argv);
+    QApplication app(argc, argv);
 
     KLocalizedString::setApplicationDomain("kandalf");
 
