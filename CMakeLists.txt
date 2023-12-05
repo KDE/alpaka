@@ -19,7 +19,8 @@ include(ECMDeprecationSettings)
 include(ECMAddTests)
 include(KDEGitCommitHooks)
 include(KDEClangFormat)
-
+include(GenerateExportHeader)
+include(ECMGenerateHeaders)
 
 find_package(Qt${QT_MAJOR_VERSION} REQUIRED COMPONENTS
     Core
