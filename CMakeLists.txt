@@ -24,6 +24,7 @@ include(KDEGitCommitHooks)
 include(KDEClangFormat)
 include(GenerateExportHeader)
 include(ECMGenerateHeaders)
+include(ECMSetupVersion)
 
 find_package(Qt${QT_MAJOR_VERSION} ${QT_MIN_VERSION} REQUIRED COMPONENTS
     Core
@@ -41,6 +42,11 @@ find_package(KF${QT_MAJOR_VERSION} ${KF_MIN_VERSION} REQUIRED COMPONENTS
 )
 
 ecm_set_disabled_deprecation_versions(QT ${QT_MIN_VERSION} KF ${KF_MIN_VERSION})
+
+ecm_setup_version(${PROJECT_VERSION}
+        VARIABLE_PREFIX KANDALF
+        VERSION_HEADER ${CMAKE_CURRENT_BINARY_DIR}/kandalf-version.h
+)
 
 add_subdirectory(src)
 

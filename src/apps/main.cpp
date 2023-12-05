@@ -12,6 +12,7 @@
 #include <QUrl>
 
 #include "ChatModel.h"
+#include "kandalf-version.h"
 
 int main(int argc, char *argv[])
 {
@@ -23,7 +24,7 @@ int main(int argc, char *argv[])
 
     KAboutData about(QStringLiteral("kandalf"),
                      i18n("Kandalf"),
-                     QStringLiteral(KANDALF_VERSION_STR),
+                     QStringLiteral(KANDALF_VERSION_STRING),
                      i18n("Ollama client"),
                      KAboutLicense::GPL_V3,
                      i18n("© 2023 Loren Burkholder"));

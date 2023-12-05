@@ -7,8 +7,6 @@ add_subdirectory(kllm)
 
 add_executable(kandalf)
 
-add_compile_definitions(KANDALF_VERSION_STR="${kandalf_VERSION_MAJOR}.${kandalf_VERSION_MINOR}")
-
 target_sources(kandalf PRIVATE
     ChatModel.cpp
     ChatModel.h
@@ -28,5 +26,7 @@ target_link_libraries(kandalf
     KF${QT_MAJOR_VERSION}::CoreAddons
     libkllmcore
 )
+
+target_include_directories(kandalf PRIVATE ${CMAKE_BINARY_DIR})
 
 install(TARGETS kandalf ${KDE_INSTALL_TARGETS_DEFAULT_ARGS})
