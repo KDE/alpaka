@@ -7,8 +7,8 @@
 
 #include <QNetworkAccessManager>
 
-#include "KLLMRequest.h"
 #include "KLLMReply.h"
+#include "KLLMRequest.h"
 
 /**
  * @brief The KLLMInterface class provides an interface around the LLM API.

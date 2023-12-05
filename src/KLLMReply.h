@@ -4,8 +4,8 @@
 
 #pragma once
 
-#include <QNetworkReply>
 #include <QJsonDocument>
+#include <QNetworkReply>
 
 #include "KLLMContext.h"
 
