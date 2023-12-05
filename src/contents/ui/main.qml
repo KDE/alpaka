@@ -16,6 +16,8 @@ Kirigami.ApplicationWindow {
 
     ChatModel { id: chat }
 
+    SystemPalette { id: palette }
+
     pageStack.initialPage: Kirigami.Page {
         title: "Kandalf"
         actions {
@@ -49,26 +51,45 @@ Kirigami.ApplicationWindow {
                     spacing: 10
                     model: chat
 
-                    delegate: ColumnLayout {
+                    delegate: RowLayout {
                         id: messageDelegate
 
                         required property string message
                         required property var sender
 
-                        spacing: 10
                         width: chatView.width
+                        height: messageBubble.height
 
-                        Controls.Label {
-                            text: messageDelegate.sender === ChatModel.LLM ? "Kandalf" : "You"
-                            font.bold: true
-                            font.pixelSize: 15
-                        }
+                        Rectangle {
+                            id: messageBubble
 
-                        Controls.Label {
-                            text: messageDelegate.message
-                            wrapMode: Controls.Label.WordWrap
-                            Layout.fillWidth: true
-                            textFormat: Controls.Label.MarkdownText
+                            radius: 5
+                            color: palette.alternateBase
+                            Layout.preferredWidth: messageLayout.implicitWidth + 20
+                            Layout.preferredHeight: messageLayout.implicitHeight + 20
+                            Layout.maximumWidth: chatView.width * 0.75
+                            Layout.alignment: messageDelegate.sender === ChatModel.LLM ? Qt.AlignLeft : Qt.AlignRight
+
+                            ColumnLayout {
+                                id: messageLayout
+
+                                anchors.fill: parent
+                                anchors.margins: 10
+                                spacing: 10
+
+                                Controls.Label {
+                                    text: messageDelegate.sender === ChatModel.LLM ? "Kandalf" : "You"
+                                    font.bold: true
+                                    font.pixelSize: 15
+                                }
+
+                                Controls.Label {
+                                    text: messageDelegate.message
+                                    wrapMode: Controls.Label.WordWrap
+                                    Layout.fillWidth: true
+                                    textFormat: Controls.Label.MarkdownText
+                                }
+                            }
                         }
                     }
                 }
