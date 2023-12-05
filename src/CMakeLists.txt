@@ -7,6 +7,8 @@ add_subdirectory(kllm)
 
 add_executable(kandalf)
 
+add_compile_definitions(KANDALF_VERSION_STR="${kandalf_VERSION_MAJOR}.${kandalf_VERSION_MINOR}")
+
 target_sources(kandalf PRIVATE
     ChatModel.cpp
     ChatModel.h

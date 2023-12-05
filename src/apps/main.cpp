@@ -23,7 +23,7 @@ int main(int argc, char *argv[])
 
     KAboutData about(QStringLiteral("kandalf"),
                      i18n("Kandalf"),
-                     QStringLiteral("1.0"),
+                     QStringLiteral(KANDALF_VERSION_STR),
                      i18n("Ollama client"),
                      KAboutLicense::GPL_V3,
                      i18n("© 2023 Loren Burkholder "));
