@@ -17,9 +17,6 @@ KLLMInterface::KLLMInterface(QObject *parent)
     : QObject{parent},
       m_manager{new QNetworkAccessManager{this}}
 {
-    // TODO: get this from ollama
-    m_models.push_back(QStringLiteral("llama2"));
-
     QNetworkRequest req{QUrl::fromUserInput(QStringLiteral("http://0.0.0.0:11434/api/tags"))};
     req.setHeader(QNetworkRequest::ContentTypeHeader, QStringLiteral("application/json"));
     auto rep = m_manager->get(req);
