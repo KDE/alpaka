@@ -1,4 +1,5 @@
 // SPDX-FileCopyrightText: 2023 Loren Burkholder <computersemiexpert@outlook.com>
+// SPDX-FileCopyrightText: 2023 Klarälvdalens Datakonsult AB, a KDAB Group company <info@kdab.com>
 //
 // SPDX-License-Identifier: GPL-2.0-only OR GPL-3.0-only OR LicenseRef-KDE-Accepted-GPL
 
@@ -78,6 +79,7 @@ void ChatModel::sendMessage(const QString &message)
     connect(rep, &KLLMReply::finished, this, [this, i = m_messages.size() - 1] {
         auto &message = m_messages[i];
         message.context = message.llmReply->context();
+        message.llmReply->deleteLater();
         message.llmReply = nullptr;
     });
     endInsertRows();
