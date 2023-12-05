@@ -24,7 +24,6 @@ public:
 
 public slots:
     KLLMReply *getCompletion(const KLLMRequest &equest);
-    KLLMReply *getCompletion(const QString &prompt);
 
 signals:
     void finished(const QString &replyText);

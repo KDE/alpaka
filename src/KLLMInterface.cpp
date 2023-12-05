@@ -67,9 +67,3 @@ KLLMReply *KLLMInterface::getCompletion(const KLLMRequest &request)
     });
     return reply;
 }
-
-KLLMReply *KLLMInterface::getCompletion(const QString &prompt)
-{
-    // TODO: choose a default model once support for choosing models is implemented
-    return getCompletion(KLLMRequest(prompt));
-}
