@@ -17,8 +17,8 @@ QJsonValue KLLMContext::toJson() const
     }
 }
 
-void KLLMContext::setOllamaContext(const QJsonArray &arr)
+void KLLMContext::setOllamaContext(const QJsonArray &context)
 {
-    m_data = arr;
+    m_data = context;
     m_backend = Backend::Ollama;
 }
