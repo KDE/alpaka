@@ -16,6 +16,10 @@ include(KDECMakeSettings)
 include(KDECompilerSettings NO_POLICY_SCOPE)
 include(ECMQtDeclareLoggingCategory)
 include(ECMDeprecationSettings)
+include(ECMAddTests)
+include(KDEGitCommitHooks)
+include(KDEClangFormat)
+
 
 find_package(Qt${QT_MAJOR_VERSION} REQUIRED COMPONENTS
     Core
@@ -35,3 +39,4 @@ ecm_set_disabled_deprecation_versions(QT 6.6  KF 5.246.0)
 add_subdirectory(src)
 
 feature_summary(WHAT ALL INCLUDE_QUIET_PACKAGES FATAL_ON_MISSING_REQUIRED_PACKAGES)
+kde_configure_git_pre_commit_hook(CHECKS CLANG_FORMAT)
