@@ -1,4 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+SPDX-FileCopyrightText: 2023 2023 Loren Burkholder <computersemiexpert@outlook.com>
+
+SPDX-License-Identifier: CC0-1.0
+-->
+
 <component type="desktop-application">
   <id>org.kde.kandalf</id>
   <name>Kandalf</name>
