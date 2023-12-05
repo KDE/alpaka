@@ -27,7 +27,7 @@ KLLMInterface::KLLMInterface(QObject *parent)
             m_models.push_back(model["name"].toString());
         emit modelsChanged();
 
-        if (m_models.size() > 0)
+        if (!m_models.isEmpty())
         {
             m_ready = true;
             emit readyChanged();
