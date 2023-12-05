@@ -31,6 +31,7 @@ public:
     Q_ENUM(Sender)
 
     explicit ChatModel(QObject *parent = nullptr);
+    ~ChatModel() override;
 
     QHash<int, QByteArray> roleNames() const override;
     int rowCount(const QModelIndex & = {}) const override;

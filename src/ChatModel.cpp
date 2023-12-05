@@ -10,6 +10,8 @@ ChatModel::ChatModel(QObject *parent)
       m_llm{new KLLMInterface{this}}
 {}
 
+ChatModel::~ChatModel() = default;
+
 QHash<int, QByteArray> ChatModel::roleNames() const
 {
     return {{Roles::MessageRole, "message"}, {Roles::SenderRole, "sender"}};
