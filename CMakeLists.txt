@@ -14,6 +14,8 @@ set(CMAKE_MODULE_PATH ${ECM_MODULE_PATH})
 include(KDEInstallDirs)
 include(KDECMakeSettings)
 include(KDECompilerSettings NO_POLICY_SCOPE)
+include(ECMQtDeclareLoggingCategory)
+include(ECMDeprecationSettings)
 
 find_package(Qt${QT_MAJOR_VERSION} REQUIRED COMPONENTS
     Core
@@ -27,6 +29,8 @@ find_package(KF${QT_MAJOR_VERSION} REQUIRED COMPONENTS
     Kirigami2
     I18n
 )
+
+ecm_set_disabled_deprecation_versions(QT 6.6  KF 5.246.0)
 
 add_subdirectory(src)
 
