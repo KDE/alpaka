@@ -1,4 +1,5 @@
 // SPDX-FileCopyrightText: 2023 Loren Burkholder <computersemiexpert@outlook.com>
+// SPDX-FileCopyrightText: 2023 Klarälvdalens Datakonsult AB, a KDAB Group company <info@kdab.com>
 //
 // SPDX-License-Identifier: GPL-2.0-only OR GPL-3.0-only OR LicenseRef-KDE-Accepted-GPL
 
@@ -16,23 +17,28 @@ Kirigami.ApplicationWindow {
     ChatModel { id: chat }
 
     pageStack.initialPage: Kirigami.Page {
+        title: "Kandalf"
+        actions {
+            main: Kirigami.Action {
+                text: "Model"
+                displayComponent: RowLayout {
+                    spacing: 10
+
+                    Controls.Label {
+                        text: "Model:"
+                    }
+
+                    Controls.ComboBox {
+                        model: chat.llm.models
+                        onCurrentTextChanged: chat.model = currentText
+                    }
+                }
+            }
+        }
+
         ColumnLayout {
             spacing: 10
             anchors.fill: parent
-
-            RowLayout {
-                Layout.fillWidth: true
-                spacing: 10
-
-                Controls.Label {
-                    text: "Model:"
-                }
-
-                Controls.ComboBox {
-                    model: chat.llm.models
-                    onCurrentTextChanged: chat.model = currentText
-                }
-            }
 
             ListView {
                 id: chatView
