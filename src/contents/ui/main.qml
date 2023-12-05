@@ -35,6 +35,10 @@ Kirigami.ApplicationWindow {
                         onCurrentTextChanged: chat.model = currentText
                     }
                 }
+            },
+            Kirigami.Action {
+                text: i18n("Start over")
+                onTriggered: chat.resetConversation()
             }
         ]
 

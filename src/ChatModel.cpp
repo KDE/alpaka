@@ -73,16 +73,26 @@ void ChatModel::sendMessage(const QString &message)
     beginInsertRows({}, m_messages.size(), m_messages.size() + 1);
     m_messages.append(ChatMessage{.content = message, .sender = Sender::User});
     m_messages.append(ChatMessage{.sender = Sender::LLM, .llmReply = rep});
-    connect(rep, &KLLMReply::contentAdded, this, [this, i = m_messages.size() - 1] {
-        auto &message = m_messages[i];
-        message.content = message.llmReply->readResponse();
-        Q_EMIT dataChanged(index(i), index(i), {Roles::MessageRole});
-    });
-    connect(rep, &KLLMReply::finished, this, [this, i = m_messages.size() - 1] {
-        auto &message = m_messages[i];
-        message.context = message.llmReply->context();
-        message.llmReply->deleteLater();
-        message.llmReply = nullptr;
-    });
+    m_connections.insert(rep, connect(rep, &KLLMReply::contentAdded, this, [this, i = m_messages.size() - 1] {
+                             auto &message = m_messages[i];
+                             message.content = message.llmReply->readResponse();
+                             Q_EMIT dataChanged(index(i), index(i), {Roles::MessageRole});
+                         }));
+    m_connections.insert(rep, connect(rep, &KLLMReply::finished, this, [this, i = m_messages.size() - 1] {
+                             auto &message = m_messages[i];
+                             m_connections.remove(message.llmReply);
+                             message.context = message.llmReply->context();
+                             message.llmReply->deleteLater();
+                             message.llmReply = nullptr;
+                         }));
     endInsertRows();
+}
+
+void ChatModel::resetConversation()
+{
+    beginResetModel();
+    for (const auto &connection : std::as_const(m_connections))
+        disconnect(connection);
+    m_messages.clear();
+    endResetModel();
 }

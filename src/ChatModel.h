@@ -44,6 +44,7 @@ public:
 
 public Q_SLOTS:
     void sendMessage(const QString &message);
+    void resetConversation();
 
 Q_SIGNALS:
     void modelChanged();
@@ -61,4 +62,6 @@ private:
     QList<ChatMessage> m_messages;
     KLLMInterface *const m_llm;
     QString m_model;
+
+    QMultiHash<KLLMReply *, QMetaObject::Connection> m_connections;
 };
