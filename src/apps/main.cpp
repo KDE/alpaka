@@ -2,6 +2,7 @@
 //
 // SPDX-License-Identifier: GPL-2.0-only OR GPL-3.0-only OR LicenseRef-KDE-Accepted-GPL
 
+#include <KAboutData>
 #include <KLocalizedContext>
 #include <KLocalizedString>
 #include <QGuiApplication>
@@ -15,10 +16,22 @@
 int main(int argc, char *argv[])
 {
     QGuiApplication app(argc, argv);
+
     KLocalizedString::setApplicationDomain("kandalf");
+
     QCoreApplication::setOrganizationName(QStringLiteral("KDE"));
-    QCoreApplication::setOrganizationDomain(QStringLiteral("kde.org"));
-    QCoreApplication::setApplicationName(QStringLiteral("Kandalf"));
+
+    KAboutData about(QStringLiteral("kandalf"),
+                     i18n("Kandalf"),
+                     QStringLiteral("1.0"),
+                     i18n("Ollama client"),
+                     KAboutLicense::GPL_V3,
+                     i18n("© 2023 Loren Burkholder "));
+    about.addAuthor(i18n("Loren Burkholder"), i18n("Maintainer"), QStringLiteral("loren.burkholder@kdab.com"));
+    about.setTranslator(i18nc("NAME OF TRANSLATORS", "Your names"), i18nc("EMAIL OF TRANSLATORS", "Your emails"));
+    about.setOrganizationDomain("kde.org");
+
+    KAboutData::setApplicationData(about);
 
     if (qEnvironmentVariableIsEmpty("QT_QUICK_CONTROLS_STYLE"))
         QQuickStyle::setStyle(QStringLiteral("org.kde.desktop"));
