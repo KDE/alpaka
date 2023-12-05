@@ -13,7 +13,7 @@ class KLLMRequest : public QObject
     Q_OBJECT
 
 public:
-    explicit KLLMRequest(QString message, QObject *parent = nullptr);
+    explicit KLLMRequest(const QString &message, QObject *parent = nullptr);
 
     QString message() const;
     const KLLMContext &context() const;

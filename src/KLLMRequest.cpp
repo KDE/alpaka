@@ -4,7 +4,7 @@
 
 #include "KLLMRequest.h"
 
-KLLMRequest::KLLMRequest(QString message, QObject *parent)
+KLLMRequest::KLLMRequest(const QString &message, QObject *parent)
     : QObject{parent},
       m_message{message}
 {}
