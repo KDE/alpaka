@@ -16,7 +16,7 @@ target_sources(kandalf PRIVATE
     KLLMReply.h
     KLLMRequest.cpp
     KLLMRequest.h
-    main.cpp
+    apps/main.cpp
 
     resources.qrc
 )
