@@ -4,11 +4,12 @@
 
 #pragma once
 
+#include "libkllmcore_export.h"
 #include <QObject>
 
 #include "KLLMContext.h"
 
-class KLLMRequest : public QObject
+class LIBKLLMCORE_EXPORT KLLMRequest : public QObject
 {
     Q_OBJECT
 

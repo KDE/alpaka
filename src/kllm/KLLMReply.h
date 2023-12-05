@@ -4,12 +4,13 @@
 
 #pragma once
 
+#include "libkllmcore_export.h"
 #include <QJsonDocument>
 #include <QNetworkReply>
 
 #include "KLLMContext.h"
 
-class KLLMReply : public QObject
+class LIBKLLMCORE_EXPORT KLLMReply : public QObject
 {
     Q_OBJECT
 
