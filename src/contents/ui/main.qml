@@ -40,34 +40,36 @@ Kirigami.ApplicationWindow {
             spacing: 10
             anchors.fill: parent
 
-            ListView {
-                id: chatView
-
+            Controls.ScrollView {
                 Layout.fillWidth: true
                 Layout.fillHeight: true
-                spacing: 10
-                model: chat
 
-                delegate: ColumnLayout {
-                    id: messageDelegate
-
-                    required property string message
-                    required property var sender
-
+                ListView {
+                    id: chatView
                     spacing: 10
-                    width: chatView.width
+                    model: chat
 
-                    Controls.Label {
-                        text: messageDelegate.sender === ChatModel.LLM ? "Kandalf" : "You"
-                        font.bold: true
-                        font.pixelSize: 15
-                    }
+                    delegate: ColumnLayout {
+                        id: messageDelegate
 
-                    Controls.Label {
-                        text: messageDelegate.message
-                        wrapMode: Controls.Label.WordWrap
-                        Layout.fillWidth: true
-                        textFormat: Controls.Label.MarkdownText
+                        required property string message
+                        required property var sender
+
+                        spacing: 10
+                        width: chatView.width
+
+                        Controls.Label {
+                            text: messageDelegate.sender === ChatModel.LLM ? "Kandalf" : "You"
+                            font.bold: true
+                            font.pixelSize: 15
+                        }
+
+                        Controls.Label {
+                            text: messageDelegate.message
+                            wrapMode: Controls.Label.WordWrap
+                            Layout.fillWidth: true
+                            textFormat: Controls.Label.MarkdownText
+                        }
                     }
                 }
             }
