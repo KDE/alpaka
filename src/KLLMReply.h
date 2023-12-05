@@ -27,7 +27,7 @@ signals:
     void finished();
 
 private:
-    QNetworkReply *m_reply;
+    QNetworkReply *const m_reply;
     QByteArray m_incompleteTokens;
 
     QList<QJsonDocument> m_tokens;

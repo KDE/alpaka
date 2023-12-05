@@ -58,6 +58,6 @@ private:
     };
 
     QList<ChatMessage> m_messages;
-    KLLMInterface *m_llm;
+    KLLMInterface *const m_llm;
     QString m_model;
 };

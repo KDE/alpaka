@@ -80,7 +80,7 @@ signals:
     void modelsChanged();
 
 private:
-    QNetworkAccessManager *m_manager;
+    QNetworkAccessManager *const m_manager;
     QStringList m_models;
     bool m_ready = false;
 };
