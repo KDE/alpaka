@@ -6,8 +6,8 @@
 
 #include <QAbstractListModel>
 
-#include "KLLMInterface.h"
-#include "KLLMReply.h"
+#include "kllm/KLLMInterface.h"
+#include "kllm/KLLMReply.h"
 
 class ChatModel : public QAbstractListModel
 {

@@ -8,14 +8,14 @@ add_executable(kandalf)
 target_sources(kandalf PRIVATE
     ChatModel.cpp
     ChatModel.h
-    KLLMContext.cpp
-    KLLMContext.h
-    KLLMInterface.cpp
-    KLLMInterface.h
-    KLLMReply.cpp
-    KLLMReply.h
-    KLLMRequest.cpp
-    KLLMRequest.h
+    kllm/KLLMContext.cpp
+    kllm/KLLMContext.h
+    kllm/KLLMInterface.cpp
+    kllm/KLLMInterface.h
+    kllm/KLLMReply.cpp
+    kllm/KLLMReply.h
+    kllm/KLLMRequest.cpp
+    kllm/KLLMRequest.h
     apps/main.cpp
 
     resources.qrc
