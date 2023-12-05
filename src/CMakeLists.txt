@@ -22,6 +22,7 @@ target_link_libraries(kandalf
     Qt${QT_MAJOR_VERSION}::QuickControls2
     KF${QT_MAJOR_VERSION}::I18n
     KF${QT_MAJOR_VERSION}::Kirigami2
+    KF${QT_MAJOR_VERSION}::CoreAddons
     libkllmcore
 )
 
