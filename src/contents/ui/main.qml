@@ -105,6 +105,7 @@ Kirigami.ApplicationWindow {
                 placeholderText: i18n("Enter a message")
                 enabled: chat.llm.ready
                 Layout.fillWidth: true
+                focus: true
                 onAccepted: {
                     chat.sendMessage(messageInput.text);
                     messageInput.text = "";
