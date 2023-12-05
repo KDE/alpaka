@@ -56,7 +56,7 @@ public:
      */
     QStringList models() const;
 
-public slots:
+public Q_SLOTS:
     /**
      * @brief Request a completion from the LLM.
      *
@@ -69,7 +69,7 @@ public slots:
      */
     KLLMReply *getCompletion(const KLLMRequest &request);
 
-signals:
+Q_SIGNALS:
     /**
      * @brief This signal is emitted when any completion requested by the interface is completed.
      * @param replyText Contains the text of the completion.

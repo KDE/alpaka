@@ -32,7 +32,7 @@ KLLMReply::KLLMReply(QNetworkReply *netReply, QObject *parent)
             m_context.setOllamaContext(m_tokens.constLast()["context"].toArray());
 
         qDebug() << "Ollama response finished";
-        emit finished();
+        Q_EMIT finished();
     });
     connect(m_reply, &QNetworkReply::errorOccurred, m_reply, [](QNetworkReply::NetworkError e) {
         qDebug() << "Ollama HTTP error:" << e;
@@ -50,6 +50,6 @@ KLLMReply::KLLMReply(QNetworkReply *netReply, QObject *parent)
         for (const auto &tok : completeTokens)
             m_tokens.append(QJsonDocument::fromJson(tok));
 
-        emit contentAdded();
+        Q_EMIT contentAdded();
     });
 }

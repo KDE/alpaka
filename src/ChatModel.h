@@ -41,10 +41,10 @@ public:
 
     void setModel(const QString &model);
 
-public slots:
+public Q_SLOTS:
     void sendMessage(const QString &message);
 
-signals:
+Q_SIGNALS:
     void modelChanged();
 
 private:

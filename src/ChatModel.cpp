@@ -51,7 +51,7 @@ void ChatModel::setModel(const QString &model)
     if (model == m_model)
         return;
     m_model = model;
-    emit modelChanged();
+    Q_EMIT modelChanged();
 }
 
 void ChatModel::sendMessage(const QString &message)
@@ -74,7 +74,7 @@ void ChatModel::sendMessage(const QString &message)
     connect(rep, &KLLMReply::contentAdded, this, [this, i = m_messages.size() - 1] {
         auto &message = m_messages[i];
         message.content = message.llmReply->readResponse();
-        emit dataChanged(index(i), index(i), {Roles::MessageRole});
+        Q_EMIT dataChanged(index(i), index(i), {Roles::MessageRole});
     });
     connect(rep, &KLLMReply::finished, this, [this, i = m_messages.size() - 1] {
         auto &message = m_messages[i];

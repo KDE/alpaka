@@ -25,12 +25,12 @@ KLLMInterface::KLLMInterface(QObject *parent)
         auto json = QJsonDocument::fromJson(rep->readAll());
         for (const QJsonValue &model : json["models"].toArray())
             m_models.push_back(model["name"].toString());
-        emit modelsChanged();
+        Q_EMIT modelsChanged();
 
         if (!m_models.isEmpty())
         {
             m_ready = true;
-            emit readyChanged();
+            Q_EMIT readyChanged();
         }
     });
 }
@@ -62,7 +62,7 @@ KLLMReply *KLLMInterface::getCompletion(const KLLMRequest &request)
 
     auto reply = new KLLMReply{m_manager->post(req, buf), this};
     connect(reply, &KLLMReply::finished, this, [this, reply, buf] {
-        emit finished(reply->readResponse());
+        Q_EMIT finished(reply->readResponse());
         buf->deleteLater();
     });
     return reply;

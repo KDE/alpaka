@@ -22,7 +22,7 @@ protected:
 
     friend class KLLMInterface;
 
-signals:
+Q_SIGNALS:
     void contentAdded();
     void finished();
 
