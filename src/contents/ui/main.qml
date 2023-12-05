@@ -78,7 +78,7 @@ Kirigami.ApplicationWindow {
                                 spacing: 10
 
                                 Controls.Label {
-                                    text: messageDelegate.sender === ChatModel.LLM ? "Kandalf" : "You"
+                                    text: messageDelegate.sender === ChatModel.LLM ? i18n("Kandalf") : i18n("You")
                                     font.bold: true
                                     font.pixelSize: 15
                                 }
@@ -98,7 +98,7 @@ Kirigami.ApplicationWindow {
             Controls.TextField {
                 id: messageInput
 
-                placeholderText: "Enter a message"
+                placeholderText: i18n("Enter a message")
                 enabled: chat.llm.ready
                 Layout.fillWidth: true
                 onAccepted: {
