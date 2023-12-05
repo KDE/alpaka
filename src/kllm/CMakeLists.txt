@@ -21,3 +21,9 @@ generate_export_header(libkllmcore BASE_NAME libkllmcore)
 target_link_libraries(libkllmcore
     Qt::Network
 )
+
+set_target_properties(libkllmcore
+    PROPERTIES OUTPUT_NAME kllmcore VERSION ${RUQOLA_LIB_VERSION} SOVERSION ${RUQOLA_LIB_SOVERSION}
+)
+
+install(TARGETS libkllmcore ${KDE_INSTALL_TARGETS_DEFAULT_ARGS})
