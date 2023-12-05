@@ -11,20 +11,22 @@
 #include <QJsonObject>
 #include <QNetworkReply>
 
+using namespace Qt::StringLiterals;
+
 KLLMInterface::KLLMInterface(QObject *parent)
     : QObject{parent},
       m_manager{new QNetworkAccessManager{this}}
 {
     // TODO: get this from ollama
-    m_models.push_back("llama2");
+    m_models.push_back(QStringLiteral("llama2"));
 
-    QNetworkRequest req{{"http://0.0.0.0:11434/api/tags"}};
-    req.setHeader(QNetworkRequest::ContentTypeHeader, "application/json");
+    QNetworkRequest req{QUrl::fromUserInput(QStringLiteral("http://0.0.0.0:11434/api/tags"))};
+    req.setHeader(QNetworkRequest::ContentTypeHeader, QStringLiteral("application/json"));
     auto rep = m_manager->get(req);
     connect(rep, &QNetworkReply::finished, this, [this, rep] {
         auto json = QJsonDocument::fromJson(rep->readAll());
-        for (const QJsonValue &model : json["models"].toArray())
-            m_models.push_back(model["name"].toString());
+        for (const QJsonValue &model : json["models"_L1].toArray())
+            m_models.push_back(model["name"_L1].toString());
         Q_EMIT modelsChanged();
 
         if (!m_models.isEmpty())
@@ -49,13 +51,13 @@ KLLMReply *KLLMInterface::getCompletion(const KLLMRequest &request)
 {
     Q_ASSERT(m_ready);
 
-    QNetworkRequest req{{"http://0.0.0.0:11434/api/generate"}};
-    req.setHeader(QNetworkRequest::ContentTypeHeader, "application/json");
+    QNetworkRequest req{QUrl::fromUserInput(QStringLiteral("http://0.0.0.0:11434/api/generate"))};
+    req.setHeader(QNetworkRequest::ContentTypeHeader, QStringLiteral("application/json"));
 
     QJsonObject data;
-    data["model"] = request.model().isEmpty() ? m_models.first() : request.model();
-    data["prompt"] = request.message();
-    data["context"] = request.context().toJson();
+    data["model"_L1] = request.model().isEmpty() ? m_models.first() : request.model();
+    data["prompt"_L1] = request.message();
+    data["context"_L1] = request.context().toJson();
 
     auto buf = new QBuffer{this};
     buf->setData(QJsonDocument(data).toJson(QJsonDocument::Compact));

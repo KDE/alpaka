@@ -8,11 +8,13 @@
 #include <QJsonArray>
 #include <QJsonDocument>
 
+using namespace Qt::StringLiterals;
+
 QString KLLMReply::readResponse() const
 {
     QString ret;
     for (const auto &tok : m_tokens)
-        ret += tok["response"].toString();
+        ret += tok["response"_L1].toString();
     return ret;
 }
 
@@ -34,7 +36,7 @@ KLLMReply::KLLMReply(QNetworkReply *netReply, QObject *parent)
         // Normally, we could assume that the tokens will never be empty once the request finishes, but it could be possible
         // that the request failed and we have no tokens to parse.
         if (!m_tokens.empty())
-            m_context.setOllamaContext(m_tokens.constLast()["context"].toArray());
+            m_context.setOllamaContext(m_tokens.constLast()["context"_L1].toArray());
 
         qDebug() << "Ollama response finished";
         m_finished = true;
