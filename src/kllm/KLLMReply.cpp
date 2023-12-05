@@ -21,6 +21,11 @@ const KLLMContext &KLLMReply::context() const
     return m_context;
 }
 
+bool KLLMReply::isFinished() const
+{
+    return m_finished;
+}
+
 KLLMReply::KLLMReply(QNetworkReply *netReply, QObject *parent)
     : QObject{parent},
       m_reply{netReply}
@@ -32,6 +37,7 @@ KLLMReply::KLLMReply(QNetworkReply *netReply, QObject *parent)
             m_context.setOllamaContext(m_tokens.constLast()["context"].toArray());
 
         qDebug() << "Ollama response finished";
+        m_finished = true;
         Q_EMIT finished();
     });
     connect(m_reply, &QNetworkReply::errorOccurred, m_reply, [](QNetworkReply::NetworkError e) {

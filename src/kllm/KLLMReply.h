@@ -48,6 +48,15 @@ public:
      */
     const KLLMContext &context() const;
 
+    /**
+     * @brief Check whether the reply has finished.
+     *
+     * If you need to know if the response has finished changing or if the context has been received yet, call this function.
+     *
+     * @return Whether the reply has finished.
+     */
+    bool isFinished() const;
+
 protected:
     explicit KLLMReply(QNetworkReply *netReply, QObject *parent = nullptr);
 
@@ -81,4 +90,5 @@ private:
     KLLMContext m_context;
 
     int m_receivedSize = 0;
+    bool m_finished = false;
 };
