@@ -1,4 +1,5 @@
 // SPDX-FileCopyrightText: 2023 Loren Burkholder <computersemiexpert@outlook.com>
+// SPDX-FileCopyrightText: 2023 Klarälvdalens Datakonsult AB, a KDAB Group company <info@kdab.com>
 //
 // SPDX-License-Identifier: GPL-2.0-only OR GPL-3.0-only OR LicenseRef-KDE-Accepted-GPL
 
@@ -28,7 +29,7 @@ KLLMReply::KLLMReply(QNetworkReply *netReply, QObject *parent)
         // Normally, we could assume that the tokens will never be empty once the request finishes, but it could be possible
         // that the request failed and we have no tokens to parse.
         if (!m_tokens.empty())
-            m_context = m_tokens.constLast()["context"].toArray();
+            m_context.setOllamaContext(m_tokens.constLast()["context"].toArray());
 
         qDebug() << "Ollama response finished";
         emit finished();

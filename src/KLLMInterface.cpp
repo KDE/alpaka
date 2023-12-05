@@ -1,4 +1,5 @@
 // SPDX-FileCopyrightText: 2023 Loren Burkholder <computersemiexpert@outlook.com>
+// SPDX-FileCopyrightText: 2023 Klarälvdalens Datakonsult AB, a KDAB Group company <info@kdab.com>
 //
 // SPDX-License-Identifier: GPL-2.0-only OR GPL-3.0-only OR LicenseRef-KDE-Accepted-GPL
 
@@ -54,7 +55,7 @@ KLLMReply *KLLMInterface::getCompletion(const KLLMRequest &request)
     QJsonObject data;
     data["model"] = request.model().isEmpty() ? m_models.first() : request.model();
     data["prompt"] = request.message();
-    data["context"] = request.context();
+    data["context"] = request.context().toJson();
 
     auto buf = new QBuffer{this};
     buf->setData(QJsonDocument(data).toJson(QJsonDocument::Compact));
