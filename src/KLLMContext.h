@@ -9,7 +9,7 @@
 
 struct KLLMContext
 {
-    QJsonValue toJson() const;
+    [[nodiscard]] QJsonValue toJson() const;
 
     void setOllamaContext(const QJsonArray &arr);
 

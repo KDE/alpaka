@@ -14,7 +14,7 @@ class KLLMReply : public QObject
     Q_OBJECT
 
 public:
-    QString readResponse() const;
+    [[nodiscard]] QString readResponse() const;
     const KLLMContext &context() const;
 
 protected:

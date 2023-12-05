@@ -44,7 +44,7 @@ public:
      *
      * @return Returns whether the interface is ready.
      */
-    bool ready() const;
+    [[nodiscard]] bool ready() const;
 
     /**
      * @brief Retrieve a list of models supported by the LLM backend.
@@ -54,7 +54,7 @@ public:
      *
      * @return Returns a QStringList containing all valid models for this interface.
      */
-    QStringList models() const;
+    [[nodiscard]] QStringList models() const;
 
 public Q_SLOTS:
     /**

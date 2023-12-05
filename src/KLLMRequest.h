@@ -15,9 +15,9 @@ class KLLMRequest : public QObject
 public:
     explicit KLLMRequest(const QString &message, QObject *parent = nullptr);
 
-    QString message() const;
+    [[nodiscard]] QString message() const;
     const KLLMContext &context() const;
-    QString model() const;
+    [[nodiscard]] QString model() const;
 
     void setMessage(const QString &message);
     void setContext(const KLLMContext &context);
