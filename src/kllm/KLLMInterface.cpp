@@ -87,4 +87,5 @@ void KLLMInterface::setOllamaUrl(const QString &ollamaUrl)
         return;
     m_ollamaUrl = ollamaUrl;
     Q_EMIT ollamaUrlChanged();
+    checkIfInterfaceIsValid();
 }
