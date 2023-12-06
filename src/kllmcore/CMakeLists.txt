@@ -19,20 +19,16 @@ set_target_properties(libkllmcore PROPERTIES
     EXPORT_NAME KLLMCore
 )
 
-set(libkllmcore_HEADERS
-    KLLMContext.h
-    KLLMInterface.h
-    KLLMReply.h
-    KLLMRequest.h
-)
-
 target_sources(libkllmcore PRIVATE
     KLLMContext.cpp
     KLLMInterface.cpp
     KLLMReply.cpp
     KLLMRequest.cpp
 
-    ${libkllmcore_HEADERS}
+    KLLMContext.h
+    KLLMInterface.h
+    KLLMReply.h
+    KLLMRequest.h
 )
 
 generate_export_header(libkllmcore
@@ -47,6 +43,7 @@ set_target_properties(libkllmcore
     PROPERTIES OUTPUT_NAME kllmcore VERSION ${KLLMCORE_VERSION} SOVERSION ${KLLMCORE_SOVERSION}
 )
 
+install(TARGETS libkllmcore EXPORT KLLMCoreTargets ${KDE_INSTALL_TARGETS_DEFAULT_ARGS})
 
 ecm_generate_headers(kllmcore_Camelcase_HEADERS
     ORIGINAL CAMELCASE
@@ -79,7 +76,7 @@ if (BUILD_QCH)
         VERSION ${kandalf_VERSION}
         ORG_DOMAIN org.kde
         SOURCES # using only public headers, to cover only public API
-        ${libkllmcore_HEADERS}
+        ${kllmcore_Camelcase_HEADERS}
         MD_MAINPAGE "${CMAKE_SOURCE_DIR}/README.md"
         IMAGE_DIRS "${CMAKE_SOURCE_DIR}/docs/pics"
         LINK_QCHS
@@ -115,5 +112,11 @@ install(FILES
     DESTINATION "${CMAKECONFIG_INSTALL_DIR}"
     COMPONENT Devel
 )
+
+install(EXPORT KLLMCoreTargets
+    DESTINATION "${CMAKECONFIG_INSTALL_DIR}"
+    FILE KLLMCoreTargets.cmake
+    )
+
 
 install(TARGETS libkllmcore ${KDE_INSTALL_TARGETS_DEFAULT_ARGS})
