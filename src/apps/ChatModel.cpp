@@ -37,8 +37,7 @@ QVariant ChatModel::data(const QModelIndex &index, int role) const
     if (!index.isValid() || index.row() < 0 || index.row() >= rowCount())
         return {};
 
-    switch (role)
-    {
+    switch (role) {
     case Roles::MessageRole:
         return m_messages[index.row()].content;
     case Roles::SenderRole:
@@ -70,10 +69,8 @@ void ChatModel::sendMessage(const QString &message)
 {
     KLLMRequest req{message};
     req.setModel(m_model);
-    for (int i = m_messages.size() - 1; i >= 0; --i)
-    {
-        if (m_messages[i].sender == Sender::LLM)
-        {
+    for (int i = m_messages.size() - 1; i >= 0; --i) {
+        if (m_messages[i].sender == Sender::LLM) {
             req.setContext(m_messages[i].context);
             break;
         }

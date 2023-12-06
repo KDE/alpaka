@@ -6,8 +6,8 @@
 
 #include <QAbstractListModel>
 
-#include "kllm/KLLMInterface.h"
-#include "kllm/KLLMReply.h"
+#include "KLLMInterface.h"
+#include "KLLMReply.h"
 
 class ChatModel : public QAbstractListModel
 {
@@ -17,17 +17,12 @@ class ChatModel : public QAbstractListModel
     Q_PROPERTY(QString model READ model WRITE setModel NOTIFY modelChanged FINAL)
 
 public:
-    enum Roles
-    {
+    enum Roles {
         MessageRole,
         SenderRole,
     };
 
-    enum Sender
-    {
-        LLM,
-        User
-    };
+    enum Sender { LLM, User };
     Q_ENUM(Sender)
 
     explicit ChatModel(QObject *parent = nullptr);
@@ -50,8 +45,7 @@ Q_SIGNALS:
     void modelChanged();
 
 private:
-    struct ChatMessage
-    {
+    struct ChatMessage {
         bool inProgress = false;
         QString content;
         Sender sender;
