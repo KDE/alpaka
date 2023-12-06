@@ -53,6 +53,10 @@ ecm_setup_version(${PROJECT_VERSION}
         VERSION_HEADER ${CMAKE_CURRENT_BINARY_DIR}/kandalf-version.h
 )
 
+if(BUILD_TESTING)
+    add_definitions(-DBUILD_TESTING)
+endif()
+
 add_subdirectory(src)
 
 # create a Config.cmake and a ConfigVersion.cmake file and install them
