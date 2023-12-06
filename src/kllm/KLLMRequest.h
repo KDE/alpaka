@@ -65,7 +65,7 @@ public:
      * You should set this to one of the values returned by KLLMInterface::models(); failure to do so will likely produce an
      * error from the backend.
      *
-     * @param model The name of the moel to be used for this request.
+     * @param model The name of the model to be used for this request.
      */
     void setModel(const QString &model);
 
