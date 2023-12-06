@@ -8,7 +8,7 @@ ecm_setup_version(PROJECT VARIABLE_PREFIX KLLMCORE
     VERSION_HEADER "${CMAKE_CURRENT_BINARY_DIR}/kllmcore_version.h"
     PACKAGE_VERSION_FILE "${CMAKE_CURRENT_BINARY_DIR}/KLLMCoreConfigVersion.cmake"
     SOVERSION 0
-    )
+)
 
 add_library(libkllmcore)
 
@@ -17,7 +17,7 @@ set_target_properties(libkllmcore PROPERTIES
     VERSION ${KLLMCORE_VERSION}
     SOVERSION ${KLLMCORE_SOVERSION}
     EXPORT_NAME KLLMCore
-    )
+)
 
 set(libkllmcore_HEADERS
     KLLMContext.h
@@ -48,27 +48,28 @@ set_target_properties(libkllmcore
 )
 
 
-# ecm_generate_headers(kllmcore_Camelcase_HEADERS
-#     HEADER_NAMES
-#     KLLMInterface
-#     KLLMReply
+ecm_generate_headers(kllmcore_Camelcase_HEADERS
+    ORIGINAL CAMELCASE
+    HEADER_NAMES
+    KLLMInterface
+    KLLMReply
 
-#     REQUIRED_HEADERS kllmcore_HEADERS
-#     PREFIX KLLMCore
-#     )
+    REQUIRED_HEADERS kllmcore_HEADERS
+    PREFIX KLLMCore
+)
 
-# install(FILES
-#     ${kllmcore_Camelcase_HEADERS}
-#     DESTINATION ${KDE_INSTALL_INCLUDEDIR}/KLLMCore
-#     COMPONENT Devel
-#     )
+install(FILES
+    ${kllmcore_Camelcase_HEADERS}
+    DESTINATION ${KDE_INSTALL_INCLUDEDIR}/KLLMCore
+    COMPONENT Devel
+)
 
-# install(FILES
-#     ${kllmcore_HEADERS}
-#     ${CMAKE_CURRENT_BINARY_DIR}/libkllmcore_export.h
-#     DESTINATION ${KDE_INSTALL_INCLUDEDIR}/KLLMCore/kllmcore
-#     COMPONENT Devel
-#     )
+install(FILES
+    ${kllmcore_HEADERS}
+    ${CMAKE_CURRENT_BINARY_DIR}/libkllmcore_export.h
+    DESTINATION ${KDE_INSTALL_INCLUDEDIR}/KLLMCore/kllmcore
+    COMPONENT Devel
+)
 
 if (BUILD_QCH)
     ecm_add_qch(
@@ -78,23 +79,23 @@ if (BUILD_QCH)
         VERSION ${kandalf_VERSION}
         ORG_DOMAIN org.kde
         SOURCES # using only public headers, to cover only public API
-            ${libkllmcore_HEADERS}
+        ${libkllmcore_HEADERS}
         MD_MAINPAGE "${CMAKE_SOURCE_DIR}/README.md"
         IMAGE_DIRS "${CMAKE_SOURCE_DIR}/docs/pics"
         LINK_QCHS
-            Qt6Core_QCH
-            Qt6Gui_QCH
-            Qt6Widgets_QCH
+        Qt6Core_QCH
+        Qt6Gui_QCH
+        Qt6Widgets_QCH
         INCLUDE_DIRS
-            ${CMAKE_CURRENT_BINARY_DIR}
+        ${CMAKE_CURRENT_BINARY_DIR}
         BLANK_MACROS
-            LIBKLLMCORE_EXPORT
-            LIBKLLMCORE_DEPRECATED_EXPORT
-            LIBKLLMCORE_DEPRECATED
-            "LIBKLLMCORE_DEPRECATED_VERSION(x, y, t)"
-            "LIBKLLMCORE_DEPRECATED_VERSION_BELATED(x, y, tx, ty, t)"
-            "LIBKLLMCORE_ENUMERATOR_DEPRECATED_VERSION(x, y, t)"
-            "LIBKLLMCORE_ENUMERATOR_DEPRECATED_VERSION_BELATED(x, y, tx, ty, t)"
+        LIBKLLMCORE_EXPORT
+        LIBKLLMCORE_DEPRECATED_EXPORT
+        LIBKLLMCORE_DEPRECATED
+        "LIBKLLMCORE_DEPRECATED_VERSION(x, y, t)"
+        "LIBKLLMCORE_DEPRECATED_VERSION_BELATED(x, y, tx, ty, t)"
+        "LIBKLLMCORE_ENUMERATOR_DEPRECATED_VERSION(x, y, t)"
+        "LIBKLLMCORE_ENUMERATOR_DEPRECATED_VERSION_BELATED(x, y, tx, ty, t)"
         TAGFILE_INSTALL_DESTINATION ${KDE_INSTALL_QTQCHDIR}
         QCH_INSTALL_DESTINATION ${KDE_INSTALL_QTQCHDIR}
         COMPONENT Devel
@@ -106,13 +107,13 @@ configure_package_config_file(
     "${CMAKE_CURRENT_SOURCE_DIR}/KLLMCoreConfig.cmake.in"
     "${CMAKE_CURRENT_BINARY_DIR}/KLLMCoreConfig.cmake"
     INSTALL_DESTINATION ${CMAKECONFIG_INSTALL_DIR}
-    )
+)
 
 install(FILES
     "${CMAKE_CURRENT_BINARY_DIR}/KLLMCoreConfig.cmake"
     "${CMAKE_CURRENT_BINARY_DIR}/KLLMCoreConfigVersion.cmake"
     DESTINATION "${CMAKECONFIG_INSTALL_DIR}"
     COMPONENT Devel
-    )
+)
 
 install(TARGETS libkllmcore ${KDE_INSTALL_TARGETS_DEFAULT_ARGS})
