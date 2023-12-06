@@ -56,7 +56,7 @@ public:
      *
      * @return Whether the reply has finished.
      */
-    bool isFinished() const;
+    [[nodiscard]] bool isFinished() const;
 
 protected:
     explicit KLLMReply(QNetworkReply *netReply, QObject *parent = nullptr);
