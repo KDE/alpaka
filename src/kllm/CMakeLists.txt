@@ -47,6 +47,7 @@ set_target_properties(libkllmcore
     PROPERTIES OUTPUT_NAME kllmcore VERSION ${KLLMCORE_VERSION} SOVERSION ${KLLMCORE_SOVERSION}
 )
 
+
 # ecm_generate_headers(kllmcore_Camelcase_HEADERS
 #     HEADER_NAMES
 #     KLLMInterface
@@ -99,5 +100,19 @@ if (BUILD_QCH)
         COMPONENT Devel
     )
 endif()
+
+
+configure_package_config_file(
+    "${CMAKE_CURRENT_SOURCE_DIR}/KLLMCoreConfig.cmake.in"
+    "${CMAKE_CURRENT_BINARY_DIR}/KLLMCoreConfig.cmake"
+    INSTALL_DESTINATION ${CMAKECONFIG_INSTALL_DIR}
+    )
+
+install(FILES
+    "${CMAKE_CURRENT_BINARY_DIR}/KLLMCoreConfig.cmake"
+    "${CMAKE_CURRENT_BINARY_DIR}/KLLMCoreConfigVersion.cmake"
+    DESTINATION "${CMAKECONFIG_INSTALL_DIR}"
+    COMPONENT Devel
+    )
 
 install(TARGETS libkllmcore ${KDE_INSTALL_TARGETS_DEFAULT_ARGS})
