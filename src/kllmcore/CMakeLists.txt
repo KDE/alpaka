@@ -39,6 +39,7 @@ generate_export_header(KLLMCore
 
 target_link_libraries(KLLMCore
     Qt::Network
+    KF${QT_MAJOR_VERSION}::I18n
 )
 
 set_target_properties(KLLMCore
