@@ -5,7 +5,7 @@
 
 #pragma once
 
-#include "libkllmcore_export.h"
+#include "kllmcore_export.h"
 
 #include "KLLMReply.h"
 #include "KLLMRequest.h"
@@ -26,7 +26,7 @@ class QNetworkAccessManager;
  * before it is ready can cause problems; for example, the interface may not have loaded the available models yet or the
  * backend could be unreachable.
  */
-class LIBKLLMCORE_EXPORT KLLMInterface : public QObject
+class KLLMCORE_EXPORT KLLMInterface : public QObject
 {
     Q_OBJECT
 

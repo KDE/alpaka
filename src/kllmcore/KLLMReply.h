@@ -5,7 +5,7 @@
 
 #pragma once
 
-#include "libkllmcore_export.h"
+#include "kllmcore_export.h"
 #include <QJsonDocument>
 
 #include "KLLMContext.h"
@@ -22,7 +22,7 @@ class QNetworkReply;
  * the new content. If you prefer to wait for the entire reply before displaying anything, connect to finished(), which will
  * only be emitted once the reply is complete.
  */
-class LIBKLLMCORE_EXPORT KLLMReply : public QObject
+class KLLMCORE_EXPORT KLLMReply : public QObject
 {
     Q_OBJECT
 

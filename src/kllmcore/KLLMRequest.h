@@ -5,7 +5,7 @@
 
 #pragma once
 
-#include "libkllmcore_export.h"
+#include "kllmcore_export.h"
 
 #include "KLLMContext.h"
 
@@ -15,7 +15,7 @@
  * Before calling KLLMInterface::getCompletion(), you need to create a KLLMRequest with information about the desired
  * completion.
  */
-class LIBKLLMCORE_EXPORT KLLMRequest
+class KLLMCORE_EXPORT KLLMRequest
 {
 public:
     /**

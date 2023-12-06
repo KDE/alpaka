@@ -4,7 +4,7 @@
 // SPDX-License-Identifier: GPL-2.0-only OR GPL-3.0-only OR LicenseRef-KDE-Accepted-GPL
 
 #pragma once
-#include "libkllmcore_export.h"
+#include "kllmcore_export.h"
 #include <QJsonArray>
 
 /**
@@ -16,7 +16,7 @@
  * To use KLLMContext, you simply need to get the context from each KLLMReply and set it on the next KLLMReqeust that you
  * send. KLLMInterface will use this in KLLMInterface::getCompletion().
  */
-struct LIBKLLMCORE_EXPORT KLLMContext {
+struct KLLMCORE_EXPORT KLLMContext {
     /**
      * @brief Converts the context to a JSON representation.
      *

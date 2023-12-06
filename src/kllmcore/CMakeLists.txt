@@ -32,7 +32,7 @@ target_sources(KLLMCore PRIVATE
 )
 
 generate_export_header(KLLMCore
-    BASE_NAME libkllmcore
+    BASE_NAME kllmcore
 )
 
 target_link_libraries(KLLMCore
@@ -63,7 +63,7 @@ install(FILES
 
 install(FILES
     ${kllmcore_HEADERS}
-    ${CMAKE_CURRENT_BINARY_DIR}/libkllmcore_export.h
+    ${CMAKE_CURRENT_BINARY_DIR}/kllmcore_export.h
     DESTINATION ${KDE_INSTALL_INCLUDEDIR}/KLLMCore/kllmcore
     COMPONENT Devel
 )
@@ -86,7 +86,7 @@ if (BUILD_QCH)
         INCLUDE_DIRS
         ${CMAKE_CURRENT_BINARY_DIR}
         BLANK_MACROS
-        LIBKLLMCORE_EXPORT
+        KLLMCORE_EXPORT
         LIBKLLMCORE_DEPRECATED_EXPORT
         LIBKLLMCORE_DEPRECATED
         "LIBKLLMCORE_DEPRECATED_VERSION(x, y, t)"
