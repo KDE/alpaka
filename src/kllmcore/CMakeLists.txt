@@ -81,8 +81,6 @@ if (BUILD_QCH)
         IMAGE_DIRS "${CMAKE_SOURCE_DIR}/docs/pics"
         LINK_QCHS
         Qt6Core_QCH
-        Qt6Gui_QCH
-        Qt6Widgets_QCH
         INCLUDE_DIRS
         ${CMAKE_CURRENT_BINARY_DIR}
         BLANK_MACROS
