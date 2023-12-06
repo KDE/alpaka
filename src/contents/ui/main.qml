@@ -7,6 +7,8 @@ import QtQuick 2.15
 import QtQuick.Controls 2.15 as Controls
 import QtQuick.Layouts 1.15
 import org.kde.kirigami 2.20 as Kirigami
+import org.kde.coreaddons 1.0 as KCoreAddons
+import org.kde.kirigamiaddons.components 1.0 as KirigamiComponents
 import org.kde.kandalf 0.1
 
 Kirigami.ApplicationWindow {
@@ -17,6 +19,8 @@ Kirigami.ApplicationWindow {
     ChatModel { id: chat }
 
     SystemPalette { id: palette }
+
+    KCoreAddons.KUser { id: localUser }
 
     pageStack.initialPage: Kirigami.Page {
         title: i18n("Kandalf")
@@ -74,6 +78,10 @@ Kirigami.ApplicationWindow {
                             Layout.preferredHeight: messageLayout.implicitHeight + 20
                             Layout.maximumWidth: chatView.width * 0.75
                             Layout.alignment: messageDelegate.sender === ChatModel.LLM ? Qt.AlignLeft : Qt.AlignRight
+                            border {
+                                width: 1
+                                color: palette.highlight
+                            }
 
                             ColumnLayout {
                                 id: messageLayout
@@ -82,10 +90,23 @@ Kirigami.ApplicationWindow {
                                 anchors.margins: 10
                                 spacing: 10
 
-                                Controls.Label {
-                                    text: messageDelegate.sender === ChatModel.LLM ? i18n("Kandalf") : i18n("You")
-                                    font.bold: true
-                                    font.pixelSize: 15
+                                RowLayout {
+                                    Layout.fillWidth: true
+                                    spacing: 10
+
+                                    KirigamiComponents.Avatar {
+                                        source: messageDelegate.sender === ChatModel.User ? localUser.faceIconUrl + "?timestamp=" + Date.now() : ""
+                                        Layout.preferredHeight: userName.height + 15
+                                        Layout.preferredWidth: height
+                                    }
+
+                                    Controls.Label {
+                                        id: userName
+
+                                        text: messageDelegate.sender === ChatModel.LLM ? i18n("Kandalf") : localUser.fullName
+                                        font.bold: true
+                                        font.pixelSize: 15
+                                    }
                                 }
 
                                 Controls.Label {
