@@ -59,6 +59,12 @@ QString ChatModel::model() const
     return m_model;
 }
 
+bool ChatModel::replyInProgress() const
+{
+    // If any replies are still connected to their slots, that means they haven't finished yet.
+    return !m_connections.empty();
+}
+
 void ChatModel::setModel(const QString &model)
 {
     if (model == m_model)
@@ -95,7 +101,9 @@ void ChatModel::sendMessage(const QString &message)
                              message.llmReply = nullptr;
                              message.inProgress = false;
                              Q_EMIT dataChanged(index(i), index(i), {Roles::FinishedRole});
+                             Q_EMIT replyInProgressChanged();
                          }));
+    Q_EMIT replyInProgressChanged();
     endInsertRows();
 }
 

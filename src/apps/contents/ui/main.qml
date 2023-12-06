@@ -154,7 +154,7 @@ Kirigami.ApplicationWindow {
                 id: messageInput
 
                 placeholderText: i18n("Enter a message")
-                enabled: chat.llm.ready
+                enabled: chat.llm.ready && !chat.replyInProgress
                 Layout.fillWidth: true
                 focus: true
                 onAccepted: {

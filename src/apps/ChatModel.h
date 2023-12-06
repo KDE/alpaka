@@ -15,6 +15,7 @@ class ChatModel : public QAbstractListModel
 
     Q_PROPERTY(KLLMInterface *llm READ llm CONSTANT FINAL)
     Q_PROPERTY(QString model READ model WRITE setModel NOTIFY modelChanged FINAL)
+    Q_PROPERTY(bool replyInProgress READ replyInProgress NOTIFY replyInProgressChanged FINAL)
 
 public:
     enum Roles {
@@ -35,6 +36,7 @@ public:
 
     [[nodiscard]] KLLMInterface *llm() const;
     [[nodiscard]] QString model() const;
+    bool replyInProgress() const;
 
     void setModel(const QString &model);
 
@@ -44,6 +46,7 @@ public Q_SLOTS:
 
 Q_SIGNALS:
     void modelChanged();
+    void replyInProgressChanged();
 
 private:
     struct ChatMessage {
