@@ -9,6 +9,7 @@
 #include <QJsonArray>
 #include <QJsonDocument>
 #include <QJsonObject>
+#include <QNetworkAccessManager>
 #include <QNetworkReply>
 
 using namespace Qt::StringLiterals;

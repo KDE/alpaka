@@ -6,11 +6,10 @@
 #pragma once
 
 #include "libkllmcore_export.h"
-#include <QNetworkAccessManager>
 
 #include "KLLMReply.h"
 #include "KLLMRequest.h"
-
+class QNetworkAccessManager;
 /**
  * @brief The KLLMInterface class provides an interface around the LLM API.
  *

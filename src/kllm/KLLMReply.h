@@ -7,9 +7,10 @@
 
 #include "libkllmcore_export.h"
 #include <QJsonDocument>
-#include <QNetworkReply>
 
 #include "KLLMContext.h"
+
+class QNetworkReply;
 
 /**
  * @brief The KLLMReply class represents a reply from an LLM.
