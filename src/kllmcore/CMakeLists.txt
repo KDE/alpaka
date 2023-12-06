@@ -12,7 +12,6 @@ ecm_setup_version(PROJECT VARIABLE_PREFIX KLLMCORE
 
 add_library(KLLMCore)
 
-
 set_target_properties(KLLMCore PROPERTIES
     VERSION ${KLLMCORE_VERSION}
     SOVERSION ${KLLMCORE_SOVERSION}
@@ -31,7 +30,7 @@ target_sources(KLLMCore PRIVATE
     KLLMRequest.h
 )
 
-ecm_qt_declare_logging_category(KLLMCore HEADER kllmcore_debug.h IDENTIFIER KLLMCORE_LOG CATEGORY_NAME org.kde.kllmcore
+ecm_qt_declare_logging_category(KLLMCore HEADER kllmcore_debug.h IDENTIFIER KLLMCORE_LOG CATEGORY_NAME org.kde.kllm.core
         DESCRIPTION "kllmcore" EXPORT KLLMCORE)
 
 generate_export_header(KLLMCore
