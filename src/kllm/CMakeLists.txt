@@ -2,11 +2,20 @@
 #
 # SPDX-License-Identifier: GPL-2.0-only OR GPL-3.0-only OR LicenseRef-KDE-Accepted-GPL
 
+ecm_setup_version(PROJECT VARIABLE_PREFIX KLLMCORE
+    VERSION_HEADER "${CMAKE_CURRENT_BINARY_DIR}/kllmcore_version.h"
+    PACKAGE_VERSION_FILE "${CMAKE_CURRENT_BINARY_DIR}/KLLMCoreConfigVersion.cmake"
+    SOVERSION 0
+    )
+
 add_library(libkllmcore)
 
+
 set_target_properties(libkllmcore PROPERTIES
-    VERSION "${KANDALF_VERSION}"
-)
+    VERSION ${KLLMCORE_VERSION}
+    SOVERSION ${KLLMCORE_SOVERSION}
+    EXPORT_NAME KLLMCore
+    )
 
 set(libkllmcore_HEADERS
     KLLMContext.h
@@ -31,8 +40,30 @@ target_link_libraries(libkllmcore
 )
 
 set_target_properties(libkllmcore
-    PROPERTIES OUTPUT_NAME kllmcore VERSION ${RUQOLA_LIB_VERSION} SOVERSION ${RUQOLA_LIB_SOVERSION}
+    PROPERTIES OUTPUT_NAME kllmcore VERSION ${KLLMCORE_LIB_VERSION} SOVERSION ${KLLMCORE_LIB_SOVERSION}
 )
+
+# ecm_generate_headers(kllmcore_Camelcase_HEADERS
+#     HEADER_NAMES
+#     KLLMInterface
+#     KLLMReply
+
+#     REQUIRED_HEADERS kllmcore_HEADERS
+#     PREFIX KLLMCore
+#     )
+
+# install(FILES
+#     ${kllmcore_Camelcase_HEADERS}
+#     DESTINATION ${KDE_INSTALL_INCLUDEDIR}/KLLMCore
+#     COMPONENT Devel
+#     )
+
+# install(FILES
+#     ${kllmcore_HEADERS}
+#     ${CMAKE_CURRENT_BINARY_DIR}/libkllmcore_export.h
+#     DESTINATION ${KDE_INSTALL_INCLUDEDIR}/KLLMCore/kllmcore
+#     COMPONENT Devel
+#     )
 
 if (BUILD_QCH)
     ecm_add_qch(
