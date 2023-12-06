@@ -120,6 +120,12 @@ Q_SIGNALS:
     void ollamaUrlChanged();
     void systemPromptChanged();
 
+    /**
+     * @brief An error occurred while communicating with the interface.
+     * @param message Contains the human readable error message.
+     */
+    void errorOccurred(const QString &message);
+
 private:
     void checkIfInterfaceIsValid();
 

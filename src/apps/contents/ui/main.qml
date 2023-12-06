@@ -22,6 +22,15 @@ Kirigami.ApplicationWindow {
 
     KCoreAddons.KUser { id: localUser }
 
+    Connections {
+        target: chat.llm
+
+        function onErrorOccurred(message: string) {
+            errorBanner.text = message;
+            errorBanner.visible = true;
+        }
+    }
+
     pageStack.initialPage: Kirigami.Page {
         title: i18n("Kandalf")
         actions: [
@@ -46,6 +55,14 @@ Kirigami.ApplicationWindow {
                 onTriggered: chat.resetConversation()
             }
         ]
+
+        header: KirigamiComponents.Banner {
+            id: errorBanner
+            type: Kirigami.MessageType.Error
+            width: parent.width
+
+            showCloseButton: true
+        }
 
         ColumnLayout {
             spacing: 10

@@ -5,6 +5,8 @@
 
 #include "KLLMInterface.h"
 
+#include <KLocalizedString>
+
 #include <QBuffer>
 #include <QJsonDocument>
 #include <QJsonObject>
@@ -66,8 +68,10 @@ void KLLMInterface::checkIfInterfaceIsValid()
     req.setHeader(QNetworkRequest::ContentTypeHeader, QStringLiteral("application/json"));
     auto rep = m_manager->get(req);
     connect(rep, &QNetworkReply::finished, this, [this, rep] {
-        if (rep->error() != QNetworkReply::NoError)
+        if (rep->error() != QNetworkReply::NoError) {
+            Q_EMIT errorOccurred(i18n("Failed to connect to interface at %1: %2", m_ollamaUrl, rep->errorString()));
             return;
+        }
 
         auto json = QJsonDocument::fromJson(rep->readAll());
         const auto models = json["models"_L1].toArray();
