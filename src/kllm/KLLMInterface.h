@@ -34,6 +34,7 @@ class LIBKLLMCORE_EXPORT KLLMInterface : public QObject
     Q_PROPERTY(bool ready READ ready NOTIFY readyChanged FINAL)
     Q_PROPERTY(QStringList models READ models NOTIFY modelsChanged FINAL)
     Q_PROPERTY(QString ollamaUrl READ ollamaUrl WRITE setOllamaUrl NOTIFY ollamaUrlChanged FINAL)
+    Q_PROPERTY(QString systemPrompt READ systemPrompt WRITE setSystemPrompt NOTIFY systemPromptChanged FINAL)
 
 public:
     /**
@@ -79,6 +80,22 @@ public:
      */
     void setOllamaUrl(const QString &ollamaUrl);
 
+    /**
+     * @brief Get the system prompt for the LLM.
+     * @return The system prompt string.
+     */
+    QString systemPrompt() const;
+
+    /**
+     * @brief Set the system prompt for the LLM.
+     *
+     * LLMs can take system prompts that instruct them on how they should generally behave in a conversation. This could be anything from how they speak to what
+     * types of information they prefer to present. You can set a system prompt here to better cater to your users.
+     *
+     * @param systemPrompt The system prompt for the LLM.
+     */
+    void setSystemPrompt(const QString &systemPrompt);
+
 public Q_SLOTS:
     /**
      * @brief Request a completion from the LLM.
@@ -102,6 +119,7 @@ Q_SIGNALS:
     void readyChanged();
     void modelsChanged();
     void ollamaUrlChanged();
+    void systemPromptChanged();
 
 private:
     void checkIfInterfaceIsValid();
@@ -110,4 +128,5 @@ private:
     QStringList m_models;
     bool m_ready = false;
     QString m_ollamaUrl;
+    QString m_systemPrompt;
 };

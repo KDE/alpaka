@@ -41,7 +41,13 @@ KLLMReply *KLLMInterface::getCompletion(const KLLMRequest &request)
     QJsonObject data;
     data["model"_L1] = request.model().isEmpty() ? m_models.first() : request.model();
     data["prompt"_L1] = request.message();
-    data["context"_L1] = request.context().toJson();
+
+    const auto context = request.context().toJson();
+    if (!context.isNull())
+        data["context"_L1] = context;
+
+    if (!m_systemPrompt.isEmpty())
+        data["system"_L1] = m_systemPrompt;
 
     auto buf = new QBuffer{this};
     buf->setData(QJsonDocument(data).toJson(QJsonDocument::Compact));
@@ -88,4 +94,17 @@ void KLLMInterface::setOllamaUrl(const QString &ollamaUrl)
     m_ollamaUrl = ollamaUrl;
     Q_EMIT ollamaUrlChanged();
     checkIfInterfaceIsValid();
+}
+
+QString KLLMInterface::systemPrompt() const
+{
+    return m_systemPrompt;
+}
+
+void KLLMInterface::setSystemPrompt(const QString &systemPrompt)
+{
+    if (m_systemPrompt == systemPrompt)
+        return;
+    m_systemPrompt = systemPrompt;
+    Q_EMIT systemPromptChanged();
 }
