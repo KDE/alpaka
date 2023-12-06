@@ -64,6 +64,13 @@ Kirigami.ApplicationWindow {
             showCloseButton: true
         }
 
+        Kirigami.PlaceholderMessage {
+            anchors.centerIn: parent
+
+            text: i18n("Waiting for interface")
+            visible: !chat.llm.ready
+        }
+
         ColumnLayout {
             spacing: 10
             anchors.fill: parent
