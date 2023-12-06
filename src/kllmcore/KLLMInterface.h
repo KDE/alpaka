@@ -67,7 +67,7 @@ public:
      * @brief Get the URL to the Ollama instance.
      * @return The URL for the Ollama instance.
      */
-    QString ollamaUrl() const;
+    [[nodiscard]] QString ollamaUrl() const;
 
     /**
      * @brief Set the URL to the Ollama instance.
@@ -83,7 +83,7 @@ public:
      * @brief Get the system prompt for the LLM.
      * @return The system prompt string.
      */
-    QString systemPrompt() const;
+    [[nodiscard]] QString systemPrompt() const;
 
     /**
      * @brief Set the system prompt for the LLM.
