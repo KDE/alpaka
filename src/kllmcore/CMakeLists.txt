@@ -70,10 +70,10 @@ install(FILES
 
 if (BUILD_QCH)
     ecm_add_qch(
-        libkllmcore_QCH
+        kllmcore_QCH
         NAME KLLM
         BASE_NAME KLLMCore
-        VERSION ${kandalf_VERSION}
+        VERSION ${KLLMCORE_VERSION}
         ORG_DOMAIN org.kde
         SOURCES # using only public headers, to cover only public API
         ${kllmcore_Camelcase_HEADERS}
@@ -87,16 +87,24 @@ if (BUILD_QCH)
         ${CMAKE_CURRENT_BINARY_DIR}
         BLANK_MACROS
         KLLMCORE_EXPORT
-        LIBKLLMCORE_DEPRECATED_EXPORT
-        LIBKLLMCORE_DEPRECATED
-        "LIBKLLMCORE_DEPRECATED_VERSION(x, y, t)"
-        "LIBKLLMCORE_DEPRECATED_VERSION_BELATED(x, y, tx, ty, t)"
-        "LIBKLLMCORE_ENUMERATOR_DEPRECATED_VERSION(x, y, t)"
-        "LIBKLLMCORE_ENUMERATOR_DEPRECATED_VERSION_BELATED(x, y, tx, ty, t)"
+        KLLMCORE_DEPRECATED_EXPORT
+        KLLMCORE_DEPRECATED
+        "KLLMCORE_DEPRECATED_VERSION(x, y, t)"
+        "KLLMCORE_DEPRECATED_VERSION_BELATED(x, y, tx, ty, t)"
+        "KLLMCORE_ENUMERATOR_DEPRECATED_VERSION(x, y, t)"
+        "KLLMCORE_ENUMERATOR_DEPRECATED_VERSION_BELATED(x, y, tx, ty, t)"
         TAGFILE_INSTALL_DESTINATION ${KDE_INSTALL_QTQCHDIR}
         QCH_INSTALL_DESTINATION ${KDE_INSTALL_QTQCHDIR}
         COMPONENT Devel
     )
+    ecm_install_qch_export(
+        TARGETS kllmcore_QCH
+        FILE KLLMCoreQchTargets.cmake
+        DESTINATION "${CMAKECONFIG_INSTALL_DIR}"
+        COMPONENT Devel
+    )
+    set(PACKAGE_INCLUDE_QCHTARGETS "include(\"\${CMAKE_CURRENT_LIST_DIR}/KLLMCoreQchTargets.cmake\")")
+
 endif()
 
 
