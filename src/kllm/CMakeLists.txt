@@ -2,6 +2,8 @@
 #
 # SPDX-License-Identifier: GPL-2.0-only OR GPL-3.0-only OR LicenseRef-KDE-Accepted-GPL
 
+set(CMAKECONFIG_INSTALL_DIR "${KDE_INSTALL_CMAKEPACKAGEDIR}/KLLMCore")
+
 ecm_setup_version(PROJECT VARIABLE_PREFIX KLLMCORE
     VERSION_HEADER "${CMAKE_CURRENT_BINARY_DIR}/kllmcore_version.h"
     PACKAGE_VERSION_FILE "${CMAKE_CURRENT_BINARY_DIR}/KLLMCoreConfigVersion.cmake"
@@ -33,14 +35,16 @@ target_sources(libkllmcore PRIVATE
     ${libkllmcore_HEADERS}
 )
 
-generate_export_header(libkllmcore BASE_NAME libkllmcore)
+generate_export_header(libkllmcore
+    BASE_NAME libkllmcore
+)
 
 target_link_libraries(libkllmcore
     Qt::Network
 )
 
 set_target_properties(libkllmcore
-    PROPERTIES OUTPUT_NAME kllmcore VERSION ${KLLMCORE_LIB_VERSION} SOVERSION ${KLLMCORE_LIB_SOVERSION}
+    PROPERTIES OUTPUT_NAME kllmcore VERSION ${KLLMCORE_VERSION} SOVERSION ${KLLMCORE_SOVERSION}
 )
 
 # ecm_generate_headers(kllmcore_Camelcase_HEADERS
