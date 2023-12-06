@@ -39,7 +39,7 @@ KLLMReply *KLLMInterface::getCompletion(const KLLMRequest &request)
     req.setHeader(QNetworkRequest::ContentTypeHeader, QStringLiteral("application/json"));
 
     QJsonObject data;
-    data["model"_L1] = request.model().isEmpty() ? m_models.first() : request.model();
+    data["model"_L1] = request.model().isEmpty() ? m_models.constFirst() : request.model();
     data["prompt"_L1] = request.message();
 
     const auto context = request.context().toJson();
