@@ -5,7 +5,6 @@
 
 #include "KLLMReply.h"
 
-#include <QJsonArray>
 #include <QJsonDocument>
 #include <QNetworkReply>
 

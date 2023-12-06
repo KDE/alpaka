@@ -6,7 +6,6 @@
 #include "KLLMInterface.h"
 
 #include <QBuffer>
-#include <QJsonArray>
 #include <QJsonDocument>
 #include <QJsonObject>
 #include <QNetworkAccessManager>
