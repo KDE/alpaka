@@ -6,7 +6,8 @@
 
 KLLMRequest::KLLMRequest(const QString &message)
     : m_message{message}
-{}
+{
+}
 
 QString KLLMRequest::message() const
 {

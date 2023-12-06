@@ -8,8 +8,7 @@
 
 QJsonValue KLLMContext::toJson() const
 {
-    switch (m_backend)
-    {
+    switch (m_backend) {
     case Backend::Ollama:
         return m_data.value<QJsonArray>();
     default:

@@ -16,8 +16,7 @@
  * To use KLLMContext, you simply need to get the context from each KLLMReply and set it on the next KLLMReqeust that you
  * send. KLLMInterface will use this in KLLMInterface::getCompletion().
  */
-struct KLLMContext
-{
+struct KLLMContext {
     /**
      * @brief Converts the context to a JSON representation.
      *
@@ -37,8 +36,7 @@ struct KLLMContext
     void setOllamaContext(const QJsonArray &context);
 
 private:
-    enum class Backend
-    {
+    enum class Backend {
         Ollama,
     } m_backend;
     QVariant m_data;

@@ -30,8 +30,8 @@ bool KLLMReply::isFinished() const
 }
 
 KLLMReply::KLLMReply(QNetworkReply *netReply, QObject *parent)
-    : QObject{parent},
-      m_reply{netReply}
+    : QObject{parent}
+    , m_reply{netReply}
 {
     connect(m_reply, &QNetworkReply::finished, m_reply, [this] {
         // Normally, we could assume that the tokens will never be empty once the request finishes, but it could be possible
