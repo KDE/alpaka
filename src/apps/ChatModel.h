@@ -32,8 +32,8 @@ public:
     int rowCount(const QModelIndex & = {}) const override;
     QVariant data(const QModelIndex &index, int role) const override;
 
-    KLLMInterface *llm() const;
-    QString model() const;
+    [[nodiscard]] KLLMInterface *llm() const;
+    [[nodiscard]] QString model() const;
 
     void setModel(const QString &model);
 
