@@ -20,6 +20,7 @@ public:
     enum Roles {
         MessageRole,
         SenderRole,
+        FinishedRole,
     };
 
     enum Sender { LLM, User };

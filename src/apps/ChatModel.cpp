@@ -24,7 +24,7 @@ ChatModel::~ChatModel() = default;
 
 QHash<int, QByteArray> ChatModel::roleNames() const
 {
-    return {{Roles::MessageRole, "message"}, {Roles::SenderRole, "sender"}};
+    return {{Roles::MessageRole, "message"}, {Roles::SenderRole, "sender"}, {Roles::FinishedRole, "finished"}};
 }
 
 int ChatModel::rowCount(const QModelIndex &) const
@@ -42,6 +42,8 @@ QVariant ChatModel::data(const QModelIndex &index, int role) const
         return m_messages[index.row()].content;
     case Roles::SenderRole:
         return m_messages[index.row()].sender;
+    case Roles::FinishedRole:
+        return !m_messages[index.row()].inProgress;
     default:
         return {};
     }
@@ -79,7 +81,7 @@ void ChatModel::sendMessage(const QString &message)
 
     beginInsertRows({}, m_messages.size(), m_messages.size() + 1);
     m_messages.append(ChatMessage{.content = message, .sender = Sender::User});
-    m_messages.append(ChatMessage{.sender = Sender::LLM, .llmReply = rep});
+    m_messages.append(ChatMessage{.inProgress = true, .sender = Sender::LLM, .llmReply = rep});
     m_connections.insert(rep, connect(rep, &KLLMReply::contentAdded, this, [this, i = m_messages.size() - 1] {
                              auto &message = m_messages[i];
                              message.content = message.llmReply->readResponse();
@@ -91,6 +93,8 @@ void ChatModel::sendMessage(const QString &message)
                              message.context = message.llmReply->context();
                              message.llmReply->deleteLater();
                              message.llmReply = nullptr;
+                             message.inProgress = false;
+                             Q_EMIT dataChanged(index(i), index(i), {Roles::FinishedRole});
                          }));
     endInsertRows();
 }

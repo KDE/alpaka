@@ -89,6 +89,7 @@ Kirigami.ApplicationWindow {
 
                         required property string message
                         required property var sender
+                        required property bool finished
 
                         width: chatView.width
                         height: messageBubble.height
@@ -130,6 +131,10 @@ Kirigami.ApplicationWindow {
                                         text: messageDelegate.sender === ChatModel.LLM ? i18n("Kandalf") : localUser.fullName
                                         font.bold: true
                                         font.pixelSize: 15
+                                    }
+
+                                    TypingIndicator {
+                                        visible: !messageDelegate.finished
                                     }
                                 }
 
