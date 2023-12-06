@@ -10,16 +10,16 @@ ecm_setup_version(PROJECT VARIABLE_PREFIX KLLMCORE
     SOVERSION 0
 )
 
-add_library(libkllmcore)
+add_library(KLLMCore)
 
 
-set_target_properties(libkllmcore PROPERTIES
+set_target_properties(KLLMCore PROPERTIES
     VERSION ${KLLMCORE_VERSION}
     SOVERSION ${KLLMCORE_SOVERSION}
     EXPORT_NAME KLLMCore
 )
 
-target_sources(libkllmcore PRIVATE
+target_sources(KLLMCore PRIVATE
     KLLMContext.cpp
     KLLMInterface.cpp
     KLLMReply.cpp
@@ -31,19 +31,19 @@ target_sources(libkllmcore PRIVATE
     KLLMRequest.h
 )
 
-generate_export_header(libkllmcore
+generate_export_header(KLLMCore
     BASE_NAME libkllmcore
 )
 
-target_link_libraries(libkllmcore
+target_link_libraries(KLLMCore
     Qt::Network
 )
 
-set_target_properties(libkllmcore
+set_target_properties(KLLMCore
     PROPERTIES OUTPUT_NAME kllmcore VERSION ${KLLMCORE_VERSION} SOVERSION ${KLLMCORE_SOVERSION}
 )
 
-install(TARGETS libkllmcore EXPORT KLLMCoreTargets ${KDE_INSTALL_TARGETS_DEFAULT_ARGS})
+install(TARGETS KLLMCore EXPORT KLLMCoreTargets ${KDE_INSTALL_TARGETS_DEFAULT_ARGS})
 
 ecm_generate_headers(kllmcore_Camelcase_HEADERS
     ORIGINAL CAMELCASE
@@ -117,6 +117,3 @@ install(EXPORT KLLMCoreTargets
     DESTINATION "${CMAKECONFIG_INSTALL_DIR}"
     FILE KLLMCoreTargets.cmake
     )
-
-
-install(TARGETS libkllmcore ${KDE_INSTALL_TARGETS_DEFAULT_ARGS})

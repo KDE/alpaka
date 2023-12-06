@@ -22,7 +22,7 @@ target_link_libraries(kandalf
     KF${QT_MAJOR_VERSION}::I18n
     KF${QT_MAJOR_VERSION}::Kirigami2
     KF${QT_MAJOR_VERSION}::CoreAddons
-    libkllmcore
+    KLLMCore
 )
 
 target_include_directories(kandalf PRIVATE ${CMAKE_BINARY_DIR})
