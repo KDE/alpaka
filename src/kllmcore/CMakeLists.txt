@@ -31,6 +31,9 @@ target_sources(KLLMCore PRIVATE
     KLLMRequest.h
 )
 
+ecm_qt_declare_logging_category(KLLMCore HEADER kllmcore_debug.h IDENTIFIER KLLMCORE_LOG CATEGORY_NAME org.kde.kllmcore
+        DESCRIPTION "kllmcore" EXPORT KLLMCORE)
+
 generate_export_header(KLLMCore
     BASE_NAME kllmcore
 )

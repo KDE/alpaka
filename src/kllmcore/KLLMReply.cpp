@@ -4,6 +4,7 @@
 // SPDX-License-Identifier: GPL-2.0-only OR GPL-3.0-only OR LicenseRef-KDE-Accepted-GPL
 
 #include "KLLMReply.h"
+#include "kllmcore_debug.h"
 
 #include <QJsonDocument>
 #include <QNetworkReply>
@@ -38,12 +39,12 @@ KLLMReply::KLLMReply(QNetworkReply *netReply, QObject *parent)
         if (!m_tokens.empty())
             m_context.setOllamaContext(m_tokens.constLast()["context"_L1].toArray());
 
-        qDebug() << "Ollama response finished";
+        qCDebug(KLLMCORE_LOG) << "Ollama response finished";
         m_finished = true;
         Q_EMIT finished();
     });
     connect(m_reply, &QNetworkReply::errorOccurred, m_reply, [](QNetworkReply::NetworkError e) {
-        qDebug() << "Ollama HTTP error:" << e;
+        qCDebug(KLLMCORE_LOG) << "Ollama HTTP error:" << e;
     });
     connect(m_reply, &QNetworkReply::downloadProgress, m_reply, [this](qint64 received, qint64 /*total*/) {
         m_incompleteTokens += m_reply->read(received - m_receivedSize);
