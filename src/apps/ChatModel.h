@@ -14,7 +14,6 @@ class ChatModel : public QAbstractListModel
     Q_OBJECT
 
     Q_PROPERTY(KLLMInterface *llm READ llm CONSTANT FINAL)
-    Q_PROPERTY(QString model READ model WRITE setModel NOTIFY modelChanged FINAL)
     Q_PROPERTY(bool replyInProgress READ replyInProgress NOTIFY replyInProgressChanged FINAL)
 
 public:
@@ -35,17 +34,13 @@ public:
     QVariant data(const QModelIndex &index, int role) const override;
 
     [[nodiscard]] KLLMInterface *llm() const;
-    [[nodiscard]] QString model() const;
     bool replyInProgress() const;
-
-    void setModel(const QString &model);
 
 public Q_SLOTS:
     void sendMessage(const QString &message);
     void resetConversation();
 
 Q_SIGNALS:
-    void modelChanged();
     void replyInProgressChanged();
 
 private:
@@ -59,7 +54,6 @@ private:
 
     QList<ChatMessage> m_messages;
     KLLMInterface *const m_llm;
-    QString m_model;
 
     QMultiHash<KLLMReply *, QMetaObject::Connection> m_connections;
 };

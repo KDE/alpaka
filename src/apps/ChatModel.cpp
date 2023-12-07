@@ -53,29 +53,16 @@ KLLMInterface *ChatModel::llm() const
     return m_llm;
 }
 
-QString ChatModel::model() const
-{
-    return m_model;
-}
-
 bool ChatModel::replyInProgress() const
 {
     // If any replies are still connected to their slots, that means they haven't finished yet.
     return !m_connections.empty();
 }
 
-void ChatModel::setModel(const QString &model)
-{
-    if (model == m_model)
-        return;
-    m_model = model;
-    Q_EMIT modelChanged();
-}
-
 void ChatModel::sendMessage(const QString &message)
 {
     KLLMRequest req{message};
-    req.setModel(m_model);
+    req.setModel(KandalfSettings::model());
     for (int i = m_messages.size() - 1; i >= 0; --i) {
         if (m_messages[i].sender == Sender::LLM) {
             req.setContext(m_messages[i].context);

@@ -31,29 +31,26 @@ Kirigami.ApplicationWindow {
         }
     }
 
+    Component {
+        id: settingsPage
+
+        SettingsPage {}
+    }
+
     pageStack.initialPage: Kirigami.Page {
         title: i18n("Kandalf")
         actions: [
             Kirigami.Action {
-                text: i18n("Model")
-                displayComponent: RowLayout {
-                    spacing: 10
-
-                    Controls.Label {
-                        text: i18n("Model:")
-                    }
-
-                    Controls.ComboBox {
-                        model: chat.llm.models
-                        onCurrentTextChanged: chat.model = currentText
-                    }
-                }
-            },
-            Kirigami.Action {
                 text: i18n("Start over")
                 icon.name: "view-refresh"
                 onTriggered: chat.resetConversation()
+            },
+            Kirigami.Action {
+                text: i18n("Settings")
+                icon.name: "settings-configure"
+                onTriggered: pageStack.pushDialogLayer(settingsPage)
             }
+
         ]
 
         header: KirigamiComponents.Banner {

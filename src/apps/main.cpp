@@ -50,5 +50,6 @@ int main(int argc, char *argv[])
     if (engine.rootObjects().isEmpty())
         return -1;
 
+    app.connect(&app, &QApplication::aboutToQuit, settings, &KandalfSettings::save);
     return app.exec();
 }

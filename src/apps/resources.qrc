@@ -2,5 +2,8 @@
     <qresource prefix="/">
         <file alias="main.qml">contents/ui/main.qml</file>
         <file alias="TypingIndicator.qml">contents/ui/TypingIndicator.qml</file>
+        <file alias="SettingsPage.qml">contents/ui/SettingsPage.qml</file>
+        <file alias="OllamaSettingsPage.qml">contents/ui/OllamaSettingsPage.qml</file>
+        <file alias="LLMSettingsPage.qml">contents/ui/LLMSettingsPage.qml</file>
     </qresource>
 </RCC>
