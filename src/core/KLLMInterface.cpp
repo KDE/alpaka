@@ -15,6 +15,11 @@
 
 using namespace Qt::StringLiterals;
 
+KLLMInterface::KLLMInterface(QObject *parent)
+    : KLLMInterface{QString{}, parent}
+{
+}
+
 KLLMInterface::KLLMInterface(const QString &ollamaUrl, QObject *parent)
     : QObject{parent}
     , m_manager{new QNetworkAccessManager{this}}
@@ -98,6 +103,11 @@ void KLLMInterface::setOllamaUrl(const QString &ollamaUrl)
     m_ollamaUrl = ollamaUrl;
     Q_EMIT ollamaUrlChanged();
     checkIfInterfaceIsValid();
+}
+
+void KLLMInterface::setOllamaUrl(const QUrl &ollamaUrl)
+{
+    setOllamaUrl(ollamaUrl.toString());
 }
 
 QString KLLMInterface::systemPrompt() const

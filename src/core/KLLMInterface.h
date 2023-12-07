@@ -37,6 +37,12 @@ class KLLMCORE_EXPORT KLLMInterface : public QObject
 
 public:
     /**
+     * @brief Creates a KLLMInterface.
+     * @param parent The parent QObject.
+     */
+    explicit KLLMInterface(QObject *parent = nullptr);
+
+    /**
      * @brief Creates a KLLMInterface with the url set to \a ollamaUrl.
      * @param ollamaUrl The URL to the Ollama instance.
      * @param parent The parent QObject.
@@ -78,6 +84,12 @@ public:
      * @param ollamaUrl The new URL for the Ollama instance.
      */
     void setOllamaUrl(const QString &ollamaUrl);
+
+    /**
+     * @brief A convenience overload of setOllamaUrl() that takes a QUrl.
+     * @param ollamaUrl The new URL for the Ollama instance.
+     */
+    void setOllamaUrl(const QUrl &ollamaUrl);
 
     /**
      * @brief Get the system prompt for the LLM.
