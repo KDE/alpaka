@@ -115,3 +115,8 @@ install(EXPORT KLLMWidgetsTargets
     DESTINATION "${CMAKECONFIG_INSTALL_DIR}"
     FILE KLLMWidgetsTargets.cmake
     )
+
+if(BUILD_TESTING)
+   add_subdirectory(tests)
+   add_subdirectory(autotests)
+endif()
