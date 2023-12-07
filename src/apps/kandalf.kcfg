@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kcfg xmlns="http://www.kde.org/standards/kcfg/1.0"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.kde.org/standards/kcfg/1.0
+                          http://www.kde.org/standards/kcfg/1.0/kcfg.xsd" >
+  <include>KUser</include>
+  <include>QEventLoop</include>
+  <include>../core/KLLMInterface.h</include>
+  <kcfgfile name="kandalfrc"/>
+  <group name="Ollama">
+    <entry name="ServerUrl" type="Url">
+      <label>The URL to the Ollama instance</label>
+      <default>http://0.0.0.0:11434</default>
+    </entry>
+  </group>
+  <group name="LLM">
+    <entry name="SystemPrompt" type="String">
+      <label>The system prompt for the LLM</label>
+      <default code="true">
+        [] {
+            KUser user;
+            return QStringLiteral("You are an AI assistant. You are speaking to a person named %1. "
+                                  "Be helpful, professional, and courteous. Do not give inaccurate "
+                                  "information.")
+                .arg(user.property(KUser::UserProperty::FullName).toString());
+        } ()
+      </default>
+    </entry>
+    <entry name="Model" type="String">
+      <label>The model used to generate responses</label>
+      <default code="true">
+        [] {
+            KLLMInterface iface{QStringLiteral("http://0.0.0.0:11434")};
+            QEventLoop waiter;
+            connect(&amp;iface, &amp;KLLMInterface::readyChanged, &amp;waiter, &amp;QEventLoop::quit);
+            waiter.exec();
+            if (!iface.ready() || iface.models().empty())
+                return QString{};
+            else
+                return iface.models().first();
+        } ()
+      </default>
+    </entry>
+  </group>
+</kcfg>

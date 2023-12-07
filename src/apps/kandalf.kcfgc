@@ -1,0 +1,6 @@
+File=kandalf.kcfgc
+ClassName=KandalfSettings
+Mutators=true
+DefaultValueGetters=true
+Singleton=true
+GenerateProperties=true
