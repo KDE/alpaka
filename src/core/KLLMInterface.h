@@ -146,7 +146,7 @@ Q_SIGNALS:
     void errorOccurred(const QString &message);
 
 private:
-    void checkIfInterfaceIsValid();
+    KLLMCORE_NO_EXPORT void checkIfInterfaceIsValid();
 
     QNetworkAccessManager *const m_manager;
     QStringList m_models;
