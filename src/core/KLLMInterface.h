@@ -146,4 +146,5 @@ private:
     bool m_ready = false;
     QString m_ollamaUrl;
     QString m_systemPrompt;
+    QMetaObject::Connection m_ollamaCheck;
 };

@@ -25,7 +25,8 @@ KLLMInterface::KLLMInterface(const QString &ollamaUrl, QObject *parent)
     , m_manager{new QNetworkAccessManager{this}}
     , m_ollamaUrl{ollamaUrl}
 {
-    checkIfInterfaceIsValid();
+    if (!m_ollamaUrl.isEmpty())
+        checkIfInterfaceIsValid();
 }
 
 bool KLLMInterface::ready() const
@@ -69,10 +70,13 @@ KLLMReply *KLLMInterface::getCompletion(const KLLMRequest &request)
 
 void KLLMInterface::checkIfInterfaceIsValid()
 {
+    if (m_ollamaCheck)
+        disconnect(m_ollamaCheck);
+
     QNetworkRequest req{QUrl::fromUserInput(m_ollamaUrl + QStringLiteral("/api/tags"))};
     req.setHeader(QNetworkRequest::ContentTypeHeader, QStringLiteral("application/json"));
     auto rep = m_manager->get(req);
-    connect(rep, &QNetworkReply::finished, this, [this, rep] {
+    m_ollamaCheck = connect(rep, &QNetworkReply::finished, this, [this, rep] {
         if (rep->error() != QNetworkReply::NoError) {
             Q_EMIT errorOccurred(i18n("Failed to connect to interface at %1: %2", m_ollamaUrl, rep->errorString()));
             m_ready = false;
