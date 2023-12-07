@@ -25,8 +25,9 @@ ChatModel::ChatModel(QObject *parent)
 
         disconnect(*setDefaultModelConnection);
         delete setDefaultModelConnection;
-        if (!m_llm->models().contains(KandalfSettings::model()))
-            KandalfSettings::setModel(m_llm->models().first());
+        const auto models = m_llm->models();
+        if (!models.contains(KandalfSettings::model()))
+            KandalfSettings::setModel(models.first());
     });
 }
 
