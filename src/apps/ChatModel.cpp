@@ -114,6 +114,8 @@ void ChatModel::resetConversation()
     beginResetModel();
     for (const auto &connection : std::as_const(m_connections))
         disconnect(connection);
+    m_connections.clear();
+    Q_EMIT replyInProgressChanged();
     m_messages.clear();
     endResetModel();
 }
