@@ -38,3 +38,11 @@ void KLLMRequest::setModel(const QString &model)
 {
     m_model = model;
 }
+
+QDebug operator<<(QDebug d, const KLLMRequest &t)
+{
+    d << "Model: " << t.model();
+    d << "Message: " << t.message();
+    d << "Context: " << t.context();
+    return d;
+}

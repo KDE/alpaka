@@ -21,3 +21,9 @@ void KLLMContext::setOllamaContext(const QJsonArray &context)
     m_data = context;
     m_backend = Backend::Ollama;
 }
+
+QDebug operator<<(QDebug d, const KLLMContext &t)
+{
+    d << "m_data " << t.toJson();
+    return d;
+}

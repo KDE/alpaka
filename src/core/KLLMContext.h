@@ -5,6 +5,7 @@
 
 #pragma once
 #include "kllmcore_export.h"
+#include <QDebug>
 #include <QJsonArray>
 
 /**
@@ -41,3 +42,4 @@ private:
     } m_backend;
     QVariant m_data;
 };
+KLLMCORE_EXPORT QDebug operator<<(QDebug d, const KLLMContext &t);
