@@ -86,7 +86,7 @@ void KLLMInterface::checkIfInterfaceIsValid()
             m_models.push_back(model["name"_L1].toString());
         Q_EMIT modelsChanged();
 
-        m_ready = m_models.isEmpty();
+        m_ready = !m_models.isEmpty();
         Q_EMIT readyChanged();
     });
 }
