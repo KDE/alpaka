@@ -18,6 +18,10 @@ ChatModel::ChatModel(QObject *parent)
     m_llm->setOllamaUrl(settings->serverUrl());
     m_llm->setSystemPrompt(settings->systemPrompt());
 
+    connect(KandalfSettings::self(), &KandalfSettings::SystemPromptChanged, this, [this] {
+        m_llm->setSystemPrompt(KandalfSettings::systemPrompt());
+    });
+
     auto setDefaultModelConnection = new QMetaObject::Connection;
     *setDefaultModelConnection = connect(m_llm, &KLLMInterface::readyChanged, this, [this, setDefaultModelConnection] {
         if (!m_llm->ready())
