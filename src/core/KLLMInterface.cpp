@@ -70,6 +70,8 @@ void KLLMInterface::checkIfInterfaceIsValid()
     connect(rep, &QNetworkReply::finished, this, [this, rep] {
         if (rep->error() != QNetworkReply::NoError) {
             Q_EMIT errorOccurred(i18n("Failed to connect to interface at %1: %2", m_ollamaUrl, rep->errorString()));
+            m_ready = false;
+            Q_EMIT readyChanged();
             return;
         }
 
@@ -79,10 +81,8 @@ void KLLMInterface::checkIfInterfaceIsValid()
             m_models.push_back(model["name"_L1].toString());
         Q_EMIT modelsChanged();
 
-        if (!m_models.isEmpty()) {
-            m_ready = true;
-            Q_EMIT readyChanged();
-        }
+        m_ready = m_models.isEmpty();
+        Q_EMIT readyChanged();
     });
 }
 
