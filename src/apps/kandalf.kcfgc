@@ -1,4 +1,4 @@
-File=kandalf.kcfgc
+File=kandalf.kcfg
 ClassName=KandalfSettings
 Mutators=true
 DefaultValueGetters=true
