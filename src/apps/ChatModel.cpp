@@ -17,6 +17,14 @@ ChatModel::ChatModel(QObject *parent)
 
     m_llm->setOllamaUrl(settings->serverUrl());
     m_llm->setSystemPrompt(settings->systemPrompt());
+    m_setDefaultModelConnection = connect(m_llm, &KLLMInterface::readyChanged, this, [this] {
+        if (!m_llm->ready())
+            return;
+
+        disconnect(m_setDefaultModelConnection);
+        if (!m_llm->models().contains(KandalfSettings::model()))
+            KandalfSettings::setModel(m_llm->models().first());
+    });
 }
 
 ChatModel::~ChatModel() = default;

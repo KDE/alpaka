@@ -56,4 +56,5 @@ private:
     KLLMInterface *const m_llm;
 
     QMultiHash<KLLMReply *, QMetaObject::Connection> m_connections;
+    QMetaObject::Connection m_setDefaultModelConnection;
 };

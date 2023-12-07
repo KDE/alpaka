@@ -35,18 +35,6 @@ SPDX-License-Identifier: GPL-2.0-only OR GPL-3.0-only OR LicenseRef-KDE-Accepted
     </entry>
     <entry name="Model" type="String">
       <label>The model used to generate responses</label>
-      <default code="true">
-        [] {
-            KLLMInterface iface{QStringLiteral("http://0.0.0.0:11434")};
-            QEventLoop waiter;
-            connect(&amp;iface, &amp;KLLMInterface::readyChanged, &amp;waiter, &amp;QEventLoop::quit);
-            waiter.exec();
-            if (!iface.ready() || iface.models().empty())
-                return QString{};
-            else
-                return iface.models().first();
-        } ()
-      </default>
     </entry>
   </group>
 </kcfg>
