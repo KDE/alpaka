@@ -43,7 +43,6 @@ find_package(Qt${QT_MAJOR_VERSION} ${QT_MIN_VERSION} REQUIRED COMPONENTS
 find_package(KF${QT_MAJOR_VERSION} ${KF_MIN_VERSION} REQUIRED COMPONENTS
     CoreAddons
     Config
-    ConfigWidgets
     Kirigami2
     I18n
 )
