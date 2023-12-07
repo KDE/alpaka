@@ -126,3 +126,8 @@ install(EXPORT KLLMCoreTargets
     DESTINATION "${CMAKECONFIG_INSTALL_DIR}"
     FILE KLLMCoreTargets.cmake
     )
+
+if(BUILD_TESTING)
+   add_subdirectory(tests)
+   add_subdirectory(autotests)
+endif()
