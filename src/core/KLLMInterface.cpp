@@ -29,6 +29,11 @@ KLLMInterface::KLLMInterface(const QString &ollamaUrl, QObject *parent)
         checkIfInterfaceIsValid();
 }
 
+KLLMInterface::KLLMInterface(const QUrl &ollamaUrl, QObject *parent)
+    : KLLMInterface{ollamaUrl.toString(), parent}
+{
+}
+
 bool KLLMInterface::ready() const
 {
     return m_ready;

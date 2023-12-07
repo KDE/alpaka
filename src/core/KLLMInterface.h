@@ -50,6 +50,13 @@ public:
     explicit KLLMInterface(const QString &ollamaUrl, QObject *parent = nullptr);
 
     /**
+     * @brief Creates a KLLMInterface with the url set to \a ollamaUrl.
+     * @param ollamaUrl The URL to the Ollama instance.
+     * @param parent The parent QObject.
+     */
+    explicit KLLMInterface(const QUrl &ollamaUrl, QObject *parent = nullptr);
+
+    /**
      * @brief Check whether the interface is ready.
      *
      * You should not use the interface until ready() returns true. Failure to observe this rule may result in undefined
