@@ -60,20 +60,6 @@ endif()
 
 add_subdirectory(src)
 
-# create a Config.cmake and a ConfigVersion.cmake file and install them
-set(CMAKECONFIG_INSTALL_DIR "${KDE_INSTALL_CMAKEPACKAGEDIR}/KLLMCore")
-message("${CMAKECONFIG_INSTALL_DIR}")
-
-if (BUILD_QCH)
-    ecm_install_qch_export(
-        TARGETS libkllmcore_QCH
-        FILE KLLMCoreQchTargets.cmake
-        DESTINATION "${CMAKECONFIG_INSTALL_DIR}"
-        COMPONENT Devel
-    )
-    set(PACKAGE_INCLUDE_QCHTARGETS "include(\"\${CMAKE_CURRENT_LIST_DIR}/KLLMCoreQchTargets.cmake\")")
-endif()
-
 ecm_qt_install_logging_categories(EXPORT KLLMCORE FILE kllm.categories DESTINATION ${KDE_INSTALL_LOGGINGCATEGORIESDIR})
 
 feature_summary(WHAT ALL INCLUDE_QUIET_PACKAGES FATAL_ON_MISSING_REQUIRED_PACKAGES)
