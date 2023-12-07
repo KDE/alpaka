@@ -80,6 +80,7 @@ Kirigami.ApplicationWindow {
                     id: chatView
                     spacing: 10
                     model: chat
+                    clip: true
 
                     delegate: RowLayout {
                         id: messageDelegate
