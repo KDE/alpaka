@@ -22,8 +22,12 @@ target_link_libraries(kandalf
     KF${QT_MAJOR_VERSION}::I18n
     KF${QT_MAJOR_VERSION}::Kirigami2
     KF${QT_MAJOR_VERSION}::CoreAddons
+    KF${QT_MAJOR_VERSION}::ConfigCore
+    KF${QT_MAJOR_VERSION}::ConfigGui
     KLLMCore
 )
+
+kconfig_add_kcfg_files(kandalf GENERATE_MOC kandalf.kcfgc)
 
 target_include_directories(kandalf PRIVATE ${CMAKE_BINARY_DIR})
 
