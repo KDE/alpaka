@@ -7,17 +7,16 @@
 
 #include <KUser>
 
+#include "kandalf.h"
+
 ChatModel::ChatModel(QObject *parent)
     : QAbstractListModel{parent}
-    , m_llm{new KLLMInterface{QStringLiteral("http://0.0.0.0:11434"), this}}
+    , m_llm{new KLLMInterface{this}}
 {
-    KUser user;
-    // Note (Loren): For some reason, Llama 2 kept trying to talk to me in asterisks text when it was prompted with my name no matter how I tweaked the system
-    // prompt, so I just gave up and forbade it to use that mode of speech unless the user used it. Even so, it doesn't always behave.
-    m_llm->setSystemPrompt(
-        QStringLiteral("You are an AI assistant. You are speaking to a person named %1. Be helpful, professional, and courteous. Do not give inaccurate "
-                       "information. Under no circumstances should you speak in asterisks text unless %1 speaks to you with asterisks text first.")
-            .arg(user.property(KUser::UserProperty::FullName).toString()));
+    auto settings = KandalfSettings::self();
+
+    m_llm->setOllamaUrl(settings->serverUrl());
+    m_llm->setSystemPrompt(settings->systemPrompt());
 }
 
 ChatModel::~ChatModel() = default;

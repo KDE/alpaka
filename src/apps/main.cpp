@@ -13,6 +13,7 @@
 
 #include "ChatModel.h"
 #include "kandalf-version.h"
+#include "kandalf.h"
 
 int main(int argc, char *argv[])
 {
@@ -39,6 +40,8 @@ int main(int argc, char *argv[])
 
     QQmlApplicationEngine engine;
 
+    auto settings = KandalfSettings::self();
+    qmlRegisterSingletonInstance("org.kde.kandalf", 1, 0, "KandalfSettings", settings);
     qmlRegisterType<ChatModel>("org.kde.kandalf", 0, 1, "ChatModel");
 
     engine.rootContext()->setContextObject(new KLocalizedContext(&engine));
