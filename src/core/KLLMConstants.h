@@ -7,7 +7,10 @@
 #include <QUrl>
 namespace KLLMCore
 {
-
+/**
+ * @brief Return default Ollama Url
+ * @return default Ollama Url.
+ */
 [[nodiscard]] KLLMCORE_EXPORT QUrl ollamaUrl();
 
 }
