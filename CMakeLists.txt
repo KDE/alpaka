@@ -56,6 +56,7 @@ ecm_setup_version(${PROJECT_VERSION}
 
 if(BUILD_TESTING)
     add_definitions(-DBUILD_TESTING)
+    find_package(Qt6 ${QT_MIN_VERSION} REQUIRED COMPONENTS Test)
 endif()
 
 add_subdirectory(src)
