@@ -24,8 +24,9 @@ ChatModel::ChatModel(QObject *parent)
 
     auto setDefaultModelConnection = new QMetaObject::Connection;
     *setDefaultModelConnection = connect(m_llm, &KLLMInterface::readyChanged, this, [this, setDefaultModelConnection] {
-        if (!m_llm->ready())
+        if (!m_llm->ready()) {
             return;
+        }
 
         disconnect(*setDefaultModelConnection);
         delete setDefaultModelConnection;

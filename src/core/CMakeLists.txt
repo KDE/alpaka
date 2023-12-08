@@ -20,14 +20,19 @@ set_target_properties(KLLMCore PROPERTIES
 
 target_sources(KLLMCore PRIVATE
     KLLMContext.cpp
-    KLLMInterface.cpp
-    KLLMReply.cpp
-    KLLMRequest.cpp
-
     KLLMContext.h
+
+    KLLMInterface.cpp
     KLLMInterface.h
+
+    KLLMReply.cpp
     KLLMReply.h
+
+    KLLMRequest.cpp
     KLLMRequest.h
+
+    KLLMConstants.cpp
+    KLLMConstants.h
 )
 
 ecm_qt_declare_logging_category(KLLMCore HEADER kllmcore_debug.h IDENTIFIER KLLMCORE_LOG CATEGORY_NAME org.kde.kllm.core
@@ -53,6 +58,7 @@ ecm_generate_headers(kllmcore_Camelcase_HEADERS
     HEADER_NAMES
     KLLMInterface
     KLLMReply
+    KLLMConstants
 
     REQUIRED_HEADERS kllmcore_HEADERS
     PREFIX KLLMCore

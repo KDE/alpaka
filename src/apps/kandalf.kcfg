@@ -12,12 +12,13 @@ SPDX-License-Identifier: GPL-2.0-only OR GPL-3.0-only OR LicenseRef-KDE-Accepted
                           http://www.kde.org/standards/kcfg/1.0/kcfg.xsd" >
   <include>KUser</include>
   <include>QEventLoop</include>
-  <include>../core/KLLMInterface.h</include>
+  <include>KLLMInterface.h</include>
+  <include>KLLMConstants.h</include>
   <kcfgfile name="kandalfrc"/>
   <group name="Ollama">
     <entry name="ServerUrl" type="Url">
       <label>The URL to the Ollama instance</label>
-      <default>http://0.0.0.0:11434</default>
+      <default code="true">KLLMCore::ollamaUrl()</default>
     </entry>
   </group>
   <group name="LLM">
