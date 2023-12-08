@@ -37,7 +37,7 @@ public:
     QVariant data(const QModelIndex &index, int role) const override;
 
     [[nodiscard]] KLLMCore::KLLMInterface *llm() const;
-    bool replyInProgress() const;
+    [[nodiscard]] bool replyInProgress() const;
 
 public Q_SLOTS:
     void sendMessage(const QString &message);
