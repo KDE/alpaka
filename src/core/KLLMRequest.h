@@ -9,7 +9,8 @@
 
 #include "KLLMContext.h"
 #include <QDebug>
-
+namespace KLLMCore
+{
 /**
  * @brief The KLLMRequest class contains a representation of a message to an LLM.
  *
@@ -75,4 +76,5 @@ private:
     KLLMContext m_context;
     QString m_model;
 };
-KLLMCORE_EXPORT QDebug operator<<(QDebug d, const KLLMRequest &t);
+}
+KLLMCORE_EXPORT QDebug operator<<(QDebug d, const KLLMCore::KLLMRequest &t);

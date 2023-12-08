@@ -8,7 +8,7 @@
 #include <KUser>
 
 #include "kandalf.h"
-
+using namespace KLLMCore;
 ChatModel::ChatModel(QObject *parent)
     : QAbstractListModel{parent}
     , m_llm{new KLLMInterface{this}}

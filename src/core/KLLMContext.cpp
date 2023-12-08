@@ -6,6 +6,8 @@
 
 #include <QJsonValue>
 
+using namespace KLLMCore;
+
 QJsonValue KLLMContext::toJson() const
 {
     switch (m_backend) {

@@ -10,7 +10,7 @@
 #include <QNetworkReply>
 
 using namespace Qt::StringLiterals;
-
+using namespace KLLMCore;
 QString KLLMReply::readResponse() const
 {
     QString ret;

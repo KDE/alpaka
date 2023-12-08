@@ -14,6 +14,7 @@
 #include <QNetworkReply>
 
 using namespace Qt::StringLiterals;
+using namespace KLLMCore;
 
 KLLMInterface::KLLMInterface(QObject *parent)
     : KLLMInterface{QString{}, parent}

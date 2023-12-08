@@ -13,7 +13,7 @@ class ChatModel : public QAbstractListModel
 {
     Q_OBJECT
 
-    Q_PROPERTY(KLLMInterface *llm READ llm CONSTANT FINAL)
+    Q_PROPERTY(KLLMCore::KLLMInterface *llm READ llm CONSTANT FINAL)
     Q_PROPERTY(bool replyInProgress READ replyInProgress NOTIFY replyInProgressChanged FINAL)
 
 public:
@@ -33,7 +33,7 @@ public:
     int rowCount(const QModelIndex & = {}) const override;
     QVariant data(const QModelIndex &index, int role) const override;
 
-    [[nodiscard]] KLLMInterface *llm() const;
+    [[nodiscard]] KLLMCore::KLLMInterface *llm() const;
     bool replyInProgress() const;
 
 public Q_SLOTS:
@@ -48,12 +48,12 @@ private:
         bool inProgress = false;
         QString content;
         Sender sender;
-        KLLMReply *llmReply;
-        KLLMContext context;
+        KLLMCore::KLLMReply *llmReply;
+        KLLMCore::KLLMContext context;
     };
 
     QList<ChatMessage> m_messages;
-    KLLMInterface *const m_llm;
+    KLLMCore::KLLMInterface *const m_llm;
 
-    QMultiHash<KLLMReply *, QMetaObject::Connection> m_connections;
+    QMultiHash<KLLMCore::KLLMReply *, QMetaObject::Connection> m_connections;
 };

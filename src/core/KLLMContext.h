@@ -8,6 +8,8 @@
 #include <QDebug>
 #include <QJsonArray>
 
+namespace KLLMCore
+{
 /**
  * @brief KLLMContext provides a representation of a conversation context.
  *
@@ -42,4 +44,5 @@ private:
     } m_backend;
     QVariant m_data;
 };
-KLLMCORE_EXPORT QDebug operator<<(QDebug d, const KLLMContext &t);
+}
+KLLMCORE_EXPORT QDebug operator<<(QDebug d, const KLLMCore::KLLMContext &t);

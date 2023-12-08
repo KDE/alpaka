@@ -11,7 +11,8 @@
 #include "KLLMContext.h"
 
 class QNetworkReply;
-
+namespace KLLMCore
+{
 /**
  * @brief The KLLMReply class represents a reply from an LLM.
  *
@@ -93,3 +94,4 @@ private:
     int m_receivedSize = 0;
     bool m_finished = false;
 };
+}

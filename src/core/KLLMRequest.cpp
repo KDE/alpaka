@@ -4,6 +4,7 @@
 
 #include "KLLMRequest.h"
 
+using namespace KLLMCore;
 KLLMRequest::KLLMRequest(const QString &message)
     : m_message{message}
 {

@@ -10,6 +10,8 @@
 #include "KLLMReply.h"
 #include "KLLMRequest.h"
 class QNetworkAccessManager;
+namespace KLLMCore
+{
 /**
  * @brief The KLLMInterface class provides an interface around the LLM API.
  *
@@ -155,3 +157,4 @@ private:
     QString m_systemPrompt;
     QMetaObject::Connection m_ollamaCheck;
 };
+}
