@@ -6,7 +6,6 @@
 #include "KLLMReply.h"
 #include "kllmcore_debug.h"
 
-#include <QJsonDocument>
 #include <QNetworkReply>
 
 using namespace Qt::StringLiterals;
