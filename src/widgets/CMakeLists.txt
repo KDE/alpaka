@@ -19,6 +19,8 @@ set_target_properties(KLLMWidgets PROPERTIES
 )
 
 target_sources(KLLMWidgets PRIVATE
+    KLLMModelComboBox.h
+    KLLMModelComboBox.cpp
 )
 
 ecm_qt_declare_logging_category(KLLMWidgets HEADER kllmwidgets_debug.h IDENTIFIER KLLMWIDGETS_LOG CATEGORY_NAME org.kde.kllm.core
@@ -30,6 +32,7 @@ generate_export_header(KLLMWidgets
 
 target_link_libraries(KLLMWidgets
     KLLMCore
+    Qt::Widgets
 )
 
 set_target_properties(KLLMWidgets
@@ -38,13 +41,14 @@ set_target_properties(KLLMWidgets
 
 install(TARGETS KLLMWidgets EXPORT KLLMWidgetsTargets ${KDE_INSTALL_TARGETS_DEFAULT_ARGS})
 
-# ecm_generate_headers(kllmwidgets_Camelcase_HEADERS
-#     ORIGINAL CAMELCASE
-#     HEADER_NAMES
+ecm_generate_headers(kllmwidgets_Camelcase_HEADERS
+    ORIGINAL CAMELCASE
+    HEADER_NAMES
+    KLLMModelComboBox
 
-#     REQUIRED_HEADERS kllmwidgets_HEADERS
-#     PREFIX KLLMWidgets
-# )
+    REQUIRED_HEADERS kllmwidgets_HEADERS
+    PREFIX KLLMWidgets
+)
 
 install(FILES
     ${kllmwidgets_Camelcase_HEADERS}
@@ -59,43 +63,42 @@ install(FILES
     COMPONENT Devel
 )
 
-# REACTIVATE IT
-# if (BUILD_QCH)
-#     ecm_add_qch(
-#         kllmwidgets_QCH
-#         NAME KLLM
-#         BASE_NAME KLLMWidgets
-#         VERSION ${KLLMWIDGETS_VERSION}
-#         ORG_DOMAIN org.kde
-#         SOURCES # using only public headers, to cover only public API
-#         ${kllmwidgets_Camelcase_HEADERS}
-#         MD_MAINPAGE "${CMAKE_SOURCE_DIR}/README.md"
-#         IMAGE_DIRS "${CMAKE_SOURCE_DIR}/docs/pics"
-#         LINK_QCHS
-#         Qt6Core_QCH
-#         INCLUDE_DIRS
-#         ${CMAKE_CURRENT_BINARY_DIR}
-#         BLANK_MACROS
-#         KLLMWIDGETS_EXPORT
-#         KLLMWIDGETS_DEPRECATED_EXPORT
-#         KLLMWIDGETS_DEPRECATED
-#         "KLLMWIDGETS_DEPRECATED_VERSION(x, y, t)"
-#         "KLLMWIDGETS_DEPRECATED_VERSION_BELATED(x, y, tx, ty, t)"
-#         "KLLMWIDGETS_ENUMERATOR_DEPRECATED_VERSION(x, y, t)"
-#         "KLLMWIDGETS_ENUMERATOR_DEPRECATED_VERSION_BELATED(x, y, tx, ty, t)"
-#         TAGFILE_INSTALL_DESTINATION ${KDE_INSTALL_QTQCHDIR}
-#         QCH_INSTALL_DESTINATION ${KDE_INSTALL_QTQCHDIR}
-#         COMPONENT Devel
-#     )
-#     ecm_install_qch_export(
-#         TARGETS kllmwidgets_QCH
-#         FILE KLLMWidgetsQchTargets.cmake
-#         DESTINATION "${CMAKECONFIG_INSTALL_DIR}"
-#         COMPONENT Devel
-#     )
-#     set(PACKAGE_INCLUDE_QCHTARGETS "include(\"\${CMAKE_CURRENT_LIST_DIR}/KLLMWidgetsQchTargets.cmake\")")
+if (BUILD_QCH)
+    ecm_add_qch(
+        kllmwidgets_QCH
+        NAME KLLM
+        BASE_NAME KLLMWidgets
+        VERSION ${KLLMWIDGETS_VERSION}
+        ORG_DOMAIN org.kde
+        SOURCES # using only public headers, to cover only public API
+        ${kllmwidgets_Camelcase_HEADERS}
+        MD_MAINPAGE "${CMAKE_SOURCE_DIR}/README.md"
+        IMAGE_DIRS "${CMAKE_SOURCE_DIR}/docs/pics"
+        LINK_QCHS
+        Qt6Core_QCH
+        INCLUDE_DIRS
+        ${CMAKE_CURRENT_BINARY_DIR}
+        BLANK_MACROS
+        KLLMWIDGETS_EXPORT
+        KLLMWIDGETS_DEPRECATED_EXPORT
+        KLLMWIDGETS_DEPRECATED
+        "KLLMWIDGETS_DEPRECATED_VERSION(x, y, t)"
+        "KLLMWIDGETS_DEPRECATED_VERSION_BELATED(x, y, tx, ty, t)"
+        "KLLMWIDGETS_ENUMERATOR_DEPRECATED_VERSION(x, y, t)"
+        "KLLMWIDGETS_ENUMERATOR_DEPRECATED_VERSION_BELATED(x, y, tx, ty, t)"
+        TAGFILE_INSTALL_DESTINATION ${KDE_INSTALL_QTQCHDIR}
+        QCH_INSTALL_DESTINATION ${KDE_INSTALL_QTQCHDIR}
+        COMPONENT Devel
+    )
+    ecm_install_qch_export(
+        TARGETS kllmwidgets_QCH
+        FILE KLLMWidgetsQchTargets.cmake
+        DESTINATION "${CMAKECONFIG_INSTALL_DIR}"
+        COMPONENT Devel
+    )
+    set(PACKAGE_INCLUDE_QCHTARGETS "include(\"\${CMAKE_CURRENT_LIST_DIR}/KLLMWidgetsQchTargets.cmake\")")
 
-# endif()
+endif()
 
 
 configure_package_config_file(
