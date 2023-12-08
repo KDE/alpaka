@@ -23,7 +23,10 @@ public:
         FinishedRole,
     };
 
-    enum Sender { LLM, User };
+    enum Sender {
+        LLM,
+        User,
+    };
     Q_ENUM(Sender)
 
     explicit ChatModel(QObject *parent = nullptr);
