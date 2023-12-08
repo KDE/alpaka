@@ -14,16 +14,16 @@ target_sources(kandalf PRIVATE
 )
 
 target_link_libraries(kandalf
-    Qt${QT_MAJOR_VERSION}::Widgets
-    Qt${QT_MAJOR_VERSION}::Quick
-    Qt${QT_MAJOR_VERSION}::Qml
-    Qt${QT_MAJOR_VERSION}::Gui
-    Qt${QT_MAJOR_VERSION}::QuickControls2
-    KF${QT_MAJOR_VERSION}::I18n
-    KF${QT_MAJOR_VERSION}::Kirigami2
-    KF${QT_MAJOR_VERSION}::CoreAddons
-    KF${QT_MAJOR_VERSION}::ConfigCore
-    KF${QT_MAJOR_VERSION}::ConfigGui
+    Qt6::Widgets
+    Qt6::Quick
+    Qt6::Qml
+    Qt6::Gui
+    Qt6::QuickControls2
+    KF6::I18n
+    KF6::Kirigami2
+    KF6::CoreAddons
+    KF6::ConfigCore
+    KF6::ConfigGui
     KLLMCore
 )
 
