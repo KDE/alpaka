@@ -132,3 +132,5 @@ void KLLMInterface::setSystemPrompt(const QString &systemPrompt)
     m_systemPrompt = systemPrompt;
     Q_EMIT systemPromptChanged();
 }
+
+#include "moc_KLLMInterface.cpp"

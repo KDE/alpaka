@@ -62,3 +62,5 @@ KLLMReply::KLLMReply(QNetworkReply *netReply, QObject *parent)
         Q_EMIT contentAdded();
     });
 }
+
+#include "moc_KLLMReply.cpp"

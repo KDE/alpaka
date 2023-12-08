@@ -119,3 +119,5 @@ void ChatModel::resetConversation()
     m_messages.clear();
     endResetModel();
 }
+
+#include "moc_ChatModel.cpp"
