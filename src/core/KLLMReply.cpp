@@ -55,6 +55,7 @@ KLLMReply::KLLMReply(QNetworkReply *netReply, QObject *parent)
         m_incompleteTokens = completeTokens.last();
         completeTokens.removeLast();
 
+        m_tokens.reserve(completeTokens.count());
         for (const auto &tok : completeTokens)
             m_tokens.append(QJsonDocument::fromJson(tok));
 

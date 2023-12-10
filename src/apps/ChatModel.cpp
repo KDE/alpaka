@@ -81,8 +81,8 @@ void ChatModel::sendMessage(const QString &message)
     KLLMRequest req{message};
     req.setModel(KandalfSettings::model());
     for (int i = m_messages.size() - 1; i >= 0; --i) {
-        if (m_messages[i].sender == Sender::LLM) {
-            req.setContext(m_messages[i].context);
+        if (m_messages.at(i).sender == Sender::LLM) {
+            req.setContext(m_messages.at(i).context);
             break;
         }
     }
