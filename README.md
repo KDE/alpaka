@@ -1,5 +1,5 @@
 <!--
-SPDX-FileCopyrightText: 2023 2023 Loren Burkholder <computersemiexpert@outlook.com>
+SPDX-FileCopyrightText: 2023 Loren Burkholder <computersemiexpert@outlook.com>
 
 SPDX-License-Identifier: CC0-1.0
 -->
