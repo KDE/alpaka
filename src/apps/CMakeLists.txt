@@ -3,7 +3,8 @@
 #
 # SPDX-License-Identifier: GPL-2.0-only OR GPL-3.0-only OR LicenseRef-KDE-Accepted-GPL
 
-add_executable(kandalf)
+add_executable(kandalf
+    controller.h controller.cpp)
 
 configure_file(config-kandalf.h.in ${CMAKE_CURRENT_BINARY_DIR}/config-kandalf.h)
 

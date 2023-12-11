@@ -14,6 +14,15 @@
 #include "ChatModel.h"
 #include "kandalf-version.h"
 #include "kandalf.h"
+#include "windowcontroller.h"
+
+static QWindow *windowFromEngine(QQmlApplicationEngine *engine)
+{
+    const auto rootObjects = engine->rootObjects();
+    auto *window = qobject_cast<QQuickWindow *>(rootObjects.first());
+    Q_ASSERT(window);
+    return window;
+}
 
 int main(int argc, char *argv[])
 {
@@ -52,5 +61,11 @@ int main(int argc, char *argv[])
         return -1;
 
     app.connect(&app, &QApplication::aboutToQuit, settings, &KandalfSettings::save);
+
+    QWindow *window = windowFromEngine(&engine);
+
+    WindowController::instance().setWindow(window);
+    WindowController::instance().restoreGeometry();
+
     return app.exec();
 }
