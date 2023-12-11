@@ -22,6 +22,9 @@ public:
 
     [[nodiscard]] bool supportSystemTray() const;
 
+public Q_SLOTS:
+    void saveWindowGeometry();
+
 private:
     void setQuitOnLastWindowClosed();
     void toggleWindow();

@@ -73,3 +73,8 @@ bool Controller::supportSystemTray() const
     return de != QStringLiteral("GNOME") && de != QStringLiteral("Pantheon");
 #endif
 }
+
+void Controller::saveWindowGeometry()
+{
+    WindowController::instance().saveGeometry();
+}
