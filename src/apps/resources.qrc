@@ -5,5 +5,6 @@
         <file alias="SettingsPage.qml">contents/ui/SettingsPage.qml</file>
         <file alias="OllamaSettingsPage.qml">contents/ui/OllamaSettingsPage.qml</file>
         <file alias="LLMSettingsPage.qml">contents/ui/LLMSettingsPage.qml</file>
+        <file alias="GeneralSettingsPage.qml">contents/ui/GeneralSettingsPage.qml</file>
     </qresource>
 </RCC>

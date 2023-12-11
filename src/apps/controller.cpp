@@ -63,3 +63,13 @@ void Controller::toggleWindow()
         instance.window()->requestActivate();
     }
 }
+
+bool Controller::supportSystemTray() const
+{
+#ifdef Q_OS_ANDROID
+    return false;
+#else
+    auto de = QString::fromLatin1(qgetenv("XDG_CURRENT_DESKTOP"));
+    return de != QStringLiteral("GNOME") && de != QStringLiteral("Pantheon");
+#endif
+}

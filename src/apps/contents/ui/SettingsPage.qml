@@ -24,6 +24,11 @@ KirigamiSettings.CategorizedSettings {
             actionName: "llm_settings"
             text: i18n("LLM")
             page: "qrc:/LLMSettingsPage.qml"
+        },
+        KirigamiSettings.SettingAction {
+            actionName: "general_settings"
+            text: i18n("General")
+            page: "qrc:/GeneralSettingsPage.qml"
         }
     ]
 }

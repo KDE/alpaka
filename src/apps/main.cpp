@@ -12,6 +12,7 @@
 #include <QUrl>
 
 #include "ChatModel.h"
+#include "controller.h"
 #include "kandalf-version.h"
 #include "kandalf.h"
 #include "windowcontroller.h"
@@ -48,6 +49,7 @@ int main(int argc, char *argv[])
     if (qEnvironmentVariableIsEmpty("QT_QUICK_CONTROLS_STYLE"))
         QQuickStyle::setStyle(QStringLiteral("org.kde.desktop"));
 
+    Controller::instance();
     QQmlApplicationEngine engine;
 
     auto settings = KandalfSettings::self();

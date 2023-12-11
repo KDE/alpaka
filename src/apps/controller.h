@@ -10,12 +10,17 @@ class SystemTray;
 class Controller : public QObject
 {
     Q_OBJECT
+    QML_ELEMENT
+    QML_SINGLETON
+    Q_PROPERTY(bool supportSystemTray READ supportSystemTray CONSTANT)
 public:
     explicit Controller(QObject *parent = nullptr);
     ~Controller() override;
 
     static Controller &instance();
     static Controller *create(QQmlEngine *engine, QJSEngine *);
+
+    [[nodiscard]] bool supportSystemTray() const;
 
 private:
     void setQuitOnLastWindowClosed();
