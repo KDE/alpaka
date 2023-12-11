@@ -21,6 +21,9 @@ set_target_properties(KLLMWidgets PROPERTIES
 target_sources(KLLMWidgets PRIVATE
     KLLMModelComboBox.h
     KLLMModelComboBox.cpp
+
+    KLLMActionMenu.h
+    KLLMActionMenu.cpp
 )
 
 ecm_qt_declare_logging_category(KLLMWidgets HEADER kllmwidgets_debug.h IDENTIFIER KLLMWIDGETS_LOG CATEGORY_NAME org.kde.kllm.core
@@ -33,6 +36,7 @@ generate_export_header(KLLMWidgets
 target_link_libraries(KLLMWidgets
     KLLMCore
     Qt::Widgets
+    KF6::XmlGui
 )
 
 set_target_properties(KLLMWidgets
@@ -45,6 +49,7 @@ ecm_generate_headers(kllmwidgets_Camelcase_HEADERS
     ORIGINAL CAMELCASE
     HEADER_NAMES
     KLLMModelComboBox
+    KLLMActionMenu
 
     REQUIRED_HEADERS kllmwidgets_HEADERS
     PREFIX KLLMWidgets
