@@ -10,3 +10,5 @@ KLLMModelComboBox::KLLMModelComboBox(QWidget *parent)
 }
 
 KLLMModelComboBox::~KLLMModelComboBox() = default;
+
+#include "moc_KLLMModelComboBox.cpp"

@@ -16,3 +16,5 @@ void KLLMConstantsTest::shouldHaveDefaultValues()
 {
     QCOMPARE(KLLMCore::ollamaUrl(), QUrl(QStringLiteral("http://0.0.0.0:11434")));
 }
+
+#include "moc_kllmconstantstest.cpp"
