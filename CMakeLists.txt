@@ -45,6 +45,7 @@ find_package(KF6 ${KF_MIN_VERSION} REQUIRED COMPONENTS
     Config
     Kirigami2
     I18n
+    StatusNotifierItem
 )
 
 ecm_set_disabled_deprecation_versions(QT ${QT_MIN_VERSION} KF ${KF_MIN_VERSION})

@@ -11,6 +11,7 @@ Dependencies:
     'frameworks/kcoreaddons': '@latest-kf6'
     'frameworks/kguiaddons': '@latest-kf6'
     'frameworks/kwidgetsaddons': '@latest-kf6'
+    'frameworks/kstatusnotifieritem': '@latest-kf6'
 
 - 'on': ['Linux', 'FreeBSD']
   'require':

@@ -10,6 +10,9 @@ target_sources(kandalf PRIVATE
     ChatModel.h
     main.cpp
 
+    systemtray.h
+    systemtray.cpp
+
     resources.qrc
 )
 
@@ -25,6 +28,7 @@ target_link_libraries(kandalf
     KF6::ConfigCore
     KF6::ConfigGui
     KLLMCore
+    KF6::StatusNotifierItem
 )
 
 kconfig_add_kcfg_files(kandalf GENERATE_MOC kandalf.kcfgc)
