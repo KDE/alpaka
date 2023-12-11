@@ -5,6 +5,8 @@
 
 add_executable(kandalf)
 
+configure_file(config-kandalf.h.in ${CMAKE_CURRENT_BINARY_DIR}/config-kandalf.h)
+
 target_sources(kandalf PRIVATE
     ChatModel.cpp
     ChatModel.h
@@ -12,6 +14,9 @@ target_sources(kandalf PRIVATE
 
     systemtray.h
     systemtray.cpp
+
+    windowcontroller.cpp
+    windowcontroller.h
 
     resources.qrc
 )
@@ -29,6 +34,7 @@ target_link_libraries(kandalf
     KF6::ConfigGui
     KLLMCore
     KF6::StatusNotifierItem
+    KF6::WindowSystem
 )
 
 kconfig_add_kcfg_files(kandalf GENERATE_MOC kandalf.kcfgc)

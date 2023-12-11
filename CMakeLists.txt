@@ -46,8 +46,15 @@ find_package(KF6 ${KF_MIN_VERSION} REQUIRED COMPONENTS
     Kirigami2
     I18n
     StatusNotifierItem
+    WindowSystem
 )
-
+# Remove it on android etc.
+if (NOT ANDROID)
+    set(HAVE_WINDOWSYSTEM TRUE)
+endif()
+if (NOT ANDROID AND NOT WIN32 AND NOT APPLE)
+    set(HAVE_X11 TRUE)
+endif()
 ecm_set_disabled_deprecation_versions(QT ${QT_MIN_VERSION} KF ${KF_MIN_VERSION})
 
 ecm_setup_version(${PROJECT_VERSION}
