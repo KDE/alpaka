@@ -18,3 +18,5 @@ void KLLMModelComboBoxTest::shouldHaveDefaultValues()
     KLLMWidgets::KLLMModelComboBox w;
     QCOMPARE(w.count(), 0);
 }
+
+#include "moc_kllmmodelcomboboxtest.cpp"

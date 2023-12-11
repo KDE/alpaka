@@ -78,3 +78,5 @@ void Controller::saveWindowGeometry()
 {
     WindowController::instance().saveGeometry();
 }
+
+#include "moc_controller.cpp"

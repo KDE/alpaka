@@ -21,3 +21,5 @@ KLLMActionMenu::~KLLMActionMenu() = default;
 void KLLMActionMenu::updateMenu()
 {
 }
+
+#include "moc_KLLMActionMenu.cpp"
