@@ -26,8 +26,9 @@ KLLMInterface::KLLMInterface(const QString &ollamaUrl, QObject *parent)
     , m_manager{new QNetworkAccessManager{this}}
     , m_ollamaUrl{ollamaUrl}
 {
-    if (!m_ollamaUrl.isEmpty())
+    if (!m_ollamaUrl.isEmpty()) {
         checkIfInterfaceIsValid();
+    }
 }
 
 KLLMInterface::KLLMInterface(const QUrl &ollamaUrl, QObject *parent)
@@ -57,11 +58,13 @@ KLLMReply *KLLMInterface::getCompletion(const KLLMRequest &request)
     data["prompt"_L1] = request.message();
 
     const auto context = request.context().toJson();
-    if (!context.isNull())
+    if (!context.isNull()) {
         data["context"_L1] = context;
+    }
 
-    if (!m_systemPrompt.isEmpty())
+    if (!m_systemPrompt.isEmpty()) {
         data["system"_L1] = m_systemPrompt;
+    }
 
     auto buf = new QBuffer{this};
     buf->setData(QJsonDocument(data).toJson(QJsonDocument::Compact));
@@ -92,8 +95,9 @@ void KLLMInterface::checkIfInterfaceIsValid()
 
         auto json = QJsonDocument::fromJson(rep->readAll());
         const auto models = json["models"_L1].toArray();
-        for (const QJsonValue &model : models)
+        for (const QJsonValue &model : models) {
             m_models.push_back(model["name"_L1].toString());
+        }
         Q_EMIT modelsChanged();
 
         m_ready = !m_models.isEmpty();
