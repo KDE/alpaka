@@ -4,15 +4,21 @@
 
 #pragma once
 
+#include "kllmwidgets_export.h"
 #include <QComboBox>
 
 namespace KLLMWidgets
 {
-class KLLMModelComboBox : public QComboBox
+/**
+ * @brief The KLLMModelComboBox class
+ */
+class KLLMWIDGETS_EXPORT KLLMModelComboBox : public QComboBox
 {
     Q_OBJECT
 public:
     explicit KLLMModelComboBox(QWidget *parent = nullptr);
     ~KLLMModelComboBox() override;
+
+    void setModels(const QStringList &models);
 };
 }

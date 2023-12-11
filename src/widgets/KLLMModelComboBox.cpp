@@ -11,4 +11,9 @@ KLLMModelComboBox::KLLMModelComboBox(QWidget *parent)
 
 KLLMModelComboBox::~KLLMModelComboBox() = default;
 
+void KLLMModelComboBox::setModels(const QStringList &models)
+{
+    addItems(models);
+}
+
 #include "moc_KLLMModelComboBox.cpp"
