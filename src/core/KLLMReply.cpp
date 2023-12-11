@@ -35,8 +35,9 @@ KLLMReply::KLLMReply(QNetworkReply *netReply, QObject *parent)
     connect(m_reply, &QNetworkReply::finished, m_reply, [this] {
         // Normally, we could assume that the tokens will never be empty once the request finishes, but it could be possible
         // that the request failed and we have no tokens to parse.
-        if (!m_tokens.empty())
+        if (!m_tokens.empty()) {
             m_context.setOllamaContext(m_tokens.constLast()["context"_L1].toArray());
+        }
 
         qCDebug(KLLMCORE_LOG) << "Ollama response finished";
         m_finished = true;
@@ -50,14 +51,16 @@ KLLMReply::KLLMReply(QNetworkReply *netReply, QObject *parent)
         m_receivedSize = received;
 
         auto completeTokens = m_incompleteTokens.split('\n');
-        if (completeTokens.size() <= 1)
+        if (completeTokens.size() <= 1) {
             return;
+        }
         m_incompleteTokens = completeTokens.last();
         completeTokens.removeLast();
 
         m_tokens.reserve(completeTokens.count());
-        for (const auto &tok : completeTokens)
+        for (const auto &tok : completeTokens) {
             m_tokens.append(QJsonDocument::fromJson(tok));
+        }
 
         Q_EMIT contentAdded();
     });
