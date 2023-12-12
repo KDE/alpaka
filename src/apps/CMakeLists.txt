@@ -3,11 +3,11 @@
 #
 # SPDX-License-Identifier: GPL-2.0-only OR GPL-3.0-only OR LicenseRef-KDE-Accepted-GPL
 
-add_executable(kandalf)
+add_executable(kognos)
 
-configure_file(config-kandalf.h.in ${CMAKE_CURRENT_BINARY_DIR}/config-kandalf.h)
+configure_file(config-kognos.h.in ${CMAKE_CURRENT_BINARY_DIR}/config-kognos.h)
 
-target_sources(kandalf PRIVATE
+target_sources(kognos PRIVATE
     ChatModel.cpp
     ChatModel.h
     main.cpp
@@ -24,7 +24,7 @@ target_sources(kandalf PRIVATE
     resources.qrc
 )
 
-target_link_libraries(kandalf
+target_link_libraries(kognos
     Qt6::Widgets
     Qt6::Quick
     Qt6::Qml
@@ -40,8 +40,8 @@ target_link_libraries(kandalf
     KF6::WindowSystem
 )
 
-kconfig_add_kcfg_files(kandalf GENERATE_MOC kandalf.kcfgc)
+kconfig_add_kcfg_files(kognos GENERATE_MOC kognos.kcfgc)
 
-target_include_directories(kandalf PRIVATE ${CMAKE_BINARY_DIR})
+target_include_directories(kognos PRIVATE ${CMAKE_BINARY_DIR})
 
-install(TARGETS kandalf ${KDE_INSTALL_TARGETS_DEFAULT_ARGS})
+install(TARGETS kognos ${KDE_INSTALL_TARGETS_DEFAULT_ARGS})

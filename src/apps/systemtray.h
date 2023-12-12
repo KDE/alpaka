@@ -26,7 +26,7 @@ public:
 
 Q_SIGNALS:
     /**
-     * @brief Triggered when the system tray icon is clicked to request Kandalf be shown or hidden.
+     * @brief Triggered when the system tray icon is clicked to request Kognos be shown or hidden.
      */
     void toggleWindow();
 };

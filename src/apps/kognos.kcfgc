@@ -1,5 +1,5 @@
-File=kandalf.kcfg
-ClassName=KandalfSettings
+File=kognos.kcfg
+ClassName=KognosSettings
 Mutators=true
 DefaultValueGetters=true
 Singleton=true

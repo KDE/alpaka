@@ -5,7 +5,7 @@
 
 #include "windowcontroller.h"
 
-#include "config-kandalf.h"
+#include "config-kognos.h"
 #include <KConfig>
 #include <KWindowConfig>
 

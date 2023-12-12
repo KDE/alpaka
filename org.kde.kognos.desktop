@@ -6,10 +6,10 @@
 Version=1.0
 Type=Application
 
-Name=Kandalf
+Name=Kognos
 Comment=An AI chat client
 Categories=Utility;KDE;
 
-Icon=kandalf
-Exec=kandalf
+Icon=kognos
+Exec=kognos
 Terminal=false

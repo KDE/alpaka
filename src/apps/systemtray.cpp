@@ -12,7 +12,7 @@ SystemTray::SystemTray(QObject *parent)
 {
     setCategory(KStatusNotifierItem::ItemCategory::SystemServices);
     // FIXME: Fix icon !
-    setIconByName(QStringLiteral("org.kde.kandalf"));
+    setIconByName(QStringLiteral("org.kde.kognos"));
     connect(this, &KStatusNotifierItem::activateRequested, this, [this] {
         KWindowSystem::setCurrentXdgActivationToken(providedToken());
         Q_EMIT toggleWindow();

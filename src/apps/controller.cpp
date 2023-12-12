@@ -3,7 +3,7 @@
 // SPDX-License-Identifier: GPL-2.0-only OR GPL-3.0-only OR LicenseRef-KDE-Accepted-GPL
 
 #include "controller.h"
-#include "kandalf.h"
+#include "kognos.h"
 #include "systemtray.h"
 #include "windowcontroller.h"
 
@@ -12,7 +12,7 @@ Controller::Controller(QObject *parent)
 {
 #ifndef Q_OS_ANDROID
     setQuitOnLastWindowClosed();
-    connect(KandalfSettings::self(), &KandalfSettings::SystemTrayChanged, this, &Controller::setQuitOnLastWindowClosed);
+    connect(KognosSettings::self(), &KognosSettings::SystemTrayChanged, this, &Controller::setQuitOnLastWindowClosed);
 #endif
 }
 
@@ -33,7 +33,7 @@ Controller *Controller::create(QQmlEngine *engine, QJSEngine *)
 void Controller::setQuitOnLastWindowClosed()
 {
 #ifndef Q_OS_ANDROID
-    if (KandalfSettings::self()->systemTray()) {
+    if (KognosSettings::self()->systemTray()) {
         mTrayIcon = new SystemTray(this);
         mTrayIcon->show();
         connect(mTrayIcon, &SystemTray::toggleWindow, this, &Controller::toggleWindow);

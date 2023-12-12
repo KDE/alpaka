@@ -7,14 +7,14 @@ import QtQuick.Controls as Controls
 import QtQuick.Layouts
 import org.kde.kirigami as Kirigami
 import org.kde.kirigamiaddons.formcard as FormCard
-import org.kde.kandalf
+import org.kde.kognos
 
 FormCard.FormCardPage {
     title: i18n("LLM settings")
 
     Component.onCompleted: {
-        prompt.text = KandalfSettings.systemPrompt;
-        modelCombo.currentIndex = modelCombo.indexOfValue(KandalfSettings.model);
+        prompt.text = KognosSettings.systemPrompt;
+        modelCombo.currentIndex = modelCombo.indexOfValue(KognosSettings.model);
     }
 
     FormCard.FormHeader {
@@ -27,7 +27,7 @@ FormCard.FormCardPage {
 
             text: i18n("LLM model")
             model: chat.llm.models
-            onCurrentTextChanged: KandalfSettings.model = currentText
+            onCurrentTextChanged: KognosSettings.model = currentText
         }
 
         FormCard.FormTextFieldDelegate {
@@ -35,7 +35,7 @@ FormCard.FormCardPage {
 
             label: i18n("System prompt")
             placeholderText: i18n("No system prompt")
-            onTextChanged: KandalfSettings.systemPrompt = text
+            onTextChanged: KognosSettings.systemPrompt = text
         }
     }
 }

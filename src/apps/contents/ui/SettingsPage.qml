@@ -9,7 +9,7 @@ import org.kde.kirigami as Kirigami
 import org.kde.coreaddons as KCoreAddons
 import org.kde.kirigamiaddons.components as KirigamiComponents
 import org.kde.kirigamiaddons.settings as KirigamiSettings
-import org.kde.kandalf
+import org.kde.kognos
 
 KirigamiSettings.CategorizedSettings {
     id: settingsRoot
