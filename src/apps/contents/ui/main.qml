@@ -27,7 +27,6 @@ Kirigami.ApplicationWindow {
 
         function onErrorOccurred(message: string) {
             errorBanner.text = message;
-            errorBanner.visible = true;
         }
     }
 
@@ -50,15 +49,21 @@ Kirigami.ApplicationWindow {
                 icon.name: "settings-configure"
                 onTriggered: pageStack.pushDialogLayer(settingsPage)
             }
-
         ]
 
         header: KirigamiComponents.Banner {
             id: errorBanner
+
+            visible: chat.llm.hasError
             type: Kirigami.MessageType.Error
             width: parent.width
-
-            showCloseButton: true
+            actions: [
+                Kirigami.Action {
+                    text: i18n("Try again")
+                    icon.name: "view-refresh"
+                    onTriggered: chat.llm.reload()
+                }
+            ]
         }
 
         Kirigami.PlaceholderMessage {

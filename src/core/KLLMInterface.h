@@ -33,6 +33,7 @@ class KLLMCORE_EXPORT KLLMInterface : public QObject
     Q_OBJECT
 
     Q_PROPERTY(bool ready READ ready NOTIFY readyChanged FINAL)
+    Q_PROPERTY(bool hasError READ hasError NOTIFY hasErrorChanged FINAL)
     Q_PROPERTY(QStringList models READ models NOTIFY modelsChanged FINAL)
     Q_PROPERTY(QString ollamaUrl READ ollamaUrl WRITE setOllamaUrl NOTIFY ollamaUrlChanged FINAL)
     Q_PROPERTY(QString systemPrompt READ systemPrompt WRITE setSystemPrompt NOTIFY systemPromptChanged FINAL)
@@ -61,12 +62,24 @@ public:
     /**
      * @brief Check whether the interface is ready.
      *
-     * You should not use the interface until ready() returns true. Failure to observe this rule may result in undefined
-     * behavior.
+     * You should not use the interface until ready() returns true. Failure to observe this rule may result in undefined behavior.
+     *
+     * If the interface encounters an error, ready() will return false. However, do not use ready() to indicate to the user that the interface is in an error
+     * state, as the interface could be in the process of making its initial connection. Instead, you should use hasError() to check for an error state.
+     * Additionally, you should connect to errorOccurred() to handle errors as they arise.
      *
      * @return Returns whether the interface is ready.
      */
     [[nodiscard]] bool ready() const;
+
+    /**
+     * @brief Check whether the interface is in an error state.
+     *
+     * After you handle an error from errorEmitted(), you should monitor this property. When it becomes \c false, you can safely resume operations.
+     *
+     * @return Returns whether the interface is in an error state.
+     */
+    [[nodiscard]] bool hasError() const;
 
     /**
      * @brief Retrieve a list of models supported by the LLM backend.
@@ -129,6 +142,13 @@ public Q_SLOTS:
      */
     KLLMReply *getCompletion(const KLLMRequest &request);
 
+    /**
+     * @brief Reload the LLM interface.
+     *
+     * Reloading the interface can be used to check if a network error is gone or to see if the available models have changed.
+     */
+    void reload();
+
 Q_SIGNALS:
     /**
      * @brief This signal is emitted when any completion requested by the interface is completed.
@@ -137,6 +157,7 @@ Q_SIGNALS:
     void finished(const QString &replyText);
 
     void readyChanged();
+    void hasErrorChanged();
     void modelsChanged();
     void ollamaUrlChanged();
     void systemPromptChanged();
@@ -148,11 +169,10 @@ Q_SIGNALS:
     void errorOccurred(const QString &message);
 
 private:
-    KLLMCORE_NO_EXPORT void checkIfInterfaceIsValid();
-
     QNetworkAccessManager *const m_manager;
     QStringList m_models;
     bool m_ready = false;
+    bool m_hasError = false;
     QString m_ollamaUrl;
     QString m_systemPrompt;
     QMetaObject::Connection m_ollamaCheck;

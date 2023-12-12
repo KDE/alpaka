@@ -26,9 +26,8 @@ KLLMInterface::KLLMInterface(const QString &ollamaUrl, QObject *parent)
     , m_manager{new QNetworkAccessManager{this}}
     , m_ollamaUrl{ollamaUrl}
 {
-    if (!m_ollamaUrl.isEmpty()) {
-        checkIfInterfaceIsValid();
-    }
+    if (!m_ollamaUrl.isEmpty())
+        reload();
 }
 
 KLLMInterface::KLLMInterface(const QUrl &ollamaUrl, QObject *parent)
@@ -38,7 +37,12 @@ KLLMInterface::KLLMInterface(const QUrl &ollamaUrl, QObject *parent)
 
 bool KLLMInterface::ready() const
 {
-    return m_ready;
+    return m_ready && !m_hasError;
+}
+
+bool KLLMInterface::hasError() const
+{
+    return m_hasError;
 }
 
 QStringList KLLMInterface::models() const
@@ -48,7 +52,7 @@ QStringList KLLMInterface::models() const
 
 KLLMReply *KLLMInterface::getCompletion(const KLLMRequest &request)
 {
-    Q_ASSERT(m_ready);
+    Q_ASSERT(ready());
 
     QNetworkRequest req{QUrl::fromUserInput(m_ollamaUrl + QStringLiteral("/api/generate"))};
     req.setHeader(QNetworkRequest::ContentTypeHeader, QStringLiteral("application/json"));
@@ -77,7 +81,7 @@ KLLMReply *KLLMInterface::getCompletion(const KLLMRequest &request)
     return reply;
 }
 
-void KLLMInterface::checkIfInterfaceIsValid()
+void KLLMInterface::reload()
 {
     if (m_ollamaCheck)
         disconnect(m_ollamaCheck);
@@ -88,8 +92,9 @@ void KLLMInterface::checkIfInterfaceIsValid()
     m_ollamaCheck = connect(rep, &QNetworkReply::finished, this, [this, rep] {
         if (rep->error() != QNetworkReply::NoError) {
             Q_EMIT errorOccurred(i18n("Failed to connect to interface at %1: %2", m_ollamaUrl, rep->errorString()));
-            m_ready = false;
+            m_hasError = true;
             Q_EMIT readyChanged();
+            Q_EMIT hasErrorChanged();
             return;
         }
 
@@ -101,7 +106,9 @@ void KLLMInterface::checkIfInterfaceIsValid()
         Q_EMIT modelsChanged();
 
         m_ready = !m_models.isEmpty();
+        m_hasError = false;
         Q_EMIT readyChanged();
+        Q_EMIT hasErrorChanged();
     });
 }
 
@@ -116,7 +123,7 @@ void KLLMInterface::setOllamaUrl(const QString &ollamaUrl)
         return;
     m_ollamaUrl = ollamaUrl;
     Q_EMIT ollamaUrlChanged();
-    checkIfInterfaceIsValid();
+    reload();
 }
 
 void KLLMInterface::setOllamaUrl(const QUrl &ollamaUrl)
