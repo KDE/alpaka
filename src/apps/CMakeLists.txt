@@ -46,6 +46,7 @@ target_link_libraries(kognos PRIVATE
     KF6::CoreAddons
     KF6::ConfigCore
     KF6::ConfigGui
+    KF6::Crash
     KLLMCore
     KF6::StatusNotifierItem
     KF6::WindowSystem

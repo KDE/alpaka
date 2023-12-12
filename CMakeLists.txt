@@ -48,7 +48,9 @@ find_package(KF6 ${KF_MIN_VERSION} REQUIRED COMPONENTS
     StatusNotifierItem
     WindowSystem
     XmlGui
+    Crash
 )
+
 # Remove it on android etc.
 if (NOT ANDROID)
     set(HAVE_WINDOWSYSTEM TRUE)

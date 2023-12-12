@@ -3,6 +3,7 @@
 // SPDX-License-Identifier: GPL-2.0-only OR GPL-3.0-only OR LicenseRef-KDE-Accepted-GPL
 
 #include <KAboutData>
+#include <KCrash>
 #include <KLocalizedContext>
 #include <KLocalizedString>
 #include <QApplication>
@@ -33,6 +34,7 @@ int main(int argc, char *argv[])
 
     QCoreApplication::setOrganizationName(QStringLiteral("KDE"));
 
+    KCrash::initialize();
     KAboutData about(QStringLiteral("kognos"),
                      i18n("Kognos"),
                      QStringLiteral(KOGNOS_VERSION_STRING),
