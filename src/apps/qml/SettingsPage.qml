@@ -18,17 +18,17 @@ KirigamiSettings.CategorizedSettings {
         KirigamiSettings.SettingAction {
             actionName: "general_settings"
             text: i18n("General")
-            page: "qrc:/GeneralSettingsPage.qml"
+            page: "qrc:/org/kde/kognos/qml/GeneralSettingsPage.qml"
         },
         KirigamiSettings.SettingAction {
             actionName: "llm_settings"
             text: i18n("LLM")
-            page: "qrc:/LLMSettingsPage.qml"
+            page: "qrc:/org/kde/kognos/qml/LLMSettingsPage.qml"
         },
         KirigamiSettings.SettingAction {
             actionName: "ollama_settings"
             text: i18n("Ollama")
-            page: "qrc:/OllamaSettingsPage.qml"
+            page: "qrc:/org/kde/kognos/qml/OllamaSettingsPage.qml"
         }
     ]
 }
