@@ -16,9 +16,9 @@ KirigamiSettings.CategorizedSettings {
 
     actions: [
         KirigamiSettings.SettingAction {
-            actionName: "ollama_settings"
-            text: i18n("Ollama")
-            page: "qrc:/OllamaSettingsPage.qml"
+            actionName: "general_settings"
+            text: i18n("General")
+            page: "qrc:/GeneralSettingsPage.qml"
         },
         KirigamiSettings.SettingAction {
             actionName: "llm_settings"
@@ -26,9 +26,9 @@ KirigamiSettings.CategorizedSettings {
             page: "qrc:/LLMSettingsPage.qml"
         },
         KirigamiSettings.SettingAction {
-            actionName: "general_settings"
-            text: i18n("General")
-            page: "qrc:/GeneralSettingsPage.qml"
+            actionName: "ollama_settings"
+            text: i18n("Ollama")
+            page: "qrc:/OllamaSettingsPage.qml"
         }
     ]
 }
