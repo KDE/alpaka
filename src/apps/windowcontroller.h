@@ -35,7 +35,7 @@ public:
     /**
      * @brief Get the window that the will be managed.
      */
-    QWindow *window() const;
+    [[nodiscard]] QWindow *window() const;
 
     /**
      * @brief Restore any saved window geometry if available.

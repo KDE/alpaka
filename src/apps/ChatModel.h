@@ -35,9 +35,9 @@ public:
     explicit ChatModel(QObject *parent = nullptr);
     ~ChatModel() override;
 
-    QHash<int, QByteArray> roleNames() const override;
-    int rowCount(const QModelIndex & = {}) const override;
-    QVariant data(const QModelIndex &index, int role) const override;
+    [[nodiscard]] QHash<int, QByteArray> roleNames() const override;
+    [[nodiscard]] int rowCount(const QModelIndex & = {}) const override;
+    [[nodiscard]] QVariant data(const QModelIndex &index, int role) const override;
 
     [[nodiscard]] KLLMCore::KLLMInterface *llm() const;
     [[nodiscard]] bool replyInProgress() const;
