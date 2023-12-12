@@ -11,7 +11,6 @@
 #include <QQuickStyle>
 #include <QUrl>
 
-#include "ChatModel.h"
 #include "controller.h"
 #include "kognos-version.h"
 #include "kognos.h"
@@ -51,18 +50,18 @@ int main(int argc, char *argv[])
 
     Controller::instance();
     QQmlApplicationEngine engine;
-
-    auto settings = KognosSettings::self();
-    qmlRegisterSingletonInstance("org.kde.kognos", 1, 0, "KognosSettings", settings);
-    qmlRegisterType<ChatModel>("org.kde.kognos", 0, 1, "ChatModel");
-
+    QObject::connect(
+        &engine,
+        &QQmlApplicationEngine::objectCreationFailed,
+        &app,
+        [] {
+            QCoreApplication::exit(-1);
+        },
+        Qt::QueuedConnection);
     engine.rootContext()->setContextObject(new KLocalizedContext(&engine));
-    engine.load(QUrl(QStringLiteral("qrc:/main.qml")));
+    engine.load(QUrl(QStringLiteral("qrc:/org/kde/kognos/qml/main.qml")));
 
-    if (engine.rootObjects().isEmpty())
-        return -1;
-
-    app.connect(&app, &QApplication::aboutToQuit, settings, &KognosSettings::save);
+    app.connect(&app, &QApplication::aboutToQuit, KognosSettings::self(), &KognosSettings::save);
 
     QWindow *window = windowFromEngine(&engine);
 

@@ -7,24 +7,39 @@ add_executable(kognos)
 
 configure_file(config-kognos.h.in ${CMAKE_CURRENT_BINARY_DIR}/config-kognos.h)
 
-target_sources(kognos PRIVATE
+set(KOGNOS_QML_SOURCES
     ChatModel.cpp
     ChatModel.h
-    main.cpp
-
-    systemtray.h
-    systemtray.cpp
 
     windowcontroller.cpp
     windowcontroller.h
 
     controller.h
     controller.cpp
-
-    resources.qrc
 )
 
-target_link_libraries(kognos
+target_sources(kognos PRIVATE
+    ${KOGNOS_QML_SOURCES}
+    main.cpp
+    systemtray.h
+    systemtray.cpp
+)
+
+qt_add_qml_module(kognos
+    URI org.kde.kognos
+    VERSION 1.0
+    QML_FILES
+        qml/GeneralSettingsPage.qml
+        qml/LLMSettingsPage.qml
+        qml/main.qml
+        qml/OllamaSettingsPage.qml
+        qml/SettingsPage.qml
+        qml/TypingIndicator.qml
+    SOURCES
+        ${KOGNOS_QML_SOURCES}
+)
+
+target_link_libraries(kognos PRIVATE
     Qt6::Widgets
     Qt6::Quick
     Qt6::Qml

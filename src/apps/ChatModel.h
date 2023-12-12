@@ -5,6 +5,7 @@
 #pragma once
 
 #include <QAbstractListModel>
+#include <QtQmlIntegration>
 
 #include "KLLMInterface.h"
 #include "KLLMReply.h"
@@ -12,6 +13,8 @@
 class ChatModel : public QAbstractListModel
 {
     Q_OBJECT
+
+    QML_ELEMENT
 
     Q_PROPERTY(KLLMCore::KLLMInterface *llm READ llm CONSTANT FINAL)
     Q_PROPERTY(bool replyInProgress READ replyInProgress NOTIFY replyInProgressChanged FINAL)
