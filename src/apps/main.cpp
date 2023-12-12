@@ -11,6 +11,7 @@
 #include <QQuickStyle>
 #include <QUrl>
 
+#include "ChatModel.h"
 #include "controller.h"
 #include "kognos-version.h"
 #include "kognos.h"
@@ -47,6 +48,12 @@ int main(int argc, char *argv[])
 
     if (qEnvironmentVariableIsEmpty("QT_QUICK_CONTROLS_STYLE"))
         QQuickStyle::setStyle(QStringLiteral("org.kde.desktop"));
+
+    auto settings = KognosSettings::self();
+    auto &controller = Controller::instance();
+    qmlRegisterSingletonInstance("org.kde.kognos", 1, 0, "KognosSettings", settings);
+    qmlRegisterSingletonInstance("org.kde.kognos", 1, 0, "Controller", &controller);
+    qmlRegisterType<ChatModel>("org.kde.kognos", 0, 1, "ChatModel");
 
     Controller::instance();
     QQmlApplicationEngine engine;

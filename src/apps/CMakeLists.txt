@@ -7,7 +7,9 @@ add_executable(kognos)
 
 configure_file(config-kognos.h.in ${CMAKE_CURRENT_BINARY_DIR}/config-kognos.h)
 
-set(KOGNOS_QML_SOURCES
+target_sources(kognos PRIVATE
+    main.cpp
+
     ChatModel.cpp
     ChatModel.h
 
@@ -16,11 +18,7 @@ set(KOGNOS_QML_SOURCES
 
     controller.h
     controller.cpp
-)
 
-target_sources(kognos PRIVATE
-    ${KOGNOS_QML_SOURCES}
-    main.cpp
     systemtray.h
     systemtray.cpp
 )
@@ -35,8 +33,6 @@ qt_add_qml_module(kognos
         qml/OllamaSettingsPage.qml
         qml/SettingsPage.qml
         qml/TypingIndicator.qml
-    SOURCES
-        ${KOGNOS_QML_SOURCES}
 )
 
 target_link_libraries(kognos PRIVATE
