@@ -54,7 +54,7 @@ private:
         bool inProgress = false;
         QString content;
         Sender sender;
-        KLLMCore::KLLMReply *llmReply;
+        KLLMCore::KLLMReply *llmReply = nullptr;
         KLLMCore::KLLMContext context;
     };
 
