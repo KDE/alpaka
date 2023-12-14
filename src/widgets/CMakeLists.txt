@@ -25,9 +25,11 @@ target_sources(KLLMWidgets PRIVATE
     KLLMActionMenu.h
     KLLMActionMenu.cpp
 
-
     KLLMConfigureWidget.h
     KLLMConfigureWidget.cpp
+
+    KLLMConfigureDialog.h
+    KLLMConfigureDialog.cpp
 )
 
 ecm_qt_declare_logging_category(KLLMWidgets HEADER kllmwidgets_debug.h IDENTIFIER KLLMWIDGETS_LOG CATEGORY_NAME org.kde.kllm.core
@@ -55,6 +57,7 @@ ecm_generate_headers(kllmwidgets_Camelcase_HEADERS
     KLLMModelComboBox
     KLLMActionMenu
     KLLMConfigureWidget
+    KLLMConfigureDialog
 
     REQUIRED_HEADERS kllmwidgets_HEADERS
     PREFIX KLLMWidgets
