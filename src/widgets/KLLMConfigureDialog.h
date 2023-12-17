@@ -8,11 +8,15 @@
 
 namespace KLLMWidgets
 {
+class KLLMConfigureWidget;
 class KLLMWIDGETS_EXPORT KLLMConfigureDialog : public QDialog
 {
     Q_OBJECT
 public:
     explicit KLLMConfigureDialog(QWidget *parent = nullptr);
     ~KLLMConfigureDialog() override;
+
+private:
+    KLLMConfigureWidget *const mKLLMConfigureWidget;
 };
 }
