@@ -17,6 +17,7 @@ KLLMResultWidget::KLLMResultWidget(QWidget *parent)
 
     mResult->setObjectName(QStringLiteral("mResult"));
     mainLayout->addWidget(mResult);
+    mResult->setReadOnly(true);
 }
 
 KLLMResultWidget::~KLLMResultWidget() = default;
