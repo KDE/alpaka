@@ -11,3 +11,5 @@ KLLMConfigureDialog::KLLMConfigureDialog(QWidget *parent)
 }
 
 KLLMConfigureDialog::~KLLMConfigureDialog() = default;
+
+#include "moc_KLLMConfigureDialog.cpp"

@@ -26,3 +26,5 @@ void KLLMResultWidget::setResult(const QString &str)
 {
     mResult->setPlainText(str);
 }
+
+#include "moc_KLLMResultWidget.cpp"

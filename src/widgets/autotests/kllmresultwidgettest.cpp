@@ -24,3 +24,5 @@ void KLLMResultWidgetTest::shouldHaveDefaultValues()
     QVERIFY(mResult);
     QVERIFY(mResult->isReadOnly());
 }
+
+#include "moc_kllmresultwidgettest.cpp"

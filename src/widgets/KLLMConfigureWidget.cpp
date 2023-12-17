@@ -14,3 +14,5 @@ KLLMConfigureWidget::KLLMConfigureWidget(QWidget *parent)
 }
 
 KLLMConfigureWidget::~KLLMConfigureWidget() = default;
+
+#include "moc_KLLMConfigureWidget.cpp"
