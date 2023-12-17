@@ -12,3 +12,4 @@ macro(add_kllmwidgets_test _source)
 
 endmacro()
 add_kllmwidgets_test(kllmmodelcomboboxtest.cpp)
+add_kllmwidgets_test(kllmresultwidgettest.cpp)
