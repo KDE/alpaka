@@ -35,6 +35,8 @@ target_sources(KLLMCore PRIVATE
     KLLMConstants.h
 )
 
+kconfig_add_kcfg_files(KLLMCore GENERATE_MOC kllmcoresettings.kcfgc)
+
 ecm_qt_declare_logging_category(KLLMCore HEADER kllmcore_debug.h IDENTIFIER KLLMCORE_LOG CATEGORY_NAME org.kde.kllm.core
         DESCRIPTION "kllmcore" EXPORT KLLMCORE)
 
@@ -45,6 +47,8 @@ generate_export_header(KLLMCore
 target_link_libraries(KLLMCore
     Qt::Network
     KF6::I18n
+    KF6::ConfigGui
+    KF6::CoreAddons
 )
 
 set_target_properties(KLLMCore
@@ -73,6 +77,7 @@ install(FILES
 install(FILES
     ${kllmcore_HEADERS}
     ${CMAKE_CURRENT_BINARY_DIR}/kllmcore_export.h
+    ${CMAKE_CURRENT_BINARY_DIR}/kllmcoresettings.h
     DESTINATION ${KDE_INSTALL_INCLUDEDIR}/KLLMCore/kllmcore
     COMPONENT Devel
 )

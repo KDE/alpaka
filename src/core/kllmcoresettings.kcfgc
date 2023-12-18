@@ -1,0 +1,8 @@
+File=kllmcoresettings.kcfg
+ClassName=KLLMCoreSettings
+Mutators=true
+DefaultValueGetters=true
+Singleton=true
+GenerateProperties=true
+Visibility=KLLMCORE_EXPORT
+IncludeFiles=\"kllmcore_export.h\"

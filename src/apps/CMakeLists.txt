@@ -52,8 +52,6 @@ target_link_libraries(kognos PRIVATE
     KF6::WindowSystem
 )
 
-kconfig_add_kcfg_files(kognos GENERATE_MOC kognos.kcfgc)
-
 target_include_directories(kognos PRIVATE ${CMAKE_BINARY_DIR})
 
 install(TARGETS kognos ${KDE_INSTALL_TARGETS_DEFAULT_ARGS})

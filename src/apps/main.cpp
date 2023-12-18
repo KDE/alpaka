@@ -14,8 +14,8 @@
 
 #include "ChatModel.h"
 #include "controller.h"
+#include "kllmcoresettings.h"
 #include "kognos-version.h"
-#include "kognos.h"
 #include "windowcontroller.h"
 
 static QWindow *windowFromEngine(QQmlApplicationEngine *engine)
@@ -51,7 +51,7 @@ int main(int argc, char *argv[])
     if (qEnvironmentVariableIsEmpty("QT_QUICK_CONTROLS_STYLE"))
         QQuickStyle::setStyle(QStringLiteral("org.kde.desktop"));
 
-    auto settings = KognosSettings::self();
+    auto settings = KLLMCoreSettings::self();
     auto &controller = Controller::instance();
     qmlRegisterSingletonInstance("org.kde.kognos", 1, 0, "KognosSettings", settings);
     qmlRegisterSingletonInstance("org.kde.kognos", 1, 0, "Controller", &controller);
@@ -70,7 +70,7 @@ int main(int argc, char *argv[])
     engine.rootContext()->setContextObject(new KLocalizedContext(&engine));
     engine.load(QUrl(QStringLiteral("qrc:/org/kde/kognos/qml/main.qml")));
 
-    app.connect(&app, &QApplication::aboutToQuit, KognosSettings::self(), &KognosSettings::save);
+    app.connect(&app, &QApplication::aboutToQuit, KLLMCoreSettings::self(), &KLLMCoreSettings::save);
 
     QWindow *window = windowFromEngine(&engine);
 

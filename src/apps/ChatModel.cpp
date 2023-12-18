@@ -7,19 +7,19 @@
 
 #include <KUser>
 
-#include "kognos.h"
+#include "kllmcoresettings.h"
 using namespace KLLMCore;
 ChatModel::ChatModel(QObject *parent)
     : QAbstractListModel{parent}
     , m_llm{new KLLMInterface{this}}
 {
-    auto settings = KognosSettings::self();
+    auto settings = KLLMCoreSettings::self();
 
     m_llm->setOllamaUrl(settings->serverUrl());
     m_llm->setSystemPrompt(settings->systemPrompt());
 
-    connect(KognosSettings::self(), &KognosSettings::SystemPromptChanged, this, [this] {
-        m_llm->setSystemPrompt(KognosSettings::systemPrompt());
+    connect(KLLMCoreSettings::self(), &KLLMCoreSettings::SystemPromptChanged, this, [this] {
+        m_llm->setSystemPrompt(KLLMCoreSettings::systemPrompt());
     });
 
     auto setDefaultModelConnection = new QMetaObject::Connection;
@@ -31,8 +31,8 @@ ChatModel::ChatModel(QObject *parent)
         disconnect(*setDefaultModelConnection);
         delete setDefaultModelConnection;
         const auto models = m_llm->models();
-        if (!models.contains(KognosSettings::model()))
-            KognosSettings::setModel(models.first());
+        if (!models.contains(KLLMCoreSettings::model()))
+            KLLMCoreSettings::setModel(models.first());
     });
 }
 
@@ -79,7 +79,7 @@ bool ChatModel::replyInProgress() const
 void ChatModel::sendMessage(const QString &message)
 {
     KLLMRequest req{message};
-    req.setModel(KognosSettings::model());
+    req.setModel(KLLMCoreSettings::model());
     for (int i = m_messages.size() - 1; i >= 0; --i) {
         if (m_messages.at(i).sender == Sender::LLM) {
             req.setContext(m_messages.at(i).context);
