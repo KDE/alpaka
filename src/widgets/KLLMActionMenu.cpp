@@ -10,7 +10,8 @@ using namespace KLLMWidgets;
 KLLMActionMenu::KLLMActionMenu(QObject *parent)
     : KActionMenu{parent}
 {
-    setText(i18nc("List of message viewer closed", "Closed Reader"));
+    // TODO: fix i18n
+    setText(i18n("Info"));
     delete menu();
     auto subMenu = new QMenu;
     setMenu(subMenu);
