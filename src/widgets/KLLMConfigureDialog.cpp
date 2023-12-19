@@ -14,7 +14,7 @@ KLLMConfigureDialog::KLLMConfigureDialog(QWidget *parent)
     : QDialog(parent)
     , mKLLMConfigureWidget(new KLLMConfigureWidget(this))
 {
-    setWindowTitle(i18nc("@title:window", "Notification History"));
+    setWindowTitle(i18nc("@title:window", "Configure Ollama"));
     auto mainLayout = new QVBoxLayout(this);
     mainLayout->setObjectName(QLatin1StringView("mainLayout"));
 
