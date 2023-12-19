@@ -8,11 +8,15 @@
 #include <QWidget>
 namespace KLLMWidgets
 {
+class KLLMModelComboBox;
 class KLLMWIDGETS_EXPORT KLLMConfigureWidget : public QWidget
 {
     Q_OBJECT
 public:
     explicit KLLMConfigureWidget(QWidget *parent = nullptr);
     ~KLLMConfigureWidget() override;
+
+private:
+    KLLMModelComboBox *const mKLLMModelComboBox;
 };
 }
