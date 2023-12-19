@@ -5,7 +5,7 @@
 
 #include "windowcontroller.h"
 
-#include "config-kognos.h"
+#include "config-alpaka.h"
 #include <KConfig>
 #include <KWindowConfig>
 

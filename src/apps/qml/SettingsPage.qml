@@ -9,7 +9,7 @@ import org.kde.kirigami as Kirigami
 import org.kde.coreaddons as KCoreAddons
 import org.kde.kirigamiaddons.components as KirigamiComponents
 import org.kde.kirigamiaddons.settings as KirigamiSettings
-import org.kde.kognos
+import org.kde.alpaka
 
 KirigamiSettings.CategorizedSettings {
     id: settingsRoot
@@ -18,17 +18,17 @@ KirigamiSettings.CategorizedSettings {
         KirigamiSettings.SettingAction {
             actionName: "general_settings"
             text: i18n("General")
-            page: "qrc:/org/kde/kognos/qml/GeneralSettingsPage.qml"
+            page: "qrc:/org/kde/alpaka/qml/GeneralSettingsPage.qml"
         },
         KirigamiSettings.SettingAction {
             actionName: "llm_settings"
             text: i18n("LLM")
-            page: "qrc:/org/kde/kognos/qml/LLMSettingsPage.qml"
+            page: "qrc:/org/kde/alpaka/qml/LLMSettingsPage.qml"
         },
         KirigamiSettings.SettingAction {
             actionName: "ollama_settings"
             text: i18n("Ollama")
-            page: "qrc:/org/kde/kognos/qml/OllamaSettingsPage.qml"
+            page: "qrc:/org/kde/alpaka/qml/OllamaSettingsPage.qml"
         }
     ]
 }

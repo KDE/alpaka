@@ -15,7 +15,7 @@
 #include "ChatModel.h"
 #include "controller.h"
 #include "kllmcoresettings.h"
-#include "kognos-version.h"
+#include "alpaka-version.h"
 #include "windowcontroller.h"
 
 static QWindow *windowFromEngine(QQmlApplicationEngine *engine)
@@ -30,14 +30,14 @@ int main(int argc, char *argv[])
 {
     QApplication app(argc, argv);
 
-    KLocalizedString::setApplicationDomain("kognos");
+    KLocalizedString::setApplicationDomain("alpaka");
 
     QCoreApplication::setOrganizationName(QStringLiteral("KDE"));
 
     KCrash::initialize();
-    KAboutData about(QStringLiteral("kognos"),
-                     i18n("Kognos"),
-                     QStringLiteral(KOGNOS_VERSION_STRING),
+    KAboutData about(QStringLiteral("alpaka"),
+                     i18n("Alpaka"),
+                     QStringLiteral(ALPAKA_VERSION_STRING),
                      i18n("Ollama client"),
                      KAboutLicense::GPL_V3,
                      i18n("© 2023 Loren Burkholder"));
@@ -53,9 +53,9 @@ int main(int argc, char *argv[])
 
     auto settings = KLLMCoreSettings::self();
     auto &controller = Controller::instance();
-    qmlRegisterSingletonInstance("org.kde.kognos", 1, 0, "KognosSettings", settings);
-    qmlRegisterSingletonInstance("org.kde.kognos", 1, 0, "Controller", &controller);
-    qmlRegisterType<ChatModel>("org.kde.kognos", 0, 1, "ChatModel");
+    qmlRegisterSingletonInstance("org.kde.alpaka", 1, 0, "AlpakaSettings", settings);
+    qmlRegisterSingletonInstance("org.kde.alpaka", 1, 0, "Controller", &controller);
+    qmlRegisterType<ChatModel>("org.kde.alpaka", 0, 1, "ChatModel");
 
     Controller::instance();
     QQmlApplicationEngine engine;
@@ -68,7 +68,7 @@ int main(int argc, char *argv[])
         },
         Qt::QueuedConnection);
     engine.rootContext()->setContextObject(new KLocalizedContext(&engine));
-    engine.load(QUrl(QStringLiteral("qrc:/org/kde/kognos/qml/main.qml")));
+    engine.load(QUrl(QStringLiteral("qrc:/org/kde/alpaka/qml/main.qml")));
 
     app.connect(&app, &QApplication::aboutToQuit, KLLMCoreSettings::self(), &KLLMCoreSettings::save);
 

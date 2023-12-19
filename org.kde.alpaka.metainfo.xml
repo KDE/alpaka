@@ -7,8 +7,8 @@ SPDX-License-Identifier: CC0-1.0
 -->
 
 <component type="desktop-application">
-  <id>org.kde.kognos</id>
-  <name>Kognos</name>
+  <id>org.kde.alpaka</id>
+  <name>Alpaka</name>
   <summary>An AI chat client</summary>
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>GPL-3.0-or-later</project_license>
@@ -19,10 +19,10 @@ SPDX-License-Identifier: CC0-1.0
   </supports>
   <description>
     <p>
-      Kognos is a client for the Ollama AI service, which lets you run LLM models such as Llama 2.
+      Alpaka is a client for the Ollama AI service, which lets you run LLM models such as Llama 2.
     </p>
   </description>
   <project_group>KDE</project_group>
-  <launchable type="desktop-id">org.kde.kognos.desktop</launchable>
+  <launchable type="desktop-id">org.kde.alpaka.desktop</launchable>
 </component>
 

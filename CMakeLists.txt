@@ -3,7 +3,7 @@
 # SPDX-License-Identifier: GPL-2.0-only OR GPL-3.0-only OR LicenseRef-KDE-Accepted-GPL
 
 cmake_minimum_required(VERSION 3.16)
-project(kognos VERSION 0.1 LANGUAGES CXX)
+project(alpaka VERSION 0.1 LANGUAGES CXX)
 
 set(KF_MIN_VERSION "5.246.0")
 set(QT_MIN_VERSION "6.6")
@@ -61,8 +61,8 @@ endif()
 ecm_set_disabled_deprecation_versions(QT ${QT_MIN_VERSION} KF ${KF_MIN_VERSION})
 
 ecm_setup_version(${PROJECT_VERSION}
-        VARIABLE_PREFIX KOGNOS
-        VERSION_HEADER ${CMAKE_CURRENT_BINARY_DIR}/kognos-version.h
+        VARIABLE_PREFIX ALPAKA
+        VERSION_HEADER ${CMAKE_CURRENT_BINARY_DIR}/alpaka-version.h
 )
 
 if(BUILD_TESTING)

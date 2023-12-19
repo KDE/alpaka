@@ -9,12 +9,12 @@ import QtQuick.Layouts
 import org.kde.kirigami as Kirigami
 import org.kde.coreaddons as KCoreAddons
 import org.kde.kirigamiaddons.components as KirigamiComponents
-import org.kde.kognos
+import org.kde.alpaka
 
 Kirigami.ApplicationWindow {
     id: root
 
-    title: i18nc("@title:window", "Kognos")
+    title: i18nc("@title:window", "Alpaka")
 
     ChatModel { id: chat }
 
@@ -37,7 +37,7 @@ Kirigami.ApplicationWindow {
     }
 
     pageStack.initialPage: Kirigami.Page {
-        title: i18n("Kognos")
+        title: i18n("Alpaka")
         actions: [
             Kirigami.Action {
                 text: i18n("Start over")
@@ -131,7 +131,7 @@ Kirigami.ApplicationWindow {
                                     Controls.Label {
                                         id: userName
 
-                                        text: messageDelegate.sender === ChatModel.LLM ? i18n("Kognos") : localUser.fullName
+                                        text: messageDelegate.sender === ChatModel.LLM ? i18n("Alpaka") : localUser.fullName
                                         font.bold: true
                                         font.pixelSize: 15
                                     }

@@ -3,11 +3,11 @@
 #
 # SPDX-License-Identifier: GPL-2.0-only OR GPL-3.0-only OR LicenseRef-KDE-Accepted-GPL
 
-add_executable(kognos)
+add_executable(alpaka)
 
-configure_file(config-kognos.h.in ${CMAKE_CURRENT_BINARY_DIR}/config-kognos.h)
+configure_file(config-alpaka.h.in ${CMAKE_CURRENT_BINARY_DIR}/config-alpaka.h)
 
-target_sources(kognos PRIVATE
+target_sources(alpaka PRIVATE
     main.cpp
 
     ChatModel.cpp
@@ -23,8 +23,8 @@ target_sources(kognos PRIVATE
     systemtray.cpp
 )
 
-qt_add_qml_module(kognos
-    URI org.kde.kognos
+qt_add_qml_module(alpaka
+    URI org.kde.alpaka
     VERSION 1.0
     QML_FILES
         qml/GeneralSettingsPage.qml
@@ -35,7 +35,7 @@ qt_add_qml_module(kognos
         qml/TypingIndicator.qml
 )
 
-target_link_libraries(kognos PRIVATE
+target_link_libraries(alpaka PRIVATE
     Qt6::Widgets
     Qt6::Quick
     Qt6::Qml
@@ -52,6 +52,6 @@ target_link_libraries(kognos PRIVATE
     KF6::WindowSystem
 )
 
-target_include_directories(kognos PRIVATE ${CMAKE_BINARY_DIR})
+target_include_directories(alpaka PRIVATE ${CMAKE_BINARY_DIR})
 
-install(TARGETS kognos ${KDE_INSTALL_TARGETS_DEFAULT_ARGS})
+install(TARGETS alpaka ${KDE_INSTALL_TARGETS_DEFAULT_ARGS})

@@ -6,10 +6,10 @@
 Version=1.0
 Type=Application
 
-Name=Kognos
+Name=Alpaka
 Comment=An AI chat client
 Categories=Utility;KDE;
 
-Icon=kognos
-Exec=kognos
+Icon=alpaka
+Exec=alpaka
 Terminal=false

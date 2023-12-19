@@ -7,13 +7,13 @@ import QtQuick.Controls as Controls
 import QtQuick.Layouts
 import org.kde.kirigami as Kirigami
 import org.kde.kirigamiaddons.formcard as FormCard
-import org.kde.kognos
+import org.kde.alpaka
 
 FormCard.FormCardPage {
     title: i18n("Ollama settings")
 
     Component.onCompleted: {
-        serverUrl.text = KognosSettings.serverUrl;
+        serverUrl.text = AlpakaSettings.serverUrl;
     }
 
     FormCard.FormHeader {
@@ -26,7 +26,7 @@ FormCard.FormCardPage {
 
             label: i18n("Ollama server URL")
             placeholderText: "http://localhost:11434"
-            onTextChanged: KognosSettings.serverUrl = text
+            onTextChanged: AlpakaSettings.serverUrl = text
         }
     }
 }
