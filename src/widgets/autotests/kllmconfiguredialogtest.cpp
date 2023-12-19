@@ -16,3 +16,5 @@ void KLLMConfigureDialogTest::shouldHaveDefaultValues()
     KLLMWidgets::KLLMConfigureDialog w;
     // TODO
 }
+
+#include "moc_kllmconfiguredialogtest.cpp"
