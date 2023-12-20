@@ -10,23 +10,6 @@
 
 using namespace Qt::StringLiterals;
 using namespace KLLMCore;
-QString KLLMReply::readResponse() const
-{
-    QString ret;
-    for (const auto &tok : m_tokens)
-        ret += tok["response"_L1].toString();
-    return ret;
-}
-
-const KLLMContext &KLLMReply::context() const
-{
-    return m_context;
-}
-
-bool KLLMReply::isFinished() const
-{
-    return m_finished;
-}
 
 KLLMReply::KLLMReply(QNetworkReply *netReply, QObject *parent)
     : QObject{parent}
@@ -66,4 +49,21 @@ KLLMReply::KLLMReply(QNetworkReply *netReply, QObject *parent)
     });
 }
 
+QString KLLMReply::readResponse() const
+{
+    QString ret;
+    for (const auto &tok : m_tokens)
+        ret += tok["response"_L1].toString();
+    return ret;
+}
+
+const KLLMContext &KLLMReply::context() const
+{
+    return m_context;
+}
+
+bool KLLMReply::isFinished() const
+{
+    return m_finished;
+}
 #include "moc_KLLMReply.cpp"
