@@ -50,6 +50,28 @@ QStringList KLLMInterface::models() const
     return m_models;
 }
 
+#if 0
+void KLLMInterface::deleteModel(const QString &modelName)
+{
+    Q_ASSERT(ready());
+
+    QNetworkRequest req{QUrl::fromUserInput(m_ollamaUrl + QStringLiteral("/api/delete"))};
+    req.setHeader(QNetworkRequest::ContentTypeHeader, QStringLiteral("application/json"));
+    QJsonObject data;
+    data["name"_L1] = modelName;
+
+    // Delete resource doesn't take argument. Need to look at how to do it.
+    auto buf = new QBuffer{this};
+    buf->setData(QJsonDocument(data).toJson(QJsonDocument::Compact));
+
+    auto reply = new KLLMReply{m_manager->deleteResource(req, buf), this};
+    connect(reply, &KLLMReply::finished, this, [this, reply, buf] {
+        Q_EMIT finished(reply->readResponse());
+        buf->deleteLater();
+    });
+}
+#endif
+
 KLLMReply *KLLMInterface::getCompletion(const KLLMRequest &request)
 {
     Q_ASSERT(ready());
