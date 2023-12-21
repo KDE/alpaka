@@ -21,6 +21,9 @@ ChatModel::ChatModel(QObject *parent)
     connect(KLLMCoreSettings::self(), &KLLMCoreSettings::SystemPromptChanged, this, [this] {
         m_llm->setSystemPrompt(KLLMCoreSettings::systemPrompt());
     });
+    connect(KLLMCoreSettings::self(), &KLLMCoreSettings::ServerUrlChanged, this, [this] {
+        m_llm->setOllamaUrl(KLLMCoreSettings::serverUrl());
+    });
 
     auto setDefaultModelConnection = new QMetaObject::Connection;
     *setDefaultModelConnection = connect(m_llm, &KLLMInterface::readyChanged, this, [this, setDefaultModelConnection] {
