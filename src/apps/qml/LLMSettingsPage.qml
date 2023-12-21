@@ -37,13 +37,5 @@ FormCard.FormCardPage {
             placeholderText: i18n("No system prompt")
             onTextChanged: AlpakaSettings.systemPrompt = text
         }
-
-        FormCard.AbstractFormDelegate {
-            id: p2
-
-            Controls.TextArea {
-                placeholderText: "foo"
-            }
-        }
     }
 }
