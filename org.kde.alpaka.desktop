@@ -7,7 +7,19 @@ Version=1.0
 Type=Application
 
 Name=Alpaka
+Name[ca]=Alpaka
+Name[nl]=Alpaka
+Name[tr]=Alpaka
+Name[uk]=Alpaka
+Name[x-test]=xxAlpakaxx
+Name[zh_TW]=Alpaka
 Comment=An AI chat client
+Comment[ca]=Un client de xat d'IA
+Comment[nl]=Een client voor AI-chat
+Comment[tr]=Yapay Zeka Sohbet İstemcisi
+Comment[uk]=Клієнт ШІ-спілкування
+Comment[x-test]=xxAn AI chat clientxx
+Comment[zh_TW]=一個 AI 聊天機器人用戶端
 Categories=Utility;KDE;
 
 Icon=alpaka
