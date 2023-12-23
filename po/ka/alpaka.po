@@ -1,31 +1,32 @@
-# Copyright (C) 2023 This file is copyright:
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR This file is copyright:
 # This file is distributed under the same license as the alpaka package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-# SPDX-FileCopyrightText: 2023 Freek de Kruijf <freekdekruijf@kde.nl>
 msgid ""
 msgstr ""
 "Project-Id-Version: alpaka\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-12-22 01:41+0000\n"
-"PO-Revision-Date: 2023-12-21 10:17+0100\n"
-"Last-Translator: Freek de Kruijf <freekdekruijf@kde.nl>\n"
-"Language-Team: \n"
-"Language: nl\n"
+"PO-Revision-Date: 2023-12-22 05:19+0100\n"
+"Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
+"Language-Team: Georgian <kde-i18n-doc@kde.org>\n"
+"Language: ka\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 23.08.4\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.3.2\n"
 
 #: src/apps/main.cpp:39 src/apps/qml/main.qml:40 src/apps/qml/main.qml:134
 #, kde-format
 msgid "Alpaka"
-msgstr "Alpaka"
+msgstr "ალპაკა"
 
 #: src/apps/main.cpp:41
 #, kde-format
 msgid "Ollama client"
-msgstr "Ollama-client"
+msgstr "Ollama-ის კლიენტი"
 
 #: src/apps/main.cpp:43
 #, kde-format
@@ -35,12 +36,12 @@ msgstr "© 2023 Loren Burkholder"
 #: src/apps/main.cpp:44
 #, kde-format
 msgid "Loren Burkholder"
-msgstr "Loren Burkholder"
+msgstr "ლორენ ბარკჰოლდერი"
 
 #: src/apps/main.cpp:44
 #, kde-format
 msgid "Maintainer"
-msgstr "Onderhouder"
+msgstr "წამყვანი პროგრამისტი"
 
 #: src/apps/main.cpp:45
 #, kde-format
@@ -50,105 +51,105 @@ msgstr "Laurent Montel"
 #: src/apps/main.cpp:45
 #, kde-format
 msgid "Developer"
-msgstr "Ontwikkelaar"
+msgstr "პროგრამისტი"
 
 #: src/apps/main.cpp:46
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr "Freek de Kruijf - 2024"
+msgstr "Temuri Doghonadze"
 
 #: src/apps/main.cpp:46
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr "freekdekruijf@kde.nl"
+msgstr "Temuri.doghonadze@gmail.com"
 
 #: src/apps/qml/GeneralSettingsPage.qml:13 src/apps/qml/SettingsPage.qml:20
 #, kde-format
 msgid "General"
-msgstr "Algemeen"
+msgstr "ზოგადი"
 
 #: src/apps/qml/GeneralSettingsPage.qml:16
 #, kde-format
 msgid "General settings"
-msgstr "Algemene instellingen"
+msgstr "ზოგადი პარამეტრები"
 
 #: src/apps/qml/GeneralSettingsPage.qml:22
 #, kde-format
 msgid "Show in System Tray"
-msgstr "In systeemvak tonen"
+msgstr "საათთან ჩვენება"
 
 #: src/apps/qml/LLMSettingsPage.qml:13
 #, kde-format
 msgid "LLM settings"
-msgstr "LLM-instellingen"
+msgstr "LLM-ის მორგება"
 
 #: src/apps/qml/LLMSettingsPage.qml:21
 #, kde-format
 msgid "Model settings"
-msgstr "Modelinstellingen"
+msgstr "მოდელის მორგება"
 
 #: src/apps/qml/LLMSettingsPage.qml:28
 #, kde-format
 msgid "LLM model"
-msgstr "LLM-model"
+msgstr "LLM-ის მოდელი"
 
 #: src/apps/qml/LLMSettingsPage.qml:36
 #, kde-format
 msgid "System prompt"
-msgstr "Systeem-prompt"
+msgstr "სისტემური კითხვა"
 
 #: src/apps/qml/LLMSettingsPage.qml:37
 #, kde-format
 msgid "No system prompt"
-msgstr "Geen systeem-prompt"
+msgstr "სისტემური კითხვის გარეშე"
 
 #: src/apps/qml/main.qml:17
 #, kde-format
 msgctxt "@title:window"
 msgid "Alpaka"
-msgstr "Alpaka"
+msgstr "ალპაკა"
 
 #: src/apps/qml/main.qml:43
 #, kde-format
 msgid "Start over"
-msgstr "Opnieuw starten"
+msgstr "თავიდან დაწყება"
 
 #: src/apps/qml/main.qml:48
 #, kde-format
 msgid "Settings"
-msgstr "Instellingen"
+msgstr "მორგება"
 
 #: src/apps/qml/main.qml:62
 #, kde-format
 msgid "Try again"
-msgstr "Opnieuw proberen"
+msgstr "კიდევ სცადეთ"
 
 #: src/apps/qml/main.qml:72
 #, kde-format
 msgid "Waiting for interface"
-msgstr "Wacht op interface"
+msgstr "ინტერფეისის მოლოდინი"
 
 #: src/apps/qml/main.qml:159
 #, kde-format
 msgid "Enter a message"
-msgstr "Voer een bericht in"
+msgstr "შეიყვანეთ შეტყობინება"
 
 #: src/apps/qml/OllamaSettingsPage.qml:13
 #, kde-format
 msgid "Ollama settings"
-msgstr "Ollama-instellingen"
+msgstr "Ollama-ის მორგება"
 
 #: src/apps/qml/OllamaSettingsPage.qml:20
 #, kde-format
 msgid "Ollama server settings"
-msgstr "Ollama-serverinstellingen"
+msgstr "Ollama სერვერის მორგება"
 
 #: src/apps/qml/OllamaSettingsPage.qml:27
 #, kde-format
 msgid "Ollama server URL"
-msgstr "Ollama-server-URL"
+msgstr "Ollama სერვერის ბმული"
 
 #: src/apps/qml/SettingsPage.qml:25
 #, kde-format
@@ -163,16 +164,16 @@ msgstr "Ollama"
 #: src/core/KLLMInterface.cpp:116
 #, kde-format
 msgid "Failed to connect to interface at %1: %2"
-msgstr "Verbinden is mislukt met interface op %1: %2"
+msgstr "ვერ მივუერთდი ინტერფეისს მისამართზე %1: %2"
 
 #. i18n
 #: src/widgets/KLLMActionMenu.cpp:14
 #, kde-format
 msgid "Info"
-msgstr "Informatie"
+msgstr "ინფორმაცია"
 
 #: src/widgets/KLLMConfigureDialog.cpp:17
 #, kde-format
 msgctxt "@title:window"
 msgid "Configure Ollama"
-msgstr "Ollama configureren"
+msgstr "Ollama-ის მორგება"

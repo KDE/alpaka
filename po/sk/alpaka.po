@@ -1,21 +1,19 @@
-# Copyright (C) 2023 This file is copyright:
-# This file is distributed under the same license as the alpaka package.
-#
-# SPDX-FileCopyrightText: 2023 Freek de Kruijf <freekdekruijf@kde.nl>
+# translation of alpaka.po to Slovak
+# SPDX-FileCopyrightText: 2023 Roman Paholík <wizzardsk@gmail.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: alpaka\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-12-22 01:41+0000\n"
-"PO-Revision-Date: 2023-12-21 10:17+0100\n"
-"Last-Translator: Freek de Kruijf <freekdekruijf@kde.nl>\n"
-"Language-Team: \n"
-"Language: nl\n"
+"PO-Revision-Date: 2023-12-22 19:35+0100\n"
+"Last-Translator: Roman Paholik <wizzardsk@gmail.com>\n"
+"Language-Team: Slovak <kde-sk@linux.sk>\n"
+"Language: sk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 23.08.4\n"
+"X-Generator: Lokalize 23.08.3\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
 
 #: src/apps/main.cpp:39 src/apps/qml/main.qml:40 src/apps/qml/main.qml:134
 #, kde-format
@@ -25,7 +23,7 @@ msgstr "Alpaka"
 #: src/apps/main.cpp:41
 #, kde-format
 msgid "Ollama client"
-msgstr "Ollama-client"
+msgstr "Ollama klient"
 
 #: src/apps/main.cpp:43
 #, kde-format
@@ -38,9 +36,9 @@ msgid "Loren Burkholder"
 msgstr "Loren Burkholder"
 
 #: src/apps/main.cpp:44
-#, kde-format
+#, fuzzy, kde-format
 msgid "Maintainer"
-msgstr "Onderhouder"
+msgstr "Správca"
 
 #: src/apps/main.cpp:45
 #, kde-format
@@ -50,59 +48,59 @@ msgstr "Laurent Montel"
 #: src/apps/main.cpp:45
 #, kde-format
 msgid "Developer"
-msgstr "Ontwikkelaar"
+msgstr "Vývojár"
 
 #: src/apps/main.cpp:46
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr "Freek de Kruijf - 2024"
+msgstr "Roman Paholík"
 
 #: src/apps/main.cpp:46
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr "freekdekruijf@kde.nl"
+msgstr "wizzardsk@gmail.com"
 
 #: src/apps/qml/GeneralSettingsPage.qml:13 src/apps/qml/SettingsPage.qml:20
 #, kde-format
 msgid "General"
-msgstr "Algemeen"
+msgstr "Všeobecné"
 
 #: src/apps/qml/GeneralSettingsPage.qml:16
 #, kde-format
 msgid "General settings"
-msgstr "Algemene instellingen"
+msgstr "Všeobecné nastavenie"
 
 #: src/apps/qml/GeneralSettingsPage.qml:22
 #, kde-format
 msgid "Show in System Tray"
-msgstr "In systeemvak tonen"
+msgstr "Zobrazovať v systémovej &lište"
 
 #: src/apps/qml/LLMSettingsPage.qml:13
 #, kde-format
 msgid "LLM settings"
-msgstr "LLM-instellingen"
+msgstr ""
 
 #: src/apps/qml/LLMSettingsPage.qml:21
 #, kde-format
 msgid "Model settings"
-msgstr "Modelinstellingen"
+msgstr ""
 
 #: src/apps/qml/LLMSettingsPage.qml:28
 #, kde-format
 msgid "LLM model"
-msgstr "LLM-model"
+msgstr ""
 
 #: src/apps/qml/LLMSettingsPage.qml:36
 #, kde-format
 msgid "System prompt"
-msgstr "Systeem-prompt"
+msgstr ""
 
 #: src/apps/qml/LLMSettingsPage.qml:37
 #, kde-format
 msgid "No system prompt"
-msgstr "Geen systeem-prompt"
+msgstr ""
 
 #: src/apps/qml/main.qml:17
 #, kde-format
@@ -113,42 +111,42 @@ msgstr "Alpaka"
 #: src/apps/qml/main.qml:43
 #, kde-format
 msgid "Start over"
-msgstr "Opnieuw starten"
+msgstr "Začať odznova"
 
 #: src/apps/qml/main.qml:48
 #, kde-format
 msgid "Settings"
-msgstr "Instellingen"
+msgstr "Nastavenia"
 
 #: src/apps/qml/main.qml:62
 #, kde-format
 msgid "Try again"
-msgstr "Opnieuw proberen"
+msgstr "Skús znova"
 
 #: src/apps/qml/main.qml:72
 #, kde-format
 msgid "Waiting for interface"
-msgstr "Wacht op interface"
+msgstr ""
 
 #: src/apps/qml/main.qml:159
 #, kde-format
 msgid "Enter a message"
-msgstr "Voer een bericht in"
+msgstr ""
 
 #: src/apps/qml/OllamaSettingsPage.qml:13
 #, kde-format
 msgid "Ollama settings"
-msgstr "Ollama-instellingen"
+msgstr ""
 
 #: src/apps/qml/OllamaSettingsPage.qml:20
 #, kde-format
 msgid "Ollama server settings"
-msgstr "Ollama-serverinstellingen"
+msgstr ""
 
 #: src/apps/qml/OllamaSettingsPage.qml:27
 #, kde-format
 msgid "Ollama server URL"
-msgstr "Ollama-server-URL"
+msgstr ""
 
 #: src/apps/qml/SettingsPage.qml:25
 #, kde-format
@@ -163,16 +161,16 @@ msgstr "Ollama"
 #: src/core/KLLMInterface.cpp:116
 #, kde-format
 msgid "Failed to connect to interface at %1: %2"
-msgstr "Verbinden is mislukt met interface op %1: %2"
+msgstr ""
 
 #. i18n
 #: src/widgets/KLLMActionMenu.cpp:14
 #, kde-format
 msgid "Info"
-msgstr "Informatie"
+msgstr "Info"
 
 #: src/widgets/KLLMConfigureDialog.cpp:17
 #, kde-format
 msgctxt "@title:window"
 msgid "Configure Ollama"
-msgstr "Ollama configureren"
+msgstr ""
