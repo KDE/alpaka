@@ -117,8 +117,9 @@ void ChatModel::sendMessage(const QString &message)
 void ChatModel::resetConversation()
 {
     beginResetModel();
-    for (const auto &connection : std::as_const(m_connections))
+    for (const auto &connection : std::as_const(m_connections)) {
         disconnect(connection);
+    }
     m_connections.clear();
     Q_EMIT replyInProgressChanged();
     m_messages.clear();
