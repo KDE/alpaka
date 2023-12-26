@@ -16,6 +16,9 @@ public:
     explicit KLLMConfigureWidget(QWidget *parent = nullptr);
     ~KLLMConfigureWidget() override;
 
+    [[nodiscard]] int currentModel() const;
+    void setCurrentModel(int index);
+
 private:
     KLLMModelComboBox *const mKLLMModelComboBox;
 };

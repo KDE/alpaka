@@ -4,6 +4,8 @@
 
 #include "KLLMConfigureWidget.h"
 #include "KLLMModelComboBox.h"
+#include <KLocalizedString>
+#include <QHBoxLayout>
 #include <QLabel>
 #include <QVBoxLayout>
 
@@ -16,10 +18,28 @@ KLLMConfigureWidget::KLLMConfigureWidget(QWidget *parent)
     mainLayout->setObjectName(QStringLiteral("mainLayout"));
     mainLayout->setContentsMargins({});
 
+    auto modelLayout = new QHBoxLayout;
+    modelLayout->setObjectName(QStringLiteral("modelLayout"));
+    mainLayout->addLayout(modelLayout);
+
+    auto label = new QLabel(i18n("Models:"), this);
+    label->setObjectName(QStringLiteral("label"));
+    modelLayout->addWidget(label);
+
     mKLLMModelComboBox->setObjectName(QStringLiteral("mKLLMModelComboBox"));
-    mainLayout->addWidget(mKLLMModelComboBox);
+    modelLayout->addWidget(mKLLMModelComboBox);
 }
 
 KLLMConfigureWidget::~KLLMConfigureWidget() = default;
+
+int KLLMConfigureWidget::currentModel() const
+{
+    return mKLLMModelComboBox->currentIndex();
+}
+
+void KLLMConfigureWidget::setCurrentModel(int index)
+{
+    mKLLMModelComboBox->setCurrentIndex(index);
+}
 
 #include "moc_KLLMConfigureWidget.cpp"
