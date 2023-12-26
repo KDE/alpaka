@@ -1,0 +1,178 @@
+# Copyright (C) YEAR This file is copyright:
+# This file is distributed under the same license as the alpaka package.
+#
+# giovanni <g.sora@tiscali.it>, 2023.
+msgid ""
+msgstr ""
+"Project-Id-Version: alpaka\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2023-12-22 01:41+0000\n"
+"PO-Revision-Date: 2023-12-25 19:02+0100\n"
+"Last-Translator: giovanni <g.sora@tiscali.it>\n"
+"Language-Team: Interlingua <kde-i18n-doc@kde.org>\n"
+"Language: ia\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Lokalize 22.12.3\n"
+
+#: src/apps/main.cpp:39 src/apps/qml/main.qml:40 src/apps/qml/main.qml:134
+#, kde-format
+msgid "Alpaka"
+msgstr "Alpaka"
+
+#: src/apps/main.cpp:41
+#, kde-format
+msgid "Ollama client"
+msgstr "Cliente de Ollama"
+
+#: src/apps/main.cpp:43
+#, kde-format
+msgid "© 2023 Loren Burkholder"
+msgstr "© 2023 Loren Burkholder"
+
+#: src/apps/main.cpp:44
+#, kde-format
+msgid "Loren Burkholder"
+msgstr "Loren Burkholder"
+
+#: src/apps/main.cpp:44
+#, kde-format
+msgid "Maintainer"
+msgstr "Mantenitor"
+
+#: src/apps/main.cpp:45
+#, kde-format
+msgid "Laurent Montel"
+msgstr "Laurent Montel"
+
+#: src/apps/main.cpp:45
+#, kde-format
+msgid "Developer"
+msgstr "Disveloppator"
+
+#: src/apps/main.cpp:46
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Giovanni Sora"
+
+#: src/apps/main.cpp:46
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "g.sora@tiscali.it"
+
+#: src/apps/qml/GeneralSettingsPage.qml:13 src/apps/qml/SettingsPage.qml:20
+#, kde-format
+msgid "General"
+msgstr "General"
+
+#: src/apps/qml/GeneralSettingsPage.qml:16
+#, kde-format
+msgid "General settings"
+msgstr "Preferentias General"
+
+#: src/apps/qml/GeneralSettingsPage.qml:22
+#, kde-format
+msgid "Show in System Tray"
+msgstr "Monstra in tabuliero de systema"
+
+#: src/apps/qml/LLMSettingsPage.qml:13
+#, kde-format
+msgid "LLM settings"
+msgstr "Preferentias de LLM"
+
+#: src/apps/qml/LLMSettingsPage.qml:21
+#, kde-format
+msgid "Model settings"
+msgstr "Preferentias de modello"
+
+#: src/apps/qml/LLMSettingsPage.qml:28
+#, kde-format
+msgid "LLM model"
+msgstr "Modello de LLM"
+
+#: src/apps/qml/LLMSettingsPage.qml:36
+#, kde-format
+msgid "System prompt"
+msgstr "Prompt(demanda) de systema"
+
+#: src/apps/qml/LLMSettingsPage.qml:37
+#, kde-format
+msgid "No system prompt"
+msgstr "Necun prompt de systema"
+
+#: src/apps/qml/main.qml:17
+#, kde-format
+msgctxt "@title:window"
+msgid "Alpaka"
+msgstr "Alpaka"
+
+#: src/apps/qml/main.qml:43
+#, kde-format
+msgid "Start over"
+msgstr "Recomenciar"
+
+#: src/apps/qml/main.qml:48
+#, kde-format
+msgid "Settings"
+msgstr "Preferentias"
+
+#: src/apps/qml/main.qml:62
+#, kde-format
+msgid "Try again"
+msgstr "Essaya de nove"
+
+#: src/apps/qml/main.qml:72
+#, kde-format
+msgid "Waiting for interface"
+msgstr "On expecta interfacie"
+
+#: src/apps/qml/main.qml:159
+#, kde-format
+msgid "Enter a message"
+msgstr "Inserta un mesage"
+
+#: src/apps/qml/OllamaSettingsPage.qml:13
+#, kde-format
+msgid "Ollama settings"
+msgstr "Preferentais de Ollama"
+
+#: src/apps/qml/OllamaSettingsPage.qml:20
+#, kde-format
+msgid "Ollama server settings"
+msgstr "Preferentials de servitor de Ollama"
+
+#: src/apps/qml/OllamaSettingsPage.qml:27
+#, kde-format
+msgid "Ollama server URL"
+msgstr "URL de servitor de Ollama"
+
+#: src/apps/qml/SettingsPage.qml:25
+#, kde-format
+msgid "LLM"
+msgstr "LLM"
+
+#: src/apps/qml/SettingsPage.qml:30
+#, kde-format
+msgid "Ollama"
+msgstr "Ollama"
+
+#: src/core/KLLMInterface.cpp:116
+#, kde-format
+msgid "Failed to connect to interface at %1: %2"
+msgstr "Falleva a connecter a interfacie a %1: %2"
+
+#. i18n
+#: src/widgets/KLLMActionMenu.cpp:14
+#, kde-format
+msgid "Info"
+msgstr "Info"
+
+#: src/widgets/KLLMConfigureDialog.cpp:17
+#, kde-format
+msgctxt "@title:window"
+msgid "Configure Ollama"
+msgstr "Configura  Ollama"
