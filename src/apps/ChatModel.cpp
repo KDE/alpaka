@@ -34,8 +34,9 @@ ChatModel::ChatModel(QObject *parent)
         disconnect(*setDefaultModelConnection);
         delete setDefaultModelConnection;
         const auto models = m_llm->models();
-        if (!models.contains(KLLMCoreSettings::model()))
-            KLLMCoreSettings::setModel(models.first());
+        if (!models.contains(KLLMCoreSettings::model())) {
+            KLLMCoreSettings::setModel(models.constFirst());
+        }
     });
 }
 
