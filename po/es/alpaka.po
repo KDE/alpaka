@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: alpaka\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-12-22 01:41+0000\n"
-"PO-Revision-Date: 2023-12-21 12:53+0100\n"
+"POT-Creation-Date: 2023-12-27 01:35+0000\n"
+"PO-Revision-Date: 2023-12-27 01:11+0100\n"
 "Last-Translator: Eloy Cuadra <ecuadra@eloihr.net>\n"
 "Language-Team: Spanish <kde-l10n-es@kde.org>\n"
 "Language: es\n"
@@ -27,74 +27,74 @@ msgstr "Alpaka"
 #: src/apps/main.cpp:41
 #, kde-format
 msgid "Ollama client"
-msgstr ""
+msgstr "Cliente de Ollama"
 
 #: src/apps/main.cpp:43
 #, kde-format
 msgid "© 2023 Loren Burkholder"
-msgstr ""
+msgstr "© 2023 Loren Burkholder"
 
 #: src/apps/main.cpp:44
 #, kde-format
 msgid "Loren Burkholder"
-msgstr ""
+msgstr "Loren Burkholder"
 
 #: src/apps/main.cpp:44
 #, kde-format
 msgid "Maintainer"
-msgstr ""
+msgstr "Responsable"
 
 #: src/apps/main.cpp:45
 #, kde-format
 msgid "Laurent Montel"
-msgstr ""
+msgstr "Laurent Montel"
 
 #: src/apps/main.cpp:45
 #, kde-format
 msgid "Developer"
-msgstr ""
+msgstr "Desarrollador"
 
 #: src/apps/main.cpp:46
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr ""
+msgstr "Eloy Cuadra"
 
 #: src/apps/main.cpp:46
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr ""
+msgstr "ecuadra@eloihr.net"
 
 #: src/apps/qml/GeneralSettingsPage.qml:13 src/apps/qml/SettingsPage.qml:20
 #, kde-format
 msgid "General"
-msgstr ""
+msgstr "General"
 
 #: src/apps/qml/GeneralSettingsPage.qml:16
 #, kde-format
 msgid "General settings"
-msgstr ""
+msgstr "Preferencias generales"
 
 #: src/apps/qml/GeneralSettingsPage.qml:22
 #, kde-format
 msgid "Show in System Tray"
-msgstr ""
+msgstr "Mostrar en la bandeja del sistema"
 
 #: src/apps/qml/LLMSettingsPage.qml:13
 #, kde-format
 msgid "LLM settings"
-msgstr ""
+msgstr "Preferencias de LLM"
 
 #: src/apps/qml/LLMSettingsPage.qml:21
 #, kde-format
 msgid "Model settings"
-msgstr ""
+msgstr "Preferencias del modelo"
 
 #: src/apps/qml/LLMSettingsPage.qml:28
 #, kde-format
 msgid "LLM model"
-msgstr ""
+msgstr "Modelo LLM"
 
 #: src/apps/qml/LLMSettingsPage.qml:36
 #, kde-format
@@ -110,71 +110,77 @@ msgstr ""
 #, kde-format
 msgctxt "@title:window"
 msgid "Alpaka"
-msgstr ""
+msgstr "Alpaka"
 
 #: src/apps/qml/main.qml:43
 #, kde-format
 msgid "Start over"
-msgstr ""
+msgstr "Volver a comenzar"
 
 #: src/apps/qml/main.qml:48
 #, kde-format
 msgid "Settings"
-msgstr ""
+msgstr "Preferencias"
 
 #: src/apps/qml/main.qml:62
 #, kde-format
 msgid "Try again"
-msgstr ""
+msgstr "Volver a probar"
 
 #: src/apps/qml/main.qml:72
 #, kde-format
 msgid "Waiting for interface"
-msgstr ""
+msgstr "Esperando la interfaz"
 
 #: src/apps/qml/main.qml:159
 #, kde-format
 msgid "Enter a message"
-msgstr ""
+msgstr "Introduzca un mensaje"
 
 #: src/apps/qml/OllamaSettingsPage.qml:13
 #, kde-format
 msgid "Ollama settings"
-msgstr ""
+msgstr "Preferencias de Ollama"
 
 #: src/apps/qml/OllamaSettingsPage.qml:20
 #, kde-format
 msgid "Ollama server settings"
-msgstr ""
+msgstr "Preferencias del servidor Ollama"
 
 #: src/apps/qml/OllamaSettingsPage.qml:27
 #, kde-format
 msgid "Ollama server URL"
-msgstr ""
+msgstr "URL del servidor Ollama"
 
 #: src/apps/qml/SettingsPage.qml:25
 #, kde-format
 msgid "LLM"
-msgstr ""
+msgstr "LLM"
 
 #: src/apps/qml/SettingsPage.qml:30
 #, kde-format
 msgid "Ollama"
-msgstr ""
+msgstr "Ollama"
 
 #: src/core/KLLMInterface.cpp:116
 #, kde-format
 msgid "Failed to connect to interface at %1: %2"
-msgstr ""
+msgstr "No se ha podido conectar a la interfaz en %1: %2"
 
 #. i18n
 #: src/widgets/KLLMActionMenu.cpp:14
 #, kde-format
 msgid "Info"
-msgstr ""
+msgstr "Información"
 
 #: src/widgets/KLLMConfigureDialog.cpp:17
 #, kde-format
 msgctxt "@title:window"
 msgid "Configure Ollama"
-msgstr ""
+msgstr "Configurar Ollama"
+
+#: src/widgets/KLLMConfigureWidget.cpp:25
+#, fuzzy, kde-format
+#| msgid "LLM model"
+msgid "Models:"
+msgstr "Modelo LLM"

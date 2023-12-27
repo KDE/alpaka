@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: alpaka\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-12-22 01:41+0000\n"
+"POT-Creation-Date: 2023-12-27 01:35+0000\n"
 "PO-Revision-Date: 2023-12-21 08:51+0100\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
@@ -178,3 +178,9 @@ msgstr "Informació"
 msgctxt "@title:window"
 msgid "Configure Ollama"
 msgstr "Configura Ollama"
+
+#: src/widgets/KLLMConfigureWidget.cpp:25
+#, fuzzy, kde-format
+#| msgid "LLM model"
+msgid "Models:"
+msgstr "Model de LLM"
