@@ -1,13 +1,13 @@
-# Copyright (C) YEAR This file is copyright:
+# Copyright (C) 2023 This file is copyright:
 # This file is distributed under the same license as the alpaka package.
 #
-# Kisaragi Hiu <mail@kisaragi-hiu.com>, 2023.
+# SPDX-FileCopyrightText: 2023 Kisaragi Hiu <mail@kisaragi-hiu.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: alpaka\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-12-27 01:35+0000\n"
-"PO-Revision-Date: 2023-12-22 01:21+0900\n"
+"PO-Revision-Date: 2023-12-27 17:54+0900\n"
 "Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
 "Language-Team: Traditional Chinese <zh-l10n@lists.slat.org>\n"
 "Language: zh_TW\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Lokalize 24.01.80\n"
+"X-Generator: Lokalize 23.08.4\n"
 
 #: src/apps/main.cpp:39 src/apps/qml/main.qml:40 src/apps/qml/main.qml:134
 #, kde-format
@@ -178,7 +178,6 @@ msgid "Configure Ollama"
 msgstr "設定 Ollama"
 
 #: src/widgets/KLLMConfigureWidget.cpp:25
-#, fuzzy, kde-format
-#| msgid "LLM model"
+#, kde-format
 msgid "Models:"
-msgstr "LLM 模型"
+msgstr "模型："
