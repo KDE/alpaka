@@ -30,7 +30,7 @@ int main(int argc, char *argv[])
 {
     QApplication app(argc, argv);
 
-    KLocalizedString::setApplicationDomain("alpaka");
+    KLocalizedString::setApplicationDomain(QByteArrayLiteral("alpaka"));
 
     QCoreApplication::setOrganizationName(QStringLiteral("KDE"));
 
