@@ -72,6 +72,8 @@ endif()
 
 add_subdirectory(src)
 
+install(PROGRAMS org.kde.alpaka.desktop DESTINATION ${KDE_INSTALL_APPDIR})
+
 ecm_qt_install_logging_categories(EXPORT KLLMCORE FILE kllm.categories DESTINATION ${KDE_INSTALL_LOGGINGCATEGORIESDIR})
 
 file(GLOB_RECURSE ALL_CLANG_FORMAT_SOURCE_FILES src/*.cpp src/*.h)
