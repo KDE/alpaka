@@ -18,6 +18,13 @@
 #include "alpaka-version.h"
 #include "windowcontroller.h"
 
+// signal handler for SIGINT & SIGTERM
+#ifdef Q_OS_UNIX
+#include <KSignalHandler>
+#include <signal.h>
+#include <unistd.h>
+#endif
+
 static QWindow *windowFromEngine(QQmlApplicationEngine *engine)
 {
     const auto rootObjects = engine->rootObjects();
@@ -76,6 +83,18 @@ int main(int argc, char *argv[])
 
     WindowController::instance().setWindow(window);
     WindowController::instance().restoreGeometry();
+#ifdef Q_OS_UNIX
+    /**
+     * Set up signal handler for SIGINT and SIGTERM
+     */
+    KSignalHandler::self()->watchSignal(SIGINT);
+    KSignalHandler::self()->watchSignal(SIGTERM);
+    QObject::connect(KSignalHandler::self(), &KSignalHandler::signalReceived, &app, [](int signal) {
+        if (signal == SIGINT || signal == SIGTERM) {
+            printf("Shutting down...\n");
+        }
+    });
+#endif
 
     return app.exec();
 }
