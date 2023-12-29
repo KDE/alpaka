@@ -6,7 +6,6 @@
     "sdk": "org.kde.Sdk",
     "command": "alpaka",
     "tags": ["nightly"],
-    "rename-icon": "alpaka",
     "desktop-file-name-suffix": " (Nightly)",
     "finish-args": [
         "--device=dri",
