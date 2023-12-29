@@ -1,23 +1,24 @@
-# Translation of alpaka.po to Catalan (Valencian)
-# Copyright (C) 2023 This_file_is_part_of_KDE
-# This file is distributed under the license LGPL version 2.1 or
-# version 3 or later versions approved by the membership of KDE e.V.
+# Translation for alpaka.po to Euskara/Basque (eu).
+# Copyright (C) 2023 This file is copyright:
+# This file is distributed under the same license as the alpaka package.
+# KDE euskaratzeko proiektuko arduraduna <xalba@ni.eus>.
 #
-# Josep M. Ferrer <txemaq@gmail.com>, 2023.
+# Translators:
+# SPDX-FileCopyrightText: 2023 Iñigo Salvador Azurmendi <xalba@ni.eus>
 msgid ""
 msgstr ""
 "Project-Id-Version: alpaka\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-12-27 01:35+0000\n"
-"PO-Revision-Date: 2023-12-27 10:42+0100\n"
-"Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
-"Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
-"Language: ca@valencia\n"
+"PO-Revision-Date: 2023-12-28 19:10+0100\n"
+"Last-Translator: Iñigo Salvador Azurmendi <xalba@ni.eus>\n"
+"Language-Team: Basque <kde-i18n-eu@kde.org>\n"
+"Language: eu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 22.12.3\n"
+"X-Generator: Lokalize 23.08.4\n"
 
 #: src/apps/main.cpp:39 src/apps/qml/main.qml:40 src/apps/qml/main.qml:134
 #, kde-format
@@ -27,7 +28,7 @@ msgstr "Alpaka"
 #: src/apps/main.cpp:41
 #, kde-format
 msgid "Ollama client"
-msgstr "Client d'Ollama"
+msgstr "Ollama client"
 
 #: src/apps/main.cpp:43
 #, kde-format
@@ -42,7 +43,7 @@ msgstr "Loren Burkholder"
 #: src/apps/main.cpp:44
 #, kde-format
 msgid "Maintainer"
-msgstr "Mantenidor"
+msgstr "Mantentzailea"
 
 #: src/apps/main.cpp:45
 #, kde-format
@@ -52,59 +53,59 @@ msgstr "Laurent Montel"
 #: src/apps/main.cpp:45
 #, kde-format
 msgid "Developer"
-msgstr "Desenvolupador"
+msgstr "Garatzailea"
 
 #: src/apps/main.cpp:46
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr "Josep M. Ferrer"
+msgstr "Iñigo Salvador Azurmendi"
 
 #: src/apps/main.cpp:46
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr "txemaq@gmail.com"
+msgstr "xalba@ni.eus"
 
 #: src/apps/qml/GeneralSettingsPage.qml:13 src/apps/qml/SettingsPage.qml:20
 #, kde-format
 msgid "General"
-msgstr "General"
+msgstr "Orokorra"
 
 #: src/apps/qml/GeneralSettingsPage.qml:16
 #, kde-format
 msgid "General settings"
-msgstr "Configuració general"
+msgstr "Ezarpen orokorrak"
 
 #: src/apps/qml/GeneralSettingsPage.qml:22
 #, kde-format
 msgid "Show in System Tray"
-msgstr "Mostra en la safata del sistema"
+msgstr "Erakutsi sistema-erretiluan"
 
 #: src/apps/qml/LLMSettingsPage.qml:13
 #, kde-format
 msgid "LLM settings"
-msgstr "Configuració de LLM"
+msgstr "LLM ezarpenak"
 
 #: src/apps/qml/LLMSettingsPage.qml:21
 #, kde-format
 msgid "Model settings"
-msgstr "Configureu el model"
+msgstr "Eredu ezarpenak"
 
 #: src/apps/qml/LLMSettingsPage.qml:28
 #, kde-format
 msgid "LLM model"
-msgstr "Model de LLM"
+msgstr "LLM eredua"
 
 #: src/apps/qml/LLMSettingsPage.qml:36
 #, kde-format
 msgid "System prompt"
-msgstr "Indicatiu del sistema"
+msgstr "Sistemaren gonbita"
 
 #: src/apps/qml/LLMSettingsPage.qml:37
 #, kde-format
 msgid "No system prompt"
-msgstr "Sense indicatiu del sistema"
+msgstr "Sistemaren gonbitik ez"
 
 #: src/apps/qml/main.qml:17
 #, kde-format
@@ -115,42 +116,42 @@ msgstr "Alpaka"
 #: src/apps/qml/main.qml:43
 #, kde-format
 msgid "Start over"
-msgstr "Torna a començar"
+msgstr "Berriro hasi"
 
 #: src/apps/qml/main.qml:48
 #, kde-format
 msgid "Settings"
-msgstr "Configuració"
+msgstr "Ezarpenak"
 
 #: src/apps/qml/main.qml:62
 #, kde-format
 msgid "Try again"
-msgstr "Torna-ho a intentar"
+msgstr "Berriz saiatu"
 
 #: src/apps/qml/main.qml:72
 #, kde-format
 msgid "Waiting for interface"
-msgstr "S'està esperant la interfície"
+msgstr "Interfazearen zain"
 
 #: src/apps/qml/main.qml:159
 #, kde-format
 msgid "Enter a message"
-msgstr "Introduïu un missatge"
+msgstr "Sartu mezu bat"
 
 #: src/apps/qml/OllamaSettingsPage.qml:13
 #, kde-format
 msgid "Ollama settings"
-msgstr "Configureu Ollama"
+msgstr "Ollama ezarpenak"
 
 #: src/apps/qml/OllamaSettingsPage.qml:20
 #, kde-format
 msgid "Ollama server settings"
-msgstr "Configureu el servidor Ollama"
+msgstr "Ollama zerbitzariaren ezarpenak"
 
 #: src/apps/qml/OllamaSettingsPage.qml:27
 #, kde-format
 msgid "Ollama server URL"
-msgstr "URL del servidor Ollama"
+msgstr "Ollama zerbitzariaren URL"
 
 #: src/apps/qml/SettingsPage.qml:25
 #, kde-format
@@ -165,21 +166,22 @@ msgstr "Ollama"
 #: src/core/KLLMInterface.cpp:116
 #, kde-format
 msgid "Failed to connect to interface at %1: %2"
-msgstr "No s'ha pogut connectar amb la interfície a %1: %2"
+msgstr "«%1»eko interfazera konektatzeko hutsegitea: %2"
 
 #. i18n
 #: src/widgets/KLLMActionMenu.cpp:14
 #, kde-format
 msgid "Info"
-msgstr "Informació"
+msgstr "Informazioa"
 
 #: src/widgets/KLLMConfigureDialog.cpp:17
 #, kde-format
 msgctxt "@title:window"
 msgid "Configure Ollama"
-msgstr "Configura Ollama"
+msgstr "Konfiguratu Ollama"
 
 #: src/widgets/KLLMConfigureWidget.cpp:25
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "LLM model"
 msgid "Models:"
-msgstr "Models:"
+msgstr "LLM eredua"
