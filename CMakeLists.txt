@@ -3,7 +3,7 @@
 # SPDX-License-Identifier: GPL-2.0-only OR GPL-3.0-only OR LicenseRef-KDE-Accepted-GPL
 
 cmake_minimum_required(VERSION 3.16)
-project(alpaka VERSION 0.1 LANGUAGES CXX)
+project(alpaka VERSION 0.1.1 LANGUAGES CXX)
 
 set(KF_MIN_VERSION "5.246.0")
 set(QT_MIN_VERSION "6.6")
