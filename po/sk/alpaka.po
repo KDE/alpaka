@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: alpaka\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-12-27 01:35+0000\n"
+"POT-Creation-Date: 2023-12-30 01:39+0000\n"
 "PO-Revision-Date: 2023-12-22 19:35+0100\n"
 "Last-Translator: Roman Paholik <wizzardsk@gmail.com>\n"
 "Language-Team: Slovak <kde-sk@linux.sk>\n"
@@ -15,48 +15,48 @@ msgstr ""
 "X-Generator: Lokalize 23.08.3\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
 
-#: src/apps/main.cpp:39 src/apps/qml/main.qml:40 src/apps/qml/main.qml:134
+#: src/apps/main.cpp:46 src/apps/qml/main.qml:40 src/apps/qml/main.qml:134
 #, kde-format
 msgid "Alpaka"
 msgstr "Alpaka"
 
-#: src/apps/main.cpp:41
+#: src/apps/main.cpp:48
 #, kde-format
 msgid "Ollama client"
 msgstr "Ollama klient"
 
-#: src/apps/main.cpp:43
+#: src/apps/main.cpp:50
 #, kde-format
 msgid "© 2023 Loren Burkholder"
 msgstr "© 2023 Loren Burkholder"
 
-#: src/apps/main.cpp:44
+#: src/apps/main.cpp:51
 #, kde-format
 msgid "Loren Burkholder"
 msgstr "Loren Burkholder"
 
-#: src/apps/main.cpp:44
+#: src/apps/main.cpp:51
 #, fuzzy, kde-format
 msgid "Maintainer"
 msgstr "Správca"
 
-#: src/apps/main.cpp:45
+#: src/apps/main.cpp:52
 #, kde-format
 msgid "Laurent Montel"
 msgstr "Laurent Montel"
 
-#: src/apps/main.cpp:45
+#: src/apps/main.cpp:52
 #, kde-format
 msgid "Developer"
 msgstr "Vývojár"
 
-#: src/apps/main.cpp:46
+#: src/apps/main.cpp:53
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
 msgstr "Roman Paholík"
 
-#: src/apps/main.cpp:46
+#: src/apps/main.cpp:53
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"

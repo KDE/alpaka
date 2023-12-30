@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: alpaka\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-12-27 01:35+0000\n"
-"PO-Revision-Date: 2023-12-22 11:08+0100\n"
+"POT-Creation-Date: 2023-12-30 01:39+0000\n"
+"PO-Revision-Date: 2023-12-28 10:42+0100\n"
 "Last-Translator: Xavier Besnard <xavier.besnard@kde.org>\n"
 "Language-Team: \n"
 "Language: fr\n"
@@ -15,48 +15,48 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Generator: Lokalize 23.08.4\n"
 
-#: src/apps/main.cpp:39 src/apps/qml/main.qml:40 src/apps/qml/main.qml:134
+#: src/apps/main.cpp:46 src/apps/qml/main.qml:40 src/apps/qml/main.qml:134
 #, kde-format
 msgid "Alpaka"
 msgstr "Alpaka"
 
-#: src/apps/main.cpp:41
+#: src/apps/main.cpp:48
 #, kde-format
 msgid "Ollama client"
 msgstr "Client pour Ollama"
 
-#: src/apps/main.cpp:43
+#: src/apps/main.cpp:50
 #, kde-format
 msgid "© 2023 Loren Burkholder"
 msgstr "© 2023 Loren Burkholder"
 
-#: src/apps/main.cpp:44
+#: src/apps/main.cpp:51
 #, kde-format
 msgid "Loren Burkholder"
 msgstr "Loren Burkholder"
 
-#: src/apps/main.cpp:44
+#: src/apps/main.cpp:51
 #, kde-format
 msgid "Maintainer"
 msgstr "Mainteneur"
 
-#: src/apps/main.cpp:45
+#: src/apps/main.cpp:52
 #, kde-format
 msgid "Laurent Montel"
 msgstr "Laurent Montel"
 
-#: src/apps/main.cpp:45
+#: src/apps/main.cpp:52
 #, kde-format
 msgid "Developer"
 msgstr "Développeur"
 
-#: src/apps/main.cpp:46
+#: src/apps/main.cpp:53
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
 msgstr "Xavier Besnard"
 
-#: src/apps/main.cpp:46
+#: src/apps/main.cpp:53
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
@@ -176,7 +176,6 @@ msgid "Configure Ollama"
 msgstr "Configurer Ollama"
 
 #: src/widgets/KLLMConfigureWidget.cpp:25
-#, fuzzy, kde-format
-#| msgid "LLM model"
+#, kde-format
 msgid "Models:"
-msgstr "Modèle « LLM »"
+msgstr "Modèles :"
