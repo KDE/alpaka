@@ -42,7 +42,7 @@ target_link_libraries(alpaka PRIVATE
     Qt6::Gui
     Qt6::QuickControls2
     KF6::I18n
-    KF6::Kirigami2
+    KF6::Kirigami
     KF6::CoreAddons
     KF6::ConfigCore
     KF6::ConfigGui
