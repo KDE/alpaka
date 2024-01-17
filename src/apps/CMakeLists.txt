@@ -27,6 +27,7 @@ qt_add_qml_module(alpaka
     URI org.kde.alpaka
     VERSION 1.0
     QML_FILES
+        qml/ChatView.qml
         qml/GeneralSettingsPage.qml
         qml/LLMSettingsPage.qml
         qml/main.qml
