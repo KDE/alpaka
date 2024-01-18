@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: alpaka\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-12-30 01:39+0000\n"
+"POT-Creation-Date: 2024-01-18 00:38+0000\n"
 "PO-Revision-Date: 2023-12-28 17:12+0100\n"
 "Last-Translator: Eloy Cuadra <ecuadra@eloihr.net>\n"
 "Language-Team: Spanish <kde-l10n-es@kde.org>\n"
@@ -19,7 +19,8 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Lokalize 23.08.4\n"
 
-#: src/apps/main.cpp:46 src/apps/qml/main.qml:40 src/apps/qml/main.qml:134
+#: src/apps/main.cpp:46 src/apps/qml/ChatView.qml:15
+#: src/apps/qml/ChatView.qml:109
 #, kde-format
 msgid "Alpaka"
 msgstr "Alpaka"
@@ -66,6 +67,31 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "ecuadra@eloihr.net"
 
+#: src/apps/qml/ChatView.qml:18
+#, kde-format
+msgid "Start over"
+msgstr "Volver a comenzar"
+
+#: src/apps/qml/ChatView.qml:23
+#, kde-format
+msgid "Settings"
+msgstr "Preferencias"
+
+#: src/apps/qml/ChatView.qml:37
+#, kde-format
+msgid "Try again"
+msgstr "Volver a probar"
+
+#: src/apps/qml/ChatView.qml:47
+#, kde-format
+msgid "Waiting for interface"
+msgstr "Esperando la interfaz"
+
+#: src/apps/qml/ChatView.qml:134
+#, kde-format
+msgid "Enter a message"
+msgstr "Introduzca un mensaje"
+
 #: src/apps/qml/GeneralSettingsPage.qml:13 src/apps/qml/SettingsPage.qml:20
 #, kde-format
 msgid "General"
@@ -111,31 +137,6 @@ msgstr "Sin punto de entrada del sistema"
 msgctxt "@title:window"
 msgid "Alpaka"
 msgstr "Alpaka"
-
-#: src/apps/qml/main.qml:43
-#, kde-format
-msgid "Start over"
-msgstr "Volver a comenzar"
-
-#: src/apps/qml/main.qml:48
-#, kde-format
-msgid "Settings"
-msgstr "Preferencias"
-
-#: src/apps/qml/main.qml:62
-#, kde-format
-msgid "Try again"
-msgstr "Volver a probar"
-
-#: src/apps/qml/main.qml:72
-#, kde-format
-msgid "Waiting for interface"
-msgstr "Esperando la interfaz"
-
-#: src/apps/qml/main.qml:159
-#, kde-format
-msgid "Enter a message"
-msgstr "Introduzca un mensaje"
 
 #: src/apps/qml/OllamaSettingsPage.qml:13
 #, kde-format

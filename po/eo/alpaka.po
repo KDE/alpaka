@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: alpaka\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-12-30 01:39+0000\n"
+"POT-Creation-Date: 2024-01-18 00:38+0000\n"
 "PO-Revision-Date: 2023-12-27 09:20+0100\n"
 "Last-Translator: Oliver Kellogg <okellogg@users.sourceforge.net>\n"
 "Language-Team: Esperanto <kde-i18n-eo@kde.org>\n"
@@ -17,7 +17,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
-#: src/apps/main.cpp:46 src/apps/qml/main.qml:40 src/apps/qml/main.qml:134
+#: src/apps/main.cpp:46 src/apps/qml/ChatView.qml:15
+#: src/apps/qml/ChatView.qml:109
 #, kde-format
 msgid "Alpaka"
 msgstr "Alpaka"
@@ -64,6 +65,31 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "okellogg@users.sourceforge.net"
 
+#: src/apps/qml/ChatView.qml:18
+#, kde-format
+msgid "Start over"
+msgstr "Rekomenci"
+
+#: src/apps/qml/ChatView.qml:23
+#, kde-format
+msgid "Settings"
+msgstr "Agordoj"
+
+#: src/apps/qml/ChatView.qml:37
+#, kde-format
+msgid "Try again"
+msgstr "Reprovi"
+
+#: src/apps/qml/ChatView.qml:47
+#, kde-format
+msgid "Waiting for interface"
+msgstr "Atendante pri interfaco"
+
+#: src/apps/qml/ChatView.qml:134
+#, kde-format
+msgid "Enter a message"
+msgstr "Enigu mesaĝon"
+
 #: src/apps/qml/GeneralSettingsPage.qml:13 src/apps/qml/SettingsPage.qml:20
 #, kde-format
 msgid "General"
@@ -109,31 +135,6 @@ msgstr "Neniu sistema invitilo"
 msgctxt "@title:window"
 msgid "Alpaka"
 msgstr "Alpaka"
-
-#: src/apps/qml/main.qml:43
-#, kde-format
-msgid "Start over"
-msgstr "Rekomenci"
-
-#: src/apps/qml/main.qml:48
-#, kde-format
-msgid "Settings"
-msgstr "Agordoj"
-
-#: src/apps/qml/main.qml:62
-#, kde-format
-msgid "Try again"
-msgstr "Reprovi"
-
-#: src/apps/qml/main.qml:72
-#, kde-format
-msgid "Waiting for interface"
-msgstr "Atendante pri interfaco"
-
-#: src/apps/qml/main.qml:159
-#, kde-format
-msgid "Enter a message"
-msgstr "Enigu mesaĝon"
 
 #: src/apps/qml/OllamaSettingsPage.qml:13
 #, kde-format
