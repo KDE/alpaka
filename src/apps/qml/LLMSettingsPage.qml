@@ -31,12 +31,39 @@ FormCard.FormCardPage {
             onCurrentTextChanged: AlpakaSettings.model = currentText
         }
 
-        FormCard.FormTextFieldDelegate {
+        FormCard.AbstractFormDelegate {
             id: prompt
 
-            label: i18n("System prompt")
-            placeholderText: i18n("No system prompt")
-            onTextChanged: AlpakaSettings.systemPrompt = text
+            contentItem: ColumnLayout {
+                spacing: Kirigami.Units.smallSpacing
+
+                Controls.Label {
+                    id: textLabel
+
+                    text: i18n("System prompt")
+                    elide: Text.ElideRight
+                    color: root.enabled ? Kirigami.Theme.textColor : Kirigami.Theme.disabledTextColor
+                    wrapMode: Text.Wrap
+                    maximumLineCount: 2
+
+                    Accessible.ignored: true
+                    Layout.fillWidth: true
+                }
+                Controls.TextArea {
+                    id: textField
+
+                    placeholderText: i18n("No system prompt")
+                    text: prompt.text
+                    activeFocusOnTab: false
+                    wrapMode: TextEdit.Wrap
+
+                    onTextChanged: editingFinished()
+                    onEditingFinished: AlpakaSettings.systemPrompt = text
+
+                    Accessible.name: textLabel.text
+                    Layout.fillWidth: true
+                }
+            }
         }
 
         FormCard.FormCheckDelegate {
