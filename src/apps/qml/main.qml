@@ -22,14 +22,6 @@ Kirigami.ApplicationWindow {
 
     KCoreAddons.KUser { id: localUser }
 
-    Connections {
-        target: chat.llm
-
-        function onErrorOccurred(message: string) {
-            errorBanner.text = message;
-        }
-    }
-
     Component {
         id: settingsPage
 

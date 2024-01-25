@@ -13,6 +13,15 @@ import org.kde.alpaka
 
 Kirigami.Page {
     title: i18n("Alpaka")
+
+    Connections {
+        target: chat.llm
+
+        function onErrorOccurred(message: string) {
+            errorBanner.text = message;
+        }
+    }
+
     actions: [
         Kirigami.Action {
             text: i18n("Start over")
