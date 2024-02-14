@@ -37,6 +37,10 @@ SPDX-License-Identifier: GPL-2.0-only OR GPL-3.0-only OR LicenseRef-KDE-Accepted
     <entry name="Model" type="String">
       <label>The model used to generate responses</label>
     </entry>
+    <entry name="ShowDebugInfo" type="bool">
+      <label>Show debug information</label>
+      <default>false</default>
+    </entry>
   </group>
   <group name="General">
     <entry name="SystemTray" type="bool">

@@ -68,6 +68,7 @@ Kirigami.Page {
                     required property string message
                     required property var sender
                     required property bool finished
+                    required property double tokensPerSecond
 
                     width: chatView.width
                     height: messageBubble.height
@@ -121,6 +122,22 @@ Kirigami.Page {
                                 wrapMode: Controls.Label.WordWrap
                                 Layout.fillWidth: true
                                 textFormat: Controls.Label.MarkdownText
+                            }
+
+                            Controls.ToolSeparator {
+                                Layout.fillWidth: true
+                                orientation: Qt.Horizontal
+                                visible: AlpakaSettings.showDebugInfo && messageDelegate.sender === ChatModel.LLM && messageDelegate.finished
+                            }
+
+                            RowLayout {
+                                Layout.fillWidth: true
+                                visible: AlpakaSettings.showDebugInfo && messageDelegate.sender === ChatModel.LLM && messageDelegate.finished
+
+                                Controls.Label {
+                                    text: i18n("%1 tok/s").arg(messageDelegate.tokensPerSecond.toFixed(2))
+                                    color: palette.disabled.text
+                                }
                             }
                         }
                     }

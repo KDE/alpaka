@@ -21,9 +21,13 @@ class ChatModel : public QAbstractListModel
 
 public:
     enum Roles {
+        // Basic roles
         MessageRole,
         SenderRole,
         FinishedRole,
+
+        // Debug information roles
+        TokensPerSecondRole,
     };
 
     enum Sender {
@@ -56,6 +60,7 @@ private:
         Sender sender;
         KLLMCore::KLLMReply *llmReply = nullptr;
         KLLMCore::KLLMContext context;
+        KLLMCore::KLLMReplyInfo info;
     };
 
     QList<ChatMessage> m_messages;

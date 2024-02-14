@@ -19,7 +19,14 @@ KLLMReply::KLLMReply(QNetworkReply *netReply, QObject *parent)
         // Normally, we could assume that the tokens will never be empty once the request finishes, but it could be possible
         // that the request failed and we have no tokens to parse.
         if (!m_tokens.empty()) {
-            m_context.setOllamaContext(m_tokens.constLast()["context"_L1].toArray());
+            const auto finalResponse = m_tokens.constLast();
+            m_context.setOllamaContext(finalResponse["context"_L1].toArray());
+            m_info.totalDuration = std::chrono::nanoseconds{finalResponse["total_duration"_L1].toInt()};
+            m_info.loadDuration = std::chrono::nanoseconds{finalResponse["load_duration"_L1].toInt()};
+            m_info.promptEvalTokenCount = finalResponse["prompt_eval_count"_L1].toInt();
+            m_info.promptEvalDuration = std::chrono::nanoseconds{finalResponse["prompt_eval_duration"_L1].toInt()};
+            m_info.tokenCount = finalResponse["eval_count"_L1].toInt();
+            m_info.duration = std::chrono::nanoseconds{finalResponse["eval_duration"_L1].toInt()};
         }
 
         qCDebug(KLLMCORE_LOG) << "Ollama response finished";
@@ -60,6 +67,11 @@ QString KLLMReply::readResponse() const
 const KLLMContext &KLLMReply::context() const
 {
     return m_context;
+}
+
+const KLLMReplyInfo &KLLMReply::info() const
+{
+    return m_info;
 }
 
 bool KLLMReply::isFinished() const

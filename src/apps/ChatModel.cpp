@@ -44,7 +44,7 @@ ChatModel::~ChatModel() = default;
 
 QHash<int, QByteArray> ChatModel::roleNames() const
 {
-    return {{Roles::MessageRole, "message"}, {Roles::SenderRole, "sender"}, {Roles::FinishedRole, "finished"}};
+    return {{Roles::MessageRole, "message"}, {Roles::SenderRole, "sender"}, {Roles::FinishedRole, "finished"}, {Roles::TokensPerSecondRole, "tokensPerSecond"}};
 }
 
 int ChatModel::rowCount(const QModelIndex &) const
@@ -57,13 +57,25 @@ QVariant ChatModel::data(const QModelIndex &index, int role) const
     if (!index.isValid() || index.row() < 0 || index.row() >= rowCount())
         return {};
 
+    const auto &message = m_messages[index.row()];
+
     switch (role) {
     case Roles::MessageRole:
-        return m_messages[index.row()].content;
+        return message.content;
     case Roles::SenderRole:
-        return m_messages[index.row()].sender;
+        return message.sender;
     case Roles::FinishedRole:
-        return !m_messages[index.row()].inProgress;
+        return !message.inProgress;
+    case Roles::TokensPerSecondRole: {
+        if (message.inProgress)
+            return 0;
+
+        const double seconds = message.info.duration.count() / 1'000'000'000.0f;
+        if (seconds == 0)
+            return 0;
+
+        return double(message.info.tokenCount) / seconds;
+    }
     default:
         return {};
     }
@@ -104,10 +116,11 @@ void ChatModel::sendMessage(const QString &message)
                              auto &message = m_messages[i];
                              m_connections.remove(message.llmReply);
                              message.context = message.llmReply->context();
+                             message.info = message.llmReply->info();
                              message.llmReply->deleteLater();
                              message.llmReply = nullptr;
                              message.inProgress = false;
-                             Q_EMIT dataChanged(index(i), index(i), {Roles::FinishedRole});
+                             Q_EMIT dataChanged(index(i), index(i), {Roles::FinishedRole, Roles::TokensPerSecondRole});
                              Q_EMIT replyInProgressChanged();
                          }));
     Q_EMIT replyInProgressChanged();

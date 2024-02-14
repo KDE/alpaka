@@ -14,6 +14,33 @@ class QNetworkReply;
 namespace KLLMCore
 {
 /**
+ * @brief The KLLMReplyInfo class represents information about a reply from an LLM.
+ *
+ * When an LLM generates a completion, the server generally will return some information about the completion, including the
+ * duration of the completion, the number of tokens received, and the duration of the prompt evaluation. This struct encapsulates such information.
+ * If any one of these fields is not available, it will be set to its default value.
+ */
+struct KLLMCORE_EXPORT KLLMReplyInfo {
+    //! The total time from when the request was received by the server to when the reply was returned.
+    std::chrono::nanoseconds totalDuration;
+
+    //! The time spent loading the model.
+    std::chrono::nanoseconds loadDuration;
+
+    //! The number of tokens in the prompt.
+    int promptEvalTokenCount;
+
+    //! The time spent evaluating the prompt.
+    std::chrono::nanoseconds promptEvalDuration;
+
+    //! The number of tokens in the reply.
+    int tokenCount;
+
+    //! The time spent generating the reply.
+    std::chrono::nanoseconds duration;
+};
+
+/**
  * @brief The KLLMReply class represents a reply from an LLM.
  *
  * Requesting a completion from a KLLMInterface will return a KLLMReply. You can use this to track the progress of the LLM's
@@ -49,6 +76,16 @@ public:
      * @return A context object that refers to this response.
      */
     const KLLMContext &context() const;
+
+    /**
+     * @brief Get extra information about the reply.
+     *
+     * This function returns a KLLMReplyInfo object containing information about this reply. If the reply has not finished, the KLLMReplyInfo object will have
+     * all members set to their default values.
+     *
+     * @return Extra information about the reply.
+     */
+    const KLLMReplyInfo &info() const;
 
     /**
      * @brief Check whether the reply has finished.
@@ -90,6 +127,7 @@ private:
     QList<QJsonDocument> m_tokens;
 
     KLLMContext m_context;
+    KLLMReplyInfo m_info;
 
     int m_receivedSize = 0;
     bool m_finished = false;

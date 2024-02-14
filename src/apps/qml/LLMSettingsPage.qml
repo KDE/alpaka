@@ -15,6 +15,7 @@ FormCard.FormCardPage {
     Component.onCompleted: {
         prompt.text = AlpakaSettings.systemPrompt;
         modelCombo.currentIndex = modelCombo.indexOfValue(AlpakaSettings.model);
+        llmDebugInfo.checked = AlpakaSettings.showDebugInfo;
     }
 
     FormCard.FormHeader {
@@ -36,6 +37,13 @@ FormCard.FormCardPage {
             label: i18n("System prompt")
             placeholderText: i18n("No system prompt")
             onTextChanged: AlpakaSettings.systemPrompt = text
+        }
+
+        FormCard.FormCheckDelegate {
+            id: llmDebugInfo
+
+            text: i18n("Show debug information")
+            onCheckedChanged: AlpakaSettings.showDebugInfo = checked
         }
     }
 }
