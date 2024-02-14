@@ -135,7 +135,7 @@ Kirigami.Page {
                                 visible: AlpakaSettings.showDebugInfo && messageDelegate.sender === ChatModel.LLM && messageDelegate.finished
 
                                 Controls.Label {
-                                    text: i18n("%1 tok/s").arg(messageDelegate.tokensPerSecond.toFixed(2))
+                                    text: i18n("%1 tok/s", messageDelegate.tokensPerSecond.toFixed(2))
                                     color: palette.disabled.text
                                 }
                             }
