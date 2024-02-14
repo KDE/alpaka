@@ -82,5 +82,7 @@ SPDX-License-Identifier: CC0-1.0
     <p xml:lang="zh-TW">Alpaka 是 Ollama AI 服務的用戶端，該服務讓您執行如 Llama 2 等大型語言模型。</p>
   </description>
   <project_group>KDE</project_group>
+  <url type="bugtracker">https://bugs.kde.org/enter_bug.cgi?format=guided&amp;product=Alpaka</url>
   <launchable type="desktop-id">org.kde.alpaka.desktop</launchable>
+  <url type="homepage">https://apps.kde.org/alpaka/</url>
 </component>
