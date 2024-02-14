@@ -8,6 +8,10 @@ SPDX-License-Identifier: CC0-1.0
 
 Alpaka is a client for Ollama built with Kirigami.
 
-# Getting started
+## Getting started
 
 To run Alpaka, you will need to install [Ollama](https://ollama.ai) and have it serving on `http://localhost:11434`. You will also need to install a model for ollama to use; you can do so by running `ollama pull llama2`. After that, you can build and run Alpaka and it will interface with the Ollama API.
+
+## Get involved
+
+If you want to get involved, please join [#alpaka:kde.org](https://go.kde.org/matrix/#/#alpaka:kde.org).
