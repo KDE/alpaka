@@ -31,6 +31,7 @@ qt_add_qml_module(alpaka
         qml/GeneralSettingsPage.qml
         qml/LLMSettingsPage.qml
         qml/main.qml
+        qml/MessageDelegate.qml
         qml/OllamaSettingsPage.qml
         qml/SettingsPage.qml
         qml/TypingIndicator.qml
