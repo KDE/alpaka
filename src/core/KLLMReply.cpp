@@ -21,12 +21,12 @@ KLLMReply::KLLMReply(QNetworkReply *netReply, QObject *parent)
         if (!m_tokens.empty()) {
             const auto finalResponse = m_tokens.constLast();
             m_context.setOllamaContext(finalResponse["context"_L1].toArray());
-            m_info.totalDuration = std::chrono::nanoseconds{finalResponse["total_duration"_L1].toInt()};
-            m_info.loadDuration = std::chrono::nanoseconds{finalResponse["load_duration"_L1].toInt()};
-            m_info.promptEvalTokenCount = finalResponse["prompt_eval_count"_L1].toInt();
-            m_info.promptEvalDuration = std::chrono::nanoseconds{finalResponse["prompt_eval_duration"_L1].toInt()};
-            m_info.tokenCount = finalResponse["eval_count"_L1].toInt();
-            m_info.duration = std::chrono::nanoseconds{finalResponse["eval_duration"_L1].toInt()};
+            m_info.totalDuration = std::chrono::nanoseconds{finalResponse["total_duration"_L1].toVariant().toULongLong()};
+            m_info.loadDuration = std::chrono::nanoseconds{finalResponse["load_duration"_L1].toVariant().toULongLong()};
+            m_info.promptEvalTokenCount = finalResponse["prompt_eval_count"_L1].toVariant().toULongLong();
+            m_info.promptEvalDuration = std::chrono::nanoseconds{finalResponse["prompt_eval_duration"_L1].toVariant().toULongLong()};
+            m_info.tokenCount = finalResponse["eval_count"_L1].toVariant().toULongLong();
+            m_info.duration = std::chrono::nanoseconds{finalResponse["eval_duration"_L1].toVariant().toULongLong()};
         }
 
         qCDebug(KLLMCORE_LOG) << "Ollama response finished";
