@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: alpaka\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-01-18 00:38+0000\n"
+"POT-Creation-Date: 2024-02-15 00:39+0000\n"
 "PO-Revision-Date: 2024-02-12 20:35+0200\n"
 "Last-Translator: Toms Trasūns <toms.trasuns@posteo.net>\n"
 "Language-Team: Latvian <kde-i18n-doc@kde.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 "X-Generator: Lokalize 23.08.4\n"
 
 #: src/apps/main.cpp:46 src/apps/qml/ChatView.qml:15
-#: src/apps/qml/ChatView.qml:109
+#: src/apps/qml/MessageDelegate.qml:59
 #, kde-format
 msgid "Alpaka"
 msgstr "Alpaka"
@@ -86,7 +86,7 @@ msgstr "Mēģināt vēlreiz"
 msgid "Waiting for interface"
 msgstr "Gaida saskarni"
 
-#: src/apps/qml/ChatView.qml:134
+#: src/apps/qml/ChatView.qml:74
 #, kde-format
 msgid "Enter a message"
 msgstr "Rakstiet ziņu"
@@ -111,31 +111,41 @@ msgstr "Rādīt sistēmas ikonu joslā"
 msgid "LLM settings"
 msgstr "LLM iestatījumi"
 
-#: src/apps/qml/LLMSettingsPage.qml:21
+#: src/apps/qml/LLMSettingsPage.qml:22
 #, kde-format
 msgid "Model settings"
 msgstr "Modeļa iestatījumi"
 
-#: src/apps/qml/LLMSettingsPage.qml:28
+#: src/apps/qml/LLMSettingsPage.qml:29
 #, kde-format
 msgid "LLM model"
 msgstr "LLM modelis"
 
-#: src/apps/qml/LLMSettingsPage.qml:36
+#: src/apps/qml/LLMSettingsPage.qml:37
 #, kde-format
 msgid "System prompt"
 msgstr "Sistēmas uzvedne"
 
-#: src/apps/qml/LLMSettingsPage.qml:37
+#: src/apps/qml/LLMSettingsPage.qml:38
 #, kde-format
 msgid "No system prompt"
 msgstr "Nav sistēmas uzvednes"
+
+#: src/apps/qml/LLMSettingsPage.qml:45
+#, kde-format
+msgid "Show debug information"
+msgstr ""
 
 #: src/apps/qml/main.qml:17
 #, kde-format
 msgctxt "@title:window"
 msgid "Alpaka"
 msgstr "Alpaka"
+
+#: src/apps/qml/MessageDelegate.qml:87
+#, kde-format
+msgid "%1 tok/s"
+msgstr ""
 
 #: src/apps/qml/OllamaSettingsPage.qml:13
 #, kde-format

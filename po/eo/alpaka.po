@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: alpaka\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-01-18 00:38+0000\n"
+"POT-Creation-Date: 2024-02-15 00:39+0000\n"
 "PO-Revision-Date: 2023-12-27 09:20+0100\n"
 "Last-Translator: Oliver Kellogg <okellogg@users.sourceforge.net>\n"
 "Language-Team: Esperanto <kde-i18n-eo@kde.org>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
 #: src/apps/main.cpp:46 src/apps/qml/ChatView.qml:15
-#: src/apps/qml/ChatView.qml:109
+#: src/apps/qml/MessageDelegate.qml:59
 #, kde-format
 msgid "Alpaka"
 msgstr "Alpaka"
@@ -85,7 +85,7 @@ msgstr "Reprovi"
 msgid "Waiting for interface"
 msgstr "Atendante pri interfaco"
 
-#: src/apps/qml/ChatView.qml:134
+#: src/apps/qml/ChatView.qml:74
 #, kde-format
 msgid "Enter a message"
 msgstr "Enigu mesaĝon"
@@ -110,31 +110,41 @@ msgstr "Montri en Sistempleto"
 msgid "LLM settings"
 msgstr "LLM-agordoj"
 
-#: src/apps/qml/LLMSettingsPage.qml:21
+#: src/apps/qml/LLMSettingsPage.qml:22
 #, kde-format
 msgid "Model settings"
 msgstr "Model-agordoj"
 
-#: src/apps/qml/LLMSettingsPage.qml:28
+#: src/apps/qml/LLMSettingsPage.qml:29
 #, kde-format
 msgid "LLM model"
 msgstr "LLM-modelo"
 
-#: src/apps/qml/LLMSettingsPage.qml:36
+#: src/apps/qml/LLMSettingsPage.qml:37
 #, kde-format
 msgid "System prompt"
 msgstr "Sistema invitilo"
 
-#: src/apps/qml/LLMSettingsPage.qml:37
+#: src/apps/qml/LLMSettingsPage.qml:38
 #, kde-format
 msgid "No system prompt"
 msgstr "Neniu sistema invitilo"
+
+#: src/apps/qml/LLMSettingsPage.qml:45
+#, kde-format
+msgid "Show debug information"
+msgstr ""
 
 #: src/apps/qml/main.qml:17
 #, kde-format
 msgctxt "@title:window"
 msgid "Alpaka"
 msgstr "Alpaka"
+
+#: src/apps/qml/MessageDelegate.qml:87
+#, kde-format
+msgid "%1 tok/s"
+msgstr ""
 
 #: src/apps/qml/OllamaSettingsPage.qml:13
 #, kde-format
