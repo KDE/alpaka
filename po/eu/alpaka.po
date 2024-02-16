@@ -1,7 +1,7 @@
 # Translation for alpaka.po to Euskara/Basque (eu).
 # Copyright (C) 2023 This file is copyright:
 # This file is distributed under the same license as the alpaka package.
-# SPDX-FileCopyrightText: 2023 KDE euskaratzeko proiektuko arduraduna <xalba@ni.eus>
+# SPDX-FileCopyrightText: 2023, 2024 KDE euskaratzeko proiektuko arduraduna <xalba@ni.eus>
 #
 # Translators:
 # SPDX-FileCopyrightText: 2023 Iñigo Salvador Azurmendi <xalba@ni.eus>
@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: alpaka\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-02-15 00:39+0000\n"
-"PO-Revision-Date: 2023-12-29 11:26+0100\n"
+"PO-Revision-Date: 2024-02-15 17:20+0100\n"
 "Last-Translator: Iñigo Salvador Azurmendi <xalba@ni.eus>\n"
 "Language-Team: Basque <kde-i18n-eu@kde.org>\n"
 "Language: eu\n"
@@ -136,7 +136,7 @@ msgstr "Sistemaren gonbitik ez"
 #: src/apps/qml/LLMSettingsPage.qml:45
 #, kde-format
 msgid "Show debug information"
-msgstr ""
+msgstr "Erakutsi arazteko informazioa"
 
 #: src/apps/qml/main.qml:17
 #, kde-format
@@ -147,7 +147,7 @@ msgstr "Alpaka"
 #: src/apps/qml/MessageDelegate.qml:87
 #, kde-format
 msgid "%1 tok/s"
-msgstr ""
+msgstr "%1 tok/s"
 
 #: src/apps/qml/OllamaSettingsPage.qml:13
 #, kde-format

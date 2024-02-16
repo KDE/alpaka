@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: alpaka\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-02-15 00:39+0000\n"
-"PO-Revision-Date: 2024-01-27 10:54+0100\n"
+"PO-Revision-Date: 2024-02-15 16:43+0100\n"
 "Last-Translator: Adrián Chaves (Gallaecio) <adrian@chaves.io>\n"
 "Language-Team: Proxecto Trasno (proxecto@trasno.gal)\n"
 "Language: gl\n"
@@ -133,7 +133,7 @@ msgstr "Sen indicación do sistema"
 #: src/apps/qml/LLMSettingsPage.qml:45
 #, kde-format
 msgid "Show debug information"
-msgstr ""
+msgstr "Amosar información de depuración"
 
 #: src/apps/qml/main.qml:17
 #, kde-format
@@ -144,7 +144,7 @@ msgstr "Alpaka"
 #: src/apps/qml/MessageDelegate.qml:87
 #, kde-format
 msgid "%1 tok/s"
-msgstr ""
+msgstr "%1 tok/s"
 
 #: src/apps/qml/OllamaSettingsPage.qml:13
 #, kde-format

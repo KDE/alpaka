@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: alpaka\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-02-15 00:39+0000\n"
-"PO-Revision-Date: 2023-12-27 05:18+0100\n"
+"PO-Revision-Date: 2024-02-15 05:54+0100\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <kde-i18n-doc@kde.org>\n"
 "Language: ka\n"
@@ -134,7 +134,7 @@ msgstr "სისტემური კითხვის გარეშე"
 #: src/apps/qml/LLMSettingsPage.qml:45
 #, kde-format
 msgid "Show debug information"
-msgstr ""
+msgstr "გამართვის ინფორმაციის ჩვენება"
 
 #: src/apps/qml/main.qml:17
 #, kde-format
@@ -145,7 +145,7 @@ msgstr "ალპაკა"
 #: src/apps/qml/MessageDelegate.qml:87
 #, kde-format
 msgid "%1 tok/s"
-msgstr ""
+msgstr "%1 კოდი/წმ"
 
 #: src/apps/qml/OllamaSettingsPage.qml:13
 #, kde-format

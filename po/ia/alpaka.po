@@ -1,13 +1,13 @@
 # Copyright (C) YEAR This file is copyright:
 # This file is distributed under the same license as the alpaka package.
 #
-# giovanni <g.sora@tiscali.it>, 2023.
+# giovanni <g.sora@tiscali.it>, 2023, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: alpaka\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-02-15 00:39+0000\n"
-"PO-Revision-Date: 2023-12-28 18:31+0100\n"
+"PO-Revision-Date: 2024-02-15 12:21+0100\n"
 "Last-Translator: giovanni <g.sora@tiscali.it>\n"
 "Language-Team: Interlingua <kde-i18n-doc@kde.org>\n"
 "Language: ia\n"
@@ -133,7 +133,7 @@ msgstr "Necun prompt de systema"
 #: src/apps/qml/LLMSettingsPage.qml:45
 #, kde-format
 msgid "Show debug information"
-msgstr ""
+msgstr "Monstra information de cribrar"
 
 #: src/apps/qml/main.qml:17
 #, kde-format
@@ -144,7 +144,7 @@ msgstr "Alpaka"
 #: src/apps/qml/MessageDelegate.qml:87
 #, kde-format
 msgid "%1 tok/s"
-msgstr ""
+msgstr "%1 tok/s"
 
 #: src/apps/qml/OllamaSettingsPage.qml:13
 #, kde-format
