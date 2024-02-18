@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: alpaka\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-02-15 00:39+0000\n"
-"PO-Revision-Date: 2024-02-10 00:30+0100\n"
+"PO-Revision-Date: 2024-02-17 12:36+0100\n"
 "Last-Translator: Shinjo Park <kde@peremen.name>\n"
 "Language-Team: Korean <kde-kr@kde.org>\n"
 "Language: ko\n"
@@ -133,7 +133,7 @@ msgstr "시스템 프롬프트 없음"
 #: src/apps/qml/LLMSettingsPage.qml:45
 #, kde-format
 msgid "Show debug information"
-msgstr ""
+msgstr "디버그 정보 표시"
 
 #: src/apps/qml/main.qml:17
 #, kde-format
@@ -144,7 +144,7 @@ msgstr "Alpaka"
 #: src/apps/qml/MessageDelegate.qml:87
 #, kde-format
 msgid "%1 tok/s"
-msgstr ""
+msgstr "%1토큰/초"
 
 #: src/apps/qml/OllamaSettingsPage.qml:13
 #, kde-format
