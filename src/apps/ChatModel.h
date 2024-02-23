@@ -28,6 +28,8 @@ public:
 
         // Debug information roles
         TokensPerSecondRole,
+        TokenCountRole,
+        DurationRole,
     };
 
     enum Sender {

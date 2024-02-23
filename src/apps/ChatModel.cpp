@@ -44,7 +44,12 @@ ChatModel::~ChatModel() = default;
 
 QHash<int, QByteArray> ChatModel::roleNames() const
 {
-    return {{Roles::MessageRole, "message"}, {Roles::SenderRole, "sender"}, {Roles::FinishedRole, "finished"}, {Roles::TokensPerSecondRole, "tokensPerSecond"}};
+    return {{Roles::MessageRole, "message"},
+            {Roles::SenderRole, "sender"},
+            {Roles::FinishedRole, "finished"},
+            {Roles::TokensPerSecondRole, "tokensPerSecond"},
+            {Roles::TokenCountRole, "tokenCount"},
+            {Roles::DurationRole, "duration"}};
 }
 
 int ChatModel::rowCount(const QModelIndex &) const
@@ -76,6 +81,10 @@ QVariant ChatModel::data(const QModelIndex &index, int role) const
 
         return double(message.info.tokenCount) / seconds;
     }
+    case Roles::TokenCountRole:
+        return message.info.tokenCount;
+    case Roles::DurationRole:
+        return message.info.duration.count() / 1'000'000'000.0f;
     default:
         return {};
     }
@@ -120,7 +129,9 @@ void ChatModel::sendMessage(const QString &message)
                              message.llmReply->deleteLater();
                              message.llmReply = nullptr;
                              message.inProgress = false;
-                             Q_EMIT dataChanged(index(i), index(i), {Roles::FinishedRole, Roles::TokensPerSecondRole});
+                             Q_EMIT dataChanged(index(i),
+                                                index(i),
+                                                {Roles::FinishedRole, Roles::TokensPerSecondRole, Roles::TokenCountRole, Roles::DurationRole});
                              Q_EMIT replyInProgressChanged();
                          }));
     Q_EMIT replyInProgressChanged();

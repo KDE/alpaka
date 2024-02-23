@@ -19,6 +19,8 @@ RowLayout {
     required property var sender
     required property bool finished
     required property double tokensPerSecond
+    required property int tokenCount
+    required property double duration
 
     height: messageBubble.height
 
@@ -79,14 +81,14 @@ RowLayout {
                 visible: AlpakaSettings.showDebugInfo && messageDelegate.sender === ChatModel.LLM && messageDelegate.finished
             }
 
-            RowLayout {
+            Controls.Label {
                 Layout.fillWidth: true
                 visible: AlpakaSettings.showDebugInfo && messageDelegate.sender === ChatModel.LLM && messageDelegate.finished
-
-                Controls.Label {
-                    text: i18n("%1 tok/s", messageDelegate.tokensPerSecond.toFixed(2))
-                    color: palette.disabled.text
-                }
+                text: i18n("%1 tok/s · %2 tokens · %3 seconds",
+                           messageDelegate.tokensPerSecond.toFixed(2),
+                           messageDelegate.tokenCount,
+                           messageDelegate.duration.toFixed(2))
+                color: palette.disabled.text
             }
         }
     }
