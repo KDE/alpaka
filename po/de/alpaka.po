@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: alpaka\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-02-15 00:39+0000\n"
+"POT-Creation-Date: 2024-02-24 00:39+0000\n"
 "PO-Revision-Date: 2024-01-18 10:17+0100\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -19,7 +19,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: src/apps/main.cpp:46 src/apps/qml/ChatView.qml:15
-#: src/apps/qml/MessageDelegate.qml:59
+#: src/apps/qml/MessageDelegate.qml:61
 #, kde-format
 msgid "Alpaka"
 msgstr ""
@@ -144,7 +144,7 @@ msgstr ""
 
 #: src/apps/qml/MessageDelegate.qml:87
 #, kde-format
-msgid "%1 tok/s"
+msgid "%1 tok/s · %2 tokens · %3 seconds"
 msgstr ""
 
 #: src/apps/qml/OllamaSettingsPage.qml:13

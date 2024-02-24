@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: alpaka\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-02-15 00:39+0000\n"
+"POT-Creation-Date: 2024-02-24 00:39+0000\n"
 "PO-Revision-Date: 2023-12-27 16:10+0200\n"
 "Last-Translator: Tommi Nieminen <translator@legisign.org>\n"
 "Language-Team: Finnish <kde-i18n-doc@kde.org>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "X-Generator: Lokalize 22.12.3\n"
 
 #: src/apps/main.cpp:46 src/apps/qml/ChatView.qml:15
-#: src/apps/qml/MessageDelegate.qml:59
+#: src/apps/qml/MessageDelegate.qml:61
 #, kde-format
 msgid "Alpaka"
 msgstr "Alpaka"
@@ -143,7 +143,7 @@ msgstr "Alpaka"
 
 #: src/apps/qml/MessageDelegate.qml:87
 #, kde-format
-msgid "%1 tok/s"
+msgid "%1 tok/s · %2 tokens · %3 seconds"
 msgstr ""
 
 #: src/apps/qml/OllamaSettingsPage.qml:13
