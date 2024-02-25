@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: alpaka\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-02-24 00:39+0000\n"
-"PO-Revision-Date: 2024-02-15 05:54+0100\n"
+"PO-Revision-Date: 2024-02-24 03:22+0100\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <kde-i18n-doc@kde.org>\n"
 "Language: ka\n"
@@ -145,7 +145,7 @@ msgstr "ალპაკა"
 #: src/apps/qml/MessageDelegate.qml:87
 #, kde-format
 msgid "%1 tok/s · %2 tokens · %3 seconds"
-msgstr ""
+msgstr "%1 კოდი/წმ · %2 კოდი · %3 წამი"
 
 #: src/apps/qml/OllamaSettingsPage.qml:13
 #, kde-format
