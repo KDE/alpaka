@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: alpaka\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-02-24 00:39+0000\n"
-"PO-Revision-Date: 2024-02-15 12:21+0100\n"
+"PO-Revision-Date: 2024-02-26 10:42+0100\n"
 "Last-Translator: giovanni <g.sora@tiscali.it>\n"
 "Language-Team: Interlingua <kde-i18n-doc@kde.org>\n"
 "Language: ia\n"
@@ -144,7 +144,7 @@ msgstr "Alpaka"
 #: src/apps/qml/MessageDelegate.qml:87
 #, kde-format
 msgid "%1 tok/s · %2 tokens · %3 seconds"
-msgstr ""
+msgstr "%1 tok/s · %2 tokens (indicios) · %3 secundas"
 
 #: src/apps/qml/OllamaSettingsPage.qml:13
 #, kde-format
