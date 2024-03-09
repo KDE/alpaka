@@ -1,0 +1,197 @@
+# Copyright (C) 2024 This file is copyright:
+# This file is distributed under the same license as the alpaka package.
+#
+# SPDX-FileCopyrightText: 2024 Guðmundur Erlingsson <gudmundure@gmail.com>
+msgid ""
+msgstr ""
+"Project-Id-Version: alpaka\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2024-02-24 00:39+0000\n"
+"PO-Revision-Date: 2024-02-16 11:36+0000\n"
+"Last-Translator: Guðmundur Erlingsson <gudmundure@gmail.com>\n"
+"Language-Team: Icelandic <kde-i18n-doc@kde.org>\n"
+"Language: is\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Lokalize 23.08.3\n"
+
+#: src/apps/main.cpp:46 src/apps/qml/ChatView.qml:15
+#: src/apps/qml/MessageDelegate.qml:61
+#, kde-format
+msgid "Alpaka"
+msgstr "Alpaka"
+
+#: src/apps/main.cpp:48
+#, kde-format
+msgid "Ollama client"
+msgstr "Viðmót fyrir Ollama"
+
+#: src/apps/main.cpp:50
+#, kde-format
+msgid "© 2023 Loren Burkholder"
+msgstr "© 2023 Loren Burkholder"
+
+#: src/apps/main.cpp:51
+#, kde-format
+msgid "Loren Burkholder"
+msgstr "Loren Burkholder"
+
+#: src/apps/main.cpp:51
+#, kde-format
+msgid "Maintainer"
+msgstr "Umsjónarmaður"
+
+#: src/apps/main.cpp:52
+#, kde-format
+msgid "Laurent Montel"
+msgstr "Laurent Montel"
+
+#: src/apps/main.cpp:52
+#, kde-format
+msgid "Developer"
+msgstr "Forritari"
+
+#: src/apps/main.cpp:53
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Guðmundur Erlingsson"
+
+#: src/apps/main.cpp:53
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "gudmundure@gmail.com"
+
+#: src/apps/qml/ChatView.qml:18
+#, kde-format
+msgid "Start over"
+msgstr "Byrja aftur"
+
+#: src/apps/qml/ChatView.qml:23
+#, kde-format
+msgid "Settings"
+msgstr "Stillingar"
+
+#: src/apps/qml/ChatView.qml:37
+#, kde-format
+msgid "Try again"
+msgstr "Reyna aftur"
+
+#: src/apps/qml/ChatView.qml:47
+#, kde-format
+msgid "Waiting for interface"
+msgstr "Bíð eftir viðmóti"
+
+#: src/apps/qml/ChatView.qml:74
+#, kde-format
+msgid "Enter a message"
+msgstr "Sláðu inn skilaboð"
+
+#: src/apps/qml/GeneralSettingsPage.qml:13 src/apps/qml/SettingsPage.qml:20
+#, kde-format
+msgid "General"
+msgstr "Almennt"
+
+#: src/apps/qml/GeneralSettingsPage.qml:16
+#, kde-format
+msgid "General settings"
+msgstr "Almennar stillingar"
+
+#: src/apps/qml/GeneralSettingsPage.qml:22
+#, kde-format
+msgid "Show in System Tray"
+msgstr "Sýna í kerfisbakka"
+
+#: src/apps/qml/LLMSettingsPage.qml:13
+#, kde-format
+msgid "LLM settings"
+msgstr "Stillingar mállíkans (LLM)"
+
+#: src/apps/qml/LLMSettingsPage.qml:22
+#, kde-format
+msgid "Model settings"
+msgstr "Stillingar líkans"
+
+#: src/apps/qml/LLMSettingsPage.qml:29
+#, kde-format
+msgid "LLM model"
+msgstr "Stórt mállíkan (LLM)"
+
+#: src/apps/qml/LLMSettingsPage.qml:37
+#, kde-format
+msgid "System prompt"
+msgstr "Kerfiskvaðning"
+
+#: src/apps/qml/LLMSettingsPage.qml:38
+#, kde-format
+msgid "No system prompt"
+msgstr "Engin kerfiskvaðning"
+
+#: src/apps/qml/LLMSettingsPage.qml:45
+#, kde-format
+msgid "Show debug information"
+msgstr "Sýna aflúsunarupplýsingar"
+
+#: src/apps/qml/main.qml:17
+#, kde-format
+msgctxt "@title:window"
+msgid "Alpaka"
+msgstr "Alpaka"
+
+#: src/apps/qml/MessageDelegate.qml:87
+#, kde-format
+msgid "%1 tok/s · %2 tokens · %3 seconds"
+msgstr ""
+
+#: src/apps/qml/OllamaSettingsPage.qml:13
+#, kde-format
+msgid "Ollama settings"
+msgstr "Stillingar fyrir Ollama"
+
+#: src/apps/qml/OllamaSettingsPage.qml:20
+#, kde-format
+msgid "Ollama server settings"
+msgstr "Stillingar fyrir Ollama-þjón"
+
+#: src/apps/qml/OllamaSettingsPage.qml:27
+#, kde-format
+msgid "Ollama server URL"
+msgstr "Slóð á Ollama-þjón"
+
+#: src/apps/qml/SettingsPage.qml:25
+#, kde-format
+msgid "LLM"
+msgstr "LLM"
+
+#: src/apps/qml/SettingsPage.qml:30
+#, kde-format
+msgid "Ollama"
+msgstr "Ollama"
+
+#: src/core/KLLMInterface.cpp:116
+#, kde-format
+msgid "Failed to connect to interface at %1: %2"
+msgstr "Mistókst að tengjast viðmóti á %1: %2"
+
+#. i18n
+#: src/widgets/KLLMActionMenu.cpp:14
+#, kde-format
+msgid "Info"
+msgstr "Upplýsingar"
+
+#: src/widgets/KLLMConfigureDialog.cpp:17
+#, kde-format
+msgctxt "@title:window"
+msgid "Configure Ollama"
+msgstr "Grunnstilla Ollama"
+
+#: src/widgets/KLLMConfigureWidget.cpp:25
+#, kde-format
+msgid "Models:"
+msgstr "Líkön:"
+
+#~ msgid "%1 tok/s"
+#~ msgstr "%1 tok/sek."
