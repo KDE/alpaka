@@ -5,7 +5,7 @@
 cmake_minimum_required(VERSION 3.16)
 project(alpaka VERSION 0.1.1 LANGUAGES CXX)
 
-set(KF_MIN_VERSION "5.246.0")
+set(KF_MIN_VERSION "6.0.0")
 set(QT_MIN_VERSION "6.6")
 
 set(CMAKE_CXX_STANDARD 20)
