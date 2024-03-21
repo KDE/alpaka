@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: alpaka\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-02-24 00:39+0000\n"
+"POT-Creation-Date: 2024-03-21 00:40+0000\n"
 "PO-Revision-Date: 2024-03-03 22:25+0100\n"
 "Last-Translator: Kristof Kiszel <ulysses@fsf.hu>\n"
 "Language-Team: Hungarian <kde-l10n-hu@kde.org>\n"
@@ -65,27 +65,27 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "ulysses@fsf.hu"
 
-#: src/apps/qml/ChatView.qml:18
+#: src/apps/qml/ChatView.qml:27
 #, kde-format
 msgid "Start over"
 msgstr "Újrakezdés"
 
-#: src/apps/qml/ChatView.qml:23
+#: src/apps/qml/ChatView.qml:32
 #, kde-format
 msgid "Settings"
 msgstr "Beállítások"
 
-#: src/apps/qml/ChatView.qml:37
+#: src/apps/qml/ChatView.qml:46
 #, kde-format
 msgid "Try again"
 msgstr "Próbálja újra"
 
-#: src/apps/qml/ChatView.qml:47
+#: src/apps/qml/ChatView.qml:56
 #, kde-format
 msgid "Waiting for interface"
 msgstr "Várakozás az interfészre"
 
-#: src/apps/qml/ChatView.qml:74
+#: src/apps/qml/ChatView.qml:83
 #, kde-format
 msgid "Enter a message"
 msgstr "Írjon be egy üzenetet"
@@ -120,17 +120,17 @@ msgstr "Modellbeállítások"
 msgid "LLM model"
 msgstr "LLM modell"
 
-#: src/apps/qml/LLMSettingsPage.qml:37
+#: src/apps/qml/LLMSettingsPage.qml:43
 #, kde-format
 msgid "System prompt"
 msgstr "Rendszerüzenet"
 
-#: src/apps/qml/LLMSettingsPage.qml:38
+#: src/apps/qml/LLMSettingsPage.qml:55
 #, kde-format
 msgid "No system prompt"
 msgstr "Nincs rendszerüzenet"
 
-#: src/apps/qml/LLMSettingsPage.qml:45
+#: src/apps/qml/LLMSettingsPage.qml:72
 #, kde-format
 msgid "Show debug information"
 msgstr "Hibakeresési információk megjelenítése"

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: alpaka\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-02-24 00:39+0000\n"
+"POT-Creation-Date: 2024-03-21 00:40+0000\n"
 "PO-Revision-Date: 2023-12-27 16:10+0200\n"
 "Last-Translator: Tommi Nieminen <translator@legisign.org>\n"
 "Language-Team: Finnish <kde-i18n-doc@kde.org>\n"
@@ -65,27 +65,27 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "translator@legisign.org"
 
-#: src/apps/qml/ChatView.qml:18
+#: src/apps/qml/ChatView.qml:27
 #, kde-format
 msgid "Start over"
 msgstr "Aloita alusta"
 
-#: src/apps/qml/ChatView.qml:23
+#: src/apps/qml/ChatView.qml:32
 #, kde-format
 msgid "Settings"
 msgstr "Asetukset"
 
-#: src/apps/qml/ChatView.qml:37
+#: src/apps/qml/ChatView.qml:46
 #, kde-format
 msgid "Try again"
 msgstr "Yritä uudelleen"
 
-#: src/apps/qml/ChatView.qml:47
+#: src/apps/qml/ChatView.qml:56
 #, kde-format
 msgid "Waiting for interface"
 msgstr "Odotetaan käyttöliittymää"
 
-#: src/apps/qml/ChatView.qml:74
+#: src/apps/qml/ChatView.qml:83
 #, kde-format
 msgid "Enter a message"
 msgstr "Kirjoita viesti"
@@ -120,17 +120,17 @@ msgstr "Mallin asetukset"
 msgid "LLM model"
 msgstr "LLM-malli"
 
-#: src/apps/qml/LLMSettingsPage.qml:37
+#: src/apps/qml/LLMSettingsPage.qml:43
 #, kde-format
 msgid "System prompt"
 msgstr "Järjestelmäkehote"
 
-#: src/apps/qml/LLMSettingsPage.qml:38
+#: src/apps/qml/LLMSettingsPage.qml:55
 #, kde-format
 msgid "No system prompt"
 msgstr "Ei järjestelmäkehotetta"
 
-#: src/apps/qml/LLMSettingsPage.qml:45
+#: src/apps/qml/LLMSettingsPage.qml:72
 #, kde-format
 msgid "Show debug information"
 msgstr ""

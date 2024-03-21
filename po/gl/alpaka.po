@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: alpaka\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-02-24 00:39+0000\n"
+"POT-Creation-Date: 2024-03-21 00:40+0000\n"
 "PO-Revision-Date: 2024-02-25 09:52+0100\n"
 "Last-Translator: Adrián Chaves (Gallaecio) <adrian@chaves.io>\n"
 "Language-Team: Proxecto Trasno (proxecto@trasno.gal)\n"
@@ -65,27 +65,27 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "adrian@chaves.io"
 
-#: src/apps/qml/ChatView.qml:18
+#: src/apps/qml/ChatView.qml:27
 #, kde-format
 msgid "Start over"
 msgstr "Comezar de novo"
 
-#: src/apps/qml/ChatView.qml:23
+#: src/apps/qml/ChatView.qml:32
 #, kde-format
 msgid "Settings"
 msgstr "Configuración"
 
-#: src/apps/qml/ChatView.qml:37
+#: src/apps/qml/ChatView.qml:46
 #, kde-format
 msgid "Try again"
 msgstr "Intentalo de novo"
 
-#: src/apps/qml/ChatView.qml:47
+#: src/apps/qml/ChatView.qml:56
 #, kde-format
 msgid "Waiting for interface"
 msgstr "Agardando pola interface"
 
-#: src/apps/qml/ChatView.qml:74
+#: src/apps/qml/ChatView.qml:83
 #, kde-format
 msgid "Enter a message"
 msgstr "Escriba unha mensaxe"
@@ -120,17 +120,17 @@ msgstr "Configuración do modelo"
 msgid "LLM model"
 msgstr "Modelo de LLM"
 
-#: src/apps/qml/LLMSettingsPage.qml:37
+#: src/apps/qml/LLMSettingsPage.qml:43
 #, kde-format
 msgid "System prompt"
 msgstr "Indicación do sistema"
 
-#: src/apps/qml/LLMSettingsPage.qml:38
+#: src/apps/qml/LLMSettingsPage.qml:55
 #, kde-format
 msgid "No system prompt"
 msgstr "Sen indicación do sistema"
 
-#: src/apps/qml/LLMSettingsPage.qml:45
+#: src/apps/qml/LLMSettingsPage.qml:72
 #, kde-format
 msgid "Show debug information"
 msgstr "Amosar información de depuración"

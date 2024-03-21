@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: alpaka\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-02-24 00:39+0000\n"
+"POT-Creation-Date: 2024-03-21 00:40+0000\n"
 "PO-Revision-Date: 2024-02-27 04:54+0900\n"
 "Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
 "Language-Team: Traditional Chinese <zh-l10n@lists.slat.org>\n"
@@ -65,27 +65,27 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "mail@kisaragi-hiu.com"
 
-#: src/apps/qml/ChatView.qml:18
+#: src/apps/qml/ChatView.qml:27
 #, kde-format
 msgid "Start over"
 msgstr "重新開始"
 
-#: src/apps/qml/ChatView.qml:23
+#: src/apps/qml/ChatView.qml:32
 #, kde-format
 msgid "Settings"
 msgstr "設定"
 
-#: src/apps/qml/ChatView.qml:37
+#: src/apps/qml/ChatView.qml:46
 #, kde-format
 msgid "Try again"
 msgstr "再試一次"
 
-#: src/apps/qml/ChatView.qml:47
+#: src/apps/qml/ChatView.qml:56
 #, kde-format
 msgid "Waiting for interface"
 msgstr "等待介面中"
 
-#: src/apps/qml/ChatView.qml:74
+#: src/apps/qml/ChatView.qml:83
 #, kde-format
 msgid "Enter a message"
 msgstr "輸入訊息"
@@ -120,17 +120,17 @@ msgstr "模型設定"
 msgid "LLM model"
 msgstr "LLM 模型"
 
-#: src/apps/qml/LLMSettingsPage.qml:37
+#: src/apps/qml/LLMSettingsPage.qml:43
 #, kde-format
 msgid "System prompt"
 msgstr "系統 prompt"
 
-#: src/apps/qml/LLMSettingsPage.qml:38
+#: src/apps/qml/LLMSettingsPage.qml:55
 #, kde-format
 msgid "No system prompt"
 msgstr "沒有系統 prompt"
 
-#: src/apps/qml/LLMSettingsPage.qml:45
+#: src/apps/qml/LLMSettingsPage.qml:72
 #, kde-format
 msgid "Show debug information"
 msgstr "顯示除錯資訊"

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: alpaka\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-02-24 00:39+0000\n"
+"POT-Creation-Date: 2024-03-21 00:40+0000\n"
 "PO-Revision-Date: 2024-02-24 21:42+0100\n"
 "Last-Translator: Shinjo Park <kde@peremen.name>\n"
 "Language-Team: Korean <kde-kr@kde.org>\n"
@@ -65,27 +65,27 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "kde@peremen.name"
 
-#: src/apps/qml/ChatView.qml:18
+#: src/apps/qml/ChatView.qml:27
 #, kde-format
 msgid "Start over"
 msgstr "다시 시작"
 
-#: src/apps/qml/ChatView.qml:23
+#: src/apps/qml/ChatView.qml:32
 #, kde-format
 msgid "Settings"
 msgstr "설정"
 
-#: src/apps/qml/ChatView.qml:37
+#: src/apps/qml/ChatView.qml:46
 #, kde-format
 msgid "Try again"
 msgstr "다시 시도"
 
-#: src/apps/qml/ChatView.qml:47
+#: src/apps/qml/ChatView.qml:56
 #, kde-format
 msgid "Waiting for interface"
 msgstr "인터페이스 대기 중"
 
-#: src/apps/qml/ChatView.qml:74
+#: src/apps/qml/ChatView.qml:83
 #, kde-format
 msgid "Enter a message"
 msgstr "메시지 입력"
@@ -120,17 +120,17 @@ msgstr "모델 설정"
 msgid "LLM model"
 msgstr "LLM 모델"
 
-#: src/apps/qml/LLMSettingsPage.qml:37
+#: src/apps/qml/LLMSettingsPage.qml:43
 #, kde-format
 msgid "System prompt"
 msgstr "시스템 프롬프트"
 
-#: src/apps/qml/LLMSettingsPage.qml:38
+#: src/apps/qml/LLMSettingsPage.qml:55
 #, kde-format
 msgid "No system prompt"
 msgstr "시스템 프롬프트 없음"
 
-#: src/apps/qml/LLMSettingsPage.qml:45
+#: src/apps/qml/LLMSettingsPage.qml:72
 #, kde-format
 msgid "Show debug information"
 msgstr "디버그 정보 표시"
