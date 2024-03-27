@@ -1,194 +1,194 @@
+# Copyright (C) 2024 This file is copyright:
+# This file is distributed under the same license as the alpaka package.
+#
+# SPDX-FileCopyrightText: 2024 Yaron Shahrabani <sh.yaron@gmail.com>
 msgid ""
 msgstr ""
-"Project-Id-Version: kdeorg\n"
+"Project-Id-Version: alpaka\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-03-21 00:40+0000\n"
-"PO-Revision-Date: 2024-03-26 19:25\n"
-"Last-Translator: \n"
-"Language-Team: Chinese Simplified\n"
-"Language: zh_CN\n"
+"PO-Revision-Date: 2024-03-26 09:13+0200\n"
+"Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
+"Language-Team: צוות התרגום של KDE ישראל\n"
+"Language: he\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
-"X-Crowdin-Project: kdeorg\n"
-"X-Crowdin-Project-ID: 269464\n"
-"X-Crowdin-Language: zh-CN\n"
-"X-Crowdin-File: /kf6-trunk/messages/alpaka/alpaka.pot\n"
-"X-Crowdin-File-ID: 48968\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Lokalize 23.08.5\n"
 
 #: src/apps/main.cpp:46 src/apps/qml/ChatView.qml:15
 #: src/apps/qml/MessageDelegate.qml:61
 #, kde-format
 msgid "Alpaka"
-msgstr ""
+msgstr "אלפקה"
 
 #: src/apps/main.cpp:48
 #, kde-format
 msgid "Ollama client"
-msgstr ""
+msgstr "לקוח ל־Ollama"
 
 #: src/apps/main.cpp:50
 #, kde-format
 msgid "© 2023 Loren Burkholder"
-msgstr ""
+msgstr "© 2023 לורן בורקהולדר"
 
 #: src/apps/main.cpp:51
 #, kde-format
 msgid "Loren Burkholder"
-msgstr ""
+msgstr "לורן בורקהולדר"
 
 #: src/apps/main.cpp:51
 #, kde-format
 msgid "Maintainer"
-msgstr ""
+msgstr "מתחזק"
 
 #: src/apps/main.cpp:52
 #, kde-format
 msgid "Laurent Montel"
-msgstr ""
+msgstr "לורנט מונטל"
 
 #: src/apps/main.cpp:52
 #, kde-format
 msgid "Developer"
-msgstr ""
+msgstr "מפתח"
 
 #: src/apps/main.cpp:53
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr ""
+msgstr "צוות התרגום של KDE ישראל"
 
 #: src/apps/main.cpp:53
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr ""
+msgstr "kde-l10n-he@kde.org"
 
 #: src/apps/qml/ChatView.qml:27
 #, kde-format
 msgid "Start over"
-msgstr ""
+msgstr "התחלה מחדש"
 
 #: src/apps/qml/ChatView.qml:32
 #, kde-format
 msgid "Settings"
-msgstr ""
+msgstr "הגדרות"
 
 #: src/apps/qml/ChatView.qml:46
 #, kde-format
 msgid "Try again"
-msgstr ""
+msgstr "לנסות שוב"
 
 #: src/apps/qml/ChatView.qml:56
 #, kde-format
 msgid "Waiting for interface"
-msgstr ""
+msgstr "בהמתנה לממשק"
 
 #: src/apps/qml/ChatView.qml:83
 #, kde-format
 msgid "Enter a message"
-msgstr ""
+msgstr "נא לכתוב הודעה"
 
 #: src/apps/qml/GeneralSettingsPage.qml:13 src/apps/qml/SettingsPage.qml:20
 #, kde-format
 msgid "General"
-msgstr ""
+msgstr "כללי"
 
 #: src/apps/qml/GeneralSettingsPage.qml:16
 #, kde-format
 msgid "General settings"
-msgstr ""
+msgstr "הגדרות כלליות"
 
 #: src/apps/qml/GeneralSettingsPage.qml:22
 #, kde-format
 msgid "Show in System Tray"
-msgstr ""
+msgstr "הצגה בשורת המשימות"
 
 #: src/apps/qml/LLMSettingsPage.qml:13
 #, kde-format
 msgid "LLM settings"
-msgstr ""
+msgstr "הגדרות LLM"
 
 #: src/apps/qml/LLMSettingsPage.qml:22
 #, kde-format
 msgid "Model settings"
-msgstr ""
+msgstr "הגדרות מודל"
 
 #: src/apps/qml/LLMSettingsPage.qml:29
 #, kde-format
 msgid "LLM model"
-msgstr ""
+msgstr "מודל LLM"
 
 #: src/apps/qml/LLMSettingsPage.qml:43
 #, kde-format
 msgid "System prompt"
-msgstr ""
+msgstr "הנחיית מערכת"
 
 #: src/apps/qml/LLMSettingsPage.qml:55
 #, kde-format
 msgid "No system prompt"
-msgstr ""
+msgstr "אין הנחיית מערכת"
 
 #: src/apps/qml/LLMSettingsPage.qml:72
 #, kde-format
 msgid "Show debug information"
-msgstr ""
+msgstr "הצגת פרטי ניפוי שגיאות"
 
 #: src/apps/qml/main.qml:17
 #, kde-format
 msgctxt "@title:window"
 msgid "Alpaka"
-msgstr ""
+msgstr "אלפקה"
 
 #: src/apps/qml/MessageDelegate.qml:87
 #, kde-format
 msgid "%1 tok/s · %2 tokens · %3 seconds"
-msgstr ""
+msgstr "%1 אסימונים לשנייה · %2 אסימונים · %3 שניות"
 
 #: src/apps/qml/OllamaSettingsPage.qml:13
 #, kde-format
 msgid "Ollama settings"
-msgstr ""
+msgstr "הגדרות Ollama"
 
 #: src/apps/qml/OllamaSettingsPage.qml:20
 #, kde-format
 msgid "Ollama server settings"
-msgstr ""
+msgstr "הגדרות שרת Ollama"
 
 #: src/apps/qml/OllamaSettingsPage.qml:27
 #, kde-format
 msgid "Ollama server URL"
-msgstr ""
+msgstr "כתובת שרת Ollama"
 
 #: src/apps/qml/SettingsPage.qml:25
 #, kde-format
 msgid "LLM"
-msgstr ""
+msgstr "LLM"
 
 #: src/apps/qml/SettingsPage.qml:30
 #, kde-format
 msgid "Ollama"
-msgstr ""
+msgstr "Ollama"
 
 #: src/core/KLLMInterface.cpp:116
 #, kde-format
 msgid "Failed to connect to interface at %1: %2"
-msgstr ""
+msgstr "ההתחברות לממשק דרך %1 נכשלה: %2"
 
 #. i18n
 #: src/widgets/KLLMActionMenu.cpp:14
 #, kde-format
 msgid "Info"
-msgstr ""
+msgstr "פרטים"
 
 #: src/widgets/KLLMConfigureDialog.cpp:17
 #, kde-format
 msgctxt "@title:window"
 msgid "Configure Ollama"
-msgstr ""
+msgstr "הגדרת Ollama"
 
 #: src/widgets/KLLMConfigureWidget.cpp:25
 #, kde-format
 msgid "Models:"
-msgstr ""
+msgstr "מודלים:"
