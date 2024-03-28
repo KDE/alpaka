@@ -7,6 +7,7 @@ Version=1.0
 Type=Application
 
 Name=Alpaka
+Name[ast]=Alpaka
 Name[ca]=Alpaka
 Name[ca@valencia]=Alpaka
 Name[cs]=Alpaka
