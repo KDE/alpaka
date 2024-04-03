@@ -56,6 +56,7 @@ SPDX-License-Identifier: CC0-1.0
   <summary xml:lang="tr">Bir yapay zeka sohbet istemcisi</summary>
   <summary xml:lang="uk">Клієнт ШІ-спілкування</summary>
   <summary xml:lang="x-test">xxAn AI chat clientxx</summary>
+  <summary xml:lang="zh-CN">AI 聊天客户端</summary>
   <summary xml:lang="zh-TW">一個 AI 聊天機器人用戶端</summary>
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>GPL-3.0-or-later</project_license>
@@ -89,6 +90,7 @@ SPDX-License-Identifier: CC0-1.0
     <p xml:lang="tr">Alpaka, Llama 2 gibi LLM modellerini çalıştırmanıza izin verin Ollama AI hizmeti için bir istemcidir.</p>
     <p xml:lang="uk">Alpaka — клієнт для служби спілкування із ШІ Ollama, який надає вам змогу запускати моделі LLM, зокрема Llama 2.</p>
     <p xml:lang="x-test">xxAlpaka is a client for the Ollama AI service, which lets you run LLM models such as Llama 2.xx</p>
+    <p xml:lang="zh-CN">Alpaka 是Ollama AI 服务的客户端，您可以运行 Llama 2 等LLIM模型。</p>
     <p xml:lang="zh-TW">Alpaka 是 Ollama AI 服務的用戶端，該服務讓您執行如 Llama 2 等大型語言模型。</p>
   </description>
   <project_group>KDE</project_group>
