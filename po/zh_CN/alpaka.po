@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: kdeorg\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-03-21 00:40+0000\n"
-"PO-Revision-Date: 2024-03-30 19:37\n"
+"PO-Revision-Date: 2024-04-01 14:44\n"
 "Last-Translator: \n"
 "Language-Team: Chinese Simplified\n"
 "Language: zh_CN\n"
@@ -41,7 +41,7 @@ msgstr ""
 #: src/apps/main.cpp:51
 #, kde-format
 msgid "Maintainer"
-msgstr ""
+msgstr "维护人员"
 
 #: src/apps/main.cpp:52
 #, kde-format
@@ -51,89 +51,89 @@ msgstr ""
 #: src/apps/main.cpp:52
 #, kde-format
 msgid "Developer"
-msgstr ""
+msgstr "开发人员"
 
 #: src/apps/main.cpp:53
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr ""
+msgstr "你的名字"
 
 #: src/apps/main.cpp:53
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr ""
+msgstr "您的电子邮箱"
 
 #: src/apps/qml/ChatView.qml:27
 #, kde-format
 msgid "Start over"
-msgstr ""
+msgstr "重新开始"
 
 #: src/apps/qml/ChatView.qml:32
 #, kde-format
 msgid "Settings"
-msgstr ""
+msgstr "设置"
 
 #: src/apps/qml/ChatView.qml:46
 #, kde-format
 msgid "Try again"
-msgstr ""
+msgstr "再试一次"
 
 #: src/apps/qml/ChatView.qml:56
 #, kde-format
 msgid "Waiting for interface"
-msgstr ""
+msgstr "正在等待设备"
 
 #: src/apps/qml/ChatView.qml:83
 #, kde-format
 msgid "Enter a message"
-msgstr ""
+msgstr "输入信息"
 
 #: src/apps/qml/GeneralSettingsPage.qml:13 src/apps/qml/SettingsPage.qml:20
 #, kde-format
 msgid "General"
-msgstr ""
+msgstr "通用"
 
 #: src/apps/qml/GeneralSettingsPage.qml:16
 #, kde-format
 msgid "General settings"
-msgstr ""
+msgstr "通用设置"
 
 #: src/apps/qml/GeneralSettingsPage.qml:22
 #, kde-format
 msgid "Show in System Tray"
-msgstr ""
+msgstr "在系统托盘中显示"
 
 #: src/apps/qml/LLMSettingsPage.qml:13
 #, kde-format
 msgid "LLM settings"
-msgstr ""
+msgstr "LLM 设置"
 
 #: src/apps/qml/LLMSettingsPage.qml:22
 #, kde-format
 msgid "Model settings"
-msgstr ""
+msgstr "模型设置"
 
 #: src/apps/qml/LLMSettingsPage.qml:29
 #, kde-format
 msgid "LLM model"
-msgstr ""
+msgstr "LLM 模型"
 
 #: src/apps/qml/LLMSettingsPage.qml:43
 #, kde-format
 msgid "System prompt"
-msgstr ""
+msgstr "系统提示"
 
 #: src/apps/qml/LLMSettingsPage.qml:55
 #, kde-format
 msgid "No system prompt"
-msgstr ""
+msgstr "没有系统提示"
 
 #: src/apps/qml/LLMSettingsPage.qml:72
 #, kde-format
 msgid "Show debug information"
-msgstr ""
+msgstr "显示调试信息"
 
 #: src/apps/qml/main.qml:17
 #, kde-format
@@ -149,22 +149,22 @@ msgstr ""
 #: src/apps/qml/OllamaSettingsPage.qml:13
 #, kde-format
 msgid "Ollama settings"
-msgstr ""
+msgstr "Ollama设置"
 
 #: src/apps/qml/OllamaSettingsPage.qml:20
 #, kde-format
 msgid "Ollama server settings"
-msgstr ""
+msgstr "Ollama服务器设置"
 
 #: src/apps/qml/OllamaSettingsPage.qml:27
 #, kde-format
 msgid "Ollama server URL"
-msgstr ""
+msgstr "Ollama 服务器 URL"
 
 #: src/apps/qml/SettingsPage.qml:25
 #, kde-format
 msgid "LLM"
-msgstr ""
+msgstr "LLM"
 
 #: src/apps/qml/SettingsPage.qml:30
 #, kde-format
@@ -174,21 +174,21 @@ msgstr ""
 #: src/core/KLLMInterface.cpp:116
 #, kde-format
 msgid "Failed to connect to interface at %1: %2"
-msgstr ""
+msgstr "无法连接到 %1的接口: %2"
 
 #. i18n
 #: src/widgets/KLLMActionMenu.cpp:14
 #, kde-format
 msgid "Info"
-msgstr ""
+msgstr "详情"
 
 #: src/widgets/KLLMConfigureDialog.cpp:17
 #, kde-format
 msgctxt "@title:window"
 msgid "Configure Ollama"
-msgstr ""
+msgstr "配置 Ollama"
 
 #: src/widgets/KLLMConfigureWidget.cpp:25
 #, kde-format
 msgid "Models:"
-msgstr ""
+msgstr "模型："
