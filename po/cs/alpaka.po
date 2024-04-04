@@ -7,15 +7,15 @@ msgstr ""
 "Project-Id-Version: alpaka\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-03-21 00:40+0000\n"
-"PO-Revision-Date: 2024-01-19 16:03+0100\n"
-"Last-Translator: Vit Pelcak <vit@pelcak.org>\n"
+"PO-Revision-Date: 2024-04-03 11:42+0200\n"
+"Last-Translator: Vit Pelcak <vpelcak@suse.cz>\n"
 "Language-Team: Czech <kde-i18n-doc@kde.org>\n"
 "Language: cs\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Lokalize 23.08.4\n"
+"X-Generator: Lokalize 24.02.1\n"
 
 #: src/apps/main.cpp:46 src/apps/qml/ChatView.qml:15
 #: src/apps/qml/MessageDelegate.qml:61
@@ -133,7 +133,7 @@ msgstr ""
 #: src/apps/qml/LLMSettingsPage.qml:72
 #, kde-format
 msgid "Show debug information"
-msgstr ""
+msgstr "Zobrazit ladicí informace"
 
 #: src/apps/qml/main.qml:17
 #, kde-format
@@ -144,7 +144,7 @@ msgstr "Alpaka"
 #: src/apps/qml/MessageDelegate.qml:87
 #, kde-format
 msgid "%1 tok/s · %2 tokens · %3 seconds"
-msgstr ""
+msgstr "%1 tok/s · %2 tokenů · %3 sekund"
 
 #: src/apps/qml/OllamaSettingsPage.qml:13
 #, kde-format
