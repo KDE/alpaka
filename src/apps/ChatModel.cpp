@@ -7,6 +7,8 @@
 
 #include <KUser>
 
+#include <ranges>
+
 #include "kllmcoresettings.h"
 using namespace KLLMCore;
 ChatModel::ChatModel(QObject *parent)
@@ -105,9 +107,9 @@ void ChatModel::sendMessage(const QString &message)
 {
     KLLMRequest req{message};
     req.setModel(KLLMCoreSettings::model());
-    for (int i = m_messages.size() - 1; i >= 0; --i) {
-        if (m_messages.at(i).sender == Sender::LLM) {
-            req.setContext(m_messages.at(i).context);
+    for (const auto &message : m_messages | std::views::reverse) {
+        if (message.sender == Sender::LLM) {
+            req.setContext(message.context);
             break;
         }
     }
