@@ -13,9 +13,9 @@
 #include <QUrl>
 
 #include "ChatModel.h"
+#include "alpaka-version.h"
 #include "controller.h"
 #include "kllmcoresettings.h"
-#include "alpaka-version.h"
 #include "windowcontroller.h"
 
 // signal handler for SIGINT & SIGTERM
