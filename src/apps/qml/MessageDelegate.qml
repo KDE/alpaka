@@ -68,11 +68,22 @@ RowLayout {
                 }
             }
 
-            Controls.Label {
+            TextEdit {
                 text: messageDelegate.message
                 wrapMode: Controls.Label.WordWrap
                 Layout.fillWidth: true
+                readOnly: true
                 textFormat: Controls.Label.MarkdownText
+                color: palette.text
+                selectionColor: palette.highlight
+
+                onLinkActivated: function(link) {
+                    Qt.openUrlExternally(link)
+                }
+                onLinkHovered: {
+                    Qt.PointingHandCursor
+                }
+                
             }
 
             Controls.ToolSeparator {
