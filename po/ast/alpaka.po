@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: alpaka\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-03-21 00:40+0000\n"
+"POT-Creation-Date: 2024-06-07 00:41+0000\n"
 "PO-Revision-Date: 2024-03-27 22:45+0100\n"
 "Last-Translator: Enol P. <enolp@softastur.org>\n"
 "Language-Team: Asturian <alministradores@softastur.org>\n"
@@ -141,7 +141,7 @@ msgctxt "@title:window"
 msgid "Alpaka"
 msgstr "Alpaka"
 
-#: src/apps/qml/MessageDelegate.qml:87
+#: src/apps/qml/MessageDelegate.qml:98
 #, kde-format
 msgid "%1 tok/s · %2 tokens · %3 seconds"
 msgstr ""
