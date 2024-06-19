@@ -14,6 +14,7 @@ import org.kde.alpaka
 Kirigami.ScrollablePage {
     title: i18n("Alpaka")
 
+    Kirigami.Theme.colorSet: Kirigami.Theme.Window
     Connections {
         target: chat.llm
 
@@ -59,7 +60,9 @@ Kirigami.ScrollablePage {
         Controls.TextField {
             id: messageInput
 
-            background.visible: false
+            background: Rectangle {
+                color: Kirigami.Theme.backgroundColor
+            }
             placeholderText: i18n("Enter a message")
             enabled: chat.llm.ready && !chat.replyInProgress
             Layout.fillWidth: true
