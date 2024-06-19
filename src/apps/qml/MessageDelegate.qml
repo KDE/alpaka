@@ -29,9 +29,9 @@ RowLayout {
 
         radius: 5
         color: palette.alternateBase
-        Layout.leftMargin: Kirigami.Units.largeSpacing
-        Layout.topMargin: Kirigami.Units.largeSpacing
-        Layout.rightMargin: Kirigami.Units.largeSpacing
+        Layout.leftMargin: Kirigami.Units.largeSpacing * 2
+        Layout.topMargin: Kirigami.Units.largeSpacing * 2
+        Layout.rightMargin: Kirigami.Units.largeSpacing * 2
         Layout.preferredWidth: messageLayout.implicitWidth + 20
         Layout.preferredHeight: messageLayout.implicitHeight + 20
         Layout.maximumWidth: messageDelegate.width * 0.75

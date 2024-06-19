@@ -72,6 +72,7 @@ Kirigami.ScrollablePage {
     }
 
     Kirigami.PlaceholderMessage {
+        parent: chatView
         anchors.centerIn: parent
 
         text: i18n("Waiting for interface")
@@ -80,7 +81,7 @@ Kirigami.ScrollablePage {
 
     ListView {
         id: chatView
-        spacing: 10
+        spacing: Kirigami.Units.largeSpacing * 2
         model: chat
         clip: true
 
