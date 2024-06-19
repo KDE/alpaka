@@ -29,6 +29,9 @@ RowLayout {
 
         radius: 5
         color: palette.alternateBase
+        Layout.leftMargin: Kirigami.Units.largeSpacing
+        Layout.topMargin: Kirigami.Units.largeSpacing
+        Layout.rightMargin: Kirigami.Units.largeSpacing
         Layout.preferredWidth: messageLayout.implicitWidth + 20
         Layout.preferredHeight: messageLayout.implicitHeight + 20
         Layout.maximumWidth: messageDelegate.width * 0.75
@@ -83,7 +86,7 @@ RowLayout {
                 onLinkHovered: {
                     Qt.PointingHandCursor
                 }
-                
+
             }
 
             Controls.ToolSeparator {

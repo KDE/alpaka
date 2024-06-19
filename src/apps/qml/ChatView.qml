@@ -11,7 +11,7 @@ import org.kde.coreaddons as KCoreAddons
 import org.kde.kirigamiaddons.components as KirigamiComponents
 import org.kde.alpaka
 
-Kirigami.Page {
+Kirigami.ScrollablePage {
     title: i18n("Alpaka")
 
     Connections {
@@ -22,6 +22,7 @@ Kirigami.Page {
         }
     }
 
+    leftPadding: 30
     actions: [
         Kirigami.Action {
             text: i18n("Start over")
@@ -50,36 +51,15 @@ Kirigami.Page {
         ]
     }
 
-    Kirigami.PlaceholderMessage {
-        anchors.centerIn: parent
-
-        text: i18n("Waiting for interface")
-        visible: !chat.llm.ready
-    }
-
-    ColumnLayout {
-        spacing: 10
-        anchors.fill: parent
-
-        Controls.ScrollView {
+    footer: ColumnLayout {
+        spacing: 0
+        Kirigami.Separator {
             Layout.fillWidth: true
-            Layout.fillHeight: true
-
-            ListView {
-                id: chatView
-                spacing: 10
-                model: chat
-                clip: true
-
-                delegate: MessageDelegate {
-                    width: chatView.width
-                }
-            }
         }
-
         Controls.TextField {
             id: messageInput
 
+            background.visible: false
             placeholderText: i18n("Enter a message")
             enabled: chat.llm.ready && !chat.replyInProgress
             Layout.fillWidth: true
@@ -88,6 +68,24 @@ Kirigami.Page {
                 chat.sendMessage(messageInput.text);
                 messageInput.text = "";
             }
+        }
+    }
+
+    Kirigami.PlaceholderMessage {
+        anchors.centerIn: parent
+
+        text: i18n("Waiting for interface")
+        visible: !chat.llm.ready
+    }
+
+    ListView {
+        id: chatView
+        spacing: 10
+        model: chat
+        clip: true
+
+        delegate: MessageDelegate {
+            width: chatView.width
         }
     }
 }
