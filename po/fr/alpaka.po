@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: alpaka\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-06-07 00:41+0000\n"
+"POT-Creation-Date: 2024-06-20 00:41+0000\n"
 "PO-Revision-Date: 2024-04-25 13:08+0200\n"
 "Last-Translator: Xavier Besnard <xavier.besnard@kde.org>\n"
 "Language-Team: French <French <kde-francophone@kde.org>>\n"
@@ -16,7 +16,7 @@ msgstr ""
 "X-Generator: Lokalize 23.08.5\n"
 
 #: src/apps/main.cpp:46 src/apps/qml/ChatView.qml:15
-#: src/apps/qml/MessageDelegate.qml:61
+#: src/apps/qml/MessageDelegate.qml:64
 #, kde-format
 msgid "Alpaka"
 msgstr "Alpaka"
@@ -63,30 +63,30 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "xavier.besnard@kde.org"
 
-#: src/apps/qml/ChatView.qml:27
+#: src/apps/qml/ChatView.qml:29
 #, kde-format
 msgid "Start over"
 msgstr "Recommencer"
 
-#: src/apps/qml/ChatView.qml:32
+#: src/apps/qml/ChatView.qml:34
 #, kde-format
 msgid "Settings"
 msgstr "Configuration"
 
-#: src/apps/qml/ChatView.qml:46
+#: src/apps/qml/ChatView.qml:48
 #, kde-format
 msgid "Try again"
 msgstr "Essayer à nouveau"
 
-#: src/apps/qml/ChatView.qml:56
-#, kde-format
-msgid "Waiting for interface"
-msgstr "En attente de l'interface"
-
-#: src/apps/qml/ChatView.qml:83
+#: src/apps/qml/ChatView.qml:66
 #, kde-format
 msgid "Enter a message"
 msgstr "Saisissez un message"
+
+#: src/apps/qml/ChatView.qml:81
+#, kde-format
+msgid "Waiting for interface"
+msgstr "En attente de l'interface"
 
 #: src/apps/qml/GeneralSettingsPage.qml:13 src/apps/qml/SettingsPage.qml:20
 #, kde-format
@@ -139,7 +139,7 @@ msgctxt "@title:window"
 msgid "Alpaka"
 msgstr "Alpaka"
 
-#: src/apps/qml/MessageDelegate.qml:98
+#: src/apps/qml/MessageDelegate.qml:101
 #, kde-format
 msgid "%1 tok/s · %2 tokens · %3 seconds"
 msgstr "%1 jetons / s · %2 jetons · %3 secondes"

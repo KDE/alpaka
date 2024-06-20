@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: alpaka\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-06-07 00:41+0000\n"
+"POT-Creation-Date: 2024-06-20 00:41+0000\n"
 "PO-Revision-Date: 2024-02-29 08:21+0200\n"
 "Last-Translator: Toms Trasūns <toms.trasuns@posteo.net>\n"
 "Language-Team: Latvian <kde-i18n-doc@kde.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 "X-Generator: Lokalize 23.08.5\n"
 
 #: src/apps/main.cpp:46 src/apps/qml/ChatView.qml:15
-#: src/apps/qml/MessageDelegate.qml:61
+#: src/apps/qml/MessageDelegate.qml:64
 #, kde-format
 msgid "Alpaka"
 msgstr "Alpaka"
@@ -66,30 +66,30 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "toms.trasuns@posteo.net"
 
-#: src/apps/qml/ChatView.qml:27
+#: src/apps/qml/ChatView.qml:29
 #, kde-format
 msgid "Start over"
 msgstr "Sākt no sākuma"
 
-#: src/apps/qml/ChatView.qml:32
+#: src/apps/qml/ChatView.qml:34
 #, kde-format
 msgid "Settings"
 msgstr "Iestatījumi"
 
-#: src/apps/qml/ChatView.qml:46
+#: src/apps/qml/ChatView.qml:48
 #, kde-format
 msgid "Try again"
 msgstr "Mēģināt vēlreiz"
 
-#: src/apps/qml/ChatView.qml:56
-#, kde-format
-msgid "Waiting for interface"
-msgstr "Gaida saskarni"
-
-#: src/apps/qml/ChatView.qml:83
+#: src/apps/qml/ChatView.qml:66
 #, kde-format
 msgid "Enter a message"
 msgstr "Rakstiet ziņu"
+
+#: src/apps/qml/ChatView.qml:81
+#, kde-format
+msgid "Waiting for interface"
+msgstr "Gaida saskarni"
 
 #: src/apps/qml/GeneralSettingsPage.qml:13 src/apps/qml/SettingsPage.qml:20
 #, kde-format
@@ -142,7 +142,7 @@ msgctxt "@title:window"
 msgid "Alpaka"
 msgstr "Alpaka"
 
-#: src/apps/qml/MessageDelegate.qml:98
+#: src/apps/qml/MessageDelegate.qml:101
 #, kde-format
 msgid "%1 tok/s · %2 tokens · %3 seconds"
 msgstr "%1 daļa/sek. · %2 daļas · %3 sekundes"
