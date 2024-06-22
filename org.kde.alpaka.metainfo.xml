@@ -29,6 +29,7 @@ SPDX-License-Identifier: CC0-1.0
   <name xml:lang="pl">Alpaka</name>
   <name xml:lang="sk">Alpaka</name>
   <name xml:lang="sl">Alpaka</name>
+  <name xml:lang="sv">Alpaka</name>
   <name xml:lang="tr">Alpaka</name>
   <name xml:lang="uk">Alpaka</name>
   <name xml:lang="x-test">xxAlpakaxx</name>
@@ -55,6 +56,7 @@ SPDX-License-Identifier: CC0-1.0
   <summary xml:lang="pl">Program do rozmów z SI</summary>
   <summary xml:lang="sk">AI chatový klient</summary>
   <summary xml:lang="sl">Odjemalec klepeta z umetno inteligenco</summary>
+  <summary xml:lang="sv">En AI-chattklient</summary>
   <summary xml:lang="tr">Yapay Zeka ile Sohbet İstemcisi</summary>
   <summary xml:lang="uk">Клієнт ШІ-спілкування</summary>
   <summary xml:lang="x-test">xxAn AI chat clientxx</summary>
@@ -90,6 +92,7 @@ SPDX-License-Identifier: CC0-1.0
     <p xml:lang="nl">Alpaka is een client voor de Ollama AI-service, die u LLM-modellen zoals Llama 2 laat uitvoeren.</p>
     <p xml:lang="pl">Alpaka jest programem do usługi SI Ollama, który umożliwia uruchamianie modeli LLM takich jak Llama 2.</p>
     <p xml:lang="sl">Alpaka je odjemalec za storitev Ollama AI, ki vam omogoča zagon modelov LLM, kot je Llama 2.</p>
+    <p xml:lang="sv">Alpaka är en klient för Ollama AI-tjänsten, som låter dig kör LLM-modeller såsom Llama 2.</p>
     <p xml:lang="tr">Alpaka, Llama 2 gibi LLM modellerini çalıştırmanıza izin verin Ollama AI hizmeti için bir istemcidir.</p>
     <p xml:lang="uk">Alpaka — клієнт для служби спілкування із ШІ Ollama, який надає вам змогу запускати моделі LLM, зокрема Llama 2.</p>
     <p xml:lang="x-test">xxAlpaka is a client for the Ollama AI service, which lets you run LLM models such as Llama 2.xx</p>
