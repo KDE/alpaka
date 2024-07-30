@@ -69,7 +69,7 @@ bool Controller::supportSystemTray() const
 #ifdef Q_OS_ANDROID
     return false;
 #else
-    auto de = QString::fromLatin1(qgetenv("XDG_CURRENT_DESKTOP"));
+    const auto de = QString::fromLatin1(qgetenv("XDG_CURRENT_DESKTOP"));
     return de != QStringLiteral("GNOME") && de != QStringLiteral("Pantheon");
 #endif
 }
