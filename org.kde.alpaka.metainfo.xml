@@ -17,6 +17,7 @@ SPDX-License-Identifier: CC0-1.0
   <name xml:lang="eu">Alpaka</name>
   <name xml:lang="fi">Alpaka</name>
   <name xml:lang="fr">Alpaka</name>
+  <name xml:lang="gl">Alpaka</name>
   <name xml:lang="he">אלפקה</name>
   <name xml:lang="hu">Alpaka</name>
   <name xml:lang="ia">Alpaka</name>
@@ -44,6 +45,7 @@ SPDX-License-Identifier: CC0-1.0
   <summary xml:lang="eu">AA berriketa bezero bat</summary>
   <summary xml:lang="fi">Tekoälykeskusteluasiakas</summary>
   <summary xml:lang="fr">Un client de discussions avec une IA</summary>
+  <summary xml:lang="gl">Cliente de conversa con intelixencia artificial (IA).</summary>
   <summary xml:lang="he">לקוח שיח מול בינה מלאכותית</summary>
   <summary xml:lang="hu">AI csevegőkliens</summary>
   <summary xml:lang="ia">Un cliente de chat (Conversation in directo) de AI (IA)</summary>
@@ -81,6 +83,7 @@ SPDX-License-Identifier: CC0-1.0
     <p xml:lang="eu">Alpaka, «Ollama» AA zerbitzuaren bezero bat da, «Llama 2» gisako LLM ereduak ibiltzen uzten dizuna.</p>
     <p xml:lang="fi">Alpaka on Ollama-tekoälypalvelun asiakas, jolla voi suorittaa suuria kielimalleja kuten Llama 2:ta.</p>
     <p xml:lang="fr">Alpaka est un client du service « Ollama AI », vous permettant d'exécuter des modèles « LLM » tels que Llama 2.</p>
+    <p xml:lang="gl">Alpaka é un cliente para o servizo Ollama de intelixencia artificial (IA) que lle permite executar modelos grandes de idiomas (LLM) como Llama 2.</p>
     <p xml:lang="he">אלפקה היא תוכנית לקוח לשירות הבינה המלאכותית Ollama שמאפשר להריץ מודלים מסוג LLM (מודלי שפה גדולים) כגון Llama 2.</p>
     <p xml:lang="hu">Az Alpaka egy kliens az Ollama AI szolgáltatáshoz, amely lehetővé teszi az LLM modellek, például a Llama 2 futtatását.</p>
     <p xml:lang="ia">Alpaka es un cliente per leservicio de AI (IA) de Ollama, que te permitte de executar modellos de LLM tal como Llama2.</p>
