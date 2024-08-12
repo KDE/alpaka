@@ -41,7 +41,6 @@ int main(int argc, char *argv[])
 
     QCoreApplication::setOrganizationName(QStringLiteral("KDE"));
 
-    KCrash::initialize();
     KAboutData about(QStringLiteral("alpaka"),
                      i18n("Alpaka"),
                      QStringLiteral(ALPAKA_VERSION_STRING),
@@ -54,6 +53,7 @@ int main(int argc, char *argv[])
     about.setOrganizationDomain("kde.org");
 
     KAboutData::setApplicationData(about);
+    KCrash::initialize();
 
     if (qEnvironmentVariableIsEmpty("QT_QUICK_CONTROLS_STYLE"))
         QQuickStyle::setStyle(QStringLiteral("org.kde.desktop"));
