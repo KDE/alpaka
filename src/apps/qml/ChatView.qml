@@ -79,7 +79,13 @@ Kirigami.ScrollablePage {
         parent: chatView
         anchors.centerIn: parent
 
-        text: i18nc("@info:placeholder", "Waiting for Interface")
+        text: i18nc("@info:placeholder", "Interface Not Found")
+        explanation: i18n("Make sure Ollama is installed and is running. Visit the project's website for setup information.")
+        helpfulAction: Kirigami.Action {
+            icon.name: "globe-symbolic"
+            text: i18nc("@action:button", "Visit Website")
+            onTriggered: Qt.openUrlExternally("https://ollama.com/")
+        }
         visible: !chat.llm.ready
     }
 
