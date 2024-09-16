@@ -29,6 +29,7 @@ Kirigami.ScrollablePage {
             text: i18n("Start over")
             icon.name: "view-refresh"
             onTriggered: chat.resetConversation()
+            enabled: chat.llm.ready
         },
         Kirigami.Action {
             text: i18n("Settings")
