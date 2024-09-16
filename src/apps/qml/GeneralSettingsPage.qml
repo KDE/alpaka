@@ -12,11 +12,8 @@ import org.kde.alpaka
 FormCard.FormCardPage {
     title: i18n("General")
 
-    FormCard.FormHeader {
-        title: i18n("General settings")
-    }
-
     FormCard.FormCard {
+        Layout.topMargin: Kirigami.Units.largeSpacing
         FormCard.FormCheckDelegate {
             id: closeDelegate
             text: i18n("Show in System Tray")

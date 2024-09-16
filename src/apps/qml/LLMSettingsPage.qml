@@ -10,7 +10,7 @@ import org.kde.kirigamiaddons.formcard as FormCard
 import org.kde.alpaka
 
 FormCard.FormCardPage {
-    title: i18n("LLM settings")
+    title: i18n("LLM")
 
     Component.onCompleted: {
         prompt.text = AlpakaSettings.systemPrompt;
@@ -18,11 +18,8 @@ FormCard.FormCardPage {
         llmDebugInfo.checked = AlpakaSettings.showDebugInfo;
     }
 
-    FormCard.FormHeader {
-        title: i18n("Model settings")
-    }
-
     FormCard.FormCard {
+        Layout.topMargin: Kirigami.Units.largeSpacing
         FormCard.FormComboBoxDelegate {
             id: modelCombo
 

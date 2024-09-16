@@ -10,17 +10,15 @@ import org.kde.kirigamiaddons.formcard as FormCard
 import org.kde.alpaka
 
 FormCard.FormCardPage {
-    title: i18n("Ollama settings")
+    title: i18n("Ollama")
 
     Component.onCompleted: {
         serverUrl.text = AlpakaSettings.serverUrl;
     }
 
-    FormCard.FormHeader {
-        title: i18n("Ollama server settings")
-    }
-
     FormCard.FormCard {
+        Layout.topMargin: Kirigami.Units.largeSpacing
+
         FormCard.FormTextFieldDelegate {
             id: serverUrl
 
