@@ -26,13 +26,13 @@ Kirigami.ScrollablePage {
     leftPadding: 30
     actions: [
         Kirigami.Action {
-            text: i18n("Start over")
+            text: i18nc("@action:intoolbar", "Start Over")
             icon.name: "view-refresh"
             onTriggered: chat.resetConversation()
             enabled: chat.llm.ready
         },
         Kirigami.Action {
-            text: i18n("Settings")
+            text: i18nc("@action:intoolbar", "Settings")
             icon.name: "settings-configure"
             onTriggered: pageStack.pushDialogLayer(settingsPage)
         }
@@ -46,7 +46,7 @@ Kirigami.ScrollablePage {
         width: parent.width
         actions: [
             Kirigami.Action {
-                text: i18n("Try again")
+                text: i18nc("@action:button", "Try Again")
                 icon.name: "view-refresh"
                 onTriggered: chat.llm.reload()
             }
@@ -64,7 +64,7 @@ Kirigami.ScrollablePage {
             background: Rectangle {
                 color: Kirigami.Theme.backgroundColor
             }
-            placeholderText: i18n("Enter a message")
+            placeholderText: i18nc("@info:placeholder", "Enter a message")
             enabled: chat.llm.ready && !chat.replyInProgress
             Layout.fillWidth: true
             focus: true
@@ -79,7 +79,7 @@ Kirigami.ScrollablePage {
         parent: chatView
         anchors.centerIn: parent
 
-        text: i18n("Waiting for interface")
+        text: i18nc("@info:placeholder", "Waiting for Interface")
         visible: !chat.llm.ready
     }
 
