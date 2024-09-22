@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: alpaka\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-08-13 00:41+0000\n"
-"PO-Revision-Date: 2024-02-25 09:52+0100\n"
+"PO-Revision-Date: 2024-09-22 00:38+0200\n"
 "Last-Translator: Adrián Chaves (Gallaecio) <adrian@chaves.io>\n"
 "Language-Team: Proxecto Trasno (proxecto@trasno.gal)\n"
 "Language: gl\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 23.08.5\n"
+"X-Generator: Lokalize 24.05.2\n"
 
 #: src/apps/main.cpp:45 src/apps/qml/ChatView.qml:15
 #: src/apps/qml/MessageDelegate.qml:64
@@ -103,7 +103,7 @@ msgstr "Configuración xeral"
 #: src/apps/qml/GeneralSettingsPage.qml:22
 #, kde-format
 msgid "Show in System Tray"
-msgstr "Amosar na bandexa do sistema"
+msgstr "Amosar na área de notificación"
 
 #: src/apps/qml/LLMSettingsPage.qml:13
 #, kde-format
