@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: alpaka\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-08-13 00:41+0000\n"
+"POT-Creation-Date: 2024-11-01 00:42+0000\n"
 "PO-Revision-Date: 2024-02-25 11:04+0100\n"
 "Last-Translator: Vincenzo Reale <smart2128vr@gmail.com>\n"
 "Language-Team: Italian <kde-i18n-it@kde.org>\n"
@@ -66,71 +66,83 @@ msgid "Your emails"
 msgstr "smart2128vr@gmail.com"
 
 #: src/apps/qml/ChatView.qml:29
-#, kde-format
-msgid "Start over"
+#, fuzzy, kde-format
+#| msgid "Start over"
+msgctxt "@action:intoolbar"
+msgid "Start Over"
 msgstr "Ricomincia"
 
-#: src/apps/qml/ChatView.qml:34
-#, kde-format
+#: src/apps/qml/ChatView.qml:35
+#, fuzzy, kde-format
+#| msgid "Settings"
+msgctxt "@action:intoolbar"
 msgid "Settings"
 msgstr "Impostazioni"
 
-#: src/apps/qml/ChatView.qml:48
-#, kde-format
-msgid "Try again"
+#: src/apps/qml/ChatView.qml:49
+#, fuzzy, kde-format
+#| msgid "Try again"
+msgctxt "@action:button"
+msgid "Try Again"
 msgstr "Prova ancora"
 
-#: src/apps/qml/ChatView.qml:66
-#, kde-format
+#: src/apps/qml/ChatView.qml:67
+#, fuzzy, kde-format
+#| msgid "Enter a message"
+msgctxt "@info:placeholder"
 msgid "Enter a message"
 msgstr "Digita un messaggio"
 
-#: src/apps/qml/ChatView.qml:81
+#: src/apps/qml/ChatView.qml:82
 #, kde-format
-msgid "Waiting for interface"
-msgstr "In attesa dell'interfaccia"
+msgctxt "@info:placeholder"
+msgid "Interface Not Found"
+msgstr ""
+
+#: src/apps/qml/ChatView.qml:83
+#, kde-format
+msgid ""
+"Make sure Ollama is installed and is running. Visit the project's website "
+"for setup information."
+msgstr ""
+
+#: src/apps/qml/ChatView.qml:86
+#, kde-format
+msgctxt "@action:button"
+msgid "Visit Website"
+msgstr ""
 
 #: src/apps/qml/GeneralSettingsPage.qml:13 src/apps/qml/SettingsPage.qml:20
 #, kde-format
 msgid "General"
 msgstr "Generale"
 
-#: src/apps/qml/GeneralSettingsPage.qml:16
-#, kde-format
-msgid "General settings"
-msgstr "Impostazioni generali"
-
-#: src/apps/qml/GeneralSettingsPage.qml:22
+#: src/apps/qml/GeneralSettingsPage.qml:19
 #, kde-format
 msgid "Show in System Tray"
 msgstr "Mostra nel vassoio di sistema"
 
-#: src/apps/qml/LLMSettingsPage.qml:13
+#: src/apps/qml/LLMSettingsPage.qml:13 src/apps/qml/SettingsPage.qml:25
 #, kde-format
-msgid "LLM settings"
-msgstr "Impostazioni LLM"
+msgid "LLM"
+msgstr "LLM"
 
-#: src/apps/qml/LLMSettingsPage.qml:22
-#, kde-format
-msgid "Model settings"
-msgstr "Impostazioni del modello"
-
-#: src/apps/qml/LLMSettingsPage.qml:29
+#: src/apps/qml/LLMSettingsPage.qml:26
 #, kde-format
 msgid "LLM model"
 msgstr "Modello LLM"
 
-#: src/apps/qml/LLMSettingsPage.qml:43
+#: src/apps/qml/LLMSettingsPage.qml:40
 #, kde-format
 msgid "System prompt"
 msgstr "Prompt di sistema"
 
-#: src/apps/qml/LLMSettingsPage.qml:55
+#: src/apps/qml/LLMSettingsPage.qml:52
 #, kde-format
 msgid "No system prompt"
 msgstr "Nessun prompt di sistema"
 
-#: src/apps/qml/LLMSettingsPage.qml:72
+#: src/apps/qml/LLMSettingsPage.qml:69
 #, kde-format
 msgid "Show debug information"
 msgstr "Mostra le informazioni di debug"
@@ -146,30 +158,15 @@ msgstr "Alpaka"
 msgid "%1 tok/s · %2 tokens · %3 seconds"
 msgstr "%1 tok/s · %2 token · %3 secondi"
 
-#: src/apps/qml/OllamaSettingsPage.qml:13
-#, kde-format
-msgid "Ollama settings"
-msgstr "Impostazioni di Ollama"
-
-#: src/apps/qml/OllamaSettingsPage.qml:20
-#, kde-format
-msgid "Ollama server settings"
-msgstr "Impostazioni del server Ollama"
-
-#: src/apps/qml/OllamaSettingsPage.qml:27
-#, kde-format
-msgid "Ollama server URL"
-msgstr "URL del server Ollama"
-
-#: src/apps/qml/SettingsPage.qml:25
-#, kde-format
-msgid "LLM"
-msgstr "LLM"
-
-#: src/apps/qml/SettingsPage.qml:30
+#: src/apps/qml/OllamaSettingsPage.qml:13 src/apps/qml/SettingsPage.qml:30
 #, kde-format
 msgid "Ollama"
 msgstr "Ollama"
+
+#: src/apps/qml/OllamaSettingsPage.qml:25
+#, kde-format
+msgid "Ollama server URL"
+msgstr "URL del server Ollama"
 
 #: src/core/KLLMInterface.cpp:116
 #, kde-format
@@ -192,6 +189,24 @@ msgstr "Configura Ollama"
 #, kde-format
 msgid "Models:"
 msgstr "Modelli:"
+
+#~ msgid "Waiting for interface"
+#~ msgstr "In attesa dell'interfaccia"
+
+#~ msgid "General settings"
+#~ msgstr "Impostazioni generali"
+
+#~ msgid "LLM settings"
+#~ msgstr "Impostazioni LLM"
+
+#~ msgid "Model settings"
+#~ msgstr "Impostazioni del modello"
+
+#~ msgid "Ollama settings"
+#~ msgstr "Impostazioni di Ollama"
+
+#~ msgid "Ollama server settings"
+#~ msgstr "Impostazioni del server Ollama"
 
 #~ msgid "%1 tok/s"
 #~ msgstr "%1 tok/s"

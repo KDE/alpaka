@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdeorg\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-08-13 00:41+0000\n"
+"POT-Creation-Date: 2024-11-01 00:42+0000\n"
 "PO-Revision-Date: 2024-04-22 15:58\n"
 "Last-Translator: \n"
 "Language-Team: Chinese Simplified\n"
@@ -66,71 +66,83 @@ msgid "Your emails"
 msgstr "您的电子邮箱"
 
 #: src/apps/qml/ChatView.qml:29
-#, kde-format
-msgid "Start over"
+#, fuzzy, kde-format
+#| msgid "Start over"
+msgctxt "@action:intoolbar"
+msgid "Start Over"
 msgstr "重新开始"
 
-#: src/apps/qml/ChatView.qml:34
-#, kde-format
+#: src/apps/qml/ChatView.qml:35
+#, fuzzy, kde-format
+#| msgid "Settings"
+msgctxt "@action:intoolbar"
 msgid "Settings"
 msgstr "设置"
 
-#: src/apps/qml/ChatView.qml:48
-#, kde-format
-msgid "Try again"
+#: src/apps/qml/ChatView.qml:49
+#, fuzzy, kde-format
+#| msgid "Try again"
+msgctxt "@action:button"
+msgid "Try Again"
 msgstr "再试一次"
 
-#: src/apps/qml/ChatView.qml:66
-#, kde-format
+#: src/apps/qml/ChatView.qml:67
+#, fuzzy, kde-format
+#| msgid "Enter a message"
+msgctxt "@info:placeholder"
 msgid "Enter a message"
 msgstr "输入信息"
 
-#: src/apps/qml/ChatView.qml:81
+#: src/apps/qml/ChatView.qml:82
 #, kde-format
-msgid "Waiting for interface"
-msgstr "正在等待设备"
+msgctxt "@info:placeholder"
+msgid "Interface Not Found"
+msgstr ""
+
+#: src/apps/qml/ChatView.qml:83
+#, kde-format
+msgid ""
+"Make sure Ollama is installed and is running. Visit the project's website "
+"for setup information."
+msgstr ""
+
+#: src/apps/qml/ChatView.qml:86
+#, kde-format
+msgctxt "@action:button"
+msgid "Visit Website"
+msgstr ""
 
 #: src/apps/qml/GeneralSettingsPage.qml:13 src/apps/qml/SettingsPage.qml:20
 #, kde-format
 msgid "General"
 msgstr "通用"
 
-#: src/apps/qml/GeneralSettingsPage.qml:16
-#, kde-format
-msgid "General settings"
-msgstr "通用设置"
-
-#: src/apps/qml/GeneralSettingsPage.qml:22
+#: src/apps/qml/GeneralSettingsPage.qml:19
 #, kde-format
 msgid "Show in System Tray"
 msgstr "在系统托盘中显示"
 
-#: src/apps/qml/LLMSettingsPage.qml:13
+#: src/apps/qml/LLMSettingsPage.qml:13 src/apps/qml/SettingsPage.qml:25
 #, kde-format
-msgid "LLM settings"
-msgstr "LLM 设置"
+msgid "LLM"
+msgstr "LLM"
 
-#: src/apps/qml/LLMSettingsPage.qml:22
-#, kde-format
-msgid "Model settings"
-msgstr "模型设置"
-
-#: src/apps/qml/LLMSettingsPage.qml:29
+#: src/apps/qml/LLMSettingsPage.qml:26
 #, kde-format
 msgid "LLM model"
 msgstr "LLM 模型"
 
-#: src/apps/qml/LLMSettingsPage.qml:43
+#: src/apps/qml/LLMSettingsPage.qml:40
 #, kde-format
 msgid "System prompt"
 msgstr "系统提示"
 
-#: src/apps/qml/LLMSettingsPage.qml:55
+#: src/apps/qml/LLMSettingsPage.qml:52
 #, kde-format
 msgid "No system prompt"
 msgstr "没有系统提示"
 
-#: src/apps/qml/LLMSettingsPage.qml:72
+#: src/apps/qml/LLMSettingsPage.qml:69
 #, kde-format
 msgid "Show debug information"
 msgstr "显示调试信息"
@@ -146,30 +158,15 @@ msgstr ""
 msgid "%1 tok/s · %2 tokens · %3 seconds"
 msgstr ""
 
-#: src/apps/qml/OllamaSettingsPage.qml:13
-#, kde-format
-msgid "Ollama settings"
-msgstr "Ollama设置"
-
-#: src/apps/qml/OllamaSettingsPage.qml:20
-#, kde-format
-msgid "Ollama server settings"
-msgstr "Ollama服务器设置"
-
-#: src/apps/qml/OllamaSettingsPage.qml:27
-#, kde-format
-msgid "Ollama server URL"
-msgstr "Ollama 服务器 URL"
-
-#: src/apps/qml/SettingsPage.qml:25
-#, kde-format
-msgid "LLM"
-msgstr "LLM"
-
-#: src/apps/qml/SettingsPage.qml:30
+#: src/apps/qml/OllamaSettingsPage.qml:13 src/apps/qml/SettingsPage.qml:30
 #, kde-format
 msgid "Ollama"
 msgstr ""
+
+#: src/apps/qml/OllamaSettingsPage.qml:25
+#, kde-format
+msgid "Ollama server URL"
+msgstr "Ollama 服务器 URL"
 
 #: src/core/KLLMInterface.cpp:116
 #, kde-format
@@ -192,3 +189,21 @@ msgstr "配置 Ollama"
 #, kde-format
 msgid "Models:"
 msgstr "模型："
+
+#~ msgid "Waiting for interface"
+#~ msgstr "正在等待设备"
+
+#~ msgid "General settings"
+#~ msgstr "通用设置"
+
+#~ msgid "LLM settings"
+#~ msgstr "LLM 设置"
+
+#~ msgid "Model settings"
+#~ msgstr "模型设置"
+
+#~ msgid "Ollama settings"
+#~ msgstr "Ollama设置"
+
+#~ msgid "Ollama server settings"
+#~ msgstr "Ollama服务器设置"
