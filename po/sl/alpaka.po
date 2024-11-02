@@ -4,7 +4,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-11-01 00:42+0000\n"
-"PO-Revision-Date: 2024-02-24 08:28+0100\n"
+"PO-Revision-Date: 2024-11-01 07:12+0100\n"
 "Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
 "Language: sl\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n%100==1 ? 1 : n%100==2 ? 2 : n%100==3 || n"
 "%100==4 ? 3 : 0);\n"
-"X-Generator: Poedit 3.4.2\n"
+"X-Generator: Poedit 3.5\n"
 
 #: src/apps/main.cpp:45 src/apps/qml/ChatView.qml:15
 #: src/apps/qml/MessageDelegate.qml:64
@@ -64,29 +64,25 @@ msgid "Your emails"
 msgstr "matjaz.jeran@amis.net"
 
 #: src/apps/qml/ChatView.qml:29
-#, fuzzy, kde-format
-#| msgid "Start over"
+#, kde-format
 msgctxt "@action:intoolbar"
 msgid "Start Over"
 msgstr "Začni znova"
 
 #: src/apps/qml/ChatView.qml:35
-#, fuzzy, kde-format
-#| msgid "Settings"
+#, kde-format
 msgctxt "@action:intoolbar"
 msgid "Settings"
 msgstr "Nastavitve"
 
 #: src/apps/qml/ChatView.qml:49
-#, fuzzy, kde-format
-#| msgid "Try again"
+#, kde-format
 msgctxt "@action:button"
 msgid "Try Again"
 msgstr "Poskusi ponovno"
 
 #: src/apps/qml/ChatView.qml:67
-#, fuzzy, kde-format
-#| msgid "Enter a message"
+#, kde-format
 msgctxt "@info:placeholder"
 msgid "Enter a message"
 msgstr "Vnesite sporočilo"
@@ -95,7 +91,7 @@ msgstr "Vnesite sporočilo"
 #, kde-format
 msgctxt "@info:placeholder"
 msgid "Interface Not Found"
-msgstr ""
+msgstr "Ni najdenega vmesnika"
 
 #: src/apps/qml/ChatView.qml:83
 #, kde-format
@@ -103,12 +99,14 @@ msgid ""
 "Make sure Ollama is installed and is running. Visit the project's website "
 "for setup information."
 msgstr ""
+"Prepričajte se, da je Ollama nameščen in delujoč. Za informacije o "
+"nastavitvah obiščite spletno mesto projekta."
 
 #: src/apps/qml/ChatView.qml:86
 #, kde-format
 msgctxt "@action:button"
 msgid "Visit Website"
-msgstr ""
+msgstr "Obiščite spletno mesto"
 
 #: src/apps/qml/GeneralSettingsPage.qml:13 src/apps/qml/SettingsPage.qml:20
 #, kde-format

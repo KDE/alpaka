@@ -3,13 +3,13 @@
 # This file is distributed under the license LGPL version 2.1 or
 # version 3 or later versions approved by the membership of KDE e.V.
 #
-# SPDX-FileCopyrightText: 2023, 2024 Josep M. Ferrer <txemaq@gmail.com>
+# SPDX-FileCopyrightText: 2023, 2024 Josep M. Ferrer <txemaq@gmail.com>s
 msgid ""
 msgstr ""
 "Project-Id-Version: alpaka\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-11-01 00:42+0000\n"
-"PO-Revision-Date: 2024-02-25 08:51+0100\n"
+"PO-Revision-Date: 2024-11-01 10:04+0100\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 23.08.4\n"
+"X-Generator: Lokalize 22.12.3\n"
 
 #: src/apps/main.cpp:45 src/apps/qml/ChatView.qml:15
 #: src/apps/qml/MessageDelegate.qml:64
@@ -68,29 +68,25 @@ msgid "Your emails"
 msgstr "txemaq@gmail.com"
 
 #: src/apps/qml/ChatView.qml:29
-#, fuzzy, kde-format
-#| msgid "Start over"
+#, kde-format
 msgctxt "@action:intoolbar"
 msgid "Start Over"
 msgstr "Torna a començar"
 
 #: src/apps/qml/ChatView.qml:35
-#, fuzzy, kde-format
-#| msgid "Settings"
+#, kde-format
 msgctxt "@action:intoolbar"
 msgid "Settings"
 msgstr "Configuració"
 
 #: src/apps/qml/ChatView.qml:49
-#, fuzzy, kde-format
-#| msgid "Try again"
+#, kde-format
 msgctxt "@action:button"
 msgid "Try Again"
 msgstr "Torneu-ho a intentar"
 
 #: src/apps/qml/ChatView.qml:67
-#, fuzzy, kde-format
-#| msgid "Enter a message"
+#, kde-format
 msgctxt "@info:placeholder"
 msgid "Enter a message"
 msgstr "Introduïu un missatge"
@@ -99,7 +95,7 @@ msgstr "Introduïu un missatge"
 #, kde-format
 msgctxt "@info:placeholder"
 msgid "Interface Not Found"
-msgstr ""
+msgstr "No s'ha trobat la interfície"
 
 #: src/apps/qml/ChatView.qml:83
 #, kde-format
@@ -107,12 +103,14 @@ msgid ""
 "Make sure Ollama is installed and is running. Visit the project's website "
 "for setup information."
 msgstr ""
+"Assegureu-vos que l'Ollama estigui instal·lat i executant-se. Visiteu el "
+"lloc web del projecte per a la informació de configuració."
 
 #: src/apps/qml/ChatView.qml:86
 #, kde-format
 msgctxt "@action:button"
 msgid "Visit Website"
-msgstr ""
+msgstr "Visiteu el lloc web"
 
 #: src/apps/qml/GeneralSettingsPage.qml:13 src/apps/qml/SettingsPage.qml:20
 #, kde-format

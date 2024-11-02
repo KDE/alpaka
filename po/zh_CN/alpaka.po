@@ -66,32 +66,28 @@ msgid "Your emails"
 msgstr "您的电子邮箱"
 
 #: src/apps/qml/ChatView.qml:29
-#, fuzzy, kde-format
-#| msgid "Start over"
+#, kde-format
 msgctxt "@action:intoolbar"
 msgid "Start Over"
-msgstr "重新开始"
+msgstr ""
 
 #: src/apps/qml/ChatView.qml:35
-#, fuzzy, kde-format
-#| msgid "Settings"
+#, kde-format
 msgctxt "@action:intoolbar"
 msgid "Settings"
-msgstr "设置"
+msgstr ""
 
 #: src/apps/qml/ChatView.qml:49
-#, fuzzy, kde-format
-#| msgid "Try again"
+#, kde-format
 msgctxt "@action:button"
 msgid "Try Again"
-msgstr "再试一次"
+msgstr ""
 
 #: src/apps/qml/ChatView.qml:67
-#, fuzzy, kde-format
-#| msgid "Enter a message"
+#, kde-format
 msgctxt "@info:placeholder"
 msgid "Enter a message"
-msgstr "输入信息"
+msgstr ""
 
 #: src/apps/qml/ChatView.qml:82
 #, kde-format
@@ -189,21 +185,3 @@ msgstr "配置 Ollama"
 #, kde-format
 msgid "Models:"
 msgstr "模型："
-
-#~ msgid "Waiting for interface"
-#~ msgstr "正在等待设备"
-
-#~ msgid "General settings"
-#~ msgstr "通用设置"
-
-#~ msgid "LLM settings"
-#~ msgstr "LLM 设置"
-
-#~ msgid "Model settings"
-#~ msgstr "模型设置"
-
-#~ msgid "Ollama settings"
-#~ msgstr "Ollama设置"
-
-#~ msgid "Ollama server settings"
-#~ msgstr "Ollama服务器设置"
