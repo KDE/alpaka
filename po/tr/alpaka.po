@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: alpaka\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-11-01 00:42+0000\n"
-"PO-Revision-Date: 2024-02-24 10:09+0300\n"
+"PO-Revision-Date: 2024-11-02 17:01+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Lokalize 24.04.70\n"
+"X-Generator: Lokalize 24.08.2\n"
 
 #: src/apps/main.cpp:45 src/apps/qml/ChatView.qml:15
 #: src/apps/qml/MessageDelegate.qml:64
@@ -66,38 +66,34 @@ msgid "Your emails"
 msgstr "emir_sari@icloud.com"
 
 #: src/apps/qml/ChatView.qml:29
-#, fuzzy, kde-format
-#| msgid "Start over"
+#, kde-format
 msgctxt "@action:intoolbar"
 msgid "Start Over"
-msgstr "Yeniden başla"
+msgstr "Yeniden Başla"
 
 #: src/apps/qml/ChatView.qml:35
-#, fuzzy, kde-format
-#| msgid "Settings"
+#, kde-format
 msgctxt "@action:intoolbar"
 msgid "Settings"
 msgstr "Ayarlar"
 
 #: src/apps/qml/ChatView.qml:49
-#, fuzzy, kde-format
-#| msgid "Try again"
+#, kde-format
 msgctxt "@action:button"
 msgid "Try Again"
-msgstr "Yeniden dene"
+msgstr "Yeniden Dene"
 
 #: src/apps/qml/ChatView.qml:67
-#, fuzzy, kde-format
-#| msgid "Enter a message"
+#, kde-format
 msgctxt "@info:placeholder"
 msgid "Enter a message"
-msgstr "Bir ileti gir"
+msgstr "Bir ileti gir…"
 
 #: src/apps/qml/ChatView.qml:82
 #, kde-format
 msgctxt "@info:placeholder"
 msgid "Interface Not Found"
-msgstr ""
+msgstr "Arayüz bulunamadı."
 
 #: src/apps/qml/ChatView.qml:83
 #, kde-format
@@ -105,12 +101,14 @@ msgid ""
 "Make sure Ollama is installed and is running. Visit the project's website "
 "for setup information."
 msgstr ""
+"Ollama’nın kurulu ve çalışıyor olduğundan emin olun. Kurulum bilgisi için "
+"projenin web sayfasını ziyaret edin."
 
 #: src/apps/qml/ChatView.qml:86
 #, kde-format
 msgctxt "@action:button"
 msgid "Visit Website"
-msgstr ""
+msgstr "Web Sayfasını Ziyaret Et"
 
 #: src/apps/qml/GeneralSettingsPage.qml:13 src/apps/qml/SettingsPage.qml:20
 #, kde-format
@@ -189,24 +187,3 @@ msgstr "Ollama’yı Yapılandır"
 #, kde-format
 msgid "Models:"
 msgstr "Modeller:"
-
-#~ msgid "Waiting for interface"
-#~ msgstr "Arayüz bekleniyor"
-
-#~ msgid "General settings"
-#~ msgstr "Genel Ayarlar"
-
-#~ msgid "LLM settings"
-#~ msgstr "LLM Ayarları"
-
-#~ msgid "Model settings"
-#~ msgstr "Model Ayarları"
-
-#~ msgid "Ollama settings"
-#~ msgstr "Ollama Ayarları"
-
-#~ msgid "Ollama server settings"
-#~ msgstr "Ollama Sunucusu Ayarları"
-
-#~ msgid "%1 tok/s"
-#~ msgstr "%1 jeton/sn"
