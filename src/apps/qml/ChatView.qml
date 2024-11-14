@@ -8,7 +8,6 @@ import QtQuick.Controls as Controls
 import QtQuick.Layouts
 import org.kde.kirigami as Kirigami
 import org.kde.coreaddons as KCoreAddons
-import org.kde.kirigamiaddons.components as KirigamiComponents
 import org.kde.alpaka
 
 Kirigami.ScrollablePage {
@@ -38,12 +37,13 @@ Kirigami.ScrollablePage {
         }
     ]
 
-    header: KirigamiComponents.Banner {
+    header: Kirigami.InlineMessage {
         id: errorBanner
 
         visible: chat.llm.hasError
         type: Kirigami.MessageType.Error
         width: parent.width
+        position: Kirigami.InlineMessage.Position.Header
         actions: [
             Kirigami.Action {
                 text: i18nc("@action:button", "Try Again")
