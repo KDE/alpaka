@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: alpaka\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-11-01 00:42+0000\n"
+"POT-Creation-Date: 2024-11-16 00:43+0000\n"
 "PO-Revision-Date: 2024-02-24 16:47+0100\n"
 "Last-Translator: Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>\n"
 "Language-Team: Polish <kde-i18n-doc@kde.org>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2);\n"
 
-#: src/apps/main.cpp:45 src/apps/qml/ChatView.qml:15
+#: src/apps/main.cpp:45 src/apps/qml/ChatView.qml:14
 #: src/apps/qml/MessageDelegate.qml:64
 #, kde-format
 msgid "Alpaka"
@@ -65,14 +65,14 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "lukasz.wojnilowicz@gmail.com"
 
-#: src/apps/qml/ChatView.qml:29
+#: src/apps/qml/ChatView.qml:28
 #, fuzzy, kde-format
 #| msgid "Start over"
 msgctxt "@action:intoolbar"
 msgid "Start Over"
 msgstr "Zacznij od początku"
 
-#: src/apps/qml/ChatView.qml:35
+#: src/apps/qml/ChatView.qml:34
 #, fuzzy, kde-format
 #| msgid "Settings"
 msgctxt "@action:intoolbar"

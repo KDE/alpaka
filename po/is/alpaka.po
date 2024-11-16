@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: alpaka\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-11-01 00:42+0000\n"
+"POT-Creation-Date: 2024-11-16 00:43+0000\n"
 "PO-Revision-Date: 2024-03-21 17:04+0000\n"
 "Last-Translator: Guðmundur Erlingsson <gudmundure@gmail.com>\n"
 "Language-Team: Icelandic <kde-i18n-doc@kde.org>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Plural-Forms: Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Lokalize 23.08.3\n"
 
-#: src/apps/main.cpp:45 src/apps/qml/ChatView.qml:15
+#: src/apps/main.cpp:45 src/apps/qml/ChatView.qml:14
 #: src/apps/qml/MessageDelegate.qml:64
 #, kde-format
 msgid "Alpaka"
@@ -65,14 +65,14 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "gudmundure@gmail.com"
 
-#: src/apps/qml/ChatView.qml:29
+#: src/apps/qml/ChatView.qml:28
 #, fuzzy, kde-format
 #| msgid "Start over"
 msgctxt "@action:intoolbar"
 msgid "Start Over"
 msgstr "Byrja aftur"
 
-#: src/apps/qml/ChatView.qml:35
+#: src/apps/qml/ChatView.qml:34
 #, fuzzy, kde-format
 #| msgid "Settings"
 msgctxt "@action:intoolbar"
