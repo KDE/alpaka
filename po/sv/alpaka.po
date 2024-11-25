@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: alpaka\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-11-16 00:43+0000\n"
-"PO-Revision-Date: 2024-06-21 15:11+0200\n"
+"PO-Revision-Date: 2024-11-24 17:43+0100\n"
 "Last-Translator: Stefan Asserhäll <stefan.asserhall@gmail.com>\n"
 "Language-Team: Swedish <kde-i18n-doc@kde.org>\n"
 "Language: sv\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 23.08.5\n"
+"X-Generator: Lokalize 24.08.3\n"
 
 #: src/apps/main.cpp:45 src/apps/qml/ChatView.qml:14
 #: src/apps/qml/MessageDelegate.qml:64
@@ -66,29 +66,25 @@ msgid "Your emails"
 msgstr "stefan.asserhall@gmail.com"
 
 #: src/apps/qml/ChatView.qml:28
-#, fuzzy, kde-format
-#| msgid "Start over"
+#, kde-format
 msgctxt "@action:intoolbar"
 msgid "Start Over"
 msgstr "Börja om"
 
 #: src/apps/qml/ChatView.qml:34
-#, fuzzy, kde-format
-#| msgid "Settings"
+#, kde-format
 msgctxt "@action:intoolbar"
 msgid "Settings"
 msgstr "Inställningar"
 
 #: src/apps/qml/ChatView.qml:49
-#, fuzzy, kde-format
-#| msgid "Try again"
+#, kde-format
 msgctxt "@action:button"
 msgid "Try Again"
 msgstr "Försök igen"
 
 #: src/apps/qml/ChatView.qml:67
-#, fuzzy, kde-format
-#| msgid "Enter a message"
+#, kde-format
 msgctxt "@info:placeholder"
 msgid "Enter a message"
 msgstr "Skriv in ett meddelande"
@@ -97,7 +93,7 @@ msgstr "Skriv in ett meddelande"
 #, kde-format
 msgctxt "@info:placeholder"
 msgid "Interface Not Found"
-msgstr ""
+msgstr "Gränssnitt hittades inte"
 
 #: src/apps/qml/ChatView.qml:83
 #, kde-format
@@ -105,12 +101,14 @@ msgid ""
 "Make sure Ollama is installed and is running. Visit the project's website "
 "for setup information."
 msgstr ""
+"Säkerställ att Ollama är installerat och körs. Besök projektets webbplats "
+"för installationsinformation."
 
 #: src/apps/qml/ChatView.qml:86
 #, kde-format
 msgctxt "@action:button"
 msgid "Visit Website"
-msgstr ""
+msgstr "Besök webbplats"
 
 #: src/apps/qml/GeneralSettingsPage.qml:13 src/apps/qml/SettingsPage.qml:20
 #, kde-format
