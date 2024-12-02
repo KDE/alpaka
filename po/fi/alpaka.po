@@ -1,13 +1,13 @@
-# Copyright (C) YEAR This file is copyright:
+# Copyright (C) 2024 This file is copyright:
 # This file is distributed under the same license as the alpaka package.
-# Tommi Nieminen <translator@legisign.org>, 2023, 2024.
+# SPDX-FileCopyrightText: 2023, 2024 Tommi Nieminen <translator@legisign.org>
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: alpaka\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-11-16 00:43+0000\n"
-"PO-Revision-Date: 2024-03-11 15:13+0200\n"
+"PO-Revision-Date: 2024-11-17 17:13+0200\n"
 "Last-Translator: Tommi Nieminen <translator@legisign.org>\n"
 "Language-Team: Finnish <kde-i18n-doc@kde.org>\n"
 "Language: fi\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 22.12.3\n"
+"X-Generator: Lokalize 23.08.5\n"
 
 #: src/apps/main.cpp:45 src/apps/qml/ChatView.qml:14
 #: src/apps/qml/MessageDelegate.qml:64
@@ -66,29 +66,25 @@ msgid "Your emails"
 msgstr "translator@legisign.org"
 
 #: src/apps/qml/ChatView.qml:28
-#, fuzzy, kde-format
-#| msgid "Start over"
+#, kde-format
 msgctxt "@action:intoolbar"
 msgid "Start Over"
 msgstr "Aloita alusta"
 
 #: src/apps/qml/ChatView.qml:34
-#, fuzzy, kde-format
-#| msgid "Settings"
+#, kde-format
 msgctxt "@action:intoolbar"
 msgid "Settings"
 msgstr "Asetukset"
 
 #: src/apps/qml/ChatView.qml:49
-#, fuzzy, kde-format
-#| msgid "Try again"
+#, kde-format
 msgctxt "@action:button"
 msgid "Try Again"
 msgstr "Yritä uudelleen"
 
 #: src/apps/qml/ChatView.qml:67
-#, fuzzy, kde-format
-#| msgid "Enter a message"
+#, kde-format
 msgctxt "@info:placeholder"
 msgid "Enter a message"
 msgstr "Kirjoita viesti"
@@ -97,7 +93,7 @@ msgstr "Kirjoita viesti"
 #, kde-format
 msgctxt "@info:placeholder"
 msgid "Interface Not Found"
-msgstr ""
+msgstr "Liitäntää ei löytynyt"
 
 #: src/apps/qml/ChatView.qml:83
 #, kde-format
@@ -105,12 +101,14 @@ msgid ""
 "Make sure Ollama is installed and is running. Visit the project's website "
 "for setup information."
 msgstr ""
+"Varmista, että Ollama on asennettu ja käynnissä. Asetustietoa löytyy "
+"projektin sivustolta."
 
 #: src/apps/qml/ChatView.qml:86
 #, kde-format
 msgctxt "@action:button"
 msgid "Visit Website"
-msgstr ""
+msgstr "Käy sivustolla"
 
 #: src/apps/qml/GeneralSettingsPage.qml:13 src/apps/qml/SettingsPage.qml:20
 #, kde-format
@@ -171,7 +169,7 @@ msgstr "Ollama-palvelimen osoite"
 #: src/core/KLLMInterface.cpp:116
 #, kde-format
 msgid "Failed to connect to interface at %1: %2"
-msgstr "Yhteydenotto käyttöliityntään osoitteessa %1 epäonnistui: %2"
+msgstr "Yhteydenotto liitäntään osoitteessa %1 epäonnistui: %2"
 
 #. i18n
 #: src/widgets/KLLMActionMenu.cpp:14
