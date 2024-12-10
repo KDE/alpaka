@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: alpaka\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-11-16 00:43+0000\n"
-"PO-Revision-Date: 2024-02-24 21:42+0100\n"
+"PO-Revision-Date: 2024-12-09 22:36+0100\n"
 "Last-Translator: Shinjo Park <kde@peremen.name>\n"
 "Language-Team: Korean <kde-kr@kde.org>\n"
 "Language: ko\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Lokalize 23.08.1\n"
+"X-Generator: Lokalize 23.08.5\n"
 
 #: src/apps/main.cpp:45 src/apps/qml/ChatView.qml:14
 #: src/apps/qml/MessageDelegate.qml:64
@@ -66,29 +66,25 @@ msgid "Your emails"
 msgstr "kde@peremen.name"
 
 #: src/apps/qml/ChatView.qml:28
-#, fuzzy, kde-format
-#| msgid "Start over"
+#, kde-format
 msgctxt "@action:intoolbar"
 msgid "Start Over"
 msgstr "다시 시작"
 
 #: src/apps/qml/ChatView.qml:34
-#, fuzzy, kde-format
-#| msgid "Settings"
+#, kde-format
 msgctxt "@action:intoolbar"
 msgid "Settings"
 msgstr "설정"
 
 #: src/apps/qml/ChatView.qml:49
-#, fuzzy, kde-format
-#| msgid "Try again"
+#, kde-format
 msgctxt "@action:button"
 msgid "Try Again"
 msgstr "다시 시도"
 
 #: src/apps/qml/ChatView.qml:67
-#, fuzzy, kde-format
-#| msgid "Enter a message"
+#, kde-format
 msgctxt "@info:placeholder"
 msgid "Enter a message"
 msgstr "메시지 입력"
@@ -97,7 +93,7 @@ msgstr "메시지 입력"
 #, kde-format
 msgctxt "@info:placeholder"
 msgid "Interface Not Found"
-msgstr ""
+msgstr "인터페이스를 찾을 수 없음"
 
 #: src/apps/qml/ChatView.qml:83
 #, kde-format
@@ -105,12 +101,14 @@ msgid ""
 "Make sure Ollama is installed and is running. Visit the project's website "
 "for setup information."
 msgstr ""
+"Ollama가 설치되어 있고 실행 중인지 확인하십시오. 자세한 사항은 프로젝트 웹사"
+"이트를 참조하십시오."
 
 #: src/apps/qml/ChatView.qml:86
 #, kde-format
 msgctxt "@action:button"
 msgid "Visit Website"
-msgstr ""
+msgstr "웹사이트 방문"
 
 #: src/apps/qml/GeneralSettingsPage.qml:13 src/apps/qml/SettingsPage.qml:20
 #, kde-format
