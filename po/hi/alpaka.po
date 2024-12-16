@@ -1,4 +1,4 @@
-# Sanskrit translations for alpaka package.
+# Hindi translations for alpaka package.
 # Copyright (C) 2024 This file is copyright:
 # This file is distributed under the same license as the alpaka package.
 # Kali <EMAIL@ADDRESS>, 2024.
@@ -8,14 +8,13 @@ msgstr ""
 "Project-Id-Version: alpaka\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-11-16 00:43+0000\n"
-"PO-Revision-Date: 2024-12-13 19:09+0530\n"
+"PO-Revision-Date: 2024-12-15 17:36+0530\n"
 "Last-Translator: Kali <EMAIL@ADDRESS>\n"
-"Language-Team: Sanskrit\n"
-"Language: sa\n"
+"Language-Team: Hindi <fedora-trans-hi@redhat.com>\n"
+"Language: hi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n>2);\n"
 
 #: src/apps/main.cpp:45 src/apps/qml/ChatView.qml:14
 #: src/apps/qml/MessageDelegate.qml:64
@@ -26,7 +25,7 @@ msgstr "अल्पाका"
 #: src/apps/main.cpp:47
 #, kde-format
 msgid "Ollama client"
-msgstr "ओल्लामा ग्राहक"
+msgstr "ओलामा ग्राहक"
 
 #: src/apps/main.cpp:49
 #, kde-format
@@ -36,64 +35,64 @@ msgstr "© 2023 लोरेन बर्कहोल्डर"
 #: src/apps/main.cpp:50
 #, kde-format
 msgid "Loren Burkholder"
-msgstr "लोरेन् बर्कहोल्डर"
+msgstr "लोरेन बर्कहोल्डर"
 
 #: src/apps/main.cpp:50
 #, kde-format
 msgid "Maintainer"
-msgstr "परिपालकः"
+msgstr "मेंटेनर"
 
 #: src/apps/main.cpp:51
 #, kde-format
 msgid "Laurent Montel"
-msgstr "लॉरेण्ट् मोंटेल्"
+msgstr "लॉरेंट मोंटेल"
 
 #: src/apps/main.cpp:51
 #, kde-format
 msgid "Developer"
-msgstr "विकासकः"
+msgstr "डेवलपर"
 
 #: src/apps/main.cpp:52
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr "भवतः नामानि"
+msgstr "तुम्हारे नाम"
 
 #: src/apps/main.cpp:52
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr "भवतः ईमेलपत्राणि"
+msgstr "आपके ईमेल"
 
 #: src/apps/qml/ChatView.qml:28
 #, kde-format
 msgctxt "@action:intoolbar"
 msgid "Start Over"
-msgstr "पुनः आरभत"
+msgstr "प्रारंभ करें"
 
 #: src/apps/qml/ChatView.qml:34
 #, kde-format
 msgctxt "@action:intoolbar"
 msgid "Settings"
-msgstr "सेटिंग्स्"
+msgstr "सेटिंग्स"
 
 #: src/apps/qml/ChatView.qml:49
 #, kde-format
 msgctxt "@action:button"
 msgid "Try Again"
-msgstr "पुनः प्रयासं कुर्वन्तु"
+msgstr "पुनः प्रयास करें"
 
 #: src/apps/qml/ChatView.qml:67
 #, kde-format
 msgctxt "@info:placeholder"
 msgid "Enter a message"
-msgstr "सन्देशं प्रविशतु"
+msgstr "संदेश दर्ज करें"
 
 #: src/apps/qml/ChatView.qml:82
 #, kde-format
 msgctxt "@info:placeholder"
 msgid "Interface Not Found"
-msgstr "अन्तरफलकं न लब्धम्"
+msgstr "इंटरफ़ेस नहीं मिला"
 
 #: src/apps/qml/ChatView.qml:83
 #, kde-format
@@ -101,14 +100,14 @@ msgid ""
 "Make sure Ollama is installed and is running. Visit the project's website "
 "for setup information."
 msgstr ""
-"Ollama संस्थापितम् अस्ति, चालितं च इति सुनिश्चितं कुर्वन्तु। सेटअप-सूचनार्थं परियोजनायाः "
-"जालपुटं पश्यन्तु ।"
+"सुनिश्चित करें कि ओलामा स्थापित है और चल रहा है। सेटअप जानकारी के लिए प्रोजेक्ट की "
+"वेबसाइट पर जाएँ।"
 
 #: src/apps/qml/ChatView.qml:86
 #, kde-format
 msgctxt "@action:button"
 msgid "Visit Website"
-msgstr "वेबसाइट् पश्यन्तु"
+msgstr "बेवसाइट देखना"
 
 #: src/apps/qml/GeneralSettingsPage.qml:13 src/apps/qml/SettingsPage.qml:20
 #, kde-format
@@ -118,12 +117,12 @@ msgstr "सामान्य"
 #: src/apps/qml/GeneralSettingsPage.qml:19
 #, kde-format
 msgid "Show in System Tray"
-msgstr "System Tray इत्यत्र दर्शयतु"
+msgstr "सिस्टम ट्रे में दिखाएँ"
 
 #: src/apps/qml/LLMSettingsPage.qml:13 src/apps/qml/SettingsPage.qml:25
 #, kde-format
 msgid "LLM"
-msgstr "एल.एल.एम"
+msgstr "एलएलएम"
 
 #: src/apps/qml/LLMSettingsPage.qml:26
 #, kde-format
@@ -133,17 +132,17 @@ msgstr "एलएलएम मॉडल"
 #: src/apps/qml/LLMSettingsPage.qml:40
 #, kde-format
 msgid "System prompt"
-msgstr "सिस्टम् प्रॉम्प्ट्"
+msgstr "सिस्टम प्रॉम्प्ट"
 
 #: src/apps/qml/LLMSettingsPage.qml:52
 #, kde-format
 msgid "No system prompt"
-msgstr "न सिस्टम् प्रॉम्प्ट्"
+msgstr "कोई सिस्टम प्रॉम्प्ट नहीं"
 
 #: src/apps/qml/LLMSettingsPage.qml:69
 #, kde-format
 msgid "Show debug information"
-msgstr "त्रुटिनिवारणसूचना दर्शयतु"
+msgstr "डीबग जानकारी दिखाएं"
 
 #: src/apps/qml/main.qml:17
 #, kde-format
@@ -154,12 +153,12 @@ msgstr "अल्पाका"
 #: src/apps/qml/MessageDelegate.qml:101
 #, kde-format
 msgid "%1 tok/s · %2 tokens · %3 seconds"
-msgstr "%1 tok/s · %2 टोकन · %3 सेकण्ड्"
+msgstr "%1 टोक/सेकेंड · %2 टोकन · %3 सेकंड"
 
 #: src/apps/qml/OllamaSettingsPage.qml:13 src/apps/qml/SettingsPage.qml:30
 #, kde-format
 msgid "Ollama"
-msgstr "भवेयुः"
+msgstr "होना"
 
 #: src/apps/qml/OllamaSettingsPage.qml:25
 #, kde-format
@@ -169,21 +168,21 @@ msgstr "ओल्लामा सर्वर यूआरएल"
 #: src/core/KLLMInterface.cpp:116
 #, kde-format
 msgid "Failed to connect to interface at %1: %2"
-msgstr "%1: %2 इत्यत्र अन्तरफलकेन सह संयोजितुं असफलम्"
+msgstr "%1 पर इंटरफ़ेस से कनेक्ट करने में विफल: %2"
 
 #. i18n
 #: src/widgets/KLLMActionMenu.cpp:14
 #, kde-format
 msgid "Info"
-msgstr "Info"
+msgstr "जानकारी"
 
 #: src/widgets/KLLMConfigureDialog.cpp:17
 #, kde-format
 msgctxt "@title:window"
 msgid "Configure Ollama"
-msgstr "ओल्लामा विन्यस्तं कुर्वन्तु"
+msgstr "ओलामा को कॉन्फ़िगर करें"
 
 #: src/widgets/KLLMConfigureWidget.cpp:25
 #, kde-format
 msgid "Models:"
-msgstr "आदर्शाः : १."
+msgstr "मॉडल:"
