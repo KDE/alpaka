@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: alpaka\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-11-16 00:43+0000\n"
-"PO-Revision-Date: 2024-02-24 21:13+0100\n"
+"PO-Revision-Date: 2024-12-26 21:43+0100\n"
 "Last-Translator: Oliver Kellogg <olivermkellogg@gmail.com>\n"
 "Language-Team: Esperanto <kde-i18n-eo@kde.org>\n"
 "Language: eo\n"
@@ -66,29 +66,25 @@ msgid "Your emails"
 msgstr "olivermkellogg@gmail.com"
 
 #: src/apps/qml/ChatView.qml:28
-#, fuzzy, kde-format
-#| msgid "Start over"
+#, kde-format
 msgctxt "@action:intoolbar"
 msgid "Start Over"
 msgstr "Rekomenci"
 
 #: src/apps/qml/ChatView.qml:34
-#, fuzzy, kde-format
-#| msgid "Settings"
+#, kde-format
 msgctxt "@action:intoolbar"
 msgid "Settings"
 msgstr "Agordoj"
 
 #: src/apps/qml/ChatView.qml:49
-#, fuzzy, kde-format
-#| msgid "Try again"
+#, kde-format
 msgctxt "@action:button"
 msgid "Try Again"
 msgstr "Reprovi"
 
 #: src/apps/qml/ChatView.qml:67
-#, fuzzy, kde-format
-#| msgid "Enter a message"
+#, kde-format
 msgctxt "@info:placeholder"
 msgid "Enter a message"
 msgstr "Enigu mesaĝon"
@@ -97,7 +93,7 @@ msgstr "Enigu mesaĝon"
 #, kde-format
 msgctxt "@info:placeholder"
 msgid "Interface Not Found"
-msgstr ""
+msgstr "Interfaco Ne Trovita"
 
 #: src/apps/qml/ChatView.qml:83
 #, kde-format
@@ -110,7 +106,7 @@ msgstr ""
 #, kde-format
 msgctxt "@action:button"
 msgid "Visit Website"
-msgstr ""
+msgstr "Viziti Retejon"
 
 #: src/apps/qml/GeneralSettingsPage.qml:13 src/apps/qml/SettingsPage.qml:20
 #, kde-format
@@ -189,21 +185,3 @@ msgstr "Agordi Ollama"
 #, kde-format
 msgid "Models:"
 msgstr "Modeloj:"
-
-#~ msgid "Waiting for interface"
-#~ msgstr "Atendante pri interfaco"
-
-#~ msgid "General settings"
-#~ msgstr "Ĝeneralaj agordoj"
-
-#~ msgid "LLM settings"
-#~ msgstr "LLM-agordoj"
-
-#~ msgid "Model settings"
-#~ msgstr "Model-agordoj"
-
-#~ msgid "Ollama settings"
-#~ msgstr "Ollama-agordoj"
-
-#~ msgid "Ollama server settings"
-#~ msgstr "Ollama-servilagordoj"
