@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: alpaka\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-11-16 00:43+0000\n"
+"POT-Creation-Date: 2025-01-13 00:43+0000\n"
 "PO-Revision-Date: 2024-11-26 21:36+0900\n"
 "Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
 "Language-Team: Traditional Chinese <zh-l10n@lists.slat.org>\n"
@@ -29,8 +29,9 @@ msgid "Ollama client"
 msgstr "Ollama 用戶端"
 
 #: src/apps/main.cpp:49
-#, kde-format
-msgid "© 2023 Loren Burkholder"
+#, fuzzy, kde-format
+#| msgid "© 2023 Loren Burkholder"
+msgid "© 2023-2025 Loren Burkholder"
 msgstr "© 2023 Loren Burkholder"
 
 #: src/apps/main.cpp:50
