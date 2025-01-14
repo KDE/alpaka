@@ -1,16 +1,16 @@
 # Translation for alpaka.po to Euskara/Basque (eu).
-# Copyright (C) 2023-2024 This file is copyright:
+# Copyright (C) 2023-2025 This file is copyright:
 # This file is distributed under the same license as the alpaka package.
-# SPDX-FileCopyrightText: 2023, 2024 KDE euskaratzeko proiektuko arduraduna <xalba@ni.eus>
+# SPDX-FileCopyrightText: 2023, 2024, 2025 KDE euskaratzeko proiektuko arduraduna <xalba@ni.eus>
 #
 # Translators:
-# SPDX-FileCopyrightText: 2023, 2024 Iñigo Salvador Azurmendi <xalba@ni.eus>
+# SPDX-FileCopyrightText: 2023, 2024, 2025 Iñigo Salvador Azurmendi <xalba@ni.eus>
 msgid ""
 msgstr ""
 "Project-Id-Version: alpaka\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-01-13 00:43+0000\n"
-"PO-Revision-Date: 2024-11-05 21:53+0100\n"
+"PO-Revision-Date: 2025-01-13 15:54+0100\n"
 "Last-Translator: Iñigo Salvador Azurmendi <xalba@ni.eus>\n"
 "Language-Team: Basque <kde-i18n-eu@kde.org>\n"
 "Language: eu\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 24.08.2\n"
+"X-Generator: Lokalize 24.12.0\n"
 
 #: src/apps/main.cpp:45 src/apps/qml/ChatView.qml:14
 #: src/apps/qml/MessageDelegate.qml:64
@@ -32,10 +32,9 @@ msgid "Ollama client"
 msgstr "Ollama client"
 
 #: src/apps/main.cpp:49
-#, fuzzy, kde-format
-#| msgid "© 2023 Loren Burkholder"
+#, kde-format
 msgid "© 2023-2025 Loren Burkholder"
-msgstr "© 2023 Loren Burkholder"
+msgstr "© 2023-2025 Loren Burkholder"
 
 #: src/apps/main.cpp:50
 #, kde-format

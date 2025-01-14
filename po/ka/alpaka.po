@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: alpaka\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-01-13 00:43+0000\n"
-"PO-Revision-Date: 2024-11-01 04:25+0100\n"
+"PO-Revision-Date: 2025-01-13 05:14+0100\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <kde-i18n-doc@kde.org>\n"
 "Language: ka\n"
@@ -30,10 +30,9 @@ msgid "Ollama client"
 msgstr "Ollama-ის კლიენტი"
 
 #: src/apps/main.cpp:49
-#, fuzzy, kde-format
-#| msgid "© 2023 Loren Burkholder"
+#, kde-format
 msgid "© 2023-2025 Loren Burkholder"
-msgstr "© 2023 Loren Burkholder"
+msgstr "© 2023-2025 Loren Burkholder"
 
 #: src/apps/main.cpp:50
 #, kde-format

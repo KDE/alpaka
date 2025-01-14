@@ -1,13 +1,13 @@
 # Copyright (C) YEAR This file is copyright:
 # This file is distributed under the same license as the alpaka package.
 #
-# Yuri Chornoivan <yurchor@ukr.net>, 2023, 2024.
+# Yuri Chornoivan <yurchor@ukr.net>, 2023, 2024, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: alpaka\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-01-13 00:43+0000\n"
-"PO-Revision-Date: 2024-11-01 19:11+0200\n"
+"PO-Revision-Date: 2025-01-13 13:12+0200\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <trans-uk@lists.fedoraproject.org>\n"
 "Language: uk\n"
@@ -30,10 +30,9 @@ msgid "Ollama client"
 msgstr "Клієнт Ollama"
 
 #: src/apps/main.cpp:49
-#, fuzzy, kde-format
-#| msgid "© 2023 Loren Burkholder"
+#, kde-format
 msgid "© 2023-2025 Loren Burkholder"
-msgstr "© Loren Burkholder, 2023"
+msgstr "© Loren Burkholder, 2023–2025"
 
 #: src/apps/main.cpp:50
 #, kde-format

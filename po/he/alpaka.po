@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: alpaka\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-01-13 00:43+0000\n"
-"PO-Revision-Date: 2024-11-01 07:29+0200\n"
+"PO-Revision-Date: 2025-01-13 18:08+0200\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
 "Language: he\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n == 1) ? 0 : ((n == 2) ? 1 : ((n > 10 && "
 "n % 10 == 0) ? 2 : 3));\n"
-"X-Generator: Lokalize 24.08.1\n"
+"X-Generator: Lokalize 24.12.0\n"
 
 #: src/apps/main.cpp:45 src/apps/qml/ChatView.qml:14
 #: src/apps/qml/MessageDelegate.qml:64
@@ -30,10 +30,9 @@ msgid "Ollama client"
 msgstr "לקוח ל־Ollama"
 
 #: src/apps/main.cpp:49
-#, fuzzy, kde-format
-#| msgid "© 2023 Loren Burkholder"
+#, kde-format
 msgid "© 2023-2025 Loren Burkholder"
-msgstr "© 2023 לורן בורקהולדר"
+msgstr "© 2023‏-2025 לורן בורקהולדר"
 
 #: src/apps/main.cpp:50
 #, kde-format
