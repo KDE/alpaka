@@ -21,22 +21,22 @@ msgstr ""
 #: src/apps/qml/MessageDelegate.qml:64
 #, kde-format
 msgid "Alpaka"
-msgstr ""
+msgstr "Alpaka"
 
 #: src/apps/main.cpp:47
 #, kde-format
 msgid "Ollama client"
-msgstr ""
+msgstr "Ollama 客户端"
 
 #: src/apps/main.cpp:49
 #, kde-format
 msgid "© 2023-2025 Loren Burkholder"
-msgstr ""
+msgstr "© 2023-2025 Loren Burkholder"
 
 #: src/apps/main.cpp:50
 #, kde-format
 msgid "Loren Burkholder"
-msgstr ""
+msgstr "Loren Burkholder"
 
 #: src/apps/main.cpp:50
 #, kde-format
@@ -46,7 +46,7 @@ msgstr "维护人员"
 #: src/apps/main.cpp:51
 #, kde-format
 msgid "Laurent Montel"
-msgstr ""
+msgstr "Laurent Montel"
 
 #: src/apps/main.cpp:51
 #, kde-format
@@ -57,56 +57,56 @@ msgstr "开发人员"
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr "你的名字"
+msgstr "KDE China"
 
 #: src/apps/main.cpp:52
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr "您的电子邮箱"
+msgstr "kde-china@kde.org"
 
 #: src/apps/qml/ChatView.qml:28
 #, kde-format
 msgctxt "@action:intoolbar"
 msgid "Start Over"
-msgstr ""
+msgstr "从头开始"
 
 #: src/apps/qml/ChatView.qml:34
 #, kde-format
 msgctxt "@action:intoolbar"
 msgid "Settings"
-msgstr ""
+msgstr "设置"
 
 #: src/apps/qml/ChatView.qml:49
 #, kde-format
 msgctxt "@action:button"
 msgid "Try Again"
-msgstr ""
+msgstr "再试一次"
 
 #: src/apps/qml/ChatView.qml:67
 #, kde-format
 msgctxt "@info:placeholder"
 msgid "Enter a message"
-msgstr ""
+msgstr "输入信息"
 
 #: src/apps/qml/ChatView.qml:82
 #, kde-format
 msgctxt "@info:placeholder"
 msgid "Interface Not Found"
-msgstr ""
+msgstr "找不到接口"
 
 #: src/apps/qml/ChatView.qml:83
 #, kde-format
 msgid ""
 "Make sure Ollama is installed and is running. Visit the project's website "
 "for setup information."
-msgstr ""
+msgstr "确保 Ollama 已安装并正在运行。如需安装信息，请访问该项目的网站。"
 
 #: src/apps/qml/ChatView.qml:86
 #, kde-format
 msgctxt "@action:button"
 msgid "Visit Website"
-msgstr ""
+msgstr "访问网站"
 
 #: src/apps/qml/GeneralSettingsPage.qml:13 src/apps/qml/SettingsPage.qml:20
 #, kde-format
@@ -147,17 +147,17 @@ msgstr "显示调试信息"
 #, kde-format
 msgctxt "@title:window"
 msgid "Alpaka"
-msgstr ""
+msgstr "Alpaka"
 
 #: src/apps/qml/MessageDelegate.qml:101
 #, kde-format
 msgid "%1 tok/s · %2 tokens · %3 seconds"
-msgstr ""
+msgstr "%1 token/秒 · %2 tokens · %3 秒"
 
 #: src/apps/qml/OllamaSettingsPage.qml:13 src/apps/qml/SettingsPage.qml:30
 #, kde-format
 msgid "Ollama"
-msgstr ""
+msgstr "Ollama"
 
 #: src/apps/qml/OllamaSettingsPage.qml:25
 #, kde-format
@@ -167,7 +167,7 @@ msgstr "Ollama 服务器 URL"
 #: src/core/KLLMInterface.cpp:116
 #, kde-format
 msgid "Failed to connect to interface at %1: %2"
-msgstr "无法连接到 %1的接口: %2"
+msgstr "无法连接到 %1的接口： %2"
 
 #. i18n
 #: src/widgets/KLLMActionMenu.cpp:14
