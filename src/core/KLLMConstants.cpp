@@ -6,5 +6,5 @@
 
 QUrl KLLMCore::ollamaUrl()
 {
-    return QUrl(QStringLiteral("http://0.0.0.0:11434"));
+    return QUrl(QStringLiteral("http://127.0.0.1:11434"));
 }
