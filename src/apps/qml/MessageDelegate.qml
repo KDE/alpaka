@@ -72,6 +72,7 @@ RowLayout {
             }
 
             TextEdit {
+                id: textEdit
                 text: messageDelegate.message
                 wrapMode: Controls.Label.WordWrap
                 Layout.fillWidth: true
@@ -86,7 +87,24 @@ RowLayout {
                 onLinkHovered: {
                     Qt.PointingHandCursor
                 }
+                MouseArea {
+                    anchors.fill: parent
+                    acceptedButtons: Qt.RightButton
+                    onClicked: contextMenu.open()
+                }
 
+                Controls.Menu {
+                    id: contextMenu
+                    Controls.MenuItem {
+                        text: i18n("Copy")
+                        enabled: textEdit.canCopy
+                        onTriggered: textEdit.copy()
+                    }
+                    Controls.MenuItem {
+                        text: i18n("Select All")
+                        onTriggered: textEdit.selectAll()
+                    }
+                }
             }
 
             Controls.ToolSeparator {
