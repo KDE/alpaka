@@ -10,7 +10,7 @@ import org.kde.kirigami as Kirigami
 import org.kde.coreaddons as KCoreAddons
 import org.kde.kirigamiaddons.components as KirigamiComponents
 import org.kde.alpaka
-
+import Qt.labs.platform as Labs
 
 RowLayout {
     id: messageDelegate
@@ -93,15 +93,17 @@ RowLayout {
                     onClicked: contextMenu.open()
                 }
 
-                Controls.Menu {
+                Labs.Menu {
                     id: contextMenu
-                    Controls.MenuItem {
+                    Labs.MenuItem {
                         text: i18n("Copy")
+                        shortcut: StandardKey.Copy
                         enabled: textEdit.canCopy
                         onTriggered: textEdit.copy()
                     }
-                    Controls.MenuItem {
+                    Labs.MenuItem {
                         text: i18n("Select All")
+                        shortcut: StandardKey.SelectAll
                         onTriggered: textEdit.selectAll()
                     }
                 }
