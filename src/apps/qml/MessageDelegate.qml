@@ -98,7 +98,7 @@ RowLayout {
                     Labs.MenuItem {
                         text: i18n("Copy")
                         shortcut: StandardKey.Copy
-                        enabled: textEdit.canCopy
+                        enabled: textEdit.selectedText.length > 0
                         onTriggered: textEdit.copy()
                     }
                     Labs.MenuItem {
