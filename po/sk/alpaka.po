@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: alpaka\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-01-13 00:43+0000\n"
+"POT-Creation-Date: 2025-01-31 00:43+0000\n"
 "PO-Revision-Date: 2023-12-22 19:35+0100\n"
 "Last-Translator: Roman Paholik <wizzardsk@gmail.com>\n"
 "Language-Team: Slovak <kde-sk@linux.sk>\n"
@@ -151,7 +151,17 @@ msgctxt "@title:window"
 msgid "Alpaka"
 msgstr "Alpaka"
 
-#: src/apps/qml/MessageDelegate.qml:101
+#: src/apps/qml/MessageDelegate.qml:99
+#, kde-format
+msgid "Copy"
+msgstr ""
+
+#: src/apps/qml/MessageDelegate.qml:105
+#, kde-format
+msgid "Select All"
+msgstr ""
+
+#: src/apps/qml/MessageDelegate.qml:121
 #, kde-format
 msgid "%1 tok/s · %2 tokens · %3 seconds"
 msgstr ""
