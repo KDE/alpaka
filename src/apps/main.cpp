@@ -4,6 +4,7 @@
 
 #include <KAboutData>
 #include <KCrash>
+#include <KIconTheme>
 #include <KLocalizedContext>
 #include <KLocalizedString>
 #include <QApplication>
@@ -35,6 +36,7 @@ static QWindow *windowFromEngine(QQmlApplicationEngine *engine)
 
 int main(int argc, char *argv[])
 {
+    KIconTheme::initTheme();
     QApplication app(argc, argv);
 
     KLocalizedString::setApplicationDomain(QByteArrayLiteral("alpaka"));
