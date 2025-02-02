@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: alpaka\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-01-31 00:43+0000\n"
-"PO-Revision-Date: 2025-01-13 09:58+0100\n"
+"PO-Revision-Date: 2025-01-31 10:13+0100\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca@valencia\n"
@@ -156,12 +156,12 @@ msgstr "Alpaka"
 #: src/apps/qml/MessageDelegate.qml:99
 #, kde-format
 msgid "Copy"
-msgstr ""
+msgstr "Copia"
 
 #: src/apps/qml/MessageDelegate.qml:105
 #, kde-format
 msgid "Select All"
-msgstr ""
+msgstr "Selecciona-ho tot"
 
 #: src/apps/qml/MessageDelegate.qml:121
 #, kde-format
