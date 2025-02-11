@@ -29,10 +29,9 @@ msgid "Ollama client"
 msgstr "Klient Ollama"
 
 #: src/apps/main.cpp:49
-#, fuzzy, kde-format
-#| msgid "© 2023 Loren Burkholder"
+#, kde-format
 msgid "© 2023-2025 Loren Burkholder"
-msgstr "© 2023 Loren Burkholder"
+msgstr ""
 
 #: src/apps/main.cpp:50
 #, kde-format
@@ -67,18 +66,16 @@ msgid "Your emails"
 msgstr "vit@pelcak.org"
 
 #: src/apps/qml/ChatView.qml:28
-#, fuzzy, kde-format
-#| msgid "Start over"
+#, kde-format
 msgctxt "@action:intoolbar"
 msgid "Start Over"
-msgstr "Začít znovu"
+msgstr ""
 
 #: src/apps/qml/ChatView.qml:34
-#, fuzzy, kde-format
-#| msgid "Settings"
+#, kde-format
 msgctxt "@action:intoolbar"
 msgid "Settings"
-msgstr "Nastavení"
+msgstr ""
 
 #: src/apps/qml/ChatView.qml:49
 #, kde-format
@@ -87,11 +84,10 @@ msgid "Try Again"
 msgstr "Zkusit znovu"
 
 #: src/apps/qml/ChatView.qml:67
-#, fuzzy, kde-format
-#| msgid "Enter a message"
+#, kde-format
 msgctxt "@info:placeholder"
 msgid "Enter a message"
-msgstr "Zadejte zprávu"
+msgstr ""
 
 #: src/apps/qml/ChatView.qml:82
 #, kde-format
@@ -156,12 +152,12 @@ msgstr "Alpaka"
 #: src/apps/qml/MessageDelegate.qml:99
 #, kde-format
 msgid "Copy"
-msgstr ""
+msgstr "Kopírovat"
 
 #: src/apps/qml/MessageDelegate.qml:105
 #, kde-format
 msgid "Select All"
-msgstr ""
+msgstr "Vybrat vše"
 
 #: src/apps/qml/MessageDelegate.qml:121
 #, kde-format
@@ -199,15 +195,3 @@ msgstr "Nastavit Ollama"
 #, kde-format
 msgid "Models:"
 msgstr "Modely:"
-
-#~ msgid "General settings"
-#~ msgstr "Obecná nastavení"
-
-#~ msgid "LLM settings"
-#~ msgstr "Nastavení LLM"
-
-#~ msgid "Model settings"
-#~ msgstr "Nastavení modelu"
-
-#~ msgid "Ollama settings"
-#~ msgstr "Nastavení Ollama"
