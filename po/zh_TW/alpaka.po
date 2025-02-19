@@ -1,13 +1,13 @@
 # Copyright (C) 2023 This file is copyright:
 # This file is distributed under the same license as the alpaka package.
 #
-# SPDX-FileCopyrightText: 2023, 2024 Kisaragi Hiu <mail@kisaragi-hiu.com>
+# SPDX-FileCopyrightText: 2023, 2024, 2025 Kisaragi Hiu <mail@kisaragi-hiu.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: alpaka\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-01-31 00:43+0000\n"
-"PO-Revision-Date: 2024-11-26 21:36+0900\n"
+"PO-Revision-Date: 2025-02-18 16:15+0900\n"
 "Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
 "Language-Team: Traditional Chinese <zh-l10n@lists.slat.org>\n"
 "Language: zh_TW\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Lokalize 24.08.3\n"
+"X-Generator: Lokalize 25.03.70\n"
 
 #: src/apps/main.cpp:45 src/apps/qml/ChatView.qml:14
 #: src/apps/qml/MessageDelegate.qml:64
@@ -29,10 +29,9 @@ msgid "Ollama client"
 msgstr "Ollama 用戶端"
 
 #: src/apps/main.cpp:49
-#, fuzzy, kde-format
-#| msgid "© 2023 Loren Burkholder"
+#, kde-format
 msgid "© 2023-2025 Loren Burkholder"
-msgstr "© 2023 Loren Burkholder"
+msgstr "© 2023-2025 Loren Burkholder"
 
 #: src/apps/main.cpp:50
 #, kde-format
@@ -153,12 +152,12 @@ msgstr "Alpaka"
 #: src/apps/qml/MessageDelegate.qml:99
 #, kde-format
 msgid "Copy"
-msgstr ""
+msgstr "複製"
 
 #: src/apps/qml/MessageDelegate.qml:105
 #, kde-format
 msgid "Select All"
-msgstr ""
+msgstr "全部選取"
 
 #: src/apps/qml/MessageDelegate.qml:121
 #, kde-format
