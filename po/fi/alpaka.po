@@ -1,13 +1,13 @@
 # Copyright (C) 2024 This file is copyright:
 # This file is distributed under the same license as the alpaka package.
-# SPDX-FileCopyrightText: 2023, 2024 Tommi Nieminen <translator@legisign.org>
+# SPDX-FileCopyrightText: 2023, 2024, 2025 Tommi Nieminen <translator@legisign.org>
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: alpaka\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-03-03 00:43+0000\n"
-"PO-Revision-Date: 2024-11-17 17:13+0200\n"
+"PO-Revision-Date: 2025-02-16 09:33+0200\n"
 "Last-Translator: Tommi Nieminen <translator@legisign.org>\n"
 "Language-Team: Finnish <kde-i18n-doc@kde.org>\n"
 "Language: fi\n"
@@ -29,10 +29,9 @@ msgid "Ollama client"
 msgstr "Ollama-asiakas"
 
 #: src/apps/main.cpp:51
-#, fuzzy, kde-format
-#| msgid "© 2023 Loren Burkholder"
+#, kde-format
 msgid "© 2023-2025 Loren Burkholder"
-msgstr "© 2023 Loren Burkholder"
+msgstr "© 2023–2025 Loren Burkholder"
 
 #: src/apps/main.cpp:52
 #, kde-format
@@ -155,12 +154,12 @@ msgstr "Alpaka"
 #: src/apps/qml/MessageDelegate.qml:99
 #, kde-format
 msgid "Copy"
-msgstr ""
+msgstr "Kopioi"
 
 #: src/apps/qml/MessageDelegate.qml:105
 #, kde-format
 msgid "Select All"
-msgstr ""
+msgstr "Valitse kaikki"
 
 #: src/apps/qml/MessageDelegate.qml:121
 #, kde-format
