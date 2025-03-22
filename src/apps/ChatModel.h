@@ -50,6 +50,7 @@ public:
 
 public Q_SLOTS:
     void sendMessage(const QString &message);
+    void getModelInfo();
     void resetConversation();
 
 Q_SIGNALS:

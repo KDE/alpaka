@@ -13,6 +13,10 @@ import org.kde.alpaka
 Kirigami.ScrollablePage {
     title: i18n("Alpaka")
 
+    Component.onCompleted: {
+        modelCombo.currentIndex = modelCombo.indexOfValue(AlpakaSettings.model);
+    }
+
     Kirigami.Theme.colorSet: Kirigami.Theme.Window
     Connections {
         target: chat.llm
@@ -22,8 +26,10 @@ Kirigami.ScrollablePage {
         }
     }
 
+
     leftPadding: 30
     actions: [
+
         Kirigami.Action {
             text: i18nc("@action:intoolbar", "Start Over")
             icon.name: "view-refresh"
@@ -58,6 +64,7 @@ Kirigami.ScrollablePage {
         Kirigami.Separator {
             Layout.fillWidth: true
         }
+
         Controls.TextField {
             id: messageInput
 
@@ -73,6 +80,26 @@ Kirigami.ScrollablePage {
                 messageInput.text = "";
             }
         }
+        Kirigami.Separator {
+            Layout.fillWidth: true
+        }
+        RowLayout {
+            Layout.margins: Kirigami.Units.smallSpacing
+            Controls.Label {
+                text: i18n("LLM model:")
+
+            }
+            Controls.ComboBox {
+                id: modelCombo
+                model: chat.llm.models
+                onCurrentTextChanged: AlpakaSettings.model = currentText
+            }
+            Controls.Button {
+                text: "Info"
+                onClicked: chat.getModelInfo()
+            }
+        }
+
     }
 
     Kirigami.PlaceholderMessage {

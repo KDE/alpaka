@@ -56,6 +56,15 @@ class KLLMCORE_EXPORT KLLMReply : public QObject
 
 public:
     /**
+     * @brief Specifies the request type.
+     *
+     * When the class in instantiated the type of request should be specified
+     */
+    enum class RequestTypes {
+        StreamingGenerate,
+        Show
+    };
+    /**
      * @brief Get the current response content.
      *
      * This function returns what it has recieved of the response so far. Therefore, until finished() is emitted, this
@@ -67,7 +76,7 @@ public:
     [[nodiscard]] QString readResponse() const;
 
     /**
-     * @brief Get the context token for this response.
+     * @brief Get the context token for this response (if applicable).
      *
      * Messages sent by most LLMs have a context identifier that allows you to chain messages into a conversation. To create
      * such a conversation, you need to take this context object and set it on the next KLLMRequest in the conversation.
@@ -78,7 +87,7 @@ public:
     const KLLMContext &context() const;
 
     /**
-     * @brief Get extra information about the reply.
+     * @brief Get extra information about the reply (if applicable).
      *
      * This function returns a KLLMReplyInfo object containing information about this reply. If the reply has not finished, the KLLMReplyInfo object will have
      * all members set to their default values.
@@ -96,8 +105,17 @@ public:
      */
     [[nodiscard]] bool isFinished() const;
 
+    /**
+     * @brief Get request type.
+     *
+     * The request type is set when this object is created.
+     *
+     * @return Corresponding request type.
+     */
+    const RequestTypes &requestType() const;
+
 protected:
-    explicit KLLMReply(QNetworkReply *netReply, QObject *parent = nullptr);
+    explicit KLLMReply(QNetworkReply *netReply, QObject *parent = nullptr, RequestTypes requestType = RequestTypes::StreamingGenerate);
 
     friend class KLLMInterface;
 
@@ -128,6 +146,7 @@ private:
 
     KLLMContext m_context;
     KLLMReplyInfo m_info;
+    RequestTypes m_requestType = RequestTypes::StreamingGenerate;
 
     int m_receivedSize = 0;
     bool m_finished = false;

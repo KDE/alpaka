@@ -143,6 +143,18 @@ public Q_SLOTS:
     KLLMReply *getCompletion(const KLLMRequest &request);
 
     /**
+     * @brief Request model info from the Ollama.
+     *
+     * Calling this function starts a request to the LLM backend. You should use the returned KLLMReply pointer to track the
+     * status of the LLM's response. Once the KLLMReply emits KLLMReply::finished(), it is your responsibility to either
+     * track or delete the KLLMReply; auto-deleting is not implemented yet.
+     *
+     * @param request The request object that will be used to create the actual LLM request.
+     * @return Returns a pointer to a KLLMReply that can be used to track the progress of the reply.
+     */
+    KLLMReply *getModelInfo(const KLLMRequest &request);
+
+    /**
      * @brief Reload the LLM interface.
      *
      * Reloading the interface can be used to check if a network error is gone or to see if the available models have changed.
