@@ -118,5 +118,11 @@ SPDX-License-Identifier: CC0-1.0
   <project_group>KDE</project_group>
   <url type="bugtracker">https://bugs.kde.org/enter_bug.cgi?format=guided&amp;product=Alpaka</url>
   <launchable type="desktop-id">org.kde.alpaka.desktop</launchable>
+  <screenshots>
+    <screenshot type="default">
+      <image>https://cdn.kde.org/screenshots/alpaka/alpaka.png</image>
+      <caption/>
+    </screenshot>
+  </screenshots>
   <url type="homepage">https://apps.kde.org/alpaka/</url>
 </component>
