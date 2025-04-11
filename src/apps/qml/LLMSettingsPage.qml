@@ -25,6 +25,7 @@ FormCard.FormCardPage {
 
             text: i18n("LLM model")
             model: chat.llm.models
+            enabled: modelCombo.count > 0
             onCurrentTextChanged: AlpakaSettings.model = currentText
         }
 
