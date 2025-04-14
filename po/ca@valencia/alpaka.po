@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: alpaka\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-03-03 00:43+0000\n"
+"POT-Creation-Date: 2025-04-14 00:43+0000\n"
 "PO-Revision-Date: 2025-01-31 10:13+0100\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
@@ -132,17 +132,17 @@ msgstr "LLM"
 msgid "LLM model"
 msgstr "Model de LLM"
 
-#: src/apps/qml/LLMSettingsPage.qml:40
+#: src/apps/qml/LLMSettingsPage.qml:41
 #, kde-format
 msgid "System prompt"
 msgstr "Indicatiu del sistema"
 
-#: src/apps/qml/LLMSettingsPage.qml:52
+#: src/apps/qml/LLMSettingsPage.qml:53
 #, kde-format
 msgid "No system prompt"
 msgstr "Sense indicatiu del sistema"
 
-#: src/apps/qml/LLMSettingsPage.qml:69
+#: src/apps/qml/LLMSettingsPage.qml:70
 #, kde-format
 msgid "Show debug information"
 msgstr "Mostra la informació de depuració"

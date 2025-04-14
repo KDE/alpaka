@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: alpaka\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-03-03 00:43+0000\n"
+"POT-Creation-Date: 2025-04-14 00:43+0000\n"
 "PO-Revision-Date: 2025-02-18 16:15+0900\n"
 "Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
 "Language-Team: Traditional Chinese <zh-l10n@lists.slat.org>\n"
@@ -128,17 +128,17 @@ msgstr "LLM"
 msgid "LLM model"
 msgstr "LLM 模型"
 
-#: src/apps/qml/LLMSettingsPage.qml:40
+#: src/apps/qml/LLMSettingsPage.qml:41
 #, kde-format
 msgid "System prompt"
 msgstr "系統 prompt"
 
-#: src/apps/qml/LLMSettingsPage.qml:52
+#: src/apps/qml/LLMSettingsPage.qml:53
 #, kde-format
 msgid "No system prompt"
 msgstr "沒有系統 prompt"
 
-#: src/apps/qml/LLMSettingsPage.qml:69
+#: src/apps/qml/LLMSettingsPage.qml:70
 #, kde-format
 msgid "Show debug information"
 msgstr "顯示除錯資訊"

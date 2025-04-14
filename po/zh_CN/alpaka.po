@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdeorg\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-03-03 00:43+0000\n"
+"POT-Creation-Date: 2025-04-14 00:43+0000\n"
 "PO-Revision-Date: 2024-04-22 15:58\n"
 "Last-Translator: \n"
 "Language-Team: Chinese Simplified\n"
@@ -128,17 +128,17 @@ msgstr "LLM"
 msgid "LLM model"
 msgstr "LLM 模型"
 
-#: src/apps/qml/LLMSettingsPage.qml:40
+#: src/apps/qml/LLMSettingsPage.qml:41
 #, kde-format
 msgid "System prompt"
 msgstr "系统提示"
 
-#: src/apps/qml/LLMSettingsPage.qml:52
+#: src/apps/qml/LLMSettingsPage.qml:53
 #, kde-format
 msgid "No system prompt"
 msgstr "没有系统提示"
 
-#: src/apps/qml/LLMSettingsPage.qml:69
+#: src/apps/qml/LLMSettingsPage.qml:70
 #, kde-format
 msgid "Show debug information"
 msgstr "显示调试信息"

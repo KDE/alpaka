@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: alpaka\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-03-03 00:43+0000\n"
+"POT-Creation-Date: 2025-04-14 00:43+0000\n"
 "PO-Revision-Date: 2025-02-01 10:38+0100\n"
 "Last-Translator: Xavier Besnard <xavier.besnard@kde.org>\n"
 "Language-Team: French <French <kde-francophone@kde.org>>\n"
@@ -128,17 +128,17 @@ msgstr "LLM"
 msgid "LLM model"
 msgstr "Modèle « LLM »"
 
-#: src/apps/qml/LLMSettingsPage.qml:40
+#: src/apps/qml/LLMSettingsPage.qml:41
 #, kde-format
 msgid "System prompt"
 msgstr "Invite du système"
 
-#: src/apps/qml/LLMSettingsPage.qml:52
+#: src/apps/qml/LLMSettingsPage.qml:53
 #, kde-format
 msgid "No system prompt"
 msgstr "Aucune invite système"
 
-#: src/apps/qml/LLMSettingsPage.qml:69
+#: src/apps/qml/LLMSettingsPage.qml:70
 #, kde-format
 msgid "Show debug information"
 msgstr "Afficher les informations de débogage"
