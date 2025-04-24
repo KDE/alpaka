@@ -103,6 +103,27 @@ KLLMReply *KLLMInterface::getCompletion(const KLLMRequest &request)
     return reply;
 }
 
+KLLMReply *KLLMInterface::getModelInfo(const KLLMRequest &request)
+{
+    Q_ASSERT(ready());
+
+    QNetworkRequest req{QUrl::fromUserInput(m_ollamaUrl + QStringLiteral("/api/show"))};
+    req.setHeader(QNetworkRequest::ContentTypeHeader, QStringLiteral("application/json"));
+
+    QJsonObject data;
+    data["model"_L1] = request.model().isEmpty() ? m_models.constFirst() : request.model();
+
+    auto buf = new QBuffer{this};
+    buf->setData(QJsonDocument(data).toJson(QJsonDocument::Compact));
+
+    auto reply = new KLLMReply{m_manager->post(req, buf), this, KLLMReply::RequestTypes::Show};
+    connect(reply, &KLLMReply::finished, this, [this, reply, buf] {
+        Q_EMIT finished(reply->readResponse());
+        buf->deleteLater();
+    });
+    return reply;
+}
+
 void KLLMInterface::reload()
 {
     if (m_ollamaCheck)

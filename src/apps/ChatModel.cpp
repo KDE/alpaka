@@ -5,6 +5,7 @@
 
 #include "ChatModel.h"
 
+#include <KLocalizedString>
 #include <KUser>
 
 #include <ranges>
@@ -128,6 +129,35 @@ void ChatModel::sendMessage(const QString &message)
                              m_connections.remove(message.llmReply);
                              message.context = message.llmReply->context();
                              message.info = message.llmReply->info();
+                             message.llmReply->deleteLater();
+                             message.llmReply = nullptr;
+                             message.inProgress = false;
+                             Q_EMIT dataChanged(index(i),
+                                                index(i),
+                                                {Roles::FinishedRole, Roles::TokensPerSecondRole, Roles::TokenCountRole, Roles::DurationRole});
+                             Q_EMIT replyInProgressChanged();
+                         }));
+    Q_EMIT replyInProgressChanged();
+    endInsertRows();
+}
+
+void ChatModel::getModelInfo()
+{
+    KLLMRequest req{QString{}};
+    req.setModel(KLLMCoreSettings::model());
+
+    auto rep = m_llm->getModelInfo(req);
+    beginInsertRows({}, m_messages.size(), m_messages.size() + 1);
+    m_messages.append(ChatMessage{.content = i18n("Show model info."), .sender = Sender::User});
+    m_messages.append(ChatMessage{.inProgress = true, .sender = Sender::LLM, .llmReply = rep});
+    m_connections.insert(rep, connect(rep, &KLLMReply::contentAdded, this, [this, i = m_messages.size() - 1] {
+                             auto &message = m_messages[i];
+                             message.content = message.llmReply->readResponse();
+                             Q_EMIT dataChanged(index(i), index(i), {Roles::MessageRole});
+                         }));
+    m_connections.insert(rep, connect(rep, &KLLMReply::finished, this, [this, i = m_messages.size() - 1] {
+                             auto &message = m_messages[i];
+                             m_connections.remove(message.llmReply);
                              message.llmReply->deleteLater();
                              message.llmReply = nullptr;
                              message.inProgress = false;

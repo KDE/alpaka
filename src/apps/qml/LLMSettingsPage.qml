@@ -14,20 +14,11 @@ FormCard.FormCardPage {
 
     Component.onCompleted: {
         prompt.text = AlpakaSettings.systemPrompt;
-        modelCombo.currentIndex = modelCombo.indexOfValue(AlpakaSettings.model);
         llmDebugInfo.checked = AlpakaSettings.showDebugInfo;
     }
 
     FormCard.FormCard {
         Layout.topMargin: Kirigami.Units.largeSpacing
-        FormCard.FormComboBoxDelegate {
-            id: modelCombo
-
-            text: i18n("LLM model")
-            model: chat.llm.models
-            enabled: modelCombo.count > 0
-            onCurrentTextChanged: AlpakaSettings.model = currentText
-        }
 
         FormCard.AbstractFormDelegate {
             id: prompt
