@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: alpaka\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-04-14 00:43+0000\n"
+"POT-Creation-Date: 2025-04-25 00:44+0000\n"
 "PO-Revision-Date: 2025-01-31 17:28+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
@@ -16,6 +16,12 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Generator: Lokalize 25.03.70\n"
+
+#: src/apps/ChatModel.cpp:151
+#, fuzzy, kde-format
+#| msgid "Show debug information"
+msgid "Show model info."
+msgstr "Hata ayıklama bilgisini göster"
 
 #: src/apps/main.cpp:47 src/apps/qml/ChatView.qml:14
 #: src/apps/qml/MessageDelegate.qml:64
@@ -65,37 +71,50 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "emir_sari@icloud.com"
 
-#: src/apps/qml/ChatView.qml:28
+#: src/apps/qml/ChatView.qml:34
 #, kde-format
 msgctxt "@action:intoolbar"
 msgid "Start Over"
 msgstr "Yeniden Başla"
 
-#: src/apps/qml/ChatView.qml:34
+#: src/apps/qml/ChatView.qml:40
 #, kde-format
 msgctxt "@action:intoolbar"
 msgid "Settings"
 msgstr "Ayarlar"
 
-#: src/apps/qml/ChatView.qml:49
+#: src/apps/qml/ChatView.qml:55
 #, kde-format
 msgctxt "@action:button"
 msgid "Try Again"
 msgstr "Yeniden Dene"
 
-#: src/apps/qml/ChatView.qml:67
+#: src/apps/qml/ChatView.qml:74
 #, kde-format
 msgctxt "@info:placeholder"
 msgid "Enter a message"
 msgstr "Bir ileti gir…"
 
-#: src/apps/qml/ChatView.qml:82
+#: src/apps/qml/ChatView.qml:89
+#, fuzzy, kde-format
+#| msgid "LLM model"
+msgid "LLM model:"
+msgstr "LLM modeli"
+
+#: src/apps/qml/ChatView.qml:98
+#, fuzzy, kde-format
+#| msgid "Info"
+msgctxt "@action:button"
+msgid "Info"
+msgstr "Bilgi"
+
+#: src/apps/qml/ChatView.qml:109
 #, kde-format
 msgctxt "@info:placeholder"
 msgid "Interface Not Found"
 msgstr "Arayüz bulunamadı."
 
-#: src/apps/qml/ChatView.qml:83
+#: src/apps/qml/ChatView.qml:110
 #, kde-format
 msgid ""
 "Make sure Ollama is installed and is running. Visit the project's website "
@@ -104,7 +123,7 @@ msgstr ""
 "Ollama’nın kurulu ve çalışıyor olduğundan emin olun. Kurulum bilgisi için "
 "projenin web sayfasını ziyaret edin."
 
-#: src/apps/qml/ChatView.qml:86
+#: src/apps/qml/ChatView.qml:113
 #, kde-format
 msgctxt "@action:button"
 msgid "Visit Website"
@@ -125,22 +144,17 @@ msgstr "Sistem tepsisinde göster"
 msgid "LLM"
 msgstr "LLM"
 
-#: src/apps/qml/LLMSettingsPage.qml:26
-#, kde-format
-msgid "LLM model"
-msgstr "LLM modeli"
-
-#: src/apps/qml/LLMSettingsPage.qml:41
+#: src/apps/qml/LLMSettingsPage.qml:32
 #, kde-format
 msgid "System prompt"
 msgstr "Sistem istemi"
 
-#: src/apps/qml/LLMSettingsPage.qml:53
+#: src/apps/qml/LLMSettingsPage.qml:44
 #, kde-format
 msgid "No system prompt"
 msgstr "Sistem istemi yok"
 
-#: src/apps/qml/LLMSettingsPage.qml:70
+#: src/apps/qml/LLMSettingsPage.qml:61
 #, kde-format
 msgid "Show debug information"
 msgstr "Hata ayıklama bilgisini göster"
@@ -176,7 +190,7 @@ msgstr "Ollama"
 msgid "Ollama server URL"
 msgstr "Ollama sunucusu URL’si"
 
-#: src/core/KLLMInterface.cpp:116
+#: src/core/KLLMInterface.cpp:137
 #, kde-format
 msgid "Failed to connect to interface at %1: %2"
 msgstr "%1 konumundaki arayüze bağlanılamadı: %2"

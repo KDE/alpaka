@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: alpaka\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-04-14 00:43+0000\n"
+"POT-Creation-Date: 2025-04-25 00:44+0000\n"
 "PO-Revision-Date: 2025-01-31 10:34+0200\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
@@ -17,6 +17,12 @@ msgstr ""
 "Plural-Forms: nplurals=4; plural=(n == 1) ? 0 : ((n == 2) ? 1 : ((n > 10 && "
 "n % 10 == 0) ? 2 : 3));\n"
 "X-Generator: Lokalize 24.12.0\n"
+
+#: src/apps/ChatModel.cpp:151
+#, fuzzy, kde-format
+#| msgid "Show debug information"
+msgid "Show model info."
+msgstr "הצגת פרטי ניפוי שגיאות"
 
 #: src/apps/main.cpp:47 src/apps/qml/ChatView.qml:14
 #: src/apps/qml/MessageDelegate.qml:64
@@ -66,37 +72,50 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "kde-l10n-he@kde.org"
 
-#: src/apps/qml/ChatView.qml:28
+#: src/apps/qml/ChatView.qml:34
 #, kde-format
 msgctxt "@action:intoolbar"
 msgid "Start Over"
 msgstr "התחלה מחדש"
 
-#: src/apps/qml/ChatView.qml:34
+#: src/apps/qml/ChatView.qml:40
 #, kde-format
 msgctxt "@action:intoolbar"
 msgid "Settings"
 msgstr "הגדרות"
 
-#: src/apps/qml/ChatView.qml:49
+#: src/apps/qml/ChatView.qml:55
 #, kde-format
 msgctxt "@action:button"
 msgid "Try Again"
 msgstr "לנסות שוב"
 
-#: src/apps/qml/ChatView.qml:67
+#: src/apps/qml/ChatView.qml:74
 #, kde-format
 msgctxt "@info:placeholder"
 msgid "Enter a message"
 msgstr "נא לכתוב הודעה"
 
-#: src/apps/qml/ChatView.qml:82
+#: src/apps/qml/ChatView.qml:89
+#, fuzzy, kde-format
+#| msgid "LLM model"
+msgid "LLM model:"
+msgstr "מודל LLM"
+
+#: src/apps/qml/ChatView.qml:98
+#, fuzzy, kde-format
+#| msgid "Info"
+msgctxt "@action:button"
+msgid "Info"
+msgstr "פרטים"
+
+#: src/apps/qml/ChatView.qml:109
 #, kde-format
 msgctxt "@info:placeholder"
 msgid "Interface Not Found"
 msgstr "הממשק לא נמצא"
 
-#: src/apps/qml/ChatView.qml:83
+#: src/apps/qml/ChatView.qml:110
 #, kde-format
 msgid ""
 "Make sure Ollama is installed and is running. Visit the project's website "
@@ -105,7 +124,7 @@ msgstr ""
 "רצוי לוודא ש־Ollama מותקנת ופעילה. יש לבקר באתר המיזם למידע בנוגע להתקנה "
 "והגדרות."
 
-#: src/apps/qml/ChatView.qml:86
+#: src/apps/qml/ChatView.qml:113
 #, kde-format
 msgctxt "@action:button"
 msgid "Visit Website"
@@ -126,22 +145,17 @@ msgstr "הצגה בשורת המשימות"
 msgid "LLM"
 msgstr "LLM"
 
-#: src/apps/qml/LLMSettingsPage.qml:26
-#, kde-format
-msgid "LLM model"
-msgstr "מודל LLM"
-
-#: src/apps/qml/LLMSettingsPage.qml:41
+#: src/apps/qml/LLMSettingsPage.qml:32
 #, kde-format
 msgid "System prompt"
 msgstr "הנחיית מערכת"
 
-#: src/apps/qml/LLMSettingsPage.qml:53
+#: src/apps/qml/LLMSettingsPage.qml:44
 #, kde-format
 msgid "No system prompt"
 msgstr "אין הנחיית מערכת"
 
-#: src/apps/qml/LLMSettingsPage.qml:70
+#: src/apps/qml/LLMSettingsPage.qml:61
 #, kde-format
 msgid "Show debug information"
 msgstr "הצגת פרטי ניפוי שגיאות"
@@ -177,7 +191,7 @@ msgstr "Ollama"
 msgid "Ollama server URL"
 msgstr "כתובת שרת Ollama"
 
-#: src/core/KLLMInterface.cpp:116
+#: src/core/KLLMInterface.cpp:137
 #, kde-format
 msgid "Failed to connect to interface at %1: %2"
 msgstr "ההתחברות לממשק דרך %1 נכשלה: %2"

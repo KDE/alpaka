@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: alpaka\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-04-14 00:43+0000\n"
+"POT-Creation-Date: 2025-04-25 00:44+0000\n"
 "PO-Revision-Date: 2025-01-31 10:13+0100\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
@@ -18,6 +18,12 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Lokalize 22.12.3\n"
+
+#: src/apps/ChatModel.cpp:151
+#, fuzzy, kde-format
+#| msgid "Show debug information"
+msgid "Show model info."
+msgstr "Mostra la informació de depuració"
 
 #: src/apps/main.cpp:47 src/apps/qml/ChatView.qml:14
 #: src/apps/qml/MessageDelegate.qml:64
@@ -67,37 +73,50 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "txemaq@gmail.com"
 
-#: src/apps/qml/ChatView.qml:28
+#: src/apps/qml/ChatView.qml:34
 #, kde-format
 msgctxt "@action:intoolbar"
 msgid "Start Over"
 msgstr "Torna a començar"
 
-#: src/apps/qml/ChatView.qml:34
+#: src/apps/qml/ChatView.qml:40
 #, kde-format
 msgctxt "@action:intoolbar"
 msgid "Settings"
 msgstr "Configuració"
 
-#: src/apps/qml/ChatView.qml:49
+#: src/apps/qml/ChatView.qml:55
 #, kde-format
 msgctxt "@action:button"
 msgid "Try Again"
 msgstr "Torneu-ho a intentar"
 
-#: src/apps/qml/ChatView.qml:67
+#: src/apps/qml/ChatView.qml:74
 #, kde-format
 msgctxt "@info:placeholder"
 msgid "Enter a message"
 msgstr "Introduïu un missatge"
 
-#: src/apps/qml/ChatView.qml:82
+#: src/apps/qml/ChatView.qml:89
+#, fuzzy, kde-format
+#| msgid "LLM model"
+msgid "LLM model:"
+msgstr "Model de LLM"
+
+#: src/apps/qml/ChatView.qml:98
+#, fuzzy, kde-format
+#| msgid "Info"
+msgctxt "@action:button"
+msgid "Info"
+msgstr "Informació"
+
+#: src/apps/qml/ChatView.qml:109
 #, kde-format
 msgctxt "@info:placeholder"
 msgid "Interface Not Found"
 msgstr "No s'ha trobat la interfície"
 
-#: src/apps/qml/ChatView.qml:83
+#: src/apps/qml/ChatView.qml:110
 #, kde-format
 msgid ""
 "Make sure Ollama is installed and is running. Visit the project's website "
@@ -106,7 +125,7 @@ msgstr ""
 "Assegureu-vos que l'Ollama estigui instal·lat i executant-se. Visiteu el "
 "lloc web del projecte per a la informació de configuració."
 
-#: src/apps/qml/ChatView.qml:86
+#: src/apps/qml/ChatView.qml:113
 #, kde-format
 msgctxt "@action:button"
 msgid "Visit Website"
@@ -127,22 +146,17 @@ msgstr "Mostra a la safata del sistema"
 msgid "LLM"
 msgstr "LLM"
 
-#: src/apps/qml/LLMSettingsPage.qml:26
-#, kde-format
-msgid "LLM model"
-msgstr "Model de LLM"
-
-#: src/apps/qml/LLMSettingsPage.qml:41
+#: src/apps/qml/LLMSettingsPage.qml:32
 #, kde-format
 msgid "System prompt"
 msgstr "Indicador del sistema"
 
-#: src/apps/qml/LLMSettingsPage.qml:53
+#: src/apps/qml/LLMSettingsPage.qml:44
 #, kde-format
 msgid "No system prompt"
 msgstr "Sense indicador del sistema"
 
-#: src/apps/qml/LLMSettingsPage.qml:70
+#: src/apps/qml/LLMSettingsPage.qml:61
 #, kde-format
 msgid "Show debug information"
 msgstr "Mostra la informació de depuració"
@@ -178,7 +192,7 @@ msgstr "Ollama"
 msgid "Ollama server URL"
 msgstr "URL del servidor Ollama"
 
-#: src/core/KLLMInterface.cpp:116
+#: src/core/KLLMInterface.cpp:137
 #, kde-format
 msgid "Failed to connect to interface at %1: %2"
 msgstr "Ha fallat en connectar amb la interfície a %1: %2"

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: alpaka\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-04-14 00:43+0000\n"
+"POT-Creation-Date: 2025-04-25 00:44+0000\n"
 "PO-Revision-Date: 2025-02-18 16:15+0900\n"
 "Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
 "Language-Team: Traditional Chinese <zh-l10n@lists.slat.org>\n"
@@ -16,6 +16,12 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Lokalize 25.03.70\n"
+
+#: src/apps/ChatModel.cpp:151
+#, fuzzy, kde-format
+#| msgid "Show debug information"
+msgid "Show model info."
+msgstr "顯示除錯資訊"
 
 #: src/apps/main.cpp:47 src/apps/qml/ChatView.qml:14
 #: src/apps/qml/MessageDelegate.qml:64
@@ -65,44 +71,57 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "mail@kisaragi-hiu.com"
 
-#: src/apps/qml/ChatView.qml:28
+#: src/apps/qml/ChatView.qml:34
 #, kde-format
 msgctxt "@action:intoolbar"
 msgid "Start Over"
 msgstr "重新開始"
 
-#: src/apps/qml/ChatView.qml:34
+#: src/apps/qml/ChatView.qml:40
 #, kde-format
 msgctxt "@action:intoolbar"
 msgid "Settings"
 msgstr "設定"
 
-#: src/apps/qml/ChatView.qml:49
+#: src/apps/qml/ChatView.qml:55
 #, kde-format
 msgctxt "@action:button"
 msgid "Try Again"
 msgstr "再試一次"
 
-#: src/apps/qml/ChatView.qml:67
+#: src/apps/qml/ChatView.qml:74
 #, kde-format
 msgctxt "@info:placeholder"
 msgid "Enter a message"
 msgstr "輸入訊息"
 
-#: src/apps/qml/ChatView.qml:82
+#: src/apps/qml/ChatView.qml:89
+#, fuzzy, kde-format
+#| msgid "LLM model"
+msgid "LLM model:"
+msgstr "LLM 模型"
+
+#: src/apps/qml/ChatView.qml:98
+#, fuzzy, kde-format
+#| msgid "Info"
+msgctxt "@action:button"
+msgid "Info"
+msgstr "資訊"
+
+#: src/apps/qml/ChatView.qml:109
 #, kde-format
 msgctxt "@info:placeholder"
 msgid "Interface Not Found"
 msgstr "未找到介面"
 
-#: src/apps/qml/ChatView.qml:83
+#: src/apps/qml/ChatView.qml:110
 #, kde-format
 msgid ""
 "Make sure Ollama is installed and is running. Visit the project's website "
 "for setup information."
 msgstr "請確認 Ollama 已安裝且正在執行中。更多初始設定資訊請參閱該專案的網站。"
 
-#: src/apps/qml/ChatView.qml:86
+#: src/apps/qml/ChatView.qml:113
 #, kde-format
 msgctxt "@action:button"
 msgid "Visit Website"
@@ -123,22 +142,17 @@ msgstr "在系統匣中顯示"
 msgid "LLM"
 msgstr "LLM"
 
-#: src/apps/qml/LLMSettingsPage.qml:26
-#, kde-format
-msgid "LLM model"
-msgstr "LLM 模型"
-
-#: src/apps/qml/LLMSettingsPage.qml:41
+#: src/apps/qml/LLMSettingsPage.qml:32
 #, kde-format
 msgid "System prompt"
 msgstr "系統 prompt"
 
-#: src/apps/qml/LLMSettingsPage.qml:53
+#: src/apps/qml/LLMSettingsPage.qml:44
 #, kde-format
 msgid "No system prompt"
 msgstr "沒有系統 prompt"
 
-#: src/apps/qml/LLMSettingsPage.qml:70
+#: src/apps/qml/LLMSettingsPage.qml:61
 #, kde-format
 msgid "Show debug information"
 msgstr "顯示除錯資訊"
@@ -174,7 +188,7 @@ msgstr "Ollama"
 msgid "Ollama server URL"
 msgstr "Ollama 伺服器網址"
 
-#: src/core/KLLMInterface.cpp:116
+#: src/core/KLLMInterface.cpp:137
 #, kde-format
 msgid "Failed to connect to interface at %1: %2"
 msgstr "無法連線到在 %1 的介面：%2"
