@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: alpaka\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-04-25 00:44+0000\n"
-"PO-Revision-Date: 2025-02-01 20:44+0100\n"
+"PO-Revision-Date: 2025-04-25 14:28+0200\n"
 "Last-Translator: Iñigo Salvador Azurmendi <xalba@ni.eus>\n"
 "Language-Team: Basque <kde-i18n-eu@kde.org>\n"
 "Language: eu\n"
@@ -18,13 +18,12 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 24.12.1\n"
+"X-Generator: Lokalize 25.04.0\n"
 
 #: src/apps/ChatModel.cpp:151
-#, fuzzy, kde-format
-#| msgid "Show debug information"
+#, kde-format
 msgid "Show model info."
-msgstr "Erakutsi arazteko informazioa"
+msgstr "Erakutsi ereduaren informazioa"
 
 #: src/apps/main.cpp:47 src/apps/qml/ChatView.qml:14
 #: src/apps/qml/MessageDelegate.qml:64
@@ -99,14 +98,12 @@ msgid "Enter a message"
 msgstr "Sartu mezu bat"
 
 #: src/apps/qml/ChatView.qml:89
-#, fuzzy, kde-format
-#| msgid "LLM model"
+#, kde-format
 msgid "LLM model:"
-msgstr "LLM eredua"
+msgstr "LLM eredua:"
 
 #: src/apps/qml/ChatView.qml:98
-#, fuzzy, kde-format
-#| msgid "Info"
+#, kde-format
 msgctxt "@action:button"
 msgid "Info"
 msgstr "Informazioa"

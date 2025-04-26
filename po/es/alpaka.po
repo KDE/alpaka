@@ -1,5 +1,5 @@
 # Spanish translations for alpaka.po package.
-# Copyright (C) 2023 This file is copyright:
+# Copyright (C) 2023-2025 This file is copyright:
 # This file is distributed under the same license as the alpaka package.
 # Automatically generated, 2023.
 #
@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: alpaka\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-04-25 00:44+0000\n"
-"PO-Revision-Date: 2025-01-31 12:16+0100\n"
+"PO-Revision-Date: 2025-04-25 12:02+0100\n"
 "Last-Translator: Eloy Cuadra <ecuadra@eloihr.net>\n"
 "Language-Team: Spanish <kde-l10n-es@kde.org>\n"
 "Language: es\n"
@@ -17,13 +17,12 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 24.12.1\n"
+"X-Generator: Lokalize 25.04.0\n"
 
 #: src/apps/ChatModel.cpp:151
-#, fuzzy, kde-format
-#| msgid "Show debug information"
+#, kde-format
 msgid "Show model info."
-msgstr "Mostrar información de depuración"
+msgstr "Mostrar información del modelo."
 
 #: src/apps/main.cpp:47 src/apps/qml/ChatView.qml:14
 #: src/apps/qml/MessageDelegate.qml:64
@@ -98,14 +97,12 @@ msgid "Enter a message"
 msgstr "Introduzca un mensaje"
 
 #: src/apps/qml/ChatView.qml:89
-#, fuzzy, kde-format
-#| msgid "LLM model"
+#, kde-format
 msgid "LLM model:"
-msgstr "Modelo LLM"
+msgstr "Modelo LLM:"
 
 #: src/apps/qml/ChatView.qml:98
-#, fuzzy, kde-format
-#| msgid "Info"
+#, kde-format
 msgctxt "@action:button"
 msgid "Info"
 msgstr "Información"
@@ -213,24 +210,3 @@ msgstr "Configurar Ollama"
 #, kde-format
 msgid "Models:"
 msgstr "Modelos:"
-
-#~ msgid "Waiting for interface"
-#~ msgstr "Esperando la interfaz"
-
-#~ msgid "General settings"
-#~ msgstr "Preferencias generales"
-
-#~ msgid "LLM settings"
-#~ msgstr "Preferencias de LLM"
-
-#~ msgid "Model settings"
-#~ msgstr "Preferencias del modelo"
-
-#~ msgid "Ollama settings"
-#~ msgstr "Preferencias de Ollama"
-
-#~ msgid "Ollama server settings"
-#~ msgstr "Preferencias del servidor Ollama"
-
-#~ msgid "%1 tok/s"
-#~ msgstr "%1 tok/s"
