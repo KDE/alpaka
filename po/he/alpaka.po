@@ -1,13 +1,13 @@
 # Copyright (C) 2024 This file is copyright:
 # This file is distributed under the same license as the alpaka package.
 #
-# SPDX-FileCopyrightText: 2024 Yaron Shahrabani <sh.yaron@gmail.com>
+# SPDX-FileCopyrightText: 2024, 2025 Yaron Shahrabani <sh.yaron@gmail.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: alpaka\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-04-25 00:44+0000\n"
-"PO-Revision-Date: 2025-01-31 10:34+0200\n"
+"PO-Revision-Date: 2025-04-26 10:01+0300\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
 "Language: he\n"
@@ -16,13 +16,12 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n == 1) ? 0 : ((n == 2) ? 1 : ((n > 10 && "
 "n % 10 == 0) ? 2 : 3));\n"
-"X-Generator: Lokalize 24.12.0\n"
+"X-Generator: Lokalize 24.12.3\n"
 
 #: src/apps/ChatModel.cpp:151
-#, fuzzy, kde-format
-#| msgid "Show debug information"
+#, kde-format
 msgid "Show model info."
-msgstr "הצגת פרטי ניפוי שגיאות"
+msgstr "הצגת פרטי דגם."
 
 #: src/apps/main.cpp:47 src/apps/qml/ChatView.qml:14
 #: src/apps/qml/MessageDelegate.qml:64
@@ -97,14 +96,12 @@ msgid "Enter a message"
 msgstr "נא לכתוב הודעה"
 
 #: src/apps/qml/ChatView.qml:89
-#, fuzzy, kde-format
-#| msgid "LLM model"
+#, kde-format
 msgid "LLM model:"
-msgstr "מודל LLM"
+msgstr "מודל LLM:"
 
 #: src/apps/qml/ChatView.qml:98
-#, fuzzy, kde-format
-#| msgid "Info"
+#, kde-format
 msgctxt "@action:button"
 msgid "Info"
 msgstr "פרטים"
