@@ -22,8 +22,6 @@ RowLayout {
     required property int tokenCount
     required property double duration
 
-    height: messageBubble.height
-
     Rectangle {
         id: messageBubble
 

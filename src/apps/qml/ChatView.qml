@@ -2,6 +2,7 @@
 // SPDX-FileCopyrightText: 2023 Klarälvdalens Datakonsult AB, a KDAB Group company <info@kdab.com>
 //
 // SPDX-License-Identifier: GPL-2.0-only OR GPL-3.0-only OR LicenseRef-KDE-Accepted-GPL
+pragma ComponentBehavior: Bound
 
 import QtQuick
 import QtQuick.Controls as Controls
@@ -121,6 +122,22 @@ Kirigami.ScrollablePage {
         spacing: Kirigami.Units.largeSpacing * 2
         model: chat
         clip: true
+        property bool autoScroll: true
+
+        function isCloseToYEnd() {
+            return (contentY + height) * (1 - (visibleArea.yPosition + visibleArea.heightRatio)) <=  height / 5;
+        }
+
+        onContentYChanged: {
+            if (isCloseToYEnd()) autoScroll = true
+            else autoScroll = false
+        }
+
+        Connections {
+            function onContentHeightChanged() {
+                if (chatView.autoScroll) chatView.positionViewAtEnd()
+            }
+        }
 
         delegate: MessageDelegate {
             width: chatView.width
