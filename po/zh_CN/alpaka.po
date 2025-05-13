@@ -18,10 +18,9 @@ msgstr ""
 "X-Crowdin-File-ID: 48968\n"
 
 #: src/apps/ChatModel.cpp:151
-#, fuzzy, kde-format
-#| msgid "Show debug information"
+#, kde-format
 msgid "Show model info."
-msgstr "显示调试信息"
+msgstr ""
 
 #: src/apps/main.cpp:47 src/apps/qml/ChatView.qml:14
 #: src/apps/qml/MessageDelegate.qml:64
@@ -96,17 +95,15 @@ msgid "Enter a message"
 msgstr "输入信息"
 
 #: src/apps/qml/ChatView.qml:89
-#, fuzzy, kde-format
-#| msgid "LLM model"
+#, kde-format
 msgid "LLM model:"
-msgstr "LLM 模型"
+msgstr ""
 
 #: src/apps/qml/ChatView.qml:98
-#, fuzzy, kde-format
-#| msgid "Info"
+#, kde-format
 msgctxt "@action:button"
 msgid "Info"
-msgstr "详情"
+msgstr ""
 
 #: src/apps/qml/ChatView.qml:109
 #, kde-format

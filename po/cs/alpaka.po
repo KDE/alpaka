@@ -18,10 +18,9 @@ msgstr ""
 "X-Generator: Lokalize 24.02.1\n"
 
 #: src/apps/ChatModel.cpp:151
-#, fuzzy, kde-format
-#| msgid "Show debug information"
+#, kde-format
 msgid "Show model info."
-msgstr "Zobrazit ladicí informace"
+msgstr ""
 
 #: src/apps/main.cpp:47 src/apps/qml/ChatView.qml:14
 #: src/apps/qml/MessageDelegate.qml:64
@@ -96,17 +95,15 @@ msgid "Enter a message"
 msgstr ""
 
 #: src/apps/qml/ChatView.qml:89
-#, fuzzy, kde-format
-#| msgid "LLM model"
+#, kde-format
 msgid "LLM model:"
-msgstr "Model LLM"
+msgstr ""
 
 #: src/apps/qml/ChatView.qml:98
-#, fuzzy, kde-format
-#| msgid "Info"
+#, kde-format
 msgctxt "@action:button"
 msgid "Info"
-msgstr "Informace"
+msgstr ""
 
 #: src/apps/qml/ChatView.qml:109
 #, kde-format
