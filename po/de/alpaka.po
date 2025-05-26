@@ -2,6 +2,7 @@
 # German translation for alpaka.
 # Copyright (C) 2024 This file is copyright:
 # This file is distributed under the same license as the alpaka package.
+# SPDX-FileCopyrightText: 2025 oneway <onewayme001@posteo.de>
 # Automatically generated, 2024.
 #
 msgid ""
@@ -9,14 +10,15 @@ msgstr ""
 "Project-Id-Version: alpaka\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-04-25 00:44+0000\n"
-"PO-Revision-Date: 2024-01-18 10:17+0100\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2025-02-17 18:03+0100\n"
+"Last-Translator: oneway <onewayme001@posteo.de>\n"
+"Language-Team: German <kde-i18n-de@kde.org>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Lokalize 25.04.1\n"
 
 #: src/apps/ChatModel.cpp:151
 #, kde-format
@@ -27,37 +29,37 @@ msgstr ""
 #: src/apps/qml/MessageDelegate.qml:64
 #, kde-format
 msgid "Alpaka"
-msgstr ""
+msgstr "Alpaka"
 
 #: src/apps/main.cpp:49
 #, kde-format
 msgid "Ollama client"
-msgstr ""
+msgstr "Ollama-Client"
 
 #: src/apps/main.cpp:51
 #, kde-format
 msgid "© 2023-2025 Loren Burkholder"
-msgstr ""
+msgstr "Copyright 2023-2025 Loren Burkholder"
 
 #: src/apps/main.cpp:52
 #, kde-format
 msgid "Loren Burkholder"
-msgstr ""
+msgstr "Loren Burkholder"
 
 #: src/apps/main.cpp:52
 #, kde-format
 msgid "Maintainer"
-msgstr ""
+msgstr "Betreuer"
 
 #: src/apps/main.cpp:53
 #, kde-format
 msgid "Laurent Montel"
-msgstr ""
+msgstr "Laurent Montel"
 
 #: src/apps/main.cpp:53
 #, kde-format
 msgid "Developer"
-msgstr ""
+msgstr "Entwickler"
 
 #: src/apps/main.cpp:54
 #, kde-format
@@ -75,25 +77,25 @@ msgstr "kde-i18n-de@kde.org"
 #, kde-format
 msgctxt "@action:intoolbar"
 msgid "Start Over"
-msgstr ""
+msgstr "Neu anfangen"
 
 #: src/apps/qml/ChatView.qml:40
 #, kde-format
 msgctxt "@action:intoolbar"
 msgid "Settings"
-msgstr ""
+msgstr "Einstellungen"
 
 #: src/apps/qml/ChatView.qml:55
 #, kde-format
 msgctxt "@action:button"
 msgid "Try Again"
-msgstr ""
+msgstr "Nochmal versuchen"
 
 #: src/apps/qml/ChatView.qml:74
 #, kde-format
 msgctxt "@info:placeholder"
 msgid "Enter a message"
-msgstr ""
+msgstr "Eine Nachricht eingeben"
 
 #: src/apps/qml/ChatView.qml:89
 #, kde-format
@@ -110,7 +112,7 @@ msgstr ""
 #, kde-format
 msgctxt "@info:placeholder"
 msgid "Interface Not Found"
-msgstr ""
+msgstr "Schnittstelle nicht gefunden"
 
 #: src/apps/qml/ChatView.qml:110
 #, kde-format
@@ -118,92 +120,94 @@ msgid ""
 "Make sure Ollama is installed and is running. Visit the project's website "
 "for setup information."
 msgstr ""
+"Stellen Sie sicher, dass Ollama installiert ist und läuft. Besuchen Sie die "
+"Website des Projekts für Einrichtungsinformationen."
 
 #: src/apps/qml/ChatView.qml:113
 #, kde-format
 msgctxt "@action:button"
 msgid "Visit Website"
-msgstr ""
+msgstr "Website besuchen"
 
 #: src/apps/qml/GeneralSettingsPage.qml:13 src/apps/qml/SettingsPage.qml:20
 #, kde-format
 msgid "General"
-msgstr ""
+msgstr "Allgemein"
 
 #: src/apps/qml/GeneralSettingsPage.qml:19
 #, kde-format
 msgid "Show in System Tray"
-msgstr ""
+msgstr "In Systemabschnitt zeigen"
 
 #: src/apps/qml/LLMSettingsPage.qml:13 src/apps/qml/SettingsPage.qml:25
 #, kde-format
 msgid "LLM"
-msgstr ""
+msgstr "LLM"
 
 #: src/apps/qml/LLMSettingsPage.qml:32
 #, kde-format
 msgid "System prompt"
-msgstr ""
+msgstr "System-Eingabeaufforderung"
 
 #: src/apps/qml/LLMSettingsPage.qml:44
 #, kde-format
 msgid "No system prompt"
-msgstr ""
+msgstr "Keine System-Eingabeaufforderung"
 
 #: src/apps/qml/LLMSettingsPage.qml:61
 #, kde-format
 msgid "Show debug information"
-msgstr ""
+msgstr "Debuginformationen anzeigen"
 
 #: src/apps/qml/main.qml:17
 #, kde-format
 msgctxt "@title:window"
 msgid "Alpaka"
-msgstr ""
+msgstr "Alpaka"
 
 #: src/apps/qml/MessageDelegate.qml:99
 #, kde-format
 msgid "Copy"
-msgstr ""
+msgstr "Kopieren"
 
 #: src/apps/qml/MessageDelegate.qml:105
 #, kde-format
 msgid "Select All"
-msgstr ""
+msgstr "Alles auswählen"
 
 #: src/apps/qml/MessageDelegate.qml:121
 #, kde-format
 msgid "%1 tok/s · %2 tokens · %3 seconds"
-msgstr ""
+msgstr "%1 tok/s · %2 Token · %3 Sekunden"
 
 #: src/apps/qml/OllamaSettingsPage.qml:13 src/apps/qml/SettingsPage.qml:30
 #, kde-format
 msgid "Ollama"
-msgstr ""
+msgstr "Ollama"
 
 #: src/apps/qml/OllamaSettingsPage.qml:25
 #, kde-format
 msgid "Ollama server URL"
-msgstr ""
+msgstr "Ollama Server-URL"
 
 #: src/core/KLLMInterface.cpp:137
 #, kde-format
 msgid "Failed to connect to interface at %1: %2"
-msgstr ""
+msgstr "Verbindung zu Schnittstelle bei %1 fehlgeschlagen: %2 "
 
 #. i18n
 #: src/widgets/KLLMActionMenu.cpp:14
 #, kde-format
 msgid "Info"
-msgstr ""
+msgstr "Info"
 
 #: src/widgets/KLLMConfigureDialog.cpp:17
 #, kde-format
 msgctxt "@title:window"
 msgid "Configure Ollama"
-msgstr ""
+msgstr "Ollama einrichten"
 
 #: src/widgets/KLLMConfigureWidget.cpp:25
 #, kde-format
 msgid "Models:"
-msgstr ""
+msgstr "Modelle:"
