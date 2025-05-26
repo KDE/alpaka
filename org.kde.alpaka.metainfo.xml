@@ -12,6 +12,7 @@ SPDX-License-Identifier: CC0-1.0
   <name xml:lang="ca">Alpaka</name>
   <name xml:lang="ca-valencia">Alpaka</name>
   <name xml:lang="cs">Alpaka</name>
+  <name xml:lang="de">Alpaka</name>
   <name xml:lang="en-GB">Alpaka</name>
   <name xml:lang="eo">Alpaka</name>
   <name xml:lang="es">Alpaka</name>
@@ -45,6 +46,7 @@ SPDX-License-Identifier: CC0-1.0
   <summary xml:lang="ca">Un client de xat d'IA</summary>
   <summary xml:lang="ca-valencia">Un client de xat d'IA</summary>
   <summary xml:lang="cs">Klient pro AI Chat</summary>
+  <summary xml:lang="de">Ein KI-Chat-Client</summary>
   <summary xml:lang="en-GB">An AI chat client</summary>
   <summary xml:lang="eo">AI-babilkliento</summary>
   <summary xml:lang="es">Cliente de charla con IA</summary>
@@ -87,6 +89,7 @@ SPDX-License-Identifier: CC0-1.0
     <p xml:lang="ar">ألباكا هو عميل لخدمة الذكاء الاصطناعي أولاما، والذي يسمح لك بتشغيل نماذج LLM مثل Llama 2.</p>
     <p xml:lang="ca">L'Alpaka és un client per al servei d'IA Ollama, que permet executar models de LLM com el Llama 2.</p>
     <p xml:lang="ca-valencia">Alpaka és un client per al servei d'IA Ollama, el qual permet executar models de LLM com el Llama 2.</p>
+    <p xml:lang="de">Alpaka ist ein Client für den Ollama-KI-Dienst, der es Ihnen ermöglicht, LLM-Modelle wie Llama 2 zu betreiben.</p>
     <p xml:lang="en-GB">Alpaka is a client for the Ollama AI service, which lets you run LLM models such as Llama 2.</p>
     <p xml:lang="eo">Alpaka estas kliento por la Ollama AI-servo, kiu permesas vin ruli LLM-modelojn kiel Llama 2.</p>
     <p xml:lang="es">Alpaka es un cliente para el servicio de IA Ollama, que permite ejecutar modelos LLM, como Llama 2.</p>
