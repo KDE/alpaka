@@ -14,6 +14,7 @@ Dependencies:
     'frameworks/kstatusnotifieritem': '@latest-kf6'
     'frameworks/kxmlgui': '@latest-kf6'
     'frameworks/kcrash': '@latest-kf6'
+    'libraries/kirigami-addons': '@latest-kf6'
 
  - 'on': ['Linux', 'FreeBSD']
    'require':
