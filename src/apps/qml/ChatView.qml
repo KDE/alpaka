@@ -68,6 +68,30 @@ Kirigami.ScrollablePage {
 
         Controls.TextField {
             id: messageInput
+            property var history: []
+            property int historyIndex: -1
+            property string currentPrompt: ""
+
+            Keys.onPressed: (event) => {
+                if (event.key === Qt.Key_Down) {
+                    if (history.length > 0 && historyIndex > 0) {
+                        historyIndex--
+                        messageInput.text = history[historyIndex]
+                        event.accepted = true
+                    } else if (historyIndex === 0 && history.length > 0) {
+                        historyIndex--
+                        messageInput.text = currentPrompt
+                        event.accepted = true
+                    }
+                } else if (event.key === Qt.Key_Up) {
+                    if (history.length > 0 && historyIndex < history.length - 1) {
+                        if (historyIndex == -1 && messageInput.text) currentPrompt = messageInput.text
+                        historyIndex++
+                        messageInput.text = history[historyIndex]
+                        event.accepted = true
+                    }
+                }
+            }
 
             background: Rectangle {
                 color: Kirigami.Theme.backgroundColor
@@ -77,8 +101,12 @@ Kirigami.ScrollablePage {
             Layout.fillWidth: true
             focus: true
             onAccepted: {
-                chat.sendMessage(messageInput.text);
-                messageInput.text = "";
+                if (messageInput.text) {
+                    chat.sendMessage(messageInput.text);
+                    history.unshift(text)
+                    historyIndex = -1
+                    messageInput.text = "";
+                }
             }
         }
         Kirigami.Separator {
@@ -87,7 +115,7 @@ Kirigami.ScrollablePage {
         RowLayout {
             Layout.margins: Kirigami.Units.smallSpacing
             Controls.Label {
-                text: i18n("LLM model:")
+                text: i18n("LLM:")
 
             }
             Controls.ComboBox {
