@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: alpaka\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-04-25 00:44+0000\n"
+"POT-Creation-Date: 2025-06-05 00:45+0000\n"
 "PO-Revision-Date: 2025-04-25 04:39+0200\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <kde-i18n-doc@kde.org>\n"
@@ -23,8 +23,8 @@ msgstr ""
 msgid "Show model info."
 msgstr "მოდელის ინფორმაციის ჩვენება."
 
-#: src/apps/main.cpp:47 src/apps/qml/ChatView.qml:14
-#: src/apps/qml/MessageDelegate.qml:64
+#: src/apps/main.cpp:47 src/apps/qml/ChatView.qml:15
+#: src/apps/qml/MessageDelegate.qml:62
 #, kde-format
 msgid "Alpaka"
 msgstr "ალპაკა"
@@ -71,48 +71,48 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "Temuri.doghonadze@gmail.com"
 
-#: src/apps/qml/ChatView.qml:34
+#: src/apps/qml/ChatView.qml:35
 #, kde-format
 msgctxt "@action:intoolbar"
 msgid "Start Over"
 msgstr "თავიდან დაწყება"
 
-#: src/apps/qml/ChatView.qml:40
+#: src/apps/qml/ChatView.qml:41
 #, kde-format
 msgctxt "@action:intoolbar"
 msgid "Settings"
 msgstr "მორგება"
 
-#: src/apps/qml/ChatView.qml:55
+#: src/apps/qml/ChatView.qml:56
 #, kde-format
 msgctxt "@action:button"
 msgid "Try Again"
 msgstr "კიდევ სცადეთ"
 
-#: src/apps/qml/ChatView.qml:74
+#: src/apps/qml/ChatView.qml:75
 #, kde-format
 msgctxt "@info:placeholder"
 msgid "Enter a message"
 msgstr "შეიყვანეთ შეტყობინება"
 
-#: src/apps/qml/ChatView.qml:89
+#: src/apps/qml/ChatView.qml:90
 #, kde-format
 msgid "LLM model:"
 msgstr "LLM მოდელი:"
 
-#: src/apps/qml/ChatView.qml:98
+#: src/apps/qml/ChatView.qml:99
 #, kde-format
 msgctxt "@action:button"
 msgid "Info"
 msgstr "ინფორმაცია"
 
-#: src/apps/qml/ChatView.qml:109
+#: src/apps/qml/ChatView.qml:110
 #, kde-format
 msgctxt "@info:placeholder"
 msgid "Interface Not Found"
 msgstr "ინტერფეისი ვერ ვიპოვე"
 
-#: src/apps/qml/ChatView.qml:110
+#: src/apps/qml/ChatView.qml:111
 #, kde-format
 msgid ""
 "Make sure Ollama is installed and is running. Visit the project's website "
@@ -121,7 +121,7 @@ msgstr ""
 "დარწმუნდით, რომ Ollama დაყენებული და გაშვებულია. მორგები ინფორმაციის "
 "მისაღებად ეწვიეთ პროექტის ვებგვერდს."
 
-#: src/apps/qml/ChatView.qml:113
+#: src/apps/qml/ChatView.qml:114
 #, kde-format
 msgctxt "@action:button"
 msgid "Visit Website"
@@ -163,17 +163,17 @@ msgctxt "@title:window"
 msgid "Alpaka"
 msgstr "ალპაკა"
 
-#: src/apps/qml/MessageDelegate.qml:99
+#: src/apps/qml/MessageDelegate.qml:97
 #, kde-format
 msgid "Copy"
 msgstr "კოპირება"
 
-#: src/apps/qml/MessageDelegate.qml:105
+#: src/apps/qml/MessageDelegate.qml:103
 #, kde-format
 msgid "Select All"
 msgstr "ყველას მონიშვნა"
 
-#: src/apps/qml/MessageDelegate.qml:121
+#: src/apps/qml/MessageDelegate.qml:119
 #, kde-format
 msgid "%1 tok/s · %2 tokens · %3 seconds"
 msgstr "%1 კოდი/წმ · %2 კოდი · %3 წამი"

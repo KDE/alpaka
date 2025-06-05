@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: alpaka\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-04-25 00:44+0000\n"
+"POT-Creation-Date: 2025-06-05 00:45+0000\n"
 "PO-Revision-Date: 2024-03-21 17:04+0000\n"
 "Last-Translator: Guðmundur Erlingsson <gudmundure@gmail.com>\n"
 "Language-Team: Icelandic <kde-i18n-doc@kde.org>\n"
@@ -23,8 +23,8 @@ msgstr ""
 msgid "Show model info."
 msgstr "Sýna aflúsunarupplýsingar"
 
-#: src/apps/main.cpp:47 src/apps/qml/ChatView.qml:14
-#: src/apps/qml/MessageDelegate.qml:64
+#: src/apps/main.cpp:47 src/apps/qml/ChatView.qml:15
+#: src/apps/qml/MessageDelegate.qml:62
 #, kde-format
 msgid "Alpaka"
 msgstr "Alpaka"
@@ -72,61 +72,61 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "gudmundure@gmail.com"
 
-#: src/apps/qml/ChatView.qml:34
+#: src/apps/qml/ChatView.qml:35
 #, fuzzy, kde-format
 #| msgid "Start over"
 msgctxt "@action:intoolbar"
 msgid "Start Over"
 msgstr "Byrja aftur"
 
-#: src/apps/qml/ChatView.qml:40
+#: src/apps/qml/ChatView.qml:41
 #, fuzzy, kde-format
 #| msgid "Settings"
 msgctxt "@action:intoolbar"
 msgid "Settings"
 msgstr "Stillingar"
 
-#: src/apps/qml/ChatView.qml:55
+#: src/apps/qml/ChatView.qml:56
 #, fuzzy, kde-format
 #| msgid "Try again"
 msgctxt "@action:button"
 msgid "Try Again"
 msgstr "Reyna aftur"
 
-#: src/apps/qml/ChatView.qml:74
+#: src/apps/qml/ChatView.qml:75
 #, fuzzy, kde-format
 #| msgid "Enter a message"
 msgctxt "@info:placeholder"
 msgid "Enter a message"
 msgstr "Sláðu inn skilaboð"
 
-#: src/apps/qml/ChatView.qml:89
+#: src/apps/qml/ChatView.qml:90
 #, fuzzy, kde-format
 #| msgid "LLM model"
 msgid "LLM model:"
 msgstr "Stórt mállíkan (LLM)"
 
-#: src/apps/qml/ChatView.qml:98
+#: src/apps/qml/ChatView.qml:99
 #, fuzzy, kde-format
 #| msgid "Info"
 msgctxt "@action:button"
 msgid "Info"
 msgstr "Upplýsingar"
 
-#: src/apps/qml/ChatView.qml:109
+#: src/apps/qml/ChatView.qml:110
 #, kde-format
 msgctxt "@info:placeholder"
 msgid "Interface Not Found"
 msgstr ""
 
-#: src/apps/qml/ChatView.qml:110
+#: src/apps/qml/ChatView.qml:111
 #, kde-format
 msgid ""
 "Make sure Ollama is installed and is running. Visit the project's website "
 "for setup information."
 msgstr ""
 
-#: src/apps/qml/ChatView.qml:113
+#: src/apps/qml/ChatView.qml:114
 #, kde-format
 msgctxt "@action:button"
 msgid "Visit Website"
@@ -168,17 +168,17 @@ msgctxt "@title:window"
 msgid "Alpaka"
 msgstr "Alpaka"
 
-#: src/apps/qml/MessageDelegate.qml:99
+#: src/apps/qml/MessageDelegate.qml:97
 #, kde-format
 msgid "Copy"
 msgstr ""
 
-#: src/apps/qml/MessageDelegate.qml:105
+#: src/apps/qml/MessageDelegate.qml:103
 #, kde-format
 msgid "Select All"
 msgstr ""
 
-#: src/apps/qml/MessageDelegate.qml:121
+#: src/apps/qml/MessageDelegate.qml:119
 #, kde-format
 msgid "%1 tok/s · %2 tokens · %3 seconds"
 msgstr "%1 tók./sek. · %2 tókar · %3 sekúndur"

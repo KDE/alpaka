@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdeorg\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-04-25 00:44+0000\n"
+"POT-Creation-Date: 2025-06-05 00:45+0000\n"
 "PO-Revision-Date: 2024-04-22 15:58\n"
 "Last-Translator: \n"
 "Language-Team: Chinese Simplified\n"
@@ -22,8 +22,8 @@ msgstr ""
 msgid "Show model info."
 msgstr ""
 
-#: src/apps/main.cpp:47 src/apps/qml/ChatView.qml:14
-#: src/apps/qml/MessageDelegate.qml:64
+#: src/apps/main.cpp:47 src/apps/qml/ChatView.qml:15
+#: src/apps/qml/MessageDelegate.qml:62
 #, kde-format
 msgid "Alpaka"
 msgstr "Alpaka"
@@ -70,55 +70,55 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "kde-china@kde.org, , zxybbb7892020@outlook.com"
 
-#: src/apps/qml/ChatView.qml:34
+#: src/apps/qml/ChatView.qml:35
 #, kde-format
 msgctxt "@action:intoolbar"
 msgid "Start Over"
 msgstr "从头开始"
 
-#: src/apps/qml/ChatView.qml:40
+#: src/apps/qml/ChatView.qml:41
 #, kde-format
 msgctxt "@action:intoolbar"
 msgid "Settings"
 msgstr "设置"
 
-#: src/apps/qml/ChatView.qml:55
+#: src/apps/qml/ChatView.qml:56
 #, kde-format
 msgctxt "@action:button"
 msgid "Try Again"
 msgstr "再试一次"
 
-#: src/apps/qml/ChatView.qml:74
+#: src/apps/qml/ChatView.qml:75
 #, kde-format
 msgctxt "@info:placeholder"
 msgid "Enter a message"
 msgstr "输入信息"
 
-#: src/apps/qml/ChatView.qml:89
+#: src/apps/qml/ChatView.qml:90
 #, kde-format
 msgid "LLM model:"
 msgstr ""
 
-#: src/apps/qml/ChatView.qml:98
+#: src/apps/qml/ChatView.qml:99
 #, kde-format
 msgctxt "@action:button"
 msgid "Info"
 msgstr ""
 
-#: src/apps/qml/ChatView.qml:109
+#: src/apps/qml/ChatView.qml:110
 #, kde-format
 msgctxt "@info:placeholder"
 msgid "Interface Not Found"
 msgstr "找不到接口"
 
-#: src/apps/qml/ChatView.qml:110
+#: src/apps/qml/ChatView.qml:111
 #, kde-format
 msgid ""
 "Make sure Ollama is installed and is running. Visit the project's website "
 "for setup information."
 msgstr "确保 Ollama 已安装并正在运行。如需安装信息，请访问该项目的网站。"
 
-#: src/apps/qml/ChatView.qml:113
+#: src/apps/qml/ChatView.qml:114
 #, kde-format
 msgctxt "@action:button"
 msgid "Visit Website"
@@ -160,17 +160,17 @@ msgctxt "@title:window"
 msgid "Alpaka"
 msgstr "Alpaka"
 
-#: src/apps/qml/MessageDelegate.qml:99
+#: src/apps/qml/MessageDelegate.qml:97
 #, kde-format
 msgid "Copy"
 msgstr "复制"
 
-#: src/apps/qml/MessageDelegate.qml:105
+#: src/apps/qml/MessageDelegate.qml:103
 #, kde-format
 msgid "Select All"
 msgstr "全选"
 
-#: src/apps/qml/MessageDelegate.qml:121
+#: src/apps/qml/MessageDelegate.qml:119
 #, kde-format
 msgid "%1 tok/s · %2 tokens · %3 seconds"
 msgstr "%1 token/秒 · %2 tokens · %3 秒"

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: alpaka\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-04-25 00:44+0000\n"
+"POT-Creation-Date: 2025-06-05 00:45+0000\n"
 "PO-Revision-Date: 2025-04-25 12:48+0200\n"
 "Last-Translator: Freek de Kruijf <freekdekruijf@kde.nl>\n"
 "Language-Team: \n"
@@ -22,8 +22,8 @@ msgstr ""
 msgid "Show model info."
 msgstr "Modelinformatie tonen."
 
-#: src/apps/main.cpp:47 src/apps/qml/ChatView.qml:14
-#: src/apps/qml/MessageDelegate.qml:64
+#: src/apps/main.cpp:47 src/apps/qml/ChatView.qml:15
+#: src/apps/qml/MessageDelegate.qml:62
 #, kde-format
 msgid "Alpaka"
 msgstr "Alpaka"
@@ -70,48 +70,48 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "freekdekruijf@kde.nl"
 
-#: src/apps/qml/ChatView.qml:34
+#: src/apps/qml/ChatView.qml:35
 #, kde-format
 msgctxt "@action:intoolbar"
 msgid "Start Over"
 msgstr "Opnieuw starten"
 
-#: src/apps/qml/ChatView.qml:40
+#: src/apps/qml/ChatView.qml:41
 #, kde-format
 msgctxt "@action:intoolbar"
 msgid "Settings"
 msgstr "Instellingen"
 
-#: src/apps/qml/ChatView.qml:55
+#: src/apps/qml/ChatView.qml:56
 #, kde-format
 msgctxt "@action:button"
 msgid "Try Again"
 msgstr "Opnieuw proberen"
 
-#: src/apps/qml/ChatView.qml:74
+#: src/apps/qml/ChatView.qml:75
 #, kde-format
 msgctxt "@info:placeholder"
 msgid "Enter a message"
 msgstr "Voer een bericht in"
 
-#: src/apps/qml/ChatView.qml:89
+#: src/apps/qml/ChatView.qml:90
 #, kde-format
 msgid "LLM model:"
 msgstr "LLM-model:"
 
-#: src/apps/qml/ChatView.qml:98
+#: src/apps/qml/ChatView.qml:99
 #, kde-format
 msgctxt "@action:button"
 msgid "Info"
 msgstr "Informatie"
 
-#: src/apps/qml/ChatView.qml:109
+#: src/apps/qml/ChatView.qml:110
 #, kde-format
 msgctxt "@info:placeholder"
 msgid "Interface Not Found"
 msgstr "Interface niet gevonden"
 
-#: src/apps/qml/ChatView.qml:110
+#: src/apps/qml/ChatView.qml:111
 #, kde-format
 msgid ""
 "Make sure Ollama is installed and is running. Visit the project's website "
@@ -120,7 +120,7 @@ msgstr ""
 "Ga na dat Ollama is geïnstalleerd en actief is. Bezoek de website van het "
 "project voor informatie over de opzet."
 
-#: src/apps/qml/ChatView.qml:113
+#: src/apps/qml/ChatView.qml:114
 #, kde-format
 msgctxt "@action:button"
 msgid "Visit Website"
@@ -162,17 +162,17 @@ msgctxt "@title:window"
 msgid "Alpaka"
 msgstr "Alpaka"
 
-#: src/apps/qml/MessageDelegate.qml:99
+#: src/apps/qml/MessageDelegate.qml:97
 #, kde-format
 msgid "Copy"
 msgstr "Kopiëren"
 
-#: src/apps/qml/MessageDelegate.qml:105
+#: src/apps/qml/MessageDelegate.qml:103
 #, kde-format
 msgid "Select All"
 msgstr "Alles selecteren"
 
-#: src/apps/qml/MessageDelegate.qml:121
+#: src/apps/qml/MessageDelegate.qml:119
 #, kde-format
 msgid "%1 tok/s · %2 tokens · %3 seconds"
 msgstr "%1 tok/s · %2 tokens · %3 seconden"

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: alpaka\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-04-25 00:44+0000\n"
+"POT-Creation-Date: 2025-06-05 00:45+0000\n"
 "PO-Revision-Date: 2025-04-28 17:45+0400\n"
 "Last-Translator: Zayed Al-Saidi <zayed.alsaidi@gmail.com>\n"
 "Language-Team: ar\n"
@@ -23,8 +23,8 @@ msgstr ""
 msgid "Show model info."
 msgstr "اعرض معلومات النموذج"
 
-#: src/apps/main.cpp:47 src/apps/qml/ChatView.qml:14
-#: src/apps/qml/MessageDelegate.qml:64
+#: src/apps/main.cpp:47 src/apps/qml/ChatView.qml:15
+#: src/apps/qml/MessageDelegate.qml:62
 #, kde-format
 msgid "Alpaka"
 msgstr "ألباكا"
@@ -71,48 +71,48 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "omats@vivaldi.net"
 
-#: src/apps/qml/ChatView.qml:34
+#: src/apps/qml/ChatView.qml:35
 #, kde-format
 msgctxt "@action:intoolbar"
 msgid "Start Over"
 msgstr "ابدأ من جديد"
 
-#: src/apps/qml/ChatView.qml:40
+#: src/apps/qml/ChatView.qml:41
 #, kde-format
 msgctxt "@action:intoolbar"
 msgid "Settings"
 msgstr "إعدادات"
 
-#: src/apps/qml/ChatView.qml:55
+#: src/apps/qml/ChatView.qml:56
 #, kde-format
 msgctxt "@action:button"
 msgid "Try Again"
 msgstr "حاول مرة أخرى"
 
-#: src/apps/qml/ChatView.qml:74
+#: src/apps/qml/ChatView.qml:75
 #, kde-format
 msgctxt "@info:placeholder"
 msgid "Enter a message"
 msgstr "أدخل رسالة"
 
-#: src/apps/qml/ChatView.qml:89
+#: src/apps/qml/ChatView.qml:90
 #, kde-format
 msgid "LLM model:"
 msgstr "نموذج LLM:"
 
-#: src/apps/qml/ChatView.qml:98
+#: src/apps/qml/ChatView.qml:99
 #, kde-format
 msgctxt "@action:button"
 msgid "Info"
 msgstr "معلومات"
 
-#: src/apps/qml/ChatView.qml:109
+#: src/apps/qml/ChatView.qml:110
 #, kde-format
 msgctxt "@info:placeholder"
 msgid "Interface Not Found"
 msgstr "واجهة غير موجودة"
 
-#: src/apps/qml/ChatView.qml:110
+#: src/apps/qml/ChatView.qml:111
 #, kde-format
 msgid ""
 "Make sure Ollama is installed and is running. Visit the project's website "
@@ -121,7 +121,7 @@ msgstr ""
 "تأكد من تثبيت أولاما وتشغيله. قم بزيارة موقع المشروع على الويب للحصول على "
 "معلومات الإعداد."
 
-#: src/apps/qml/ChatView.qml:113
+#: src/apps/qml/ChatView.qml:114
 #, kde-format
 msgctxt "@action:button"
 msgid "Visit Website"
@@ -163,17 +163,17 @@ msgctxt "@title:window"
 msgid "Alpaka"
 msgstr "ألباكا"
 
-#: src/apps/qml/MessageDelegate.qml:99
+#: src/apps/qml/MessageDelegate.qml:97
 #, kde-format
 msgid "Copy"
 msgstr "انسخ"
 
-#: src/apps/qml/MessageDelegate.qml:105
+#: src/apps/qml/MessageDelegate.qml:103
 #, kde-format
 msgid "Select All"
 msgstr "حدّد الكلّ"
 
-#: src/apps/qml/MessageDelegate.qml:121
+#: src/apps/qml/MessageDelegate.qml:119
 #, kde-format
 msgid "%1 tok/s · %2 tokens · %3 seconds"
 msgstr "%1 رمز/ثانية · %2 رموز · %3 ثواني"
