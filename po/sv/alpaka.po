@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: alpaka\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-06-05 00:45+0000\n"
+"POT-Creation-Date: 2025-06-08 00:45+0000\n"
 "PO-Revision-Date: 2025-05-30 21:14+0200\n"
 "Last-Translator: Stefan Asserhäll <stefan.asserhall@gmail.com>\n"
 "Language-Team: Swedish <kde-i18n-doc@kde.org>\n"
@@ -88,30 +88,30 @@ msgctxt "@action:button"
 msgid "Try Again"
 msgstr "Försök igen"
 
-#: src/apps/qml/ChatView.qml:75
+#: src/apps/qml/ChatView.qml:99
 #, kde-format
 msgctxt "@info:placeholder"
 msgid "Enter a message"
 msgstr "Skriv in ett meddelande"
 
-#: src/apps/qml/ChatView.qml:90
+#: src/apps/qml/ChatView.qml:118
 #, kde-format
-msgid "LLM model:"
-msgstr "LLM-modell:"
+msgid "LLM:"
+msgstr ""
 
-#: src/apps/qml/ChatView.qml:99
+#: src/apps/qml/ChatView.qml:127
 #, kde-format
 msgctxt "@action:button"
 msgid "Info"
 msgstr "Information"
 
-#: src/apps/qml/ChatView.qml:110
+#: src/apps/qml/ChatView.qml:138
 #, kde-format
 msgctxt "@info:placeholder"
 msgid "Interface Not Found"
 msgstr "Gränssnitt hittades inte"
 
-#: src/apps/qml/ChatView.qml:111
+#: src/apps/qml/ChatView.qml:139
 #, kde-format
 msgid ""
 "Make sure Ollama is installed and is running. Visit the project's website "
@@ -120,7 +120,7 @@ msgstr ""
 "Säkerställ att Ollama är installerat och körs. Besök projektets webbplats "
 "för installationsinformation."
 
-#: src/apps/qml/ChatView.qml:114
+#: src/apps/qml/ChatView.qml:142
 #, kde-format
 msgctxt "@action:button"
 msgid "Visit Website"
@@ -208,6 +208,9 @@ msgstr "Anpassa Ollama"
 #, kde-format
 msgid "Models:"
 msgstr "Modeller:"
+
+#~ msgid "LLM model:"
+#~ msgstr "LLM-modell:"
 
 #~ msgid "Waiting for interface"
 #~ msgstr "Väntar på gränssnitt"

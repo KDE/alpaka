@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: alpaka\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-06-05 00:45+0000\n"
+"POT-Creation-Date: 2025-06-08 00:45+0000\n"
 "PO-Revision-Date: 2025-04-26 10:01+0300\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
@@ -89,30 +89,30 @@ msgctxt "@action:button"
 msgid "Try Again"
 msgstr "לנסות שוב"
 
-#: src/apps/qml/ChatView.qml:75
+#: src/apps/qml/ChatView.qml:99
 #, kde-format
 msgctxt "@info:placeholder"
 msgid "Enter a message"
 msgstr "נא לכתוב הודעה"
 
-#: src/apps/qml/ChatView.qml:90
+#: src/apps/qml/ChatView.qml:118
 #, kde-format
-msgid "LLM model:"
-msgstr "מודל LLM:"
+msgid "LLM:"
+msgstr ""
 
-#: src/apps/qml/ChatView.qml:99
+#: src/apps/qml/ChatView.qml:127
 #, kde-format
 msgctxt "@action:button"
 msgid "Info"
 msgstr "פרטים"
 
-#: src/apps/qml/ChatView.qml:110
+#: src/apps/qml/ChatView.qml:138
 #, kde-format
 msgctxt "@info:placeholder"
 msgid "Interface Not Found"
 msgstr "הממשק לא נמצא"
 
-#: src/apps/qml/ChatView.qml:111
+#: src/apps/qml/ChatView.qml:139
 #, kde-format
 msgid ""
 "Make sure Ollama is installed and is running. Visit the project's website "
@@ -121,7 +121,7 @@ msgstr ""
 "רצוי לוודא ש־Ollama מותקנת ופעילה. יש לבקר באתר המיזם למידע בנוגע להתקנה "
 "והגדרות."
 
-#: src/apps/qml/ChatView.qml:114
+#: src/apps/qml/ChatView.qml:142
 #, kde-format
 msgctxt "@action:button"
 msgid "Visit Website"
@@ -209,6 +209,9 @@ msgstr "הגדרת Ollama"
 #, kde-format
 msgid "Models:"
 msgstr "מודלים:"
+
+#~ msgid "LLM model:"
+#~ msgstr "מודל LLM:"
 
 #~ msgid "Waiting for interface"
 #~ msgstr "בהמתנה לממשק"

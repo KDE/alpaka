@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: alpaka\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-06-05 00:45+0000\n"
+"POT-Creation-Date: 2025-06-08 00:45+0000\n"
 "PO-Revision-Date: 2025-04-25 09:31+0300\n"
 "Last-Translator: Emir SARI <emir_sari@îcloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
@@ -88,30 +88,30 @@ msgctxt "@action:button"
 msgid "Try Again"
 msgstr "Yeniden Dene"
 
-#: src/apps/qml/ChatView.qml:75
+#: src/apps/qml/ChatView.qml:99
 #, kde-format
 msgctxt "@info:placeholder"
 msgid "Enter a message"
 msgstr "Bir ileti gir…"
 
-#: src/apps/qml/ChatView.qml:90
+#: src/apps/qml/ChatView.qml:118
 #, kde-format
-msgid "LLM model:"
-msgstr "LLM modeli:"
+msgid "LLM:"
+msgstr ""
 
-#: src/apps/qml/ChatView.qml:99
+#: src/apps/qml/ChatView.qml:127
 #, kde-format
 msgctxt "@action:button"
 msgid "Info"
 msgstr "Bilgi"
 
-#: src/apps/qml/ChatView.qml:110
+#: src/apps/qml/ChatView.qml:138
 #, kde-format
 msgctxt "@info:placeholder"
 msgid "Interface Not Found"
 msgstr "Arayüz bulunamadı."
 
-#: src/apps/qml/ChatView.qml:111
+#: src/apps/qml/ChatView.qml:139
 #, kde-format
 msgid ""
 "Make sure Ollama is installed and is running. Visit the project's website "
@@ -120,7 +120,7 @@ msgstr ""
 "Ollama’nın kurulu ve çalışıyor olduğundan emin olun. Kurulum bilgisi için "
 "projenin web sayfasını ziyaret edin."
 
-#: src/apps/qml/ChatView.qml:114
+#: src/apps/qml/ChatView.qml:142
 #, kde-format
 msgctxt "@action:button"
 msgid "Visit Website"
@@ -208,3 +208,6 @@ msgstr "Ollama’yı Yapılandır"
 #, kde-format
 msgid "Models:"
 msgstr "Modeller:"
+
+#~ msgid "LLM model:"
+#~ msgstr "LLM modeli:"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: alpaka\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-06-05 00:45+0000\n"
+"POT-Creation-Date: 2025-06-08 00:45+0000\n"
 "PO-Revision-Date: 2024-12-24 20:39+0530\n"
 "Last-Translator: kali <shreekantkalwar@gmail.com>\n"
 "Language-Team: Sanskrit <kde-i18n-doc@kde.org>\n"
@@ -92,32 +92,31 @@ msgctxt "@action:button"
 msgid "Try Again"
 msgstr "पुनः प्रयासं कुर्वन्तु"
 
-#: src/apps/qml/ChatView.qml:75
+#: src/apps/qml/ChatView.qml:99
 #, kde-format
 msgctxt "@info:placeholder"
 msgid "Enter a message"
 msgstr "सन्देशं प्रविशतु"
 
-#: src/apps/qml/ChatView.qml:90
-#, fuzzy, kde-format
-#| msgid "LLM model"
-msgid "LLM model:"
-msgstr "एलएलएम मॉडल"
+#: src/apps/qml/ChatView.qml:118
+#, kde-format
+msgid "LLM:"
+msgstr ""
 
-#: src/apps/qml/ChatView.qml:99
+#: src/apps/qml/ChatView.qml:127
 #, fuzzy, kde-format
 #| msgid "Info"
 msgctxt "@action:button"
 msgid "Info"
 msgstr "Info"
 
-#: src/apps/qml/ChatView.qml:110
+#: src/apps/qml/ChatView.qml:138
 #, kde-format
 msgctxt "@info:placeholder"
 msgid "Interface Not Found"
 msgstr "अन्तरफलकं न लब्धम्"
 
-#: src/apps/qml/ChatView.qml:111
+#: src/apps/qml/ChatView.qml:139
 #, kde-format
 msgid ""
 "Make sure Ollama is installed and is running. Visit the project's website "
@@ -126,7 +125,7 @@ msgstr ""
 "Ollama संस्थापितम् अस्ति, चालितं च इति सुनिश्चितं कुर्वन्तु। सेटअप-सूचनार्थं परियोजनायाः "
 "जालपुटं पश्यन्तु ।"
 
-#: src/apps/qml/ChatView.qml:114
+#: src/apps/qml/ChatView.qml:142
 #, kde-format
 msgctxt "@action:button"
 msgid "Visit Website"
@@ -214,3 +213,8 @@ msgstr "ओल्लामा विन्यस्तं कुर्वन्�
 #, kde-format
 msgid "Models:"
 msgstr "आदर्शाः :"
+
+#, fuzzy
+#~| msgid "LLM model"
+#~ msgid "LLM model:"
+#~ msgstr "एलएलएम मॉडल"
