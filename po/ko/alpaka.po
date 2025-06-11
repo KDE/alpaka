@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: alpaka\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-06-08 00:45+0000\n"
-"PO-Revision-Date: 2025-04-06 21:08+0200\n"
+"PO-Revision-Date: 2025-06-11 00:13+0200\n"
 "Last-Translator: Shinjo Park <kde@peremen.name>\n"
 "Language-Team: Korean <kde-kr@kde.org>\n"
 "Language: ko\n"
@@ -15,13 +15,12 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Lokalize 23.08.5\n"
+"X-Generator: Lokalize 24.12.3\n"
 
 #: src/apps/ChatModel.cpp:151
-#, fuzzy, kde-format
-#| msgid "Show debug information"
+#, kde-format
 msgid "Show model info."
-msgstr "디버그 정보 표시"
+msgstr "모델 정보를 표시합니다."
 
 #: src/apps/main.cpp:47 src/apps/qml/ChatView.qml:15
 #: src/apps/qml/MessageDelegate.qml:62
@@ -98,11 +97,10 @@ msgstr "메시지 입력"
 #: src/apps/qml/ChatView.qml:118
 #, kde-format
 msgid "LLM:"
-msgstr ""
+msgstr "LLM:"
 
 #: src/apps/qml/ChatView.qml:127
-#, fuzzy, kde-format
-#| msgid "Info"
+#, kde-format
 msgctxt "@action:button"
 msgid "Info"
 msgstr "정보"
