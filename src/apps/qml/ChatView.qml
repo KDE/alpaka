@@ -125,6 +125,7 @@ Kirigami.ScrollablePage {
             }
             Controls.Button {
                 text: i18nc("@action:button", "Info")
+                enabled: modelCombo.count > 0
                 onClicked: chat.getModelInfo()
             }
         }
