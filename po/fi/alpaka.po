@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: alpaka\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-06-08 00:45+0000\n"
+"POT-Creation-Date: 2025-06-27 00:45+0000\n"
 "PO-Revision-Date: 2025-05-25 08:27+0300\n"
 "Last-Translator: Tommi Nieminen <translator@legisign.org>\n"
 "Language-Team: Finnish <kde-i18n-doc@kde.org>\n"
@@ -105,13 +105,13 @@ msgctxt "@action:button"
 msgid "Info"
 msgstr "Tietoa"
 
-#: src/apps/qml/ChatView.qml:138
+#: src/apps/qml/ChatView.qml:139
 #, kde-format
 msgctxt "@info:placeholder"
 msgid "Interface Not Found"
 msgstr "Liitäntää ei löytynyt"
 
-#: src/apps/qml/ChatView.qml:139
+#: src/apps/qml/ChatView.qml:140
 #, kde-format
 msgid ""
 "Make sure Ollama is installed and is running. Visit the project's website "
@@ -120,7 +120,7 @@ msgstr ""
 "Varmista, että Ollama on asennettu ja käynnissä. Asetustietoa löytyy "
 "projektin sivustolta."
 
-#: src/apps/qml/ChatView.qml:142
+#: src/apps/qml/ChatView.qml:143
 #, kde-format
 msgctxt "@action:button"
 msgid "Visit Website"
