@@ -95,6 +95,7 @@ int main(int argc, char *argv[])
     QObject::connect(KSignalHandler::self(), &KSignalHandler::signalReceived, &app, [](int signal) {
         if (signal == SIGINT || signal == SIGTERM) {
             printf("Shutting down...\n");
+            QApplication::exit();
         }
     });
 #endif
