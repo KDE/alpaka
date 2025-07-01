@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: alpaka\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-06-27 00:45+0000\n"
-"PO-Revision-Date: 2025-04-29 17:20+0300\n"
+"PO-Revision-Date: 2025-06-27 12:27+0300\n"
 "Last-Translator: Toms Trasuns <toms.trasuns@posteo.net>\n"
 "Language-Team: Latvian <kde-i18n-doc@kde.org>\n"
 "Language: lv\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n != 0 ? 1 : "
 "2);\n"
-"X-Generator: Lokalize 25.04.0\n"
+"X-Generator: Lokalize 25.04.2\n"
 
 #: src/apps/ChatModel.cpp:151
 #, kde-format
@@ -98,7 +98,7 @@ msgstr "Rakstiet ziņu"
 #: src/apps/qml/ChatView.qml:118
 #, kde-format
 msgid "LLM:"
-msgstr ""
+msgstr "Lielais valodas modelis:"
 
 #: src/apps/qml/ChatView.qml:127
 #, kde-format
@@ -140,7 +140,7 @@ msgstr "Rādīt sistēmas ikonu joslā"
 #: src/apps/qml/LLMSettingsPage.qml:13 src/apps/qml/SettingsPage.qml:25
 #, kde-format
 msgid "LLM"
-msgstr "LLM"
+msgstr "Lielais valodas modelis"
 
 #: src/apps/qml/LLMSettingsPage.qml:32
 #, kde-format
