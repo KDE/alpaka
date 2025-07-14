@@ -20,7 +20,7 @@ msgstr ""
 #: src/apps/ChatModel.cpp:151
 #, kde-format
 msgid "Show model info."
-msgstr ""
+msgstr "显示模型信息。"
 
 #: src/apps/main.cpp:47 src/apps/qml/ChatView.qml:15
 #: src/apps/qml/MessageDelegate.qml:62
@@ -97,13 +97,13 @@ msgstr "输入信息"
 #: src/apps/qml/ChatView.qml:118
 #, kde-format
 msgid "LLM:"
-msgstr ""
+msgstr "LLM："
 
 #: src/apps/qml/ChatView.qml:127
 #, kde-format
 msgctxt "@action:button"
 msgid "Info"
-msgstr ""
+msgstr "详情"
 
 #: src/apps/qml/ChatView.qml:139
 #, kde-format
