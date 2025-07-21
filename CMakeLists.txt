@@ -27,6 +27,8 @@ include(GenerateExportHeader)
 include(ECMGenerateHeaders)
 include(ECMSetupVersion)
 include(ECMAddQch)
+include(ECMAddAppIcon)
+include(ECMInstallIcons)
 
 option(BUILD_QCH "Build API documentation in QCH format (for e.g. Qt Assistant, Qt Creator & KDevelop)" OFF)
 add_feature_info(QCH ${BUILD_QCH} "API documentation in QCH format (for e.g. Qt Assistant, Qt Creator & KDevelop)")
@@ -70,6 +72,28 @@ if(BUILD_TESTING)
     add_definitions(-DBUILD_TESTING)
     find_package(Qt6 ${QT_MIN_VERSION} REQUIRED COMPONENTS Test)
 endif()
+
+# icons
+set(alpaka_ICONS
+    icons/22-apps-alpaka.png
+    icons/24-apps-alpaka.png
+    icons/32-apps-alpaka.png
+    icons/48-apps-alpaka.png
+    icons/64-apps-alpaka.png
+    icons/128-apps-alpaka.png
+    icons/256-apps-alpaka.png
+    icons/512-apps-alpaka.png
+    icons/sc-apps-alpaka.svg
+)
+
+ecm_add_app_icon(alpaka ICONS ${alpaka_ICONS})
+
+ecm_install_icons(
+    ICONS ${alpaka_ICONS}
+    DESTINATION ${KDE_INSTALL_ICONDIR}
+    THEME hicolor
+)
+
 
 add_subdirectory(src)
 

@@ -55,6 +55,7 @@ int main(int argc, char *argv[])
     about.setOrganizationDomain("kde.org");
 
     KAboutData::setApplicationData(about);
+    QApplication::setWindowIcon(QIcon::fromTheme(QStringLiteral("alpaka")));
     KCrash::initialize();
 
     if (qEnvironmentVariableIsEmpty("QT_QUICK_CONTROLS_STYLE"))
