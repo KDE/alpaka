@@ -15,6 +15,23 @@
         "--socket=pulseaudio",
         "--share=network"
     ],
+    "cleanup": [
+        "*.a",
+        "*.la",
+        "/doc",
+        "/docs",
+        "/include",
+        "/lib/cmake",
+        "/lib/pkgconfig",
+        "/lib/x86_64-linux-gnu/cmake",
+        "/lib/x86_64-linux-gnu/pkgconfig",
+        "/man",
+        "/share/cmake",
+        "/share/doc",
+        "/share/gtk-doc",
+        "/share/man",
+        "/share/pkgconfig"
+    ],
     "separate-locales": false,
     "modules": [
         {
