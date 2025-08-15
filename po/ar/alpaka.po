@@ -118,8 +118,8 @@ msgid ""
 "Make sure Ollama is installed and is running. Visit the project's website "
 "for setup information."
 msgstr ""
-"تأكد من تثبيت أولاما وتشغيله. قم بزيارة موقع المشروع على الويب للحصول على "
-"معلومات الإعداد."
+"تأكد من تثبيت أولاما وتشغيله. زر موقع المشروع على الويب للحصول على معلومات "
+"الإعداد."
 
 #: src/apps/qml/ChatView.qml:143
 #, kde-format
