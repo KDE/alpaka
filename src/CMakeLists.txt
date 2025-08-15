@@ -4,5 +4,4 @@
 # SPDX-License-Identifier: GPL-2.0-only OR GPL-3.0-only OR LicenseRef-KDE-Accepted-GPL
 
 add_subdirectory(core)
-add_subdirectory(widgets)
 add_subdirectory(apps)
