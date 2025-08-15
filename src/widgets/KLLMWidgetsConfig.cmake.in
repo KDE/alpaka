@@ -1,9 +1,0 @@
-# SPDX-FileCopyrightText: 2023-2024 Laurent Montel <montel.org>
-# SPDX-License-Identifier: BSD-3-Clause
-@PACKAGE_INIT@
-include(CMakeFindDependencyMacro)
-
-find_dependency(KLLMCore)
-include("${CMAKE_CURRENT_LIST_DIR}/KLLMWidgetsTargets.cmake")
-
-@PACKAGE_INCLUDE_QCHTARGETS@

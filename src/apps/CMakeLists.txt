@@ -38,7 +38,6 @@ qt_add_qml_module(alpaka
 )
 
 target_link_libraries(alpaka PRIVATE
-    Qt6::Widgets
     Qt6::Quick
     Qt6::Qml
     Qt6::Gui
