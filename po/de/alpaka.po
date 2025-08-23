@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: alpaka\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-06-27 00:45+0000\n"
+"POT-Creation-Date: 2025-08-23 00:45+0000\n"
 "PO-Revision-Date: 2025-07-28 11:11+0200\n"
 "Last-Translator: Philipp Kiemle <l10n@prly.mozmail.com>\n"
 "Language-Team: German <kde-i18n-de@kde.org>\n"
@@ -196,19 +196,12 @@ msgstr "URL des Ollama-Servers"
 msgid "Failed to connect to interface at %1: %2"
 msgstr "Verbindung zu Schnittstelle unter „%1“ fehlgeschlagen: %2"
 
-#. i18n
-#: src/widgets/KLLMActionMenu.cpp:14
-#, kde-format
-msgid "Info"
-msgstr "Info"
+#~ msgid "Info"
+#~ msgstr "Info"
 
-#: src/widgets/KLLMConfigureDialog.cpp:17
-#, kde-format
-msgctxt "@title:window"
-msgid "Configure Ollama"
-msgstr "Ollama einrichten"
+#~ msgctxt "@title:window"
+#~ msgid "Configure Ollama"
+#~ msgstr "Ollama einrichten"
 
-#: src/widgets/KLLMConfigureWidget.cpp:25
-#, kde-format
-msgid "Models:"
-msgstr "Modelle:"
+#~ msgid "Models:"
+#~ msgstr "Modelle:"

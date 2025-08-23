@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: alpaka\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-06-27 00:45+0000\n"
+"POT-Creation-Date: 2025-08-23 00:45+0000\n"
 "PO-Revision-Date: 2025-06-12 12:31+0400\n"
 "Last-Translator: Zayed Al-Saidi <zayed.alsaidi@gmail.com>\n"
 "Language-Team: ar\n"
@@ -193,22 +193,15 @@ msgstr "عنوان خادم أولاما"
 msgid "Failed to connect to interface at %1: %2"
 msgstr "فشل الاتصال بالواجهة في %1: %2"
 
-#. i18n
-#: src/widgets/KLLMActionMenu.cpp:14
-#, kde-format
-msgid "Info"
-msgstr "معلومات"
+#~ msgid "Info"
+#~ msgstr "معلومات"
 
-#: src/widgets/KLLMConfigureDialog.cpp:17
-#, kde-format
-msgctxt "@title:window"
-msgid "Configure Ollama"
-msgstr "اضبط أولاما"
+#~ msgctxt "@title:window"
+#~ msgid "Configure Ollama"
+#~ msgstr "اضبط أولاما"
 
-#: src/widgets/KLLMConfigureWidget.cpp:25
-#, kde-format
-msgid "Models:"
-msgstr "النماذج:"
+#~ msgid "Models:"
+#~ msgstr "النماذج:"
 
 #~ msgid "LLM model:"
 #~ msgstr "نموذج LLM:"

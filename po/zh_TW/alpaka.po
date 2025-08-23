@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: alpaka\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-06-27 00:45+0000\n"
+"POT-Creation-Date: 2025-08-23 00:45+0000\n"
 "PO-Revision-Date: 2025-06-09 00:02+0900\n"
 "Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
 "Language-Team: Traditional Chinese <zh-l10n@lists.slat.org>\n"
@@ -190,22 +190,15 @@ msgstr "Ollama 伺服器網址"
 msgid "Failed to connect to interface at %1: %2"
 msgstr "無法連線到在 %1 的介面：%2"
 
-#. i18n
-#: src/widgets/KLLMActionMenu.cpp:14
-#, kde-format
-msgid "Info"
-msgstr "資訊"
+#~ msgid "Info"
+#~ msgstr "資訊"
 
-#: src/widgets/KLLMConfigureDialog.cpp:17
-#, kde-format
-msgctxt "@title:window"
-msgid "Configure Ollama"
-msgstr "設定 Ollama"
+#~ msgctxt "@title:window"
+#~ msgid "Configure Ollama"
+#~ msgstr "設定 Ollama"
 
-#: src/widgets/KLLMConfigureWidget.cpp:25
-#, kde-format
-msgid "Models:"
-msgstr "模型："
+#~ msgid "Models:"
+#~ msgstr "模型："
 
 #~ msgid "LLM model:"
 #~ msgstr "LLM 模型："

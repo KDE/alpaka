@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: alpaka\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-06-27 00:45+0000\n"
+"POT-Creation-Date: 2025-08-23 00:45+0000\n"
 "PO-Revision-Date: 2024-12-24 20:39+0530\n"
 "Last-Translator: kali <shreekantkalwar@gmail.com>\n"
 "Language-Team: Sanskrit <kde-i18n-doc@kde.org>\n"
@@ -197,22 +197,15 @@ msgstr "ओल्लामा सर्वर यूआरएल"
 msgid "Failed to connect to interface at %1: %2"
 msgstr "%1: %2 इत्यत्र अन्तरफलकेन सह संयोजितुं असफलम्"
 
-#. i18n
-#: src/widgets/KLLMActionMenu.cpp:14
-#, kde-format
-msgid "Info"
-msgstr "Info"
+#~ msgid "Info"
+#~ msgstr "Info"
 
-#: src/widgets/KLLMConfigureDialog.cpp:17
-#, kde-format
-msgctxt "@title:window"
-msgid "Configure Ollama"
-msgstr "ओल्लामा विन्यस्तं कुर्वन्तु"
+#~ msgctxt "@title:window"
+#~ msgid "Configure Ollama"
+#~ msgstr "ओल्लामा विन्यस्तं कुर्वन्तु"
 
-#: src/widgets/KLLMConfigureWidget.cpp:25
-#, kde-format
-msgid "Models:"
-msgstr "आदर्शाः :"
+#~ msgid "Models:"
+#~ msgstr "आदर्शाः :"
 
 #, fuzzy
 #~| msgid "LLM model"

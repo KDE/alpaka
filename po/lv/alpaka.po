@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: alpaka\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-06-27 00:45+0000\n"
+"POT-Creation-Date: 2025-08-23 00:45+0000\n"
 "PO-Revision-Date: 2025-06-27 12:27+0300\n"
 "Last-Translator: Toms Trasuns <toms.trasuns@posteo.net>\n"
 "Language-Team: Latvian <kde-i18n-doc@kde.org>\n"
@@ -193,22 +193,15 @@ msgstr "„Ollama“ servera adrese"
 msgid "Failed to connect to interface at %1: %2"
 msgstr "Neizdevās savienoties ar saskarni pie %1: %2"
 
-#. i18n
-#: src/widgets/KLLMActionMenu.cpp:14
-#, kde-format
-msgid "Info"
-msgstr "Informācija"
+#~ msgid "Info"
+#~ msgstr "Informācija"
 
-#: src/widgets/KLLMConfigureDialog.cpp:17
-#, kde-format
-msgctxt "@title:window"
-msgid "Configure Ollama"
-msgstr "Konfigurēt „Ollama“"
+#~ msgctxt "@title:window"
+#~ msgid "Configure Ollama"
+#~ msgstr "Konfigurēt „Ollama“"
 
-#: src/widgets/KLLMConfigureWidget.cpp:25
-#, kde-format
-msgid "Models:"
-msgstr "Modeļi:"
+#~ msgid "Models:"
+#~ msgstr "Modeļi:"
 
 #~ msgid "LLM model:"
 #~ msgstr "LLM modelis:"

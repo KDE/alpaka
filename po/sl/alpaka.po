@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-06-27 00:45+0000\n"
+"POT-Creation-Date: 2025-08-23 00:45+0000\n"
 "PO-Revision-Date: 2025-06-08 07:03+0200\n"
 "Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
@@ -190,22 +190,15 @@ msgstr "URL strežnika Ollama"
 msgid "Failed to connect to interface at %1: %2"
 msgstr "Povezava z vmesnikom na %1 ni uspela: %2"
 
-#. i18n
-#: src/widgets/KLLMActionMenu.cpp:14
-#, kde-format
-msgid "Info"
-msgstr "Informacije"
+#~ msgid "Info"
+#~ msgstr "Informacije"
 
-#: src/widgets/KLLMConfigureDialog.cpp:17
-#, kde-format
-msgctxt "@title:window"
-msgid "Configure Ollama"
-msgstr "Konfiguriraj Ollamo"
+#~ msgctxt "@title:window"
+#~ msgid "Configure Ollama"
+#~ msgstr "Konfiguriraj Ollamo"
 
-#: src/widgets/KLLMConfigureWidget.cpp:25
-#, kde-format
-msgid "Models:"
-msgstr "Modeli:"
+#~ msgid "Models:"
+#~ msgstr "Modeli:"
 
 #~ msgid "LLM model:"
 #~ msgstr "LLM model:"

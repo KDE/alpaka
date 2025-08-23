@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: alpaka\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-06-27 00:45+0000\n"
+"POT-Creation-Date: 2025-08-23 00:45+0000\n"
 "PO-Revision-Date: 2025-06-08 05:06+0200\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <kde-i18n-doc@kde.org>\n"
@@ -193,22 +193,15 @@ msgstr "Ollama სერვერის ბმული"
 msgid "Failed to connect to interface at %1: %2"
 msgstr "ვერ მივუერთდი ინტერფეისს მისამართზე %1: %2"
 
-#. i18n
-#: src/widgets/KLLMActionMenu.cpp:14
-#, kde-format
-msgid "Info"
-msgstr "ინფორმაცია"
+#~ msgid "Info"
+#~ msgstr "ინფორმაცია"
 
-#: src/widgets/KLLMConfigureDialog.cpp:17
-#, kde-format
-msgctxt "@title:window"
-msgid "Configure Ollama"
-msgstr "Ollama-ის მორგება"
+#~ msgctxt "@title:window"
+#~ msgid "Configure Ollama"
+#~ msgstr "Ollama-ის მორგება"
 
-#: src/widgets/KLLMConfigureWidget.cpp:25
-#, kde-format
-msgid "Models:"
-msgstr "მოდელები:"
+#~ msgid "Models:"
+#~ msgstr "მოდელები:"
 
 #~ msgid "LLM model:"
 #~ msgstr "LLM მოდელი:"
