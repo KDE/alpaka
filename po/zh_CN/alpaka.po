@@ -189,13 +189,3 @@ msgstr "Ollama 服务器 URL"
 #, kde-format
 msgid "Failed to connect to interface at %1: %2"
 msgstr "无法连接到 %1的接口： %2"
-
-#~ msgid "Info"
-#~ msgstr "详情"
-
-#~ msgctxt "@title:window"
-#~ msgid "Configure Ollama"
-#~ msgstr "配置 Ollama"
-
-#~ msgid "Models:"
-#~ msgstr "模型："
