@@ -189,13 +189,3 @@ msgstr ""
 #, kde-format
 msgid "Failed to connect to interface at %1: %2"
 msgstr ""
-
-#~ msgid "Info"
-#~ msgstr "Informace"
-
-#~ msgctxt "@title:window"
-#~ msgid "Configure Ollama"
-#~ msgstr "Nastavit Ollama"
-
-#~ msgid "Models:"
-#~ msgstr "Modely:"
