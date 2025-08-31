@@ -78,7 +78,7 @@ int main(int argc, char *argv[])
         },
         Qt::QueuedConnection);
     engine.rootContext()->setContextObject(new KLocalizedContext(&engine));
-    engine.load(QUrl(QStringLiteral("qrc:/org/kde/alpaka/qml/main.qml")));
+    engine.loadFromModule("org.kde.alpaka", "Main");
 
     app.connect(&app, &QApplication::aboutToQuit, KLLMCoreSettings::self(), &KLLMCoreSettings::save);
 

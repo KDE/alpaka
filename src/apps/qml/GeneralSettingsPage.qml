@@ -15,7 +15,7 @@ FormCard.FormCardPage {
     FormCard.FormCard {
         Layout.topMargin: Kirigami.Units.largeSpacing
         FormCard.FormCheckDelegate {
-            id: closeDelegate
+            id: generalSettings
             text: i18n("Show in System Tray")
             checked: AlpakaSettings.systemTray
             visible: Controller.supportSystemTray

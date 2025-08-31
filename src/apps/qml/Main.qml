@@ -22,10 +22,10 @@ Kirigami.ApplicationWindow {
 
     KCoreAddons.KUser { id: localUser }
 
-    Component {
-        id: settingsPage
 
-        SettingsPage {}
+    ConfigurationView {
+        id: configurationView
+        window: root
     }
 
     pageStack.initialPage: ChatView {}

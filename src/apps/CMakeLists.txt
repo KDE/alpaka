@@ -4,6 +4,10 @@
 # SPDX-License-Identifier: GPL-2.0-only OR GPL-3.0-only OR LicenseRef-KDE-Accepted-GPL
 
 add_executable(alpaka)
+ecm_add_qml_module(alpaka
+    URI org.kde.alpaka
+    VERSION 1.0
+)
 
 configure_file(config-alpaka.h.in ${CMAKE_CURRENT_BINARY_DIR}/config-alpaka.h)
 
@@ -23,17 +27,15 @@ target_sources(alpaka PRIVATE
     systemtray.cpp
 )
 
-qt_add_qml_module(alpaka
-    URI org.kde.alpaka
-    VERSION 1.0
-    QML_FILES
+ecm_target_qml_sources(alpaka
+    SOURCES
         qml/ChatView.qml
+        qml/ConfigurationView.qml
         qml/GeneralSettingsPage.qml
         qml/LLMSettingsPage.qml
-        qml/main.qml
+        qml/Main.qml
         qml/MessageDelegate.qml
         qml/OllamaSettingsPage.qml
-        qml/SettingsPage.qml
         qml/TypingIndicator.qml
 )
 

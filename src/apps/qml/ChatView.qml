@@ -40,7 +40,7 @@ Kirigami.ScrollablePage {
         Kirigami.Action {
             text: i18nc("@action:intoolbar", "Settings")
             icon.name: "settings-configure"
-            onTriggered: pageStack.pushDialogLayer(settingsPage)
+            onTriggered: configurationView.open()
         }
     ]
 
