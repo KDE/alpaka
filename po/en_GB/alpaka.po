@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: alpaka\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-08-23 00:45+0000\n"
+"POT-Creation-Date: 2025-09-01 00:45+0000\n"
 "PO-Revision-Date: 2024-11-01 14:00+0000\n"
 "Last-Translator: Steve Allewell <steve.allewell@gmail.com>\n"
 "Language-Team: British English\n"
@@ -129,20 +129,26 @@ msgctxt "@action:button"
 msgid "Visit Website"
 msgstr "Visit Website"
 
-#: src/apps/qml/GeneralSettingsPage.qml:13 src/apps/qml/SettingsPage.qml:20
+#: src/apps/qml/ConfigurationView.qml:18
+#: src/apps/qml/GeneralSettingsPage.qml:13
 #, kde-format
 msgid "General"
 msgstr "General"
+
+#: src/apps/qml/ConfigurationView.qml:23 src/apps/qml/LLMSettingsPage.qml:13
+#, kde-format
+msgid "LLM"
+msgstr "LLM"
+
+#: src/apps/qml/ConfigurationView.qml:28 src/apps/qml/OllamaSettingsPage.qml:13
+#, kde-format
+msgid "Ollama"
+msgstr "Ollama"
 
 #: src/apps/qml/GeneralSettingsPage.qml:19
 #, kde-format
 msgid "Show in System Tray"
 msgstr "Show in System Tray"
-
-#: src/apps/qml/LLMSettingsPage.qml:13 src/apps/qml/SettingsPage.qml:25
-#, kde-format
-msgid "LLM"
-msgstr "LLM"
 
 #: src/apps/qml/LLMSettingsPage.qml:32
 #, kde-format
@@ -159,7 +165,7 @@ msgstr "No system prompt"
 msgid "Show debug information"
 msgstr "Show debug information"
 
-#: src/apps/qml/main.qml:17
+#: src/apps/qml/Main.qml:17
 #, kde-format
 msgctxt "@title:window"
 msgid "Alpaka"
@@ -179,11 +185,6 @@ msgstr ""
 #, kde-format
 msgid "%1 tok/s · %2 tokens · %3 seconds"
 msgstr "%1 tok/s · %2 tokens · %3 seconds"
-
-#: src/apps/qml/OllamaSettingsPage.qml:13 src/apps/qml/SettingsPage.qml:30
-#, kde-format
-msgid "Ollama"
-msgstr "Ollama"
 
 #: src/apps/qml/OllamaSettingsPage.qml:25
 #, kde-format

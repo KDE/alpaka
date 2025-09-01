@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: alpaka\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-08-23 00:45+0000\n"
+"POT-Creation-Date: 2025-09-01 00:45+0000\n"
 "PO-Revision-Date: 2025-06-08 11:03+0300\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
@@ -127,20 +127,26 @@ msgctxt "@action:button"
 msgid "Visit Website"
 msgstr "ביקור באתר"
 
-#: src/apps/qml/GeneralSettingsPage.qml:13 src/apps/qml/SettingsPage.qml:20
+#: src/apps/qml/ConfigurationView.qml:18
+#: src/apps/qml/GeneralSettingsPage.qml:13
 #, kde-format
 msgid "General"
 msgstr "כללי"
+
+#: src/apps/qml/ConfigurationView.qml:23 src/apps/qml/LLMSettingsPage.qml:13
+#, kde-format
+msgid "LLM"
+msgstr "LLM"
+
+#: src/apps/qml/ConfigurationView.qml:28 src/apps/qml/OllamaSettingsPage.qml:13
+#, kde-format
+msgid "Ollama"
+msgstr "Ollama"
 
 #: src/apps/qml/GeneralSettingsPage.qml:19
 #, kde-format
 msgid "Show in System Tray"
 msgstr "הצגה בשורת המשימות"
-
-#: src/apps/qml/LLMSettingsPage.qml:13 src/apps/qml/SettingsPage.qml:25
-#, kde-format
-msgid "LLM"
-msgstr "LLM"
 
 #: src/apps/qml/LLMSettingsPage.qml:32
 #, kde-format
@@ -157,7 +163,7 @@ msgstr "אין הנחיית מערכת"
 msgid "Show debug information"
 msgstr "הצגת פרטי ניפוי שגיאות"
 
-#: src/apps/qml/main.qml:17
+#: src/apps/qml/Main.qml:17
 #, kde-format
 msgctxt "@title:window"
 msgid "Alpaka"
@@ -177,11 +183,6 @@ msgstr "בחירה בהכול"
 #, kde-format
 msgid "%1 tok/s · %2 tokens · %3 seconds"
 msgstr "%1 אסימונים לשנייה · %2 אסימונים · %3 שניות"
-
-#: src/apps/qml/OllamaSettingsPage.qml:13 src/apps/qml/SettingsPage.qml:30
-#, kde-format
-msgid "Ollama"
-msgstr "Ollama"
 
 #: src/apps/qml/OllamaSettingsPage.qml:25
 #, kde-format
