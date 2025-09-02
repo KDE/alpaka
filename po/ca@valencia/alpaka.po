@@ -178,7 +178,7 @@ msgstr "Copia"
 #: src/apps/qml/MessageDelegate.qml:103
 #, kde-format
 msgid "Select All"
-msgstr "Tria-ho tot"
+msgstr "Selecciona-ho tot"
 
 #: src/apps/qml/MessageDelegate.qml:119
 #, kde-format
@@ -194,13 +194,3 @@ msgstr "URL del servidor Ollama"
 #, kde-format
 msgid "Failed to connect to interface at %1: %2"
 msgstr "No s'ha pogut connectar amb la interfície a %1: %2"
-
-#~ msgid "Info"
-#~ msgstr "Informació"
-
-#~ msgctxt "@title:window"
-#~ msgid "Configure Ollama"
-#~ msgstr "Configura Ollama"
-
-#~ msgid "Models:"
-#~ msgstr "Models:"
