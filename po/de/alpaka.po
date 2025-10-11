@@ -4,8 +4,6 @@
 # This file is distributed under the same license as the alpaka package.
 # SPDX-FileCopyrightText: 2025 oneway <onewayme001@posteo.de>
 # SPDX-FileCopyrightText: 2025 Philipp Kiemle <l10n@prly.mozmail.com>
-# Automatically generated, 2024.
-#
 msgid ""
 msgstr ""
 "Project-Id-Version: alpaka\n"
