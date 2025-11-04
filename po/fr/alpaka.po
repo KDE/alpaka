@@ -143,7 +143,7 @@ msgstr "Ollama"
 #: src/apps/qml/GeneralSettingsPage.qml:19
 #, kde-format
 msgid "Show in System Tray"
-msgstr "Afficher dans la boîte à miniatures du système"
+msgstr "Afficher dans la boite à miniatures du système"
 
 #: src/apps/qml/LLMSettingsPage.qml:32
 #, kde-format
