@@ -25,10 +25,8 @@ Kirigami.ScrollablePage {
         }
     }
 
-
     leftPadding: 30
     actions: [
-
         Kirigami.Action {
             text: i18nc("@action:intoolbar", "Start Over")
             icon.name: "view-refresh"
@@ -63,58 +61,75 @@ Kirigami.ScrollablePage {
         Kirigami.Separator {
             Layout.fillWidth: true
         }
+        Controls.ScrollView {
+            Layout.fillWidth: true
+            clip: true
+            implicitHeight: Math.min(Kirigami.Units.gridUnit * 12, Math.max(Kirigami.Units.gridUnit * 3, contentHeight))
+            Controls.TextArea {
+                id: messageInput
+                wrapMode: TextEdit.Wrap
+                placeholderText: i18nc("@info:placeholder", "Enter a message")
+                enabled: chat.llm.ready && !chat.replyInProgress
+                width: parent.width
+                focus: true
 
-        Controls.TextField {
-            id: messageInput
-            property var history: []
-            property int historyIndex: -1
-            property string currentPrompt: ""
+                property var history: []
+                property int historyIndex: -1
+                property string currentPrompt: ""
 
-            Keys.onPressed: (event) => {
-                if (event.key === Qt.Key_Down) {
-                    if (history.length > 0 && historyIndex > 0) {
-                        historyIndex--
-                        messageInput.text = history[historyIndex]
-                        event.accepted = true
-                    } else if (historyIndex === 0 && history.length > 0) {
-                        historyIndex--
-                        messageInput.text = currentPrompt
-                        event.accepted = true
-                    }
-                } else if (event.key === Qt.Key_Up) {
-                    if (history.length > 0 && historyIndex < history.length - 1) {
-                        if (historyIndex == -1 && messageInput.text) currentPrompt = messageInput.text
-                        historyIndex++
-                        messageInput.text = history[historyIndex]
-                        event.accepted = true
+                Keys.onPressed: event => {
+                    if (event.key === Qt.Key_Down && !event.modifiers) {
+                        if (history.length > 0 && historyIndex > 0) {
+                            historyIndex--;
+                            messageInput.text = history[historyIndex];
+                            event.accepted = true;
+                        } else if (historyIndex === 0 && history.length > 0) {
+                            historyIndex--;
+                            messageInput.text = currentPrompt;
+                            event.accepted = true;
+                        }
+                    } else if (event.key === Qt.Key_Up && !event.modifiers) {
+                        if (history.length > 0 && historyIndex < history.length - 1) {
+                            if (historyIndex === -1 && messageInput.text)
+                                currentPrompt = messageInput.text;
+
+                            historyIndex++;
+                            messageInput.text = history[historyIndex];
+                            event.accepted = true;
+                        }
                     }
                 }
-            }
 
-            background: Rectangle {
-                color: Kirigami.Theme.backgroundColor
-            }
-            placeholderText: i18nc("@info:placeholder", "Enter a message")
-            enabled: chat.llm.ready && !chat.replyInProgress
-            Layout.fillWidth: true
-            focus: true
-            onAccepted: {
-                if (messageInput.text) {
-                    chat.sendMessage(messageInput.text);
-                    history.unshift(text)
-                    historyIndex = -1
-                    messageInput.text = "";
+                background: Rectangle {
+                    color: Kirigami.Theme.backgroundColor
+                }
+
+                Keys.onReturnPressed: event => {
+                    if (event.modifiers & Qt.ShiftModifier) {
+                        const pos = messageInput.cursorPosition;
+                        messageInput.text = messageInput.text.slice(0, pos) + "\n" + messageInput.text.slice(pos);
+                        messageInput.cursorPosition = pos + 1;
+                        event.accepted = true;
+                    } else {
+                        if (messageInput.text) {
+                            chat.sendMessage(messageInput.text.replace(/\n/g, "  \n"));
+                            history.unshift(messageInput.text);
+                            historyIndex = -1;
+                            messageInput.text = "";
+                        }
+                        event.accepted = true;
+                    }
                 }
             }
         }
         Kirigami.Separator {
             Layout.fillWidth: true
         }
+
         RowLayout {
             Layout.margins: Kirigami.Units.smallSpacing
             Controls.Label {
                 text: i18n("LLM:")
-
             }
             Controls.ComboBox {
                 id: modelCombo
@@ -127,7 +142,6 @@ Kirigami.ScrollablePage {
                 onClicked: chat.getModelInfo()
             }
         }
-
     }
 
     Kirigami.PlaceholderMessage {
@@ -152,17 +166,20 @@ Kirigami.ScrollablePage {
         property bool autoScroll: true
 
         function isCloseToYEnd() {
-            return (contentY + height) * (1 - (visibleArea.yPosition + visibleArea.heightRatio)) <=  height / 5;
+            return (contentY + height) * (1 - (visibleArea.yPosition + visibleArea.heightRatio)) <= height / 5;
         }
 
         onContentYChanged: {
-            if (isCloseToYEnd()) autoScroll = true
-            else autoScroll = false
+            if (isCloseToYEnd())
+                autoScroll = true;
+            else
+                autoScroll = false;
         }
 
         Connections {
             function onContentHeightChanged() {
-                if (chatView.autoScroll) chatView.positionViewAtEnd()
+                if (chatView.autoScroll)
+                    chatView.positionViewAtEnd();
             }
         }
 
