@@ -34,7 +34,7 @@ void Controller::setQuitOnLastWindowClosed()
 {
 #ifndef Q_OS_ANDROID
     if (KLLMCoreSettings::self()->systemTray()) {
-        mTrayIcon = new SystemTray(this);
+        mTrayIcon = new SystemTray(WindowController::instance().window());
         mTrayIcon->show();
         connect(mTrayIcon, &SystemTray::toggleWindow, this, &Controller::toggleWindow);
     } else {

@@ -4,22 +4,16 @@
 // Code based on neochat code
 
 #include "systemtray.h"
-#include "windowcontroller.h"
 #include <KWindowSystem>
 
 SystemTray::SystemTray(QObject *parent)
     : KStatusNotifierItem{parent}
 {
-    setCategory(KStatusNotifierItem::ItemCategory::SystemServices);
-    // FIXME: Fix icon !
-    setIconByName(QStringLiteral("org.kde.alpaka"));
+    setCategory(KStatusNotifierItem::ItemCategory::ApplicationStatus);
+    setIconByName(QStringLiteral("alpaka"));
     connect(this, &KStatusNotifierItem::activateRequested, this, [this] {
         KWindowSystem::setCurrentXdgActivationToken(providedToken());
         Q_EMIT toggleWindow();
-    });
-
-    connect(&WindowController::instance(), &WindowController::windowChanged, this, [this] {
-        setAssociatedWindow(WindowController::instance().window());
     });
 }
 
