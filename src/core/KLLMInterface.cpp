@@ -134,7 +134,7 @@ void KLLMInterface::reload()
     auto rep = m_manager->get(req);
     m_ollamaCheck = connect(rep, &QNetworkReply::finished, this, [this, rep] {
         if (rep->error() != QNetworkReply::NoError) {
-            Q_EMIT errorOccurred(i18n("Failed to connect to interface at %1: %2", m_ollamaUrl, rep->errorString()));
+            Q_EMIT errorOccurred(i18nc("%1 is an URL, %2 an error description", "Failed to connect to interface at %1: %2", m_ollamaUrl, rep->errorString()));
             m_hasError = true;
             Q_EMIT readyChanged();
             Q_EMIT hasErrorChanged();

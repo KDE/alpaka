@@ -102,13 +102,13 @@ RowLayout {
                 Labs.Menu {
                     id: contextMenu
                     Labs.MenuItem {
-                        text: i18n("Copy")
+                        text: i18nc("@action:inmenu", "Copy")
                         shortcut: StandardKey.Copy
                         enabled: textEdit.selectedText.length > 0
                         onTriggered: textEdit.copy()
                     }
                     Labs.MenuItem {
-                        text: i18n("Select All")
+                        text: i18n("@action:inmenu", "Select All")
                         shortcut: StandardKey.SelectAll
                         onTriggered: textEdit.selectAll()
                     }
@@ -124,7 +124,7 @@ RowLayout {
             Controls.Label {
                 Layout.fillWidth: true
                 visible: AlpakaSettings.showDebugInfo && messageDelegate.sender === ChatModel.LLM && messageDelegate.finished
-                text: i18n("%1 tok/s · %2 tokens · %3 seconds",
+                text: i18nc("'toks' is short for 'tokens'", "%1 tok/s · %2 tokens · %3 seconds",
                            messageDelegate.tokensPerSecond.toFixed(2),
                            messageDelegate.tokenCount,
                            messageDelegate.duration.toFixed(2))
