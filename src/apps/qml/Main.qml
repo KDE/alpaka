@@ -4,12 +4,8 @@
 // SPDX-License-Identifier: GPL-2.0-only OR GPL-3.0-only OR LicenseRef-KDE-Accepted-GPL
 
 import QtQuick
-import QtQuick.Controls as Controls
-import QtQuick.Layouts
 import org.kde.kirigami as Kirigami
 import org.kde.coreaddons as KCoreAddons
-import org.kde.kirigamiaddons.components as KirigamiComponents
-import org.kde.alpaka
 
 Kirigami.ApplicationWindow {
     id: root
@@ -21,7 +17,6 @@ Kirigami.ApplicationWindow {
     SystemPalette { id: palette }
 
     KCoreAddons.KUser { id: localUser }
-
 
     ConfigurationView {
         id: configurationView

@@ -15,7 +15,7 @@
 /**
  * @class WindowController
  *
- * A singleton class to help manage the NeoChat window.
+ * A singleton class to help manage the Alpaka window.
  */
 class WindowController : public QObject
 {

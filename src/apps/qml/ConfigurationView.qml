@@ -3,11 +3,7 @@
 // SPDX-License-Identifier: GPL-2.0-only OR GPL-3.0-only OR LicenseRef-KDE-Accepted-GPL
 
 import QtQuick
-import QtQuick.Controls as Controls
-import QtQuick.Layouts
-import org.kde.kirigami as Kirigami
 import org.kde.kirigamiaddons.settings as KirigamiSettings
-import org.kde.alpaka
 
 KirigamiSettings.ConfigurationView {
     id: settingsRoot

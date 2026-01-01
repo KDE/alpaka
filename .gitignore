@@ -81,3 +81,12 @@ CMakeLists.txt.user*
 
 # build dirs
 build*/
+
+#Zed config dir
+.zed/
+
+#symbolic link to compile_commands.json in build dir to be used by the LSP
+compile_commands.json
+
+#QC config dir
+.qtcreator/
