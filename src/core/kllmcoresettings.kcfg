@@ -47,5 +47,9 @@ SPDX-License-Identifier: GPL-2.0-only OR GPL-3.0-only OR LicenseRef-KDE-Accepted
       <label>Close Alpaka to system tray</label>
       <default>false</default>
     </entry>
+    <entry name="AutoScrollDown" type="bool">
+      <label>Auto scroll down when a new prompt is posted</label>
+      <default>true</default>
+    </entry>
   </group>
 </kcfg>

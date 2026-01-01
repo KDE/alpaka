@@ -116,6 +116,7 @@ Kirigami.ScrollablePage {
                             history.unshift(messageInput.text);
                             historyIndex = -1;
                             messageInput.text = "";
+                            if (AlpakaSettings.autoScrollDown) chatView.autoScroll = true
                         }
                         event.accepted = true;
                     }
