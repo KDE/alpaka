@@ -76,25 +76,16 @@ KLLMReply *KLLMInterface::getCompletion(const KLLMRequest &request)
 {
     Q_ASSERT(ready());
 
-    QNetworkRequest req{QUrl::fromUserInput(m_ollamaUrl + QStringLiteral("/api/generate"))};
+    qDebug() << "Outgoing request:" << request;
+    QNetworkRequest req{QUrl::fromUserInput(m_ollamaUrl + QStringLiteral("/api/chat"))};
     req.setHeader(QNetworkRequest::ContentTypeHeader, QStringLiteral("application/json"));
 
     QJsonObject data;
     data["model"_L1] = request.model().isEmpty() ? m_models.constFirst() : request.model();
-    data["prompt"_L1] = request.message();
-
-    const auto context = request.context().toJson();
-    if (!context.isNull()) {
-        data["context"_L1] = context;
-    }
-
-    if (!m_systemPrompt.isEmpty()) {
-        data["system"_L1] = m_systemPrompt;
-    }
+    data["messages"_L1] = request.messages();
 
     auto buf = new QBuffer{this};
     buf->setData(QJsonDocument(data).toJson(QJsonDocument::Compact));
-
     auto reply = new KLLMReply{m_manager->post(req, buf), this};
     connect(reply, &KLLMReply::finished, this, [this, reply, buf] {
         Q_EMIT finished(reply->readResponse());
@@ -172,19 +163,6 @@ void KLLMInterface::setOllamaUrl(const QString &ollamaUrl)
 void KLLMInterface::setOllamaUrl(const QUrl &ollamaUrl)
 {
     setOllamaUrl(ollamaUrl.toString());
-}
-
-QString KLLMInterface::systemPrompt() const
-{
-    return m_systemPrompt;
-}
-
-void KLLMInterface::setSystemPrompt(const QString &systemPrompt)
-{
-    if (m_systemPrompt == systemPrompt)
-        return;
-    m_systemPrompt = systemPrompt;
-    Q_EMIT systemPromptChanged();
 }
 
 #include "moc_KLLMInterface.cpp"

@@ -8,10 +8,10 @@
 #include <KLocalizedString>
 #include <KUser>
 
-#include <qtypes.h>
-#include <ranges>
-
 #include "kllmcoresettings.h"
+#include <QJsonObject>
+#include <QStringLiteral>
+using namespace Qt::StringLiterals;
 using namespace KLLMCore;
 ChatModel::ChatModel(QObject *parent)
     : QAbstractListModel{parent}
@@ -20,10 +20,20 @@ ChatModel::ChatModel(QObject *parent)
     auto settings = KLLMCoreSettings::self();
 
     m_llm->setOllamaUrl(settings->serverUrl());
-    m_llm->setSystemPrompt(settings->systemPrompt());
+
+    QJsonObject systemMessage;
+    systemMessage["role"_L1] = "system"_L1;
+    systemMessage["content"_L1] = KLLMCoreSettings::systemPrompt();
+    m_messageJsonHistory.append(systemMessage);
 
     connect(KLLMCoreSettings::self(), &KLLMCoreSettings::SystemPromptChanged, this, [this] {
-        m_llm->setSystemPrompt(KLLMCoreSettings::systemPrompt());
+        auto lastMessage = this->m_messageJsonHistory.last();
+        if (lastMessage["role"_L1] == "system"_L1)
+            this->m_messageJsonHistory.removeLast();
+        QJsonObject systemMessage;
+        systemMessage["role"_L1] = "system"_L1;
+        systemMessage["content"_L1] = KLLMCoreSettings::systemPrompt();
+        this->m_messageJsonHistory.append(systemMessage);
     });
     connect(KLLMCoreSettings::self(), &KLLMCoreSettings::ServerUrlChanged, this, [this] {
         m_llm->setOllamaUrl(KLLMCoreSettings::serverUrl());
@@ -110,14 +120,13 @@ bool ChatModel::replyInProgress() const
 
 void ChatModel::sendMessage(const QString &message)
 {
-    KLLMRequest req{message};
+    QJsonObject obj;
+    obj["role"_L1] = "user"_L1;
+    obj["content"_L1] = message;
+    m_messageJsonHistory.append(obj);
+    KLLMRequest req{m_messageJsonHistory};
     req.setModel(KLLMCoreSettings::model());
-    for (const auto &message : m_messages | std::views::reverse) {
-        if (message.sender == Sender::LLM) {
-            req.setContext(message.context);
-            break;
-        }
-    }
+
     auto rep = m_llm->getCompletion(req);
 
     beginInsertRows({}, m_messages.size(), m_messages.size() + 1);
@@ -132,8 +141,8 @@ void ChatModel::sendMessage(const QString &message)
                              auto &message = m_messages[i];
                              m_connections.remove(message.llmReply);
                              if (!message.llmReply->isAborted()) {
-                                 message.context = message.llmReply->context();
                                  message.info = message.llmReply->info();
+                                 m_messageJsonHistory.append(message.llmReply->getReplyJson()); // TODO: Summarize older chats befor appending
                              }
                              message.llmReply->deleteLater();
                              message.llmReply = nullptr;
@@ -149,7 +158,7 @@ void ChatModel::sendMessage(const QString &message)
 
 void ChatModel::getModelInfo()
 {
-    KLLMRequest req{QString{}};
+    KLLMRequest req{QJsonArray{}};
     req.setModel(KLLMCoreSettings::model());
 
     auto rep = m_llm->getModelInfo(req);
@@ -186,6 +195,7 @@ void ChatModel::resetConversation()
     m_connections.clear();
     Q_EMIT replyInProgressChanged();
     m_messages.clear();
+    m_messageJsonHistory = {};
     endResetModel();
 }
 

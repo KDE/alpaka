@@ -3,21 +3,17 @@
 // SPDX-License-Identifier: GPL-2.0-only OR GPL-3.0-only OR LicenseRef-KDE-Accepted-GPL
 
 #include "KLLMRequest.h"
+#include <QJsonArray>
 
 using namespace KLLMCore;
-KLLMRequest::KLLMRequest(const QString &message)
-    : m_message{message}
+KLLMRequest::KLLMRequest(const QJsonArray &messages)
+    : m_messages(messages)
 {
 }
 
-QString KLLMRequest::message() const
+QJsonArray KLLMRequest::messages() const
 {
-    return m_message;
-}
-
-const KLLMContext &KLLMRequest::context() const
-{
-    return m_context;
+    return m_messages;
 }
 
 QString KLLMRequest::model() const
@@ -25,14 +21,9 @@ QString KLLMRequest::model() const
     return m_model;
 }
 
-void KLLMRequest::setMessage(const QString &message)
+void KLLMRequest::setMessages(const QJsonArray &messages)
 {
-    m_message = message;
-}
-
-void KLLMRequest::setContext(const KLLMContext &context)
-{
-    m_context = context;
+    m_messages = messages;
 }
 
 void KLLMRequest::setModel(const QString &model)
@@ -43,7 +34,6 @@ void KLLMRequest::setModel(const QString &model)
 QDebug operator<<(QDebug d, const KLLMRequest &t)
 {
     d << "Model: " << t.model();
-    d << "Message: " << t.message();
-    d << "Context: " << t.context();
+    d << "Message: " << t.messages();
     return d;
 }

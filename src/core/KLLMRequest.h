@@ -7,8 +7,8 @@
 
 #include "kllmcore_export.h"
 
-#include "KLLMContext.h"
 #include <QDebug>
+#include <QJsonArray>
 namespace KLLMCore
 {
 /**
@@ -21,23 +21,17 @@ class KLLMCORE_EXPORT KLLMRequest
 {
 public:
     /**
-     * @brief Creates a KLLMRequest with the message \a message.
-     * @param message The message that will be sent to the LLM.
+     * @brief Creates a KLLMRequest with the array of messages \a messages.
+     * @param messages The json array of messages that will be sent to the LLM.
      * @param parent
      */
-    explicit KLLMRequest(const QString &message);
+    explicit KLLMRequest(const QJsonArray &messages);
 
     /**
-     * @brief Use this to get the message for the LLM.
-     * @return Returns the message to be sent to the LLM.
+     * @brief Use this to get the array of messages for the LLM.
+     * @return Returns the array of messages to be sent to the LLM.
      */
-    [[nodiscard]] QString message() const;
-
-    /**
-     * @brief Use this to retrive the context for the LLM.
-     * @return Returns the context object to be sent to the LLM.
-     */
-    const KLLMContext &context() const;
+    [[nodiscard]] QJsonArray messages() const;
 
     /**
      * @brief Gets the LLM model that will be used by the backend.
@@ -46,20 +40,10 @@ public:
     [[nodiscard]] QString model() const;
 
     /**
-     * @brief Sets the message to be sent to the LLM.
-     * @param message The message text to be sent to the LLM.
+     * @brief Sets the messages to be sent to the LLM.
+     * @param messages The array of messages in json format to be sent to the LLM.
      */
-    void setMessage(const QString &message);
-
-    /**
-     * @brief Sets the conversation context for the LLM.
-     *
-     * If you want the LLM to respond in context of previous messages, you should set this to the context returned in the
-     * previous KLLMReply.
-     *
-     * @param context The context object for this request.
-     */
-    void setContext(const KLLMContext &context);
+    void setMessages(const QJsonArray &messages);
 
     /**
      * @brief Sets the model to be used for this request.
@@ -72,8 +56,7 @@ public:
     void setModel(const QString &model);
 
 private:
-    QString m_message;
-    KLLMContext m_context;
+    QJsonArray m_messages;
     QString m_model;
 };
 }

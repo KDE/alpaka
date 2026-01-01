@@ -5,8 +5,8 @@
 #pragma once
 
 #include <QAbstractListModel>
+#include <QJsonArray>
 #include <QtQmlIntegration>
-#include <qtypes.h>
 
 #include "KLLMInterface.h"
 #include "KLLMReply.h"
@@ -66,11 +66,11 @@ private:
         Sender sender;
         qsizetype messageIndex = -1;
         KLLMCore::KLLMReply *llmReply = nullptr;
-        KLLMCore::KLLMContext context;
         KLLMCore::KLLMReplyInfo info;
     };
 
     QList<ChatMessage> m_messages;
+    QJsonArray m_messageJsonHistory;
     KLLMCore::KLLMInterface *const m_llm;
 
     QMultiHash<KLLMCore::KLLMReply *, QMetaObject::Connection> m_connections;

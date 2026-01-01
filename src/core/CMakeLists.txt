@@ -19,9 +19,6 @@ set_target_properties(KLLMCore PROPERTIES
 )
 
 target_sources(KLLMCore PRIVATE
-    KLLMContext.cpp
-    KLLMContext.h
-
     KLLMInterface.cpp
     KLLMInterface.h
 

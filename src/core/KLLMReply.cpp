@@ -7,6 +7,7 @@
 #include "kllmcore_debug.h"
 
 #include <QNetworkReply>
+#include <QObject>
 
 using namespace Qt::StringLiterals;
 using namespace KLLMCore;
@@ -21,13 +22,20 @@ KLLMReply::KLLMReply(QNetworkReply *netReply, QObject *parent, RequestTypes requ
         // that the request failed and we have no tokens to parse.
         if (!m_aborted && m_requestType == RequestTypes::StreamingGenerate && !m_tokens.empty()) {
             const auto finalResponse = m_tokens.constLast();
-            m_context.setOllamaContext(finalResponse["context"_L1].toArray());
+            m_info.doneReason = finalResponse["done_reason"_L1].toVariant().toString();
+            m_info.messageRole = finalResponse["message"_L1]["role"_L1].toVariant().toString();
             m_info.totalDuration = std::chrono::nanoseconds{finalResponse["total_duration"_L1].toVariant().toULongLong()};
             m_info.loadDuration = std::chrono::nanoseconds{finalResponse["load_duration"_L1].toVariant().toULongLong()};
             m_info.promptEvalTokenCount = finalResponse["prompt_eval_count"_L1].toVariant().toULongLong();
             m_info.promptEvalDuration = std::chrono::nanoseconds{finalResponse["prompt_eval_duration"_L1].toVariant().toULongLong()};
             m_info.tokenCount = finalResponse["eval_count"_L1].toVariant().toULongLong();
             m_info.duration = std::chrono::nanoseconds{finalResponse["eval_duration"_L1].toVariant().toULongLong()};
+            m_replyJson = finalResponse["message"_L1].toObject();
+            QString messageContent;
+            for (const auto &tok : m_tokens)
+                messageContent += tok["message"_L1]["content"_L1].toString();
+
+            m_replyJson["content"_L1] = messageContent;
         }
 
         qCDebug(KLLMCORE_LOG) << "Ollama response finished";
@@ -79,16 +87,11 @@ QString KLLMReply::readResponse() const
         break;
     case RequestTypes::StreamingGenerate:
         for (const auto &tok : m_tokens)
-            ret += tok["response"_L1].toString();
+            ret += tok["message"_L1]["content"_L1].toString();
         break;
     }
 
     return ret;
-}
-
-const KLLMContext &KLLMReply::context() const
-{
-    return m_context;
 }
 
 const KLLMReplyInfo &KLLMReply::info() const
@@ -109,6 +112,11 @@ bool KLLMReply::isFinished() const
 bool KLLMReply::isAborted() const
 {
     return m_aborted;
+}
+
+QJsonObject KLLMReply::getReplyJson() const
+{
+    return m_replyJson;
 }
 
 void KLLMReply::abort()

@@ -6,9 +6,11 @@
 #pragma once
 
 #include "kllmcore_export.h"
+#include <QJsonArray>
 #include <QJsonDocument>
-
-#include "KLLMContext.h"
+#include <QJsonObject>
+#include <QObject>
+#include <chrono>
 
 class QNetworkReply;
 namespace KLLMCore
@@ -38,6 +40,12 @@ struct KLLMCORE_EXPORT KLLMReplyInfo {
 
     //! The time spent generating the reply.
     std::chrono::nanoseconds duration;
+
+    //! The reason for which the respnse has ended
+    QString doneReason;
+
+    //! The role specified for the message
+    QString messageRole;
 };
 
 /**
@@ -76,17 +84,6 @@ public:
     [[nodiscard]] QString readResponse() const;
 
     /**
-     * @brief Get the context token for this response (if applicable).
-     *
-     * Messages sent by most LLMs have a context identifier that allows you to chain messages into a conversation. To create
-     * such a conversation, you need to take this context object and set it on the next KLLMRequest in the conversation.
-     * KLLMInterface::getCompletion() will use that context object to continue the message thread.
-     *
-     * @return A context object that refers to this response.
-     */
-    const KLLMContext &context() const;
-
-    /**
      * @brief Get extra information about the reply (if applicable).
      *
      * This function returns a KLLMReplyInfo object containing information about this reply. If the reply has not finished, the KLLMReplyInfo object will have
@@ -99,7 +96,7 @@ public:
     /**
      * @brief Check whether the reply has finished.
      *
-     * If you need to know if the response has finished changing or if the context has been received yet, call this function.
+     * If you need to know if the response has finished changing, call this function.
      *
      * @return Whether the reply has finished.
      */
@@ -122,6 +119,13 @@ public:
      * @return Corresponding request type.
      */
     const RequestTypes &requestType() const;
+
+    /**
+     * @brief  Returns the json object of completed response
+     *
+     * Returns the json object of completed response. Can be used to keep the context of conversation
+     */
+    QJsonObject getReplyJson() const;
 
     /**
      * @brief Aborts connection
@@ -162,8 +166,8 @@ private:
 
     QList<QJsonDocument> m_tokens;
 
-    KLLMContext m_context;
     KLLMReplyInfo m_info;
+    QJsonObject m_replyJson;
     RequestTypes m_requestType = RequestTypes::StreamingGenerate;
 
     int m_receivedSize = 0;
