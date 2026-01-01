@@ -106,6 +106,15 @@ public:
     [[nodiscard]] bool isFinished() const;
 
     /**
+     * @brief Check whether the reply has been aborted.
+     *
+     * If you need to know if an abort is called for this reply, call this function.
+     *
+     * @return Whether the reply has been aborted.
+     */
+    [[nodiscard]] bool isAborted() const;
+
+    /**
      * @brief Get request type.
      *
      * The request type is set when this object is created.
@@ -113,6 +122,13 @@ public:
      * @return Corresponding request type.
      */
     const RequestTypes &requestType() const;
+
+    /**
+     * @brief Aborts connection
+     *
+     * Aborts incomming response stream in the middle
+     */
+    void abort();
 
 protected:
     explicit KLLMReply(QNetworkReply *netReply, QObject *parent = nullptr, RequestTypes requestType = RequestTypes::StreamingGenerate);
@@ -138,6 +154,8 @@ Q_SIGNALS:
      */
     void finished();
 
+    void aborted();
+
 private:
     QNetworkReply *const m_reply;
     QByteArray m_incompleteTokens;
@@ -150,5 +168,6 @@ private:
 
     int m_receivedSize = 0;
     bool m_finished = false;
+    bool m_aborted = false;
 };
 }

@@ -8,6 +8,7 @@
 #include <KLocalizedString>
 #include <KUser>
 
+#include <qtypes.h>
 #include <ranges>
 
 #include "kllmcoresettings.h"
@@ -50,6 +51,7 @@ QHash<int, QByteArray> ChatModel::roleNames() const
     return {{Roles::MessageRole, "message"},
             {Roles::SenderRole, "sender"},
             {Roles::FinishedRole, "finished"},
+            {Roles::MessageIndexRole, "messageIndex"},
             {Roles::TokensPerSecondRole, "tokensPerSecond"},
             {Roles::TokenCountRole, "tokenCount"},
             {Roles::DurationRole, "duration"}};
@@ -68,6 +70,8 @@ QVariant ChatModel::data(const QModelIndex &index, int role) const
     const auto &message = m_messages[index.row()];
 
     switch (role) {
+    case Roles::MessageIndexRole:
+        return message.messageIndex;
     case Roles::MessageRole:
         return message.content;
     case Roles::SenderRole:
@@ -117,8 +121,8 @@ void ChatModel::sendMessage(const QString &message)
     auto rep = m_llm->getCompletion(req);
 
     beginInsertRows({}, m_messages.size(), m_messages.size() + 1);
-    m_messages.append(ChatMessage{.content = message, .sender = Sender::User});
-    m_messages.append(ChatMessage{.inProgress = true, .sender = Sender::LLM, .llmReply = rep});
+    m_messages.append(ChatMessage{.content = message, .sender = Sender::User, .messageIndex = m_messages.size()});
+    m_messages.append(ChatMessage{.inProgress = true, .sender = Sender::LLM, .messageIndex = m_messages.size(), .llmReply = rep});
     m_connections.insert(rep, connect(rep, &KLLMReply::contentAdded, this, [this, i = m_messages.size() - 1] {
                              auto &message = m_messages[i];
                              message.content = message.llmReply->readResponse();
@@ -127,8 +131,10 @@ void ChatModel::sendMessage(const QString &message)
     m_connections.insert(rep, connect(rep, &KLLMReply::finished, this, [this, i = m_messages.size() - 1] {
                              auto &message = m_messages[i];
                              m_connections.remove(message.llmReply);
-                             message.context = message.llmReply->context();
-                             message.info = message.llmReply->info();
+                             if (!message.llmReply->isAborted()) {
+                                 message.context = message.llmReply->context();
+                                 message.info = message.llmReply->info();
+                             }
                              message.llmReply->deleteLater();
                              message.llmReply = nullptr;
                              message.inProgress = false;
@@ -148,9 +154,10 @@ void ChatModel::getModelInfo()
 
     auto rep = m_llm->getModelInfo(req);
     beginInsertRows({}, m_messages.size(), m_messages.size() + 1);
-    m_messages.append(ChatMessage{.content = i18n("Show model info."), .sender = Sender::User});
-    m_messages.append(ChatMessage{.inProgress = true, .sender = Sender::LLM, .llmReply = rep});
-    m_connections.insert(rep, connect(rep, &KLLMReply::contentAdded, this, [this, i = m_messages.size() - 1] {
+
+    m_messages.append(ChatMessage{.content = i18n("Show model info."), .sender = Sender::User, .messageIndex = m_messages.size() - 1});
+    m_messages.append(ChatMessage{.inProgress = true, .sender = Sender::LLM, .messageIndex = m_messages.size(), .llmReply = rep});
+    m_connections.insert(rep, connect(rep, &KLLMReply::contentAdded, this, [this, i = m_messages.size()] {
                              auto &message = m_messages[i];
                              message.content = message.llmReply->readResponse();
                              Q_EMIT dataChanged(index(i), index(i), {Roles::MessageRole});
@@ -180,6 +187,11 @@ void ChatModel::resetConversation()
     Q_EMIT replyInProgressChanged();
     m_messages.clear();
     endResetModel();
+}
+
+void ChatModel::abortRes(qsizetype itemIndex)
+{
+    m_messages[itemIndex].llmReply->abort();
 }
 
 #include "moc_ChatModel.cpp"

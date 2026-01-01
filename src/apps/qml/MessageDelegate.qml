@@ -13,6 +13,7 @@ import Qt.labs.platform as Labs
 RowLayout {
     id: messageDelegate
 
+    required property int messageIndex
     required property string message
     required property var sender
     required property bool finished
@@ -64,6 +65,15 @@ RowLayout {
 
                 TypingIndicator {
                     visible: !messageDelegate.finished
+                }
+                
+                Controls.Button {
+                    visible: !messageDelegate.finished
+                    flat: true
+                    icon.name: "media-playback-stop"
+                    onClicked: {
+                        chat.abortRes(messageDelegate.messageIndex)
+                    }
                 }
             }
 

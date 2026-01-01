@@ -19,7 +19,7 @@ KLLMReply::KLLMReply(QNetworkReply *netReply, QObject *parent, RequestTypes requ
     connect(m_reply, &QNetworkReply::finished, m_reply, [this] {
         // Normally, we could assume that the tokens will never be empty once the request finishes, but it could be possible
         // that the request failed and we have no tokens to parse.
-        if (m_requestType == RequestTypes::StreamingGenerate && !m_tokens.empty()) {
+        if (!m_aborted && m_requestType == RequestTypes::StreamingGenerate && !m_tokens.empty()) {
             const auto finalResponse = m_tokens.constLast();
             m_context.setOllamaContext(finalResponse["context"_L1].toArray());
             m_info.totalDuration = std::chrono::nanoseconds{finalResponse["total_duration"_L1].toVariant().toULongLong()};
@@ -38,6 +38,8 @@ KLLMReply::KLLMReply(QNetworkReply *netReply, QObject *parent, RequestTypes requ
         qCDebug(KLLMCORE_LOG) << "Ollama HTTP error:" << e;
     });
     connect(m_reply, &QNetworkReply::downloadProgress, m_reply, [this](qint64 received, qint64 /*total*/) {
+        if (m_aborted)
+            return;
         m_incompleteTokens += m_reply->read(received - m_receivedSize);
         m_receivedSize = received;
         switch (m_requestType) {
@@ -103,4 +105,18 @@ bool KLLMReply::isFinished() const
 {
     return m_finished;
 }
+
+bool KLLMReply::isAborted() const
+{
+    return m_aborted;
+}
+
+void KLLMReply::abort()
+{
+    if (m_reply && !m_finished) {
+        m_aborted = true;
+        m_reply->abort();
+    }
+}
+
 #include "moc_KLLMReply.cpp"

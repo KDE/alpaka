@@ -6,6 +6,7 @@
 
 #include <QAbstractListModel>
 #include <QtQmlIntegration>
+#include <qtypes.h>
 
 #include "KLLMInterface.h"
 #include "KLLMReply.h"
@@ -25,6 +26,7 @@ public:
         MessageRole,
         SenderRole,
         FinishedRole,
+        MessageIndexRole,
 
         // Debug information roles
         TokensPerSecondRole,
@@ -52,6 +54,7 @@ public Q_SLOTS:
     void sendMessage(const QString &message);
     void getModelInfo();
     void resetConversation();
+    void abortRes(qsizetype itemIndex);
 
 Q_SIGNALS:
     void replyInProgressChanged();
@@ -61,6 +64,7 @@ private:
         bool inProgress = false;
         QString content;
         Sender sender;
+        qsizetype messageIndex = -1;
         KLLMCore::KLLMReply *llmReply = nullptr;
         KLLMCore::KLLMContext context;
         KLLMCore::KLLMReplyInfo info;
