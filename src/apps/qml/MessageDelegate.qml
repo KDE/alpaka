@@ -108,7 +108,7 @@ RowLayout {
                         onTriggered: textEdit.copy()
                     }
                     Labs.MenuItem {
-                        text: i18n("@action:inmenu", "Select All")
+                        text: i18nc("@action:inmenu", "Select All")
                         shortcut: StandardKey.SelectAll
                         onTriggered: textEdit.selectAll()
                     }
