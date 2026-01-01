@@ -155,9 +155,9 @@ void ChatModel::getModelInfo()
     auto rep = m_llm->getModelInfo(req);
     beginInsertRows({}, m_messages.size(), m_messages.size() + 1);
 
-    m_messages.append(ChatMessage{.content = i18n("Show model info."), .sender = Sender::User, .messageIndex = m_messages.size() - 1});
+    m_messages.append(ChatMessage{.content = i18n("Show model info."), .sender = Sender::User, .messageIndex = m_messages.size()});
     m_messages.append(ChatMessage{.inProgress = true, .sender = Sender::LLM, .messageIndex = m_messages.size(), .llmReply = rep});
-    m_connections.insert(rep, connect(rep, &KLLMReply::contentAdded, this, [this, i = m_messages.size()] {
+    m_connections.insert(rep, connect(rep, &KLLMReply::contentAdded, this, [this, i = m_messages.size() - 1] {
                              auto &message = m_messages[i];
                              message.content = message.llmReply->readResponse();
                              Q_EMIT dataChanged(index(i), index(i), {Roles::MessageRole});
