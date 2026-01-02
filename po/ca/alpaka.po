@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: alpaka\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-11-17 11:55+0000\n"
+"POT-Creation-Date: 2026-01-02 00:47+0000\n"
 "PO-Revision-Date: 2025-08-15 09:20+0200\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
@@ -19,13 +19,23 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Lokalize 25.04.3\n"
 
-#: src/apps/ChatModel.cpp:151
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Josep M. Ferrer"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "txemaq@gmail.com"
+
+#: src/apps/ChatModel.cpp:158
 #, kde-format
 msgid "Show model info."
 msgstr "Mostra la informació del model."
 
-#: src/apps/main.cpp:47 src/apps/qml/ChatView.qml:15
-#: src/apps/qml/MessageDelegate.qml:62
+#: src/apps/main.cpp:47 src/apps/qml/ChatView.qml:13
+#: src/apps/qml/MessageDelegate.qml:61
 #, kde-format
 msgid "Alpaka"
 msgstr "Alpaka"
@@ -36,8 +46,9 @@ msgid "Ollama client"
 msgstr "Client d'Ollama"
 
 #: src/apps/main.cpp:51
-#, kde-format
-msgid "© 2023-2025 Loren Burkholder"
+#, fuzzy, kde-format
+#| msgid "© 2023-2025 Loren Burkholder"
+msgid "© 2023–2025 Loren Burkholder"
 msgstr "© 2023-2025 Loren Burkholder"
 
 #: src/apps/main.cpp:52
@@ -60,60 +71,48 @@ msgstr "Laurent Montel"
 msgid "Developer"
 msgstr "Desenvolupador"
 
-#: src/apps/main.cpp:54
-#, kde-format
-msgctxt "NAME OF TRANSLATORS"
-msgid "Your names"
-msgstr "Josep M. Ferrer"
-
-#: src/apps/main.cpp:54
-#, kde-format
-msgctxt "EMAIL OF TRANSLATORS"
-msgid "Your emails"
-msgstr "txemaq@gmail.com"
-
-#: src/apps/qml/ChatView.qml:35
+#: src/apps/qml/ChatView.qml:31
 #, kde-format
 msgctxt "@action:intoolbar"
 msgid "Start Over"
 msgstr "Torna a començar"
 
-#: src/apps/qml/ChatView.qml:41
+#: src/apps/qml/ChatView.qml:37
 #, kde-format
 msgctxt "@action:intoolbar"
 msgid "Settings"
 msgstr "Configuració"
 
-#: src/apps/qml/ChatView.qml:56
+#: src/apps/qml/ChatView.qml:52
 #, kde-format
 msgctxt "@action:button"
 msgid "Try Again"
 msgstr "Torneu-ho a intentar"
 
-#: src/apps/qml/ChatView.qml:99
+#: src/apps/qml/ChatView.qml:71
 #, kde-format
 msgctxt "@info:placeholder"
 msgid "Enter a message"
 msgstr "Introduïu un missatge"
 
-#: src/apps/qml/ChatView.qml:118
+#: src/apps/qml/ChatView.qml:133
 #, kde-format
 msgid "LLM:"
 msgstr "LLM:"
 
-#: src/apps/qml/ChatView.qml:127
+#: src/apps/qml/ChatView.qml:141
 #, kde-format
 msgctxt "@action:button"
 msgid "Info"
 msgstr "Informació"
 
-#: src/apps/qml/ChatView.qml:139
+#: src/apps/qml/ChatView.qml:152
 #, kde-format
 msgctxt "@info:placeholder"
 msgid "Interface Not Found"
 msgstr "No s'ha trobat la interfície"
 
-#: src/apps/qml/ChatView.qml:140
+#: src/apps/qml/ChatView.qml:153
 #, kde-format
 msgid ""
 "Make sure Ollama is installed and is running. Visit the project's website "
@@ -122,76 +121,89 @@ msgstr ""
 "Assegureu-vos que l'Ollama estigui instal·lat i executant-se. Visiteu el "
 "lloc web del projecte per a la informació de configuració."
 
-#: src/apps/qml/ChatView.qml:143
+#: src/apps/qml/ChatView.qml:156
 #, kde-format
 msgctxt "@action:button"
 msgid "Visit Website"
 msgstr "Visiteu el lloc web"
 
-#: src/apps/qml/ConfigurationView.qml:18
-#: src/apps/qml/GeneralSettingsPage.qml:13
+#: src/apps/qml/ConfigurationView.qml:14
+#: src/apps/qml/GeneralSettingsPage.qml:11
 #, kde-format
 msgid "General"
 msgstr "General"
 
-#: src/apps/qml/ConfigurationView.qml:23 src/apps/qml/LLMSettingsPage.qml:13
+#: src/apps/qml/ConfigurationView.qml:19 src/apps/qml/LLMSettingsPage.qml:12
 #, kde-format
 msgid "LLM"
 msgstr "LLM"
 
-#: src/apps/qml/ConfigurationView.qml:28 src/apps/qml/OllamaSettingsPage.qml:13
+#: src/apps/qml/ConfigurationView.qml:24 src/apps/qml/OllamaSettingsPage.qml:11
 #, kde-format
 msgid "Ollama"
 msgstr "Ollama"
 
-#: src/apps/qml/GeneralSettingsPage.qml:19
+#: src/apps/qml/GeneralSettingsPage.qml:16
 #, kde-format
 msgid "Show in System Tray"
 msgstr "Mostra a la safata del sistema"
 
-#: src/apps/qml/LLMSettingsPage.qml:32
+#: src/apps/qml/GeneralSettingsPage.qml:26
+#, kde-format
+msgid "Auto scroll down when a new prompt is posted"
+msgstr ""
+
+#: src/apps/qml/LLMSettingsPage.qml:31
 #, kde-format
 msgid "System prompt"
 msgstr "Petició del sistema"
 
-#: src/apps/qml/LLMSettingsPage.qml:44
+#: src/apps/qml/LLMSettingsPage.qml:43
 #, kde-format
 msgid "No system prompt"
 msgstr "Sense petició del sistema"
 
-#: src/apps/qml/LLMSettingsPage.qml:61
+#: src/apps/qml/LLMSettingsPage.qml:60
 #, kde-format
 msgid "Show debug information"
 msgstr "Mostra la informació de depuració"
 
-#: src/apps/qml/Main.qml:17
+#: src/apps/qml/Main.qml:13
 #, kde-format
 msgctxt "@title:window"
 msgid "Alpaka"
 msgstr "Alpaka"
 
-#: src/apps/qml/MessageDelegate.qml:97
-#, kde-format
+#: src/apps/qml/MessageDelegate.qml:105
+#, fuzzy, kde-format
+#| msgid "Copy"
+msgctxt "@action:inmenu"
 msgid "Copy"
 msgstr "Copia"
 
-#: src/apps/qml/MessageDelegate.qml:103
-#, kde-format
+#: src/apps/qml/MessageDelegate.qml:111
+#, fuzzy, kde-format
+#| msgid "Select All"
+msgctxt "@action:inmenu"
 msgid "Select All"
 msgstr "Selecciona-ho tot"
 
-#: src/apps/qml/MessageDelegate.qml:119
-#, kde-format
+#: src/apps/qml/MessageDelegate.qml:127
+#, fuzzy, kde-format
+#| msgid "%1 tok/s · %2 tokens · %3 seconds"
+msgctxt "'toks' is short for 'tokens'"
 msgid "%1 tok/s · %2 tokens · %3 seconds"
 msgstr "%1 tok/s · %2 testimonis · %3 segons"
 
-#: src/apps/qml/OllamaSettingsPage.qml:25
+#: src/apps/qml/OllamaSettingsPage.qml:23
 #, kde-format
 msgid "Ollama server URL"
 msgstr "URL del servidor Ollama"
 
 #: src/core/KLLMInterface.cpp:137
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Failed to connect to interface at %1: %2"
+msgctxt "%1 is an URL, %2 an error description"
 msgid "Failed to connect to interface at %1: %2"
 msgstr "Ha fallat en connectar amb la interfície a %1: %2"
 

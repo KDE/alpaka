@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: alpaka\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-11-17 11:55+0000\n"
+"POT-Creation-Date: 2026-01-02 00:47+0000\n"
 "PO-Revision-Date: 2024-12-15 17:36+0530\n"
 "Last-Translator: Kali <EMAIL@ADDRESS>\n"
 "Language-Team: Hindi <fedora-trans-hi@redhat.com>\n"
@@ -17,14 +17,24 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n!=1);\n"
 
-#: src/apps/ChatModel.cpp:151
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "तुम्हारे नाम"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "आपके ईमेल"
+
+#: src/apps/ChatModel.cpp:158
 #, fuzzy, kde-format
 #| msgid "Show debug information"
 msgid "Show model info."
 msgstr "डीबग जानकारी दिखाएं"
 
-#: src/apps/main.cpp:47 src/apps/qml/ChatView.qml:15
-#: src/apps/qml/MessageDelegate.qml:62
+#: src/apps/main.cpp:47 src/apps/qml/ChatView.qml:13
+#: src/apps/qml/MessageDelegate.qml:61
 #, kde-format
 msgid "Alpaka"
 msgstr "अल्पाका"
@@ -37,7 +47,7 @@ msgstr "ओलामा ग्राहक"
 #: src/apps/main.cpp:51
 #, fuzzy, kde-format
 #| msgid "© 2023 Loren Burkholder"
-msgid "© 2023-2025 Loren Burkholder"
+msgid "© 2023–2025 Loren Burkholder"
 msgstr "© 2023 लोरेन बर्कहोल्डर"
 
 #: src/apps/main.cpp:52
@@ -60,61 +70,49 @@ msgstr "लॉरेंट मोंटेल"
 msgid "Developer"
 msgstr "डेवलपर"
 
-#: src/apps/main.cpp:54
-#, kde-format
-msgctxt "NAME OF TRANSLATORS"
-msgid "Your names"
-msgstr "तुम्हारे नाम"
-
-#: src/apps/main.cpp:54
-#, kde-format
-msgctxt "EMAIL OF TRANSLATORS"
-msgid "Your emails"
-msgstr "आपके ईमेल"
-
-#: src/apps/qml/ChatView.qml:35
+#: src/apps/qml/ChatView.qml:31
 #, kde-format
 msgctxt "@action:intoolbar"
 msgid "Start Over"
 msgstr "प्रारंभ करें"
 
-#: src/apps/qml/ChatView.qml:41
+#: src/apps/qml/ChatView.qml:37
 #, kde-format
 msgctxt "@action:intoolbar"
 msgid "Settings"
 msgstr "सेटिंग्स"
 
-#: src/apps/qml/ChatView.qml:56
+#: src/apps/qml/ChatView.qml:52
 #, kde-format
 msgctxt "@action:button"
 msgid "Try Again"
 msgstr "पुनः प्रयास करें"
 
-#: src/apps/qml/ChatView.qml:99
+#: src/apps/qml/ChatView.qml:71
 #, kde-format
 msgctxt "@info:placeholder"
 msgid "Enter a message"
 msgstr "संदेश दर्ज करें"
 
-#: src/apps/qml/ChatView.qml:118
+#: src/apps/qml/ChatView.qml:133
 #, kde-format
 msgid "LLM:"
 msgstr ""
 
-#: src/apps/qml/ChatView.qml:127
+#: src/apps/qml/ChatView.qml:141
 #, fuzzy, kde-format
 #| msgid "Info"
 msgctxt "@action:button"
 msgid "Info"
 msgstr "जानकारी"
 
-#: src/apps/qml/ChatView.qml:139
+#: src/apps/qml/ChatView.qml:152
 #, kde-format
 msgctxt "@info:placeholder"
 msgid "Interface Not Found"
 msgstr "इंटरफ़ेस नहीं मिला"
 
-#: src/apps/qml/ChatView.qml:140
+#: src/apps/qml/ChatView.qml:153
 #, kde-format
 msgid ""
 "Make sure Ollama is installed and is running. Visit the project's website "
@@ -123,76 +121,87 @@ msgstr ""
 "सुनिश्चित करें कि ओलामा स्थापित है और चल रहा है। सेटअप जानकारी के लिए प्रोजेक्ट की "
 "वेबसाइट पर जाएँ।"
 
-#: src/apps/qml/ChatView.qml:143
+#: src/apps/qml/ChatView.qml:156
 #, kde-format
 msgctxt "@action:button"
 msgid "Visit Website"
 msgstr "बेवसाइट देखना"
 
-#: src/apps/qml/ConfigurationView.qml:18
-#: src/apps/qml/GeneralSettingsPage.qml:13
+#: src/apps/qml/ConfigurationView.qml:14
+#: src/apps/qml/GeneralSettingsPage.qml:11
 #, kde-format
 msgid "General"
 msgstr "सामान्य"
 
-#: src/apps/qml/ConfigurationView.qml:23 src/apps/qml/LLMSettingsPage.qml:13
+#: src/apps/qml/ConfigurationView.qml:19 src/apps/qml/LLMSettingsPage.qml:12
 #, kde-format
 msgid "LLM"
 msgstr "एलएलएम"
 
-#: src/apps/qml/ConfigurationView.qml:28 src/apps/qml/OllamaSettingsPage.qml:13
+#: src/apps/qml/ConfigurationView.qml:24 src/apps/qml/OllamaSettingsPage.qml:11
 #, kde-format
 msgid "Ollama"
 msgstr "होना"
 
-#: src/apps/qml/GeneralSettingsPage.qml:19
+#: src/apps/qml/GeneralSettingsPage.qml:16
 #, kde-format
 msgid "Show in System Tray"
 msgstr "सिस्टम ट्रे में दिखाएँ"
 
-#: src/apps/qml/LLMSettingsPage.qml:32
+#: src/apps/qml/GeneralSettingsPage.qml:26
+#, kde-format
+msgid "Auto scroll down when a new prompt is posted"
+msgstr ""
+
+#: src/apps/qml/LLMSettingsPage.qml:31
 #, kde-format
 msgid "System prompt"
 msgstr "सिस्टम प्रॉम्प्ट"
 
-#: src/apps/qml/LLMSettingsPage.qml:44
+#: src/apps/qml/LLMSettingsPage.qml:43
 #, kde-format
 msgid "No system prompt"
 msgstr "कोई सिस्टम प्रॉम्प्ट नहीं"
 
-#: src/apps/qml/LLMSettingsPage.qml:61
+#: src/apps/qml/LLMSettingsPage.qml:60
 #, kde-format
 msgid "Show debug information"
 msgstr "डीबग जानकारी दिखाएं"
 
-#: src/apps/qml/Main.qml:17
+#: src/apps/qml/Main.qml:13
 #, kde-format
 msgctxt "@title:window"
 msgid "Alpaka"
 msgstr "अल्पाका"
 
-#: src/apps/qml/MessageDelegate.qml:97
+#: src/apps/qml/MessageDelegate.qml:105
 #, kde-format
+msgctxt "@action:inmenu"
 msgid "Copy"
 msgstr ""
 
-#: src/apps/qml/MessageDelegate.qml:103
+#: src/apps/qml/MessageDelegate.qml:111
 #, kde-format
+msgctxt "@action:inmenu"
 msgid "Select All"
 msgstr ""
 
-#: src/apps/qml/MessageDelegate.qml:119
-#, kde-format
+#: src/apps/qml/MessageDelegate.qml:127
+#, fuzzy, kde-format
+#| msgid "%1 tok/s · %2 tokens · %3 seconds"
+msgctxt "'toks' is short for 'tokens'"
 msgid "%1 tok/s · %2 tokens · %3 seconds"
 msgstr "%1 टोक/सेकेंड · %2 टोकन · %3 सेकंड"
 
-#: src/apps/qml/OllamaSettingsPage.qml:25
+#: src/apps/qml/OllamaSettingsPage.qml:23
 #, kde-format
 msgid "Ollama server URL"
 msgstr "ओल्लामा सर्वर यूआरएल"
 
 #: src/core/KLLMInterface.cpp:137
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Failed to connect to interface at %1: %2"
+msgctxt "%1 is an URL, %2 an error description"
 msgid "Failed to connect to interface at %1: %2"
 msgstr "%1 पर इंटरफ़ेस से कनेक्ट करने में विफल: %2"
 

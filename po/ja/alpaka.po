@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: alpaka\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-11-17 11:55+0000\n"
+"POT-Creation-Date: 2026-01-02 00:47+0000\n"
 "PO-Revision-Date: 2023-12-21 22:40-0800\n"
 "Last-Translator: Japanese KDE translation team <kde-jp@kde.org>\n"
 "Language-Team: Japanese <kde-jp@kde.org>\n"
@@ -14,13 +14,23 @@ msgstr ""
 "X-Accelerator-Marker: &\n"
 "X-Text-Markup: kde4\n"
 
-#: src/apps/ChatModel.cpp:151
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr ""
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr ""
+
+#: src/apps/ChatModel.cpp:158
 #, kde-format
 msgid "Show model info."
 msgstr ""
 
-#: src/apps/main.cpp:47 src/apps/qml/ChatView.qml:15
-#: src/apps/qml/MessageDelegate.qml:62
+#: src/apps/main.cpp:47 src/apps/qml/ChatView.qml:13
+#: src/apps/qml/MessageDelegate.qml:61
 #, kde-format
 msgid "Alpaka"
 msgstr ""
@@ -32,7 +42,7 @@ msgstr ""
 
 #: src/apps/main.cpp:51
 #, kde-format
-msgid "© 2023-2025 Loren Burkholder"
+msgid "© 2023–2025 Loren Burkholder"
 msgstr ""
 
 #: src/apps/main.cpp:52
@@ -55,135 +65,132 @@ msgstr ""
 msgid "Developer"
 msgstr ""
 
-#: src/apps/main.cpp:54
-#, kde-format
-msgctxt "NAME OF TRANSLATORS"
-msgid "Your names"
-msgstr ""
-
-#: src/apps/main.cpp:54
-#, kde-format
-msgctxt "EMAIL OF TRANSLATORS"
-msgid "Your emails"
-msgstr ""
-
-#: src/apps/qml/ChatView.qml:35
+#: src/apps/qml/ChatView.qml:31
 #, kde-format
 msgctxt "@action:intoolbar"
 msgid "Start Over"
 msgstr ""
 
-#: src/apps/qml/ChatView.qml:41
+#: src/apps/qml/ChatView.qml:37
 #, kde-format
 msgctxt "@action:intoolbar"
 msgid "Settings"
 msgstr ""
 
-#: src/apps/qml/ChatView.qml:56
+#: src/apps/qml/ChatView.qml:52
 #, kde-format
 msgctxt "@action:button"
 msgid "Try Again"
 msgstr ""
 
-#: src/apps/qml/ChatView.qml:99
+#: src/apps/qml/ChatView.qml:71
 #, kde-format
 msgctxt "@info:placeholder"
 msgid "Enter a message"
 msgstr ""
 
-#: src/apps/qml/ChatView.qml:118
+#: src/apps/qml/ChatView.qml:133
 #, kde-format
 msgid "LLM:"
 msgstr ""
 
-#: src/apps/qml/ChatView.qml:127
+#: src/apps/qml/ChatView.qml:141
 #, kde-format
 msgctxt "@action:button"
 msgid "Info"
 msgstr ""
 
-#: src/apps/qml/ChatView.qml:139
+#: src/apps/qml/ChatView.qml:152
 #, kde-format
 msgctxt "@info:placeholder"
 msgid "Interface Not Found"
 msgstr ""
 
-#: src/apps/qml/ChatView.qml:140
+#: src/apps/qml/ChatView.qml:153
 #, kde-format
 msgid ""
 "Make sure Ollama is installed and is running. Visit the project's website "
 "for setup information."
 msgstr ""
 
-#: src/apps/qml/ChatView.qml:143
+#: src/apps/qml/ChatView.qml:156
 #, kde-format
 msgctxt "@action:button"
 msgid "Visit Website"
 msgstr ""
 
-#: src/apps/qml/ConfigurationView.qml:18
-#: src/apps/qml/GeneralSettingsPage.qml:13
+#: src/apps/qml/ConfigurationView.qml:14
+#: src/apps/qml/GeneralSettingsPage.qml:11
 #, kde-format
 msgid "General"
 msgstr ""
 
-#: src/apps/qml/ConfigurationView.qml:23 src/apps/qml/LLMSettingsPage.qml:13
+#: src/apps/qml/ConfigurationView.qml:19 src/apps/qml/LLMSettingsPage.qml:12
 #, kde-format
 msgid "LLM"
 msgstr ""
 
-#: src/apps/qml/ConfigurationView.qml:28 src/apps/qml/OllamaSettingsPage.qml:13
+#: src/apps/qml/ConfigurationView.qml:24 src/apps/qml/OllamaSettingsPage.qml:11
 #, kde-format
 msgid "Ollama"
 msgstr ""
 
-#: src/apps/qml/GeneralSettingsPage.qml:19
+#: src/apps/qml/GeneralSettingsPage.qml:16
 #, kde-format
 msgid "Show in System Tray"
 msgstr ""
 
-#: src/apps/qml/LLMSettingsPage.qml:32
+#: src/apps/qml/GeneralSettingsPage.qml:26
+#, kde-format
+msgid "Auto scroll down when a new prompt is posted"
+msgstr ""
+
+#: src/apps/qml/LLMSettingsPage.qml:31
 #, kde-format
 msgid "System prompt"
 msgstr ""
 
-#: src/apps/qml/LLMSettingsPage.qml:44
+#: src/apps/qml/LLMSettingsPage.qml:43
 #, kde-format
 msgid "No system prompt"
 msgstr ""
 
-#: src/apps/qml/LLMSettingsPage.qml:61
+#: src/apps/qml/LLMSettingsPage.qml:60
 #, kde-format
 msgid "Show debug information"
 msgstr ""
 
-#: src/apps/qml/Main.qml:17
+#: src/apps/qml/Main.qml:13
 #, kde-format
 msgctxt "@title:window"
 msgid "Alpaka"
 msgstr ""
 
-#: src/apps/qml/MessageDelegate.qml:97
+#: src/apps/qml/MessageDelegate.qml:105
 #, kde-format
+msgctxt "@action:inmenu"
 msgid "Copy"
 msgstr ""
 
-#: src/apps/qml/MessageDelegate.qml:103
+#: src/apps/qml/MessageDelegate.qml:111
 #, kde-format
+msgctxt "@action:inmenu"
 msgid "Select All"
 msgstr ""
 
-#: src/apps/qml/MessageDelegate.qml:119
+#: src/apps/qml/MessageDelegate.qml:127
 #, kde-format
+msgctxt "'toks' is short for 'tokens'"
 msgid "%1 tok/s · %2 tokens · %3 seconds"
 msgstr ""
 
-#: src/apps/qml/OllamaSettingsPage.qml:25
+#: src/apps/qml/OllamaSettingsPage.qml:23
 #, kde-format
 msgid "Ollama server URL"
 msgstr ""
 
 #: src/core/KLLMInterface.cpp:137
 #, kde-format
+msgctxt "%1 is an URL, %2 an error description"
 msgid "Failed to connect to interface at %1: %2"
 msgstr ""
