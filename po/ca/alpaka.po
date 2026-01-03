@@ -1,15 +1,15 @@
 # Translation of alpaka.po to Catalan
-# Copyright (C) 2023-2025 This_file_is_part_of_KDE
+# Copyright (C) 2023-2026 This_file_is_part_of_KDE
 # This file is distributed under the license LGPL version 2.1 or
 # version 3 or later versions approved by the membership of KDE e.V.
 #
-# SPDX-FileCopyrightText: 2023, 2024, 2025 Josep M. Ferrer <txemaq@gmail.com>
+# SPDX-FileCopyrightText: 2023, 2024, 2025, 2026 Josep M. Ferrer <txemaq@gmail.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: alpaka\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-01-02 00:47+0000\n"
-"PO-Revision-Date: 2025-08-15 09:20+0200\n"
+"PO-Revision-Date: 2026-01-02 08:57+0100\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 25.04.3\n"
+"X-Generator: Lokalize 25.12.0\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -46,10 +46,9 @@ msgid "Ollama client"
 msgstr "Client d'Ollama"
 
 #: src/apps/main.cpp:51
-#, fuzzy, kde-format
-#| msgid "© 2023-2025 Loren Burkholder"
+#, kde-format
 msgid "© 2023–2025 Loren Burkholder"
-msgstr "© 2023-2025 Loren Burkholder"
+msgstr "© 2023–2025 Loren Burkholder"
 
 #: src/apps/main.cpp:52
 #, kde-format
@@ -151,17 +150,17 @@ msgstr "Mostra a la safata del sistema"
 #: src/apps/qml/GeneralSettingsPage.qml:26
 #, kde-format
 msgid "Auto scroll down when a new prompt is posted"
-msgstr ""
+msgstr "Desplaçament automàtic quan es publica una indicació nova"
 
 #: src/apps/qml/LLMSettingsPage.qml:31
 #, kde-format
 msgid "System prompt"
-msgstr "Petició del sistema"
+msgstr "Indicació del sistema"
 
 #: src/apps/qml/LLMSettingsPage.qml:43
 #, kde-format
 msgid "No system prompt"
-msgstr "Sense petició del sistema"
+msgstr "Sense indicació del sistema"
 
 #: src/apps/qml/LLMSettingsPage.qml:60
 #, kde-format
@@ -175,25 +174,22 @@ msgid "Alpaka"
 msgstr "Alpaka"
 
 #: src/apps/qml/MessageDelegate.qml:105
-#, fuzzy, kde-format
-#| msgid "Copy"
+#, kde-format
 msgctxt "@action:inmenu"
 msgid "Copy"
 msgstr "Copia"
 
 #: src/apps/qml/MessageDelegate.qml:111
-#, fuzzy, kde-format
-#| msgid "Select All"
+#, kde-format
 msgctxt "@action:inmenu"
 msgid "Select All"
 msgstr "Selecciona-ho tot"
 
 #: src/apps/qml/MessageDelegate.qml:127
-#, fuzzy, kde-format
-#| msgid "%1 tok/s · %2 tokens · %3 seconds"
+#, kde-format
 msgctxt "'toks' is short for 'tokens'"
 msgid "%1 tok/s · %2 tokens · %3 seconds"
-msgstr "%1 tok/s · %2 testimonis · %3 segons"
+msgstr "%1 segment/s · %2 segments · %3 segons"
 
 #: src/apps/qml/OllamaSettingsPage.qml:23
 #, kde-format
@@ -201,8 +197,7 @@ msgid "Ollama server URL"
 msgstr "URL del servidor Ollama"
 
 #: src/core/KLLMInterface.cpp:137
-#, fuzzy, kde-format
-#| msgid "Failed to connect to interface at %1: %2"
+#, kde-format
 msgctxt "%1 is an URL, %2 an error description"
 msgid "Failed to connect to interface at %1: %2"
 msgstr "Ha fallat en connectar amb la interfície a %1: %2"

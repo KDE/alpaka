@@ -4,7 +4,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-01-02 00:47+0000\n"
-"PO-Revision-Date: 2025-06-08 07:03+0200\n"
+"PO-Revision-Date: 2026-01-02 07:02+0100\n"
 "Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
 "Language: sl\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n%100==1 ? 1 : n%100==2 ? 2 : n%100==3 || n"
 "%100==4 ? 3 : 0);\n"
-"X-Generator: Poedit 3.6\n"
+"X-Generator: Poedit 3.8\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -42,8 +42,7 @@ msgid "Ollama client"
 msgstr "Odjemalec Ollama"
 
 #: src/apps/main.cpp:51
-#, fuzzy, kde-format
-#| msgid "© 2023-2025 Loren Burkholder"
+#, kde-format
 msgid "© 2023–2025 Loren Burkholder"
 msgstr "© 2023-2025 Loren Burkholder"
 
@@ -147,7 +146,7 @@ msgstr "Prikaži v sistemskem pladnju"
 #: src/apps/qml/GeneralSettingsPage.qml:26
 #, kde-format
 msgid "Auto scroll down when a new prompt is posted"
-msgstr ""
+msgstr "Samodejno pomakni navzdol, ko je objavljen nov poziv"
 
 #: src/apps/qml/LLMSettingsPage.qml:31
 #, kde-format
@@ -171,22 +170,19 @@ msgid "Alpaka"
 msgstr "Alpaka"
 
 #: src/apps/qml/MessageDelegate.qml:105
-#, fuzzy, kde-format
-#| msgid "Copy"
+#, kde-format
 msgctxt "@action:inmenu"
 msgid "Copy"
 msgstr "Kopiraj"
 
 #: src/apps/qml/MessageDelegate.qml:111
-#, fuzzy, kde-format
-#| msgid "Select All"
+#, kde-format
 msgctxt "@action:inmenu"
 msgid "Select All"
 msgstr "Izberi vse"
 
 #: src/apps/qml/MessageDelegate.qml:127
-#, fuzzy, kde-format
-#| msgid "%1 tok/s · %2 tokens · %3 seconds"
+#, kde-format
 msgctxt "'toks' is short for 'tokens'"
 msgid "%1 tok/s · %2 tokens · %3 seconds"
 msgstr "%1 tok/s · %2 žetonov · %3 sekund"
@@ -197,11 +193,10 @@ msgid "Ollama server URL"
 msgstr "URL strežnika Ollama"
 
 #: src/core/KLLMInterface.cpp:137
-#, fuzzy, kde-format
-#| msgid "Failed to connect to interface at %1: %2"
+#, kde-format
 msgctxt "%1 is an URL, %2 an error description"
 msgid "Failed to connect to interface at %1: %2"
-msgstr "Povezava z vmesnikom na %1 ni uspela: %2"
+msgstr "Neuspela povezava na vmesnik %1: %2"
 
 #~ msgid "Info"
 #~ msgstr "Informacije"

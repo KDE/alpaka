@@ -1,13 +1,13 @@
 # Copyright (C) YEAR This file is copyright:
 # This file is distributed under the same license as the alpaka package.
 #
-# Yuri Chornoivan <yurchor@ukr.net>, 2023, 2024, 2025.
+# Yuri Chornoivan <yurchor@ukr.net>, 2023, 2024, 2025, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: alpaka\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-01-02 00:47+0000\n"
-"PO-Revision-Date: 2025-06-08 08:10+0300\n"
+"PO-Revision-Date: 2026-01-02 09:21+0200\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <trans-uk@lists.fedoraproject.org>\n"
 "Language: uk\n"
@@ -45,8 +45,7 @@ msgid "Ollama client"
 msgstr "Клієнт Ollama"
 
 #: src/apps/main.cpp:51
-#, fuzzy, kde-format
-#| msgid "© 2023-2025 Loren Burkholder"
+#, kde-format
 msgid "© 2023–2025 Loren Burkholder"
 msgstr "© Loren Burkholder, 2023–2025"
 
@@ -150,7 +149,7 @@ msgstr "Показувати у системному лотку"
 #: src/apps/qml/GeneralSettingsPage.qml:26
 #, kde-format
 msgid "Auto scroll down when a new prompt is posted"
-msgstr ""
+msgstr "Автоматично гортати далі при появі нового запиту"
 
 #: src/apps/qml/LLMSettingsPage.qml:31
 #, kde-format
@@ -174,22 +173,19 @@ msgid "Alpaka"
 msgstr "Alpaka"
 
 #: src/apps/qml/MessageDelegate.qml:105
-#, fuzzy, kde-format
-#| msgid "Copy"
+#, kde-format
 msgctxt "@action:inmenu"
 msgid "Copy"
 msgstr "Копіювати"
 
 #: src/apps/qml/MessageDelegate.qml:111
-#, fuzzy, kde-format
-#| msgid "Select All"
+#, kde-format
 msgctxt "@action:inmenu"
 msgid "Select All"
 msgstr "Позначити все"
 
 #: src/apps/qml/MessageDelegate.qml:127
-#, fuzzy, kde-format
-#| msgid "%1 tok/s · %2 tokens · %3 seconds"
+#, kde-format
 msgctxt "'toks' is short for 'tokens'"
 msgid "%1 tok/s · %2 tokens · %3 seconds"
 msgstr "%1 жет/с · %2 жетони · %3 секунд"
@@ -200,8 +196,7 @@ msgid "Ollama server URL"
 msgstr "Адреса сервера Ollama"
 
 #: src/core/KLLMInterface.cpp:137
-#, fuzzy, kde-format
-#| msgid "Failed to connect to interface at %1: %2"
+#, kde-format
 msgctxt "%1 is an URL, %2 an error description"
 msgid "Failed to connect to interface at %1: %2"
 msgstr "Не вдалося встановити з'єднання з інтерфейсом на %1: %2"
