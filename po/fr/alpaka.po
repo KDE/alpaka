@@ -4,7 +4,7 @@ msgstr ""
 "Project-Id-Version: alpaka\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-01-02 00:47+0000\n"
-"PO-Revision-Date: 2026-01-03 09:54+0100\n"
+"PO-Revision-Date: 2026-01-05 20:36+0100\n"
 "Last-Translator: Xavier Besnard <xavier.besnard@kde.org>\n"
 "Language-Team: \n"
 "Language: fr\n"
@@ -147,7 +147,7 @@ msgstr "Afficher dans la boite à miniatures du système"
 #, kde-format
 msgid "Auto scroll down when a new prompt is posted"
 msgstr ""
-"Défilement automatique vers le bas lorsqu’un nouveau message est envoyé"
+"Défilement automatique vers le bas lorsqu'un nouveau message est envoyé"
 
 #: src/apps/qml/LLMSettingsPage.qml:31
 #, kde-format
