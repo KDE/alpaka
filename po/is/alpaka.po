@@ -2,13 +2,13 @@
 # This file is distributed under the same license as the alpaka package.
 #
 # SPDX-FileCopyrightText: 2024 Guðmundur Erlingsson <gudmundure@gmail.com>
-# SPDX-FileCopyrightText: 2025 Sveinn í Felli <sv1@fellsnet.is>
+# SPDX-FileCopyrightText: 2025, 2026 Sveinn í Felli <sv1@fellsnet.is>
 msgid ""
 msgstr ""
 "Project-Id-Version: alpaka\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-01-02 00:47+0000\n"
-"PO-Revision-Date: 2025-11-26 10:13+0000\n"
+"PO-Revision-Date: 2026-01-15 16:27+0000\n"
 "Last-Translator: Sveinn í Felli <sv1@fellsnet.is>\n"
 "Language-Team: Icelandic\n"
 "Language: is\n"
@@ -45,8 +45,7 @@ msgid "Ollama client"
 msgstr "Viðmót fyrir Ollama"
 
 #: src/apps/main.cpp:51
-#, fuzzy, kde-format
-#| msgid "© 2023-2025 Loren Burkholder"
+#, kde-format
 msgid "© 2023–2025 Loren Burkholder"
 msgstr "© 2023-2025 Loren Burkholder"
 
@@ -174,22 +173,19 @@ msgid "Alpaka"
 msgstr "Alpaka"
 
 #: src/apps/qml/MessageDelegate.qml:105
-#, fuzzy, kde-format
-#| msgid "Copy"
+#, kde-format
 msgctxt "@action:inmenu"
 msgid "Copy"
 msgstr "Afrita"
 
 #: src/apps/qml/MessageDelegate.qml:111
-#, fuzzy, kde-format
-#| msgid "Select All"
+#, kde-format
 msgctxt "@action:inmenu"
 msgid "Select All"
 msgstr "Velja allt"
 
 #: src/apps/qml/MessageDelegate.qml:127
-#, fuzzy, kde-format
-#| msgid "%1 tok/s · %2 tokens · %3 seconds"
+#, kde-format
 msgctxt "'toks' is short for 'tokens'"
 msgid "%1 tok/s · %2 tokens · %3 seconds"
 msgstr "%1 tók./sek. · %2 tókar · %3 sekúndur"
@@ -200,8 +196,7 @@ msgid "Ollama server URL"
 msgstr "Slóð á Ollama-þjón"
 
 #: src/core/KLLMInterface.cpp:137
-#, fuzzy, kde-format
-#| msgid "Failed to connect to interface at %1: %2"
+#, kde-format
 msgctxt "%1 is an URL, %2 an error description"
 msgid "Failed to connect to interface at %1: %2"
 msgstr "Mistókst að tengjast viðmóti á %1: %2"
