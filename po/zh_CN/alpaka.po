@@ -46,7 +46,7 @@ msgstr "Ollama 客户端"
 #: src/apps/main.cpp:51
 #, kde-format
 msgid "© 2023–2025 Loren Burkholder"
-msgstr ""
+msgstr "© 2023–2025 Loren Burkholder"
 
 #: src/apps/main.cpp:52
 #, kde-format
@@ -146,7 +146,7 @@ msgstr "在系统托盘中显示"
 #: src/apps/qml/GeneralSettingsPage.qml:26
 #, kde-format
 msgid "Auto scroll down when a new prompt is posted"
-msgstr ""
+msgstr "当有新的提示词发布时自动向下滚动"
 
 #: src/apps/qml/LLMSettingsPage.qml:31
 #, kde-format
@@ -173,19 +173,19 @@ msgstr "Alpaka"
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Copy"
-msgstr ""
+msgstr "复制"
 
 #: src/apps/qml/MessageDelegate.qml:111
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Select All"
-msgstr ""
+msgstr "全选"
 
 #: src/apps/qml/MessageDelegate.qml:127
 #, kde-format
 msgctxt "'toks' is short for 'tokens'"
 msgid "%1 tok/s · %2 tokens · %3 seconds"
-msgstr ""
+msgstr "%1 token/秒 · %2 tokens · %3 秒"
 
 #: src/apps/qml/OllamaSettingsPage.qml:23
 #, kde-format
@@ -196,4 +196,4 @@ msgstr "Ollama 服务器 URL"
 #, kde-format
 msgctxt "%1 is an URL, %2 an error description"
 msgid "Failed to connect to interface at %1: %2"
-msgstr ""
+msgstr "无法连接到位于 %1 的接口：%2"
