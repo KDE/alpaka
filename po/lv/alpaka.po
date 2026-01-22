@@ -1,13 +1,13 @@
 # Copyright (C) 2024 This file is copyright:
 # This file is distributed under the same license as the alpaka package.
 #
-# SPDX-FileCopyrightText: 2024, 2025 Toms Trasūns <toms.trasuns@posteo.net>
+# SPDX-FileCopyrightText: 2024, 2025, 2026 Toms Trasūns <toms.trasuns@posteo.net>
 msgid ""
 msgstr ""
 "Project-Id-Version: alpaka\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-01-02 00:47+0000\n"
-"PO-Revision-Date: 2025-06-27 12:27+0300\n"
+"PO-Revision-Date: 2026-01-20 19:09+0200\n"
 "Last-Translator: Toms Trasuns <toms.trasuns@posteo.net>\n"
 "Language-Team: Latvian <kde-i18n-doc@kde.org>\n"
 "Language: lv\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n != 0 ? 1 : "
 "2);\n"
-"X-Generator: Lokalize 25.04.2\n"
+"X-Generator: Lokalize 25.12.1\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -45,8 +45,7 @@ msgid "Ollama client"
 msgstr "„Ollama“ klients"
 
 #: src/apps/main.cpp:51
-#, fuzzy, kde-format
-#| msgid "© 2023-2025 Loren Burkholder"
+#, kde-format
 msgid "© 2023–2025 Loren Burkholder"
 msgstr "© 2023—2025 Loren Burkholder"
 
@@ -150,7 +149,7 @@ msgstr "Rādīt sistēmas ikonu joslā"
 #: src/apps/qml/GeneralSettingsPage.qml:26
 #, kde-format
 msgid "Auto scroll down when a new prompt is posted"
-msgstr ""
+msgstr "Automātiski ritināt, kad parādās jauna uzvedne"
 
 #: src/apps/qml/LLMSettingsPage.qml:31
 #, kde-format
@@ -174,25 +173,22 @@ msgid "Alpaka"
 msgstr "Alpaka"
 
 #: src/apps/qml/MessageDelegate.qml:105
-#, fuzzy, kde-format
-#| msgid "Copy"
+#, kde-format
 msgctxt "@action:inmenu"
 msgid "Copy"
 msgstr "Kopēt"
 
 #: src/apps/qml/MessageDelegate.qml:111
-#, fuzzy, kde-format
-#| msgid "Select All"
+#, kde-format
 msgctxt "@action:inmenu"
 msgid "Select All"
 msgstr "Atlasīt visu"
 
 #: src/apps/qml/MessageDelegate.qml:127
-#, fuzzy, kde-format
-#| msgid "%1 tok/s · %2 tokens · %3 seconds"
+#, kde-format
 msgctxt "'toks' is short for 'tokens'"
 msgid "%1 tok/s · %2 tokens · %3 seconds"
-msgstr "%1 daļa/sek. · %2 daļas · %3 sekundes"
+msgstr "%1 datvien./sek. · %2 datvienības · %3 sekundes"
 
 #: src/apps/qml/OllamaSettingsPage.qml:23
 #, kde-format
@@ -200,8 +196,7 @@ msgid "Ollama server URL"
 msgstr "„Ollama“ servera adrese"
 
 #: src/core/KLLMInterface.cpp:137
-#, fuzzy, kde-format
-#| msgid "Failed to connect to interface at %1: %2"
+#, kde-format
 msgctxt "%1 is an URL, %2 an error description"
 msgid "Failed to connect to interface at %1: %2"
 msgstr "Neizdevās savienoties ar saskarni pie %1: %2"
