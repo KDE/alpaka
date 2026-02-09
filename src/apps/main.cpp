@@ -49,7 +49,8 @@ int main(int argc, char *argv[])
                      i18n("Ollama client"),
                      KAboutLicense::GPL_V3,
                      i18n("© 2023–2025 Loren Burkholder"));
-    about.addAuthor(i18n("Loren Burkholder"), i18n("Maintainer"), QStringLiteral("computersemiexpert@outlook.com"));
+    about.addAuthor(i18n("Loren Burkholder"), i18n("Creator"), QStringLiteral("computersemiexpert@outlook.com"));
+    about.addAuthor(i18n("Siavosh Kasravi"), i18n("Maintainer"), QStringLiteral("siavosh.kasravi@gmail.com"));
     about.addCredit(i18n("Laurent Montel"), i18n("Developer"), QStringLiteral("montel@kde.org"));
     about.setOrganizationDomain("kde.org");
 
