@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: alpaka\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-01-02 00:47+0000\n"
+"POT-Creation-Date: 2026-02-12 00:46+0000\n"
 "PO-Revision-Date: 2023-12-21 22:40-0800\n"
 "Last-Translator: Japanese KDE translation team <kde-jp@kde.org>\n"
 "Language-Team: Japanese <kde-jp@kde.org>\n"
@@ -52,15 +52,25 @@ msgstr ""
 
 #: src/apps/main.cpp:52
 #, kde-format
-msgid "Maintainer"
+msgid "Creator"
 msgstr ""
 
 #: src/apps/main.cpp:53
 #, kde-format
-msgid "Laurent Montel"
+msgid "Siavosh Kasravi"
 msgstr ""
 
 #: src/apps/main.cpp:53
+#, kde-format
+msgid "Maintainer"
+msgstr ""
+
+#: src/apps/main.cpp:54
+#, kde-format
+msgid "Laurent Montel"
+msgstr ""
+
+#: src/apps/main.cpp:54
 #, kde-format
 msgid "Developer"
 msgstr ""

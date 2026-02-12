@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-01-02 00:47+0000\n"
+"POT-Creation-Date: 2026-02-12 00:46+0000\n"
 "PO-Revision-Date: 2026-01-02 07:02+0100\n"
 "Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
@@ -53,15 +53,25 @@ msgstr "Loren Burkholder"
 
 #: src/apps/main.cpp:52
 #, kde-format
+msgid "Creator"
+msgstr ""
+
+#: src/apps/main.cpp:53
+#, kde-format
+msgid "Siavosh Kasravi"
+msgstr ""
+
+#: src/apps/main.cpp:53
+#, kde-format
 msgid "Maintainer"
 msgstr "Vzdrževalec"
 
-#: src/apps/main.cpp:53
+#: src/apps/main.cpp:54
 #, kde-format
 msgid "Laurent Montel"
 msgstr "Laurent Montel"
 
-#: src/apps/main.cpp:53
+#: src/apps/main.cpp:54
 #, kde-format
 msgid "Developer"
 msgstr "Razvijalec"

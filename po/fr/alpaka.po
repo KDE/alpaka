@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: alpaka\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-01-02 00:47+0000\n"
+"POT-Creation-Date: 2026-02-12 00:46+0000\n"
 "PO-Revision-Date: 2026-01-05 20:36+0100\n"
 "Last-Translator: Xavier Besnard <xavier.besnard@kde.org>\n"
 "Language-Team: \n"
@@ -52,15 +52,25 @@ msgstr "Loren Burkholder"
 
 #: src/apps/main.cpp:52
 #, kde-format
+msgid "Creator"
+msgstr ""
+
+#: src/apps/main.cpp:53
+#, kde-format
+msgid "Siavosh Kasravi"
+msgstr ""
+
+#: src/apps/main.cpp:53
+#, kde-format
 msgid "Maintainer"
 msgstr "Mainteneur"
 
-#: src/apps/main.cpp:53
+#: src/apps/main.cpp:54
 #, kde-format
 msgid "Laurent Montel"
 msgstr "Laurent Montel"
 
-#: src/apps/main.cpp:53
+#: src/apps/main.cpp:54
 #, kde-format
 msgid "Developer"
 msgstr "Développeur"
