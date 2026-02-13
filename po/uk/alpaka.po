@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: alpaka\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-02-12 00:46+0000\n"
-"PO-Revision-Date: 2026-01-02 09:21+0200\n"
+"PO-Revision-Date: 2026-02-12 12:17+0200\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <trans-uk@lists.fedoraproject.org>\n"
 "Language: uk\n"
@@ -57,12 +57,12 @@ msgstr "Loren Burkholder"
 #: src/apps/main.cpp:52
 #, kde-format
 msgid "Creator"
-msgstr ""
+msgstr "Автор"
 
 #: src/apps/main.cpp:53
 #, kde-format
 msgid "Siavosh Kasravi"
-msgstr ""
+msgstr "Сявош Касварі"
 
 #: src/apps/main.cpp:53
 #, kde-format

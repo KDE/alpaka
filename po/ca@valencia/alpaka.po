@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: alpaka\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-02-12 00:46+0000\n"
-"PO-Revision-Date: 2026-01-02 08:57+0100\n"
+"PO-Revision-Date: 2026-02-12 09:20+0100\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca@valencia\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 25.12.0\n"
+"X-Generator: Lokalize 25.04.0\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -58,12 +58,12 @@ msgstr "Loren Burkholder"
 #: src/apps/main.cpp:52
 #, kde-format
 msgid "Creator"
-msgstr ""
+msgstr "Creador"
 
 #: src/apps/main.cpp:53
 #, kde-format
 msgid "Siavosh Kasravi"
-msgstr ""
+msgstr "Siavosh Kasravi"
 
 #: src/apps/main.cpp:53
 #, kde-format

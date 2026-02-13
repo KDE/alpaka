@@ -57,7 +57,7 @@ msgstr "Loren Burkholder"
 #: src/apps/main.cpp:52
 #, kde-format
 msgid "Creator"
-msgstr ""
+msgstr "Vytvořil"
 
 #: src/apps/main.cpp:53
 #, kde-format

@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: alpaka\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-02-12 00:46+0000\n"
-"PO-Revision-Date: 2026-01-02 04:58+0100\n"
+"PO-Revision-Date: 2026-02-12 05:20+0100\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <kde-i18n-doc@kde.org>\n"
 "Language: ka\n"
@@ -57,12 +57,12 @@ msgstr "ლორენ ბარკჰოლდერი"
 #: src/apps/main.cpp:52
 #, kde-format
 msgid "Creator"
-msgstr ""
+msgstr "შემქმნელი"
 
 #: src/apps/main.cpp:53
 #, kde-format
 msgid "Siavosh Kasravi"
-msgstr ""
+msgstr "Siavosh Kasravi"
 
 #: src/apps/main.cpp:53
 #, kde-format
