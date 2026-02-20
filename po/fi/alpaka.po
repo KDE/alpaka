@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: alpaka\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-02-12 00:46+0000\n"
+"POT-Creation-Date: 2026-02-20 00:49+0000\n"
 "PO-Revision-Date: 2025-07-07 15:54+0300\n"
 "Last-Translator: Tommi Nieminen <translator@legisign.org>\n"
 "Language-Team: Finnish <kde-i18n-doc@kde.org>\n"
@@ -27,7 +27,7 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "translator@legisign.org"
 
-#: src/apps/ChatModel.cpp:158
+#: src/apps/ChatModel.cpp:167
 #, kde-format
 msgid "Show model info."
 msgstr "Näytä tietoa mallista."
@@ -208,7 +208,7 @@ msgstr "%1 mkiä/s · %2 merkkiä · %3 sekuntia"
 msgid "Ollama server URL"
 msgstr "Ollama-palvelimen osoite"
 
-#: src/core/KLLMInterface.cpp:137
+#: src/core/KLLMInterface.cpp:128
 #, fuzzy, kde-format
 #| msgid "Failed to connect to interface at %1: %2"
 msgctxt "%1 is an URL, %2 an error description"

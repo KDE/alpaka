@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: alpaka\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-02-12 00:46+0000\n"
+"POT-Creation-Date: 2026-02-20 00:49+0000\n"
 "PO-Revision-Date: 2026-02-12 15:58+0900\n"
 "Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
 "Language-Team: Traditional Chinese <zh-l10n@lists.slat.org>\n"
@@ -27,7 +27,7 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "mail@kisaragi-hiu.com"
 
-#: src/apps/ChatModel.cpp:158
+#: src/apps/ChatModel.cpp:167
 #, kde-format
 msgid "Show model info."
 msgstr "顯示模型資訊。"
@@ -202,7 +202,7 @@ msgstr "每秒 %1 個 token · %2 個 token · %3 秒"
 msgid "Ollama server URL"
 msgstr "Ollama 伺服器網址"
 
-#: src/core/KLLMInterface.cpp:137
+#: src/core/KLLMInterface.cpp:128
 #, kde-format
 msgctxt "%1 is an URL, %2 an error description"
 msgid "Failed to connect to interface at %1: %2"
