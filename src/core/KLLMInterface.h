@@ -118,7 +118,21 @@ public Q_SLOTS:
      *
      * Calling this function starts a request to the LLM backend. You should use the returned KLLMReply pointer to track the
      * status of the LLM's response. Once the KLLMReply emits KLLMReply::finished(), it is your responsibility to either
-     * track or delete the KLLMReply; auto-deleting is not implemented yet.
+     * track or delete the KLLMReply; auto-deleting is not implemented yet.// Parameters
+     *
+     * Ollama API for /chat:
+     *     model: (required) the model name
+     *     messages: the messages of the chat, this can be used to keep a chat memory
+     *     tools: list of tools in JSON for the model to use if supported
+     *     think: (for thinking models) should the model think before responding?
+     *
+     *     The message object has the following fields:
+     *       role: the role of the message, either system, user, assistant, or tool
+     *       content: the content of the message
+     *       thinking: (for thinking models) the model's thinking process
+     *       images (optional): a list of images to include in the message (for multimodal models such as llava)
+     *       tool_calls (optional): a list of tools in JSON that the model wants to use
+     *       tool_name (optional): add the name of the tool that was executed to inform the model of the result
      *
      * @param request The request object that will be used to create the actual LLM request.
      * @return Returns a pointer to a KLLMReply that can be used to track the progress of the reply.

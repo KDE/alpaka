@@ -5,8 +5,8 @@
 
 #pragma once
 
+#include "KLLMContext.h"
 #include "kllmcore_export.h"
-
 #include <QDebug>
 #include <QJsonArray>
 namespace KLLMCore
@@ -21,17 +21,17 @@ class KLLMCORE_EXPORT KLLMRequest
 {
 public:
     /**
-     * @brief Creates a KLLMRequest with the array of messages \a messages.
-     * @param messages The json array of messages that will be sent to the LLM.
+     * @brief Creates a KLLMRequest with context.
+     * @param context The contect object containing messages that will be sent to the LLM.
      * @param parent
      */
-    explicit KLLMRequest(const QJsonArray &messages);
+    explicit KLLMRequest(KLLMContext *context);
 
     /**
-     * @brief Use this to get the array of messages for the LLM.
-     * @return Returns the array of messages to be sent to the LLM.
+     * @brief Use this to get the outgoing context for the LLM.
+     * @return Returns the KLLMContext containing messages to be sent to the LLM.
      */
-    [[nodiscard]] QJsonArray messages() const;
+    [[nodiscard]] KLLMContext *context() const;
 
     /**
      * @brief Gets the LLM model that will be used by the backend.
@@ -40,10 +40,10 @@ public:
     [[nodiscard]] QString model() const;
 
     /**
-     * @brief Sets the messages to be sent to the LLM.
-     * @param messages The array of messages in json format to be sent to the LLM.
+     * @brief Sets the context to be sent to the LLM.
+     * @param context The context object to be sent to the LLM.
      */
-    void setMessages(const QJsonArray &messages);
+    void setContext(const KLLMContext *context);
 
     /**
      * @brief Sets the model to be used for this request.
@@ -56,7 +56,7 @@ public:
     void setModel(const QString &model);
 
 private:
-    QJsonArray m_messages;
+    KLLMContext *m_context;
     QString m_model;
 };
 }

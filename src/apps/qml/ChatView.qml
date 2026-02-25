@@ -6,6 +6,7 @@ pragma ComponentBehavior: Bound
 
 import QtQuick
 import QtQuick.Controls as Controls
+import QtQuick.Dialogs as Dialogs
 import QtQuick.Layouts
 import org.kde.kirigami as Kirigami
 
@@ -68,7 +69,7 @@ Kirigami.ScrollablePage {
             Controls.TextArea {
                 id: messageInput
                 wrapMode: TextEdit.Wrap
-                placeholderText: i18nc("@info:placeholder", "Enter a message")
+                placeholderText: i18nc("@info:placeholder", "Enter a message (Use @ to open the attachment menu)")
                 enabled: chat.llm.ready && !chat.replyInProgress
                 width: parent.width
                 focus: true
@@ -121,8 +122,135 @@ Kirigami.ScrollablePage {
                         event.accepted = true;
                     }
                 }
+
+                onTextChanged: {
+                    // Check if the last typed character is "@"
+                    if (text.length > 0 && text[cursorPosition - 1] === "@" && (text[cursorPosition - 2] === " " || text.length == 1)) {
+                        const cursorPos = messageInput.cursorRectangle
+                        mentionMenu.popup(
+                            messageInput.mapToGlobal(Qt.point(cursorPos.x, cursorPos.y + cursorPos.height)),
+                            messageInput
+                        )
+                    }
+                }
             }
         }
+
+        Controls.Menu {
+            id: mentionMenu
+            Controls.MenuItem {
+                text: "file"
+                onTriggered: {
+                    mentionMenu.close();
+                    fileDialog.open();
+                }
+            }
+            Controls.MenuItem {
+                text: "picture"
+                onTriggered: {
+                    mentionMenu.close();
+                    imageDialog.open();
+                }
+            }
+            Controls.MenuItem {
+                text: "directory"
+                onTriggered: {
+                    mentionMenu.close();
+                    dirDialog.open();
+                }
+            }
+            // TODO: Uncomment when url handling was implemented
+            // Controls.MenuItem {
+            //     text: "url"
+            //     onTriggered: {
+            //         mentionMenu.close();
+            //         urlDialog.open();
+            //     }
+            // }
+        }
+
+        Dialogs.FileDialog {
+            id: fileDialog
+            title: "Select a Text File"
+
+            onAccepted: {
+                messageInput.insert(messageInput.cursorPosition, "[[" + selectedFile  + "]] ");
+            }
+            
+            onRejected: {
+                messageInput.insert(messageInput.cursorPosition - 1, " ");
+            }
+        }
+
+        Dialogs.FileDialog {
+            id: imageDialog
+            title: "Pick a Picture"
+            nameFilters: ["Images (*.png *.jpg *.jpeg *.bmp *.gif)", "All files (*)"]
+            onAccepted: {
+                messageInput.insert(messageInput.cursorPosition, "[[" + selectedFile + "]] ");
+            }
+            
+            onRejected: {
+                messageInput.insert(messageInput.cursorPosition - 1, " ");
+            }
+        }
+        
+        Dialogs.FolderDialog {
+            id: dirDialog
+            title: "Select a Directory"
+            options: Dialogs.FolderDialog.ReadOnly
+            onAccepted: {
+                messageInput.insert(messageInput.cursorPosition, "[[" + selectedFolder + "]] ");
+            }
+            
+            onRejected: {
+                messageInput.insert(messageInput.cursorPosition - 1, " ");
+            }
+        }
+        
+        Controls.Dialog {
+            id: urlDialog
+            title: "Insert URL"
+            modal: true
+            standardButtons: Controls.Dialog.Ok | Controls.Dialog.Cancel
+        
+            Column {
+                spacing: 10
+                padding: 12
+        
+                Controls.TextField {
+                    id: urlField
+                    width: 400
+                    placeholderText: "https://example.com/file.txt"
+                    inputMethodHints: Qt.ImhUrlCharactersOnly
+                }
+        
+                Controls.Label {
+                    visible: !urlField.acceptableInput
+                    color: "red"
+                    text: "Invalid URL"
+                }
+            }
+        
+            onAccepted: {
+                if (isValidUrl(urlField.text)) {
+                    messageInput.insert(messageInput.cursorPosition, "[[" + urlField.text + "]] ");
+                } else {
+                    Qt.callLater(function() {
+                        urlDialog.open()
+                    })
+                }
+            }
+            
+            onRejected: {
+                messageInput.insert(messageInput.cursorPosition - 1, " ");
+            }
+        
+            function isValidUrl(text) {
+                return text.match(/^(https?):\/\/\S+$/)
+            }
+        }
+
         Kirigami.Separator {
             Layout.fillWidth: true
         }

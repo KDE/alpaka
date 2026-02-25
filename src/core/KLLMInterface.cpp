@@ -79,10 +79,13 @@ KLLMReply *KLLMInterface::getCompletion(const KLLMRequest &request)
     qDebug() << "Outgoing request:" << request;
     QNetworkRequest req{QUrl::fromUserInput(m_ollamaUrl + QStringLiteral("/api/chat"))};
     req.setHeader(QNetworkRequest::ContentTypeHeader, QStringLiteral("application/json"));
-
     QJsonObject data;
     data["model"_L1] = request.model().isEmpty() ? m_models.constFirst() : request.model();
-    data["messages"_L1] = request.messages();
+    QJsonArray messagesJson;
+    for (auto t : request.context()->messages()) {
+        messagesJson.append(t.toJson());
+    }
+    data["messages"_L1] = messagesJson;
 
     auto buf = new QBuffer{this};
     buf->setData(QJsonDocument(data).toJson(QJsonDocument::Compact));

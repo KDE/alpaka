@@ -16,25 +16,25 @@ using namespace KLLMCore;
 ChatModel::ChatModel(QObject *parent)
     : QAbstractListModel{parent}
     , m_llm{new KLLMInterface{this}}
+    , m_context{new KLLMContext{this}} // TODO: make it a list of context object so we can track multiple threads
 {
     auto settings = KLLMCoreSettings::self();
 
     m_llm->setOllamaUrl(settings->serverUrl());
 
-    QJsonObject systemMessage;
-    systemMessage["role"_L1] = "system"_L1;
-    systemMessage["content"_L1] = KLLMCoreSettings::systemPrompt();
-    m_messageJsonHistory.append(systemMessage);
+    m_context->addSystemMessage(KLLMCoreSettings::systemPrompt());
 
-    connect(KLLMCoreSettings::self(), &KLLMCoreSettings::SystemPromptChanged, this, [this] {
-        auto lastMessage = this->m_messageJsonHistory.last();
-        if (lastMessage["role"_L1] == "system"_L1)
-            this->m_messageJsonHistory.removeLast();
-        QJsonObject systemMessage;
-        systemMessage["role"_L1] = "system"_L1;
-        systemMessage["content"_L1] = KLLMCoreSettings::systemPrompt();
-        this->m_messageJsonHistory.append(systemMessage);
+    m_systemPromptTimer = new QTimer(this);
+    m_systemPromptTimer->setSingleShot(true);
+    m_systemPromptTimer->setInterval(600);
+
+    connect(m_systemPromptTimer, &QTimer::timeout, this, [this] {
+        m_context->addSystemMessage(KLLMCoreSettings::systemPrompt());
     });
+    connect(KLLMCoreSettings::self(), &KLLMCoreSettings::SystemPromptChanged, this, [this] {
+        m_systemPromptTimer->start();
+    });
+
     connect(KLLMCoreSettings::self(), &KLLMCoreSettings::ServerUrlChanged, this, [this] {
         m_llm->setOllamaUrl(KLLMCoreSettings::serverUrl());
     });
@@ -124,7 +124,8 @@ void ChatModel::sendMessage(const QString &message)
     obj["role"_L1] = "user"_L1;
     obj["content"_L1] = message;
     m_messageJsonHistory.append(obj);
-    KLLMRequest req{m_messageJsonHistory};
+    m_context->addUserMessage(message);
+    KLLMRequest req{m_context};
     req.setModel(KLLMCoreSettings::model());
 
     auto rep = m_llm->getCompletion(req);
@@ -144,6 +145,7 @@ void ChatModel::sendMessage(const QString &message)
                                  message.info = message.llmReply->info();
                                  m_messageJsonHistory.append(message.llmReply->getReplyJson()); // TODO: Summarize older chats befor appending
                              }
+                             m_context->addAssistantMessage(message.content);
                              message.llmReply->deleteLater();
                              message.llmReply = nullptr;
                              message.inProgress = false;
@@ -158,7 +160,7 @@ void ChatModel::sendMessage(const QString &message)
 
 void ChatModel::getModelInfo()
 {
-    KLLMRequest req{QJsonArray{}};
+    KLLMRequest req{new KLLMContext{this}};
     req.setModel(KLLMCoreSettings::model());
 
     auto rep = m_llm->getModelInfo(req);
@@ -196,6 +198,7 @@ void ChatModel::resetConversation()
     Q_EMIT replyInProgressChanged();
     m_messages.clear();
     m_messageJsonHistory = {};
+    m_context->clear();
     endResetModel();
 }
 

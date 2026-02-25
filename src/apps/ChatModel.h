@@ -8,6 +8,7 @@
 #include <QJsonArray>
 #include <QtQmlIntegration>
 
+#include "KLLMContext.h"
 #include "KLLMInterface.h"
 #include "KLLMReply.h"
 
@@ -64,6 +65,7 @@ private:
         bool inProgress = false;
         QString content;
         Sender sender;
+
         qsizetype messageIndex = -1;
         KLLMCore::KLLMReply *llmReply = nullptr;
         KLLMCore::KLLMReplyInfo info;
@@ -72,6 +74,7 @@ private:
     QList<ChatMessage> m_messages;
     QJsonArray m_messageJsonHistory;
     KLLMCore::KLLMInterface *const m_llm;
-
+    KLLMCore::KLLMContext *const m_context;
     QMultiHash<KLLMCore::KLLMReply *, QMetaObject::Connection> m_connections;
+    QTimer *m_systemPromptTimer;
 };

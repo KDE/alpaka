@@ -51,7 +51,8 @@
             "displayName": "dev-clang",
             "cacheVariables": {
                 "CMAKE_BUILD_TYPE": "Debug",
-                "CMAKE_EXPORT_COMPILE_COMMANDS": "ON"
+                "CMAKE_EXPORT_COMPILE_COMMANDS": "ON",
+                "CMAKE_CXX_FLAGS_DEBUG": "-O0 -g3 -fno-omit-frame-pointer -fno-inline -fno-optimize-sibling-calls"
             },
             "environment": {
                 "CXX": "clang++",

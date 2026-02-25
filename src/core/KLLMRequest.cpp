@@ -4,26 +4,22 @@
 
 #include "KLLMRequest.h"
 #include <QJsonArray>
+#include <QStringBuilder>
 
 using namespace KLLMCore;
-KLLMRequest::KLLMRequest(const QJsonArray &messages)
-    : m_messages(messages)
+KLLMRequest::KLLMRequest(KLLMContext *context)
+    : m_context(context)
 {
 }
 
-QJsonArray KLLMRequest::messages() const
+KLLMContext *KLLMRequest::context() const
 {
-    return m_messages;
+    return m_context;
 }
 
 QString KLLMRequest::model() const
 {
     return m_model;
-}
-
-void KLLMRequest::setMessages(const QJsonArray &messages)
-{
-    m_messages = messages;
 }
 
 void KLLMRequest::setModel(const QString &model)
@@ -34,6 +30,6 @@ void KLLMRequest::setModel(const QString &model)
 QDebug operator<<(QDebug d, const KLLMRequest &t)
 {
     d << "Model: " << t.model();
-    d << "Message: " << t.messages();
+    d << "Message: " << t.context()->toJsonDocument();
     return d;
 }
