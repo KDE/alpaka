@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: alpaka\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-02-20 00:49+0000\n"
+"POT-Creation-Date: 2026-02-26 00:47+0000\n"
 "PO-Revision-Date: 2023-12-22 19:35+0100\n"
 "Last-Translator: Roman Paholik <wizzardsk@gmail.com>\n"
 "Language-Team: Slovak <kde-sk@linux.sk>\n"
@@ -25,12 +25,12 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "wizzardsk@gmail.com"
 
-#: src/apps/ChatModel.cpp:167
+#: src/apps/ChatModel.cpp:169
 #, kde-format
 msgid "Show model info."
 msgstr ""
 
-#: src/apps/main.cpp:47 src/apps/qml/ChatView.qml:13
+#: src/apps/main.cpp:47 src/apps/qml/ChatView.qml:14
 #: src/apps/qml/MessageDelegate.qml:61
 #, kde-format
 msgid "Alpaka"
@@ -77,59 +77,59 @@ msgstr "Laurent Montel"
 msgid "Developer"
 msgstr "Vývojár"
 
-#: src/apps/qml/ChatView.qml:31
+#: src/apps/qml/ChatView.qml:32
 #, fuzzy, kde-format
 #| msgid "Start over"
 msgctxt "@action:intoolbar"
 msgid "Start Over"
 msgstr "Začať odznova"
 
-#: src/apps/qml/ChatView.qml:37
+#: src/apps/qml/ChatView.qml:38
 #, fuzzy, kde-format
 #| msgid "Settings"
 msgctxt "@action:intoolbar"
 msgid "Settings"
 msgstr "Nastavenia"
 
-#: src/apps/qml/ChatView.qml:52
+#: src/apps/qml/ChatView.qml:53
 #, fuzzy, kde-format
 #| msgid "Try again"
 msgctxt "@action:button"
 msgid "Try Again"
 msgstr "Skús znova"
 
-#: src/apps/qml/ChatView.qml:71
+#: src/apps/qml/ChatView.qml:72
 #, kde-format
 msgctxt "@info:placeholder"
-msgid "Enter a message"
+msgid "Enter a message (Use @ to open the attachment menu)"
 msgstr ""
 
-#: src/apps/qml/ChatView.qml:133
+#: src/apps/qml/ChatView.qml:261
 #, kde-format
 msgid "LLM:"
 msgstr ""
 
-#: src/apps/qml/ChatView.qml:141
+#: src/apps/qml/ChatView.qml:269
 #, fuzzy, kde-format
 #| msgid "Info"
 msgctxt "@action:button"
 msgid "Info"
 msgstr "Info"
 
-#: src/apps/qml/ChatView.qml:152
+#: src/apps/qml/ChatView.qml:280
 #, kde-format
 msgctxt "@info:placeholder"
 msgid "Interface Not Found"
 msgstr ""
 
-#: src/apps/qml/ChatView.qml:153
+#: src/apps/qml/ChatView.qml:281
 #, kde-format
 msgid ""
 "Make sure Ollama is installed and is running. Visit the project's website "
 "for setup information."
 msgstr ""
 
-#: src/apps/qml/ChatView.qml:156
+#: src/apps/qml/ChatView.qml:284
 #, kde-format
 msgctxt "@action:button"
 msgid "Visit Website"
@@ -205,7 +205,7 @@ msgstr ""
 msgid "Ollama server URL"
 msgstr ""
 
-#: src/core/KLLMInterface.cpp:128
+#: src/core/KLLMInterface.cpp:131
 #, kde-format
 msgctxt "%1 is an URL, %2 an error description"
 msgid "Failed to connect to interface at %1: %2"

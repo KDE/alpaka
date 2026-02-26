@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-02-20 00:49+0000\n"
+"POT-Creation-Date: 2026-02-26 00:47+0000\n"
 "PO-Revision-Date: 2026-02-12 06:33+0100\n"
 "Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
@@ -25,12 +25,12 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "matjaz.jeran@amis.net"
 
-#: src/apps/ChatModel.cpp:167
+#: src/apps/ChatModel.cpp:169
 #, kde-format
 msgid "Show model info."
 msgstr "Prikaži informacije o modelu."
 
-#: src/apps/main.cpp:47 src/apps/qml/ChatView.qml:13
+#: src/apps/main.cpp:47 src/apps/qml/ChatView.qml:14
 #: src/apps/qml/MessageDelegate.qml:61
 #, kde-format
 msgid "Alpaka"
@@ -76,48 +76,48 @@ msgstr "Laurent Montel"
 msgid "Developer"
 msgstr "Razvijalec"
 
-#: src/apps/qml/ChatView.qml:31
+#: src/apps/qml/ChatView.qml:32
 #, kde-format
 msgctxt "@action:intoolbar"
 msgid "Start Over"
 msgstr "Začni znova"
 
-#: src/apps/qml/ChatView.qml:37
+#: src/apps/qml/ChatView.qml:38
 #, kde-format
 msgctxt "@action:intoolbar"
 msgid "Settings"
 msgstr "Nastavitve"
 
-#: src/apps/qml/ChatView.qml:52
+#: src/apps/qml/ChatView.qml:53
 #, kde-format
 msgctxt "@action:button"
 msgid "Try Again"
 msgstr "Poskusi ponovno"
 
-#: src/apps/qml/ChatView.qml:71
+#: src/apps/qml/ChatView.qml:72
 #, kde-format
 msgctxt "@info:placeholder"
-msgid "Enter a message"
-msgstr "Vnesite sporočilo"
+msgid "Enter a message (Use @ to open the attachment menu)"
+msgstr ""
 
-#: src/apps/qml/ChatView.qml:133
+#: src/apps/qml/ChatView.qml:261
 #, kde-format
 msgid "LLM:"
 msgstr "LLM:"
 
-#: src/apps/qml/ChatView.qml:141
+#: src/apps/qml/ChatView.qml:269
 #, kde-format
 msgctxt "@action:button"
 msgid "Info"
 msgstr "Informacije"
 
-#: src/apps/qml/ChatView.qml:152
+#: src/apps/qml/ChatView.qml:280
 #, kde-format
 msgctxt "@info:placeholder"
 msgid "Interface Not Found"
 msgstr "Ni najdenega vmesnika"
 
-#: src/apps/qml/ChatView.qml:153
+#: src/apps/qml/ChatView.qml:281
 #, kde-format
 msgid ""
 "Make sure Ollama is installed and is running. Visit the project's website "
@@ -126,7 +126,7 @@ msgstr ""
 "Prepričajte se, da je Ollama nameščen in delujoč. Za informacije o "
 "nastavitvah obiščite spletno mesto projekta."
 
-#: src/apps/qml/ChatView.qml:156
+#: src/apps/qml/ChatView.qml:284
 #, kde-format
 msgctxt "@action:button"
 msgid "Visit Website"
@@ -202,11 +202,15 @@ msgstr "%1 tok/s · %2 žetonov · %3 sekund"
 msgid "Ollama server URL"
 msgstr "URL strežnika Ollama"
 
-#: src/core/KLLMInterface.cpp:128
+#: src/core/KLLMInterface.cpp:131
 #, kde-format
 msgctxt "%1 is an URL, %2 an error description"
 msgid "Failed to connect to interface at %1: %2"
 msgstr "Neuspela povezava na vmesnik %1: %2"
+
+#~ msgctxt "@info:placeholder"
+#~ msgid "Enter a message"
+#~ msgstr "Vnesite sporočilo"
 
 #~ msgid "Info"
 #~ msgstr "Informacije"

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: alpaka\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-02-20 00:49+0000\n"
+"POT-Creation-Date: 2026-02-26 00:47+0000\n"
 "PO-Revision-Date: 2025-06-11 00:13+0200\n"
 "Last-Translator: Shinjo Park <kde@peremen.name>\n"
 "Language-Team: Korean <kde-kr@kde.org>\n"
@@ -27,12 +27,12 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "kde@peremen.name"
 
-#: src/apps/ChatModel.cpp:167
+#: src/apps/ChatModel.cpp:169
 #, kde-format
 msgid "Show model info."
 msgstr "모델 정보를 표시합니다."
 
-#: src/apps/main.cpp:47 src/apps/qml/ChatView.qml:13
+#: src/apps/main.cpp:47 src/apps/qml/ChatView.qml:14
 #: src/apps/qml/MessageDelegate.qml:61
 #, kde-format
 msgid "Alpaka"
@@ -79,48 +79,48 @@ msgstr "Laurent Montel"
 msgid "Developer"
 msgstr "개발자"
 
-#: src/apps/qml/ChatView.qml:31
+#: src/apps/qml/ChatView.qml:32
 #, kde-format
 msgctxt "@action:intoolbar"
 msgid "Start Over"
 msgstr "다시 시작"
 
-#: src/apps/qml/ChatView.qml:37
+#: src/apps/qml/ChatView.qml:38
 #, kde-format
 msgctxt "@action:intoolbar"
 msgid "Settings"
 msgstr "설정"
 
-#: src/apps/qml/ChatView.qml:52
+#: src/apps/qml/ChatView.qml:53
 #, kde-format
 msgctxt "@action:button"
 msgid "Try Again"
 msgstr "다시 시도"
 
-#: src/apps/qml/ChatView.qml:71
+#: src/apps/qml/ChatView.qml:72
 #, kde-format
 msgctxt "@info:placeholder"
-msgid "Enter a message"
-msgstr "메시지 입력"
+msgid "Enter a message (Use @ to open the attachment menu)"
+msgstr ""
 
-#: src/apps/qml/ChatView.qml:133
+#: src/apps/qml/ChatView.qml:261
 #, kde-format
 msgid "LLM:"
 msgstr "LLM:"
 
-#: src/apps/qml/ChatView.qml:141
+#: src/apps/qml/ChatView.qml:269
 #, kde-format
 msgctxt "@action:button"
 msgid "Info"
 msgstr "정보"
 
-#: src/apps/qml/ChatView.qml:152
+#: src/apps/qml/ChatView.qml:280
 #, kde-format
 msgctxt "@info:placeholder"
 msgid "Interface Not Found"
 msgstr "인터페이스를 찾을 수 없음"
 
-#: src/apps/qml/ChatView.qml:153
+#: src/apps/qml/ChatView.qml:281
 #, kde-format
 msgid ""
 "Make sure Ollama is installed and is running. Visit the project's website "
@@ -129,7 +129,7 @@ msgstr ""
 "Ollama가 설치되어 있고 실행 중인지 확인하십시오. 자세한 사항은 프로젝트 웹사"
 "이트를 참조하십시오."
 
-#: src/apps/qml/ChatView.qml:156
+#: src/apps/qml/ChatView.qml:284
 #, kde-format
 msgctxt "@action:button"
 msgid "Visit Website"
@@ -208,12 +208,16 @@ msgstr "%1토큰/초 · 토큰 %2개 · %3초"
 msgid "Ollama server URL"
 msgstr "Ollama 서버 URL"
 
-#: src/core/KLLMInterface.cpp:128
+#: src/core/KLLMInterface.cpp:131
 #, fuzzy, kde-format
 #| msgid "Failed to connect to interface at %1: %2"
 msgctxt "%1 is an URL, %2 an error description"
 msgid "Failed to connect to interface at %1: %2"
 msgstr "%1의 인터페이스에 연결할 수 없음: %2"
+
+#~ msgctxt "@info:placeholder"
+#~ msgid "Enter a message"
+#~ msgstr "메시지 입력"
 
 #~ msgid "Info"
 #~ msgstr "정보"
