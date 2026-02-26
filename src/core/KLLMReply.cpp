@@ -8,6 +8,7 @@
 
 #include <QNetworkReply>
 #include <QObject>
+#include <qlogging.h>
 
 using namespace Qt::StringLiterals;
 using namespace KLLMCore;

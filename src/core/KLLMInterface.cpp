@@ -7,6 +7,7 @@
 
 #include <KLocalizedString>
 
+#include "kllmcoresettings.h"
 #include <QBuffer>
 #include <QJsonDocument>
 #include <QJsonObject>
@@ -87,6 +88,18 @@ KLLMReply *KLLMInterface::getCompletion(const KLLMRequest &request)
     }
     data["messages"_L1] = messagesJson;
 
+    QJsonObject opts;
+    opts["num_ctx"_L1] = KLLMCoreSettings::self()->numCtx();
+    opts["repeat_last_n"_L1] = KLLMCoreSettings::self()->repeatLastN();
+    opts["repeat_penalty"_L1] = KLLMCoreSettings::self()->repeatPenalty();
+    opts["seed"_L1] = KLLMCoreSettings::self()->seed();
+    opts["temperature"_L1] = KLLMCoreSettings::self()->temperature();
+    opts["num_predict"_L1] = KLLMCoreSettings::self()->numPredict();
+    opts["top_k"_L1] = KLLMCoreSettings::self()->topK();
+    opts["top_p"_L1] = KLLMCoreSettings::self()->topP();
+    opts["min_p"_L1] = KLLMCoreSettings::self()->minP();
+
+    data["options"_L1] = opts;
     auto buf = new QBuffer{this};
     buf->setData(QJsonDocument(data).toJson(QJsonDocument::Compact));
     auto reply = new KLLMReply{m_manager->post(req, buf), this};

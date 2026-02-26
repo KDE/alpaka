@@ -20,6 +20,42 @@ SPDX-License-Identifier: GPL-2.0-only OR GPL-3.0-only OR LicenseRef-KDE-Accepted
       <label>The URL to the Ollama instance</label>
       <default code="true">KLLMCore::ollamaUrl()</default>
     </entry>
+      <entry name="NumCtx" type="Int">
+        <label>Context size</label>
+        <default>2048</default>
+      </entry>
+      <entry name="RepeatLastN" type="Int">
+        <label>How far back for the model to look back to prevent repetition</label>
+        <default>64</default>
+      </entry>
+      <entry name="RepeatPenalty" type="Double">
+        <label>Sets how strongly to penalize repetitions</label>
+        <default>1.1</default>
+      </entry>
+      <entry name="Temperature" type="Double">
+        <label>Increasing the temperature will make the model answer more creatively</label>
+        <default>0.8</default>
+      </entry>
+      <entry name="Seed" type="Int">
+        <label>Seed to use for generation</label>
+        <default>-1</default>
+      </entry>
+      <entry name="NumPredict" type="Int">
+        <label>Maximum number of tokens to predict when generating text</label>
+        <default>-1</default>
+      </entry>
+      <entry name="TopK" type="Int">
+        <label>Reduces the probability of generating nonsense</label>
+        <default>40</default>
+      </entry>
+      <entry name="TopP" type="Double">
+        <label>Reduces the probability of generating nonsense (works with top_k)</label>
+        <default>0.9</default>
+      </entry>
+      <entry name="MinP" type="Double">
+        <label>Alternative to the topp, and aims to ensure a balance of quality and variety</label>
+        <default>0</default>
+      </entry>
   </group>
   <group name="LLM">
     <entry name="SystemPrompt" type="String">
