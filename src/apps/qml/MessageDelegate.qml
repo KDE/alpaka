@@ -54,7 +54,7 @@ RowLayout {
                     Binding {
                         target: avatar
                         property: "source"
-                        when: localUser.faceIconUrl && localUser.faceIconUrl.length > 0
+                        when: messageDelegate.sender === ChatModel.User && localUser.faceIconUrl && localUser.faceIconUrl != ""
                         value: localUser.faceIconUrl + "?timestamp=" + Date.now()
                     }
                     Layout.preferredHeight: userName.height + 15
