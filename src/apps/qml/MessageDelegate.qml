@@ -50,7 +50,13 @@ RowLayout {
                 spacing: 10
 
                 KirigamiComponents.Avatar {
-                    source: messageDelegate.sender === ChatModel.User ? localUser.faceIconUrl + "?timestamp=" + Date.now() : ""
+                    id: avatar
+                    Binding {
+                        target: avatar
+                        property: "source"
+                        when: localUser.faceIconUrl && localUser.faceIconUrl.length > 0
+                        value: localUser.faceIconUrl + "?timestamp=" + Date.now()
+                    }
                     Layout.preferredHeight: userName.height + 15
                     Layout.preferredWidth: height
                 }
