@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: alpaka\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-02-26 00:47+0000\n"
+"POT-Creation-Date: 2026-02-27 00:47+0000\n"
 "PO-Revision-Date: 2024-11-01 14:00+0000\n"
 "Last-Translator: Steve Allewell <steve.allewell@gmail.com>\n"
 "Language-Team: British English\n"
@@ -34,7 +34,7 @@ msgid "Show model info."
 msgstr "Show debug information"
 
 #: src/apps/main.cpp:47 src/apps/qml/ChatView.qml:14
-#: src/apps/qml/MessageDelegate.qml:61
+#: src/apps/qml/MessageDelegate.qml:67
 #, kde-format
 msgid "Alpaka"
 msgstr "Alpaka"
@@ -184,19 +184,19 @@ msgctxt "@title:window"
 msgid "Alpaka"
 msgstr "Alpaka"
 
-#: src/apps/qml/MessageDelegate.qml:105
+#: src/apps/qml/MessageDelegate.qml:111
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Copy"
 msgstr ""
 
-#: src/apps/qml/MessageDelegate.qml:111
+#: src/apps/qml/MessageDelegate.qml:117
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Select All"
 msgstr ""
 
-#: src/apps/qml/MessageDelegate.qml:127
+#: src/apps/qml/MessageDelegate.qml:133
 #, fuzzy, kde-format
 #| msgid "%1 tok/s · %2 tokens · %3 seconds"
 msgctxt "'toks' is short for 'tokens'"
@@ -208,7 +208,62 @@ msgstr "%1 tok/s · %2 tokens · %3 seconds"
 msgid "Ollama server URL"
 msgstr "Ollama server URL"
 
-#: src/core/KLLMInterface.cpp:131
+#: src/apps/qml/OllamaSettingsPage.qml:30
+#, kde-format
+msgid "Advanced Parameters"
+msgstr ""
+
+#: src/apps/qml/OllamaSettingsPage.qml:34
+#, kde-format
+msgid "Context size"
+msgstr ""
+
+#: src/apps/qml/OllamaSettingsPage.qml:42
+#, kde-format
+msgid "Repeat penalty lookback tokens"
+msgstr ""
+
+#: src/apps/qml/OllamaSettingsPage.qml:51
+#, kde-format
+msgid "Repeat penalization factor [scaled x10]"
+msgstr ""
+
+#: src/apps/qml/OllamaSettingsPage.qml:61
+#, kde-format
+msgid "Temperature [scaled x10]"
+msgstr ""
+
+#: src/apps/qml/OllamaSettingsPage.qml:71
+#, kde-format
+msgid "Seed (-1 = random)"
+msgstr ""
+
+#: src/apps/qml/OllamaSettingsPage.qml:79
+#, kde-format
+msgid "Maximum tokens to predict (-1 = unlimited)"
+msgstr ""
+
+#: src/apps/qml/OllamaSettingsPage.qml:87
+#, kde-format
+msgid "Top K"
+msgstr ""
+
+#: src/apps/qml/OllamaSettingsPage.qml:95
+#, kde-format
+msgid "Top P [scaled x100]"
+msgstr ""
+
+#: src/apps/qml/OllamaSettingsPage.qml:105
+#, kde-format
+msgid "Min P [scaled x10]"
+msgstr ""
+
+#: src/apps/qml/OllamaSettingsPage.qml:115
+#, kde-format
+msgid "Reset to defaults"
+msgstr ""
+
+#: src/core/KLLMInterface.cpp:144
 #, fuzzy, kde-format
 #| msgid "Failed to connect to interface at %1: %2"
 msgctxt "%1 is an URL, %2 an error description"

@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: alpaka\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-02-26 00:47+0000\n"
-"PO-Revision-Date: 2026-02-12 09:20+0100\n"
+"POT-Creation-Date: 2026-02-27 00:47+0000\n"
+"PO-Revision-Date: 2026-02-26 08:43+0100\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca@valencia\n"
@@ -35,7 +35,7 @@ msgid "Show model info."
 msgstr "Mostra la informació del model."
 
 #: src/apps/main.cpp:47 src/apps/qml/ChatView.qml:14
-#: src/apps/qml/MessageDelegate.qml:61
+#: src/apps/qml/MessageDelegate.qml:67
 #, kde-format
 msgid "Alpaka"
 msgstr "Alpaka"
@@ -102,7 +102,7 @@ msgstr "Torneu-ho a provar"
 #, kde-format
 msgctxt "@info:placeholder"
 msgid "Enter a message (Use @ to open the attachment menu)"
-msgstr ""
+msgstr "Introduïu un missatge (Utilitzeu @ per a obrir el menú d'adjunció)"
 
 #: src/apps/qml/ChatView.qml:261
 #, kde-format
@@ -183,19 +183,19 @@ msgctxt "@title:window"
 msgid "Alpaka"
 msgstr "Alpaka"
 
-#: src/apps/qml/MessageDelegate.qml:105
+#: src/apps/qml/MessageDelegate.qml:111
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Copy"
 msgstr "Copia"
 
-#: src/apps/qml/MessageDelegate.qml:111
+#: src/apps/qml/MessageDelegate.qml:117
 #, kde-format
 msgctxt "@action:inmenu"
 msgid "Select All"
 msgstr "Selecciona-ho tot"
 
-#: src/apps/qml/MessageDelegate.qml:127
+#: src/apps/qml/MessageDelegate.qml:133
 #, kde-format
 msgctxt "'toks' is short for 'tokens'"
 msgid "%1 tok/s · %2 tokens · %3 seconds"
@@ -206,12 +206,63 @@ msgstr "%1 segments · %2 segments · %3 segons"
 msgid "Ollama server URL"
 msgstr "URL del servidor Ollama"
 
-#: src/core/KLLMInterface.cpp:131
+#: src/apps/qml/OllamaSettingsPage.qml:30
+#, kde-format
+msgid "Advanced Parameters"
+msgstr ""
+
+#: src/apps/qml/OllamaSettingsPage.qml:34
+#, kde-format
+msgid "Context size"
+msgstr ""
+
+#: src/apps/qml/OllamaSettingsPage.qml:42
+#, kde-format
+msgid "Repeat penalty lookback tokens"
+msgstr ""
+
+#: src/apps/qml/OllamaSettingsPage.qml:51
+#, kde-format
+msgid "Repeat penalization factor [scaled x10]"
+msgstr ""
+
+#: src/apps/qml/OllamaSettingsPage.qml:61
+#, kde-format
+msgid "Temperature [scaled x10]"
+msgstr ""
+
+#: src/apps/qml/OllamaSettingsPage.qml:71
+#, kde-format
+msgid "Seed (-1 = random)"
+msgstr ""
+
+#: src/apps/qml/OllamaSettingsPage.qml:79
+#, kde-format
+msgid "Maximum tokens to predict (-1 = unlimited)"
+msgstr ""
+
+#: src/apps/qml/OllamaSettingsPage.qml:87
+#, kde-format
+msgid "Top K"
+msgstr ""
+
+#: src/apps/qml/OllamaSettingsPage.qml:95
+#, kde-format
+msgid "Top P [scaled x100]"
+msgstr ""
+
+#: src/apps/qml/OllamaSettingsPage.qml:105
+#, kde-format
+msgid "Min P [scaled x10]"
+msgstr ""
+
+#: src/apps/qml/OllamaSettingsPage.qml:115
+#, kde-format
+msgid "Reset to defaults"
+msgstr ""
+
+#: src/core/KLLMInterface.cpp:144
 #, kde-format
 msgctxt "%1 is an URL, %2 an error description"
 msgid "Failed to connect to interface at %1: %2"
 msgstr "Ha fallat mentre es connectava amb la interfície a %1: %2"
-
-#~ msgctxt "@info:placeholder"
-#~ msgid "Enter a message"
-#~ msgstr "Introduïu un missatge"
