@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: alpaka\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-02-27 00:47+0000\n"
-"PO-Revision-Date: 2026-02-26 08:43+0100\n"
+"PO-Revision-Date: 2026-02-27 07:42+0100\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca@valencia\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 25.04.0\n"
+"X-Generator: Lokalize 25.12.2\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -209,57 +209,57 @@ msgstr "URL del servidor Ollama"
 #: src/apps/qml/OllamaSettingsPage.qml:30
 #, kde-format
 msgid "Advanced Parameters"
-msgstr ""
+msgstr "Paràmetres avançats"
 
 #: src/apps/qml/OllamaSettingsPage.qml:34
 #, kde-format
 msgid "Context size"
-msgstr ""
+msgstr "Mida del context"
 
 #: src/apps/qml/OllamaSettingsPage.qml:42
 #, kde-format
 msgid "Repeat penalty lookback tokens"
-msgstr ""
+msgstr "Segments textuals d'anticipació de penalització de repetició"
 
 #: src/apps/qml/OllamaSettingsPage.qml:51
 #, kde-format
 msgid "Repeat penalization factor [scaled x10]"
-msgstr ""
+msgstr "Factor de penalització de repetició [a escala x10]"
 
 #: src/apps/qml/OllamaSettingsPage.qml:61
 #, kde-format
 msgid "Temperature [scaled x10]"
-msgstr ""
+msgstr "Temperatura [a escala x10]"
 
 #: src/apps/qml/OllamaSettingsPage.qml:71
 #, kde-format
 msgid "Seed (-1 = random)"
-msgstr ""
+msgstr "Llavor (-1 = aleatori)"
 
 #: src/apps/qml/OllamaSettingsPage.qml:79
 #, kde-format
 msgid "Maximum tokens to predict (-1 = unlimited)"
-msgstr ""
+msgstr "Màxim de segments textuals que s'han de predir (-1 = sense límit)"
 
 #: src/apps/qml/OllamaSettingsPage.qml:87
 #, kde-format
 msgid "Top K"
-msgstr ""
+msgstr "Top K"
 
 #: src/apps/qml/OllamaSettingsPage.qml:95
 #, kde-format
 msgid "Top P [scaled x100]"
-msgstr ""
+msgstr "Top P [a escala x100]"
 
 #: src/apps/qml/OllamaSettingsPage.qml:105
 #, kde-format
 msgid "Min P [scaled x10]"
-msgstr ""
+msgstr "Min P [a escala x10]"
 
 #: src/apps/qml/OllamaSettingsPage.qml:115
 #, kde-format
 msgid "Reset to defaults"
-msgstr ""
+msgstr "Restaura els valors predeterminats"
 
 #: src/core/KLLMInterface.cpp:144
 #, kde-format

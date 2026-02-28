@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: alpaka\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-02-27 00:47+0000\n"
-"PO-Revision-Date: 2026-02-26 07:57+0300\n"
+"PO-Revision-Date: 2026-02-27 07:56+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
@@ -207,57 +207,57 @@ msgstr "Ollama sunucusu URL’si"
 #: src/apps/qml/OllamaSettingsPage.qml:30
 #, kde-format
 msgid "Advanced Parameters"
-msgstr ""
+msgstr "Gelişmiş Parametreler"
 
 #: src/apps/qml/OllamaSettingsPage.qml:34
 #, kde-format
 msgid "Context size"
-msgstr ""
+msgstr "Bağlam boyutu"
 
 #: src/apps/qml/OllamaSettingsPage.qml:42
 #, kde-format
 msgid "Repeat penalty lookback tokens"
-msgstr ""
+msgstr "Penaltı geri bakış jetonlarını yinele"
 
 #: src/apps/qml/OllamaSettingsPage.qml:51
 #, kde-format
 msgid "Repeat penalization factor [scaled x10]"
-msgstr ""
+msgstr "Penalizasyon çarpanını yinele [10× ölçekli]"
 
 #: src/apps/qml/OllamaSettingsPage.qml:61
 #, kde-format
 msgid "Temperature [scaled x10]"
-msgstr ""
+msgstr "Sıcaklık [10× ölçekli]"
 
 #: src/apps/qml/OllamaSettingsPage.qml:71
 #, kde-format
 msgid "Seed (-1 = random)"
-msgstr ""
+msgstr "Tohum (−1 = rastgele)"
 
 #: src/apps/qml/OllamaSettingsPage.qml:79
 #, kde-format
 msgid "Maximum tokens to predict (-1 = unlimited)"
-msgstr ""
+msgstr "Tahmin edilecek en çok jeton (−1 = sınırsız)"
 
 #: src/apps/qml/OllamaSettingsPage.qml:87
 #, kde-format
 msgid "Top K"
-msgstr ""
+msgstr "Üst K"
 
 #: src/apps/qml/OllamaSettingsPage.qml:95
 #, kde-format
 msgid "Top P [scaled x100]"
-msgstr ""
+msgstr "Üst P [100× ölçekli]"
 
 #: src/apps/qml/OllamaSettingsPage.qml:105
 #, kde-format
 msgid "Min P [scaled x10]"
-msgstr ""
+msgstr "Min P [10× ölçekli]"
 
 #: src/apps/qml/OllamaSettingsPage.qml:115
 #, kde-format
 msgid "Reset to defaults"
-msgstr ""
+msgstr "Öntanımlılara Sıfırla"
 
 #: src/core/KLLMInterface.cpp:144
 #, kde-format

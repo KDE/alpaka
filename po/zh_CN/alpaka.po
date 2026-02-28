@@ -100,7 +100,7 @@ msgstr "再试一次"
 #, kde-format
 msgctxt "@info:placeholder"
 msgid "Enter a message (Use @ to open the attachment menu)"
-msgstr ""
+msgstr "请输入一条消息 (使用 @ 打开附件菜单)"
 
 #: src/apps/qml/ChatView.qml:261
 #, kde-format

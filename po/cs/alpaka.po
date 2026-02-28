@@ -256,7 +256,7 @@ msgstr ""
 #: src/apps/qml/OllamaSettingsPage.qml:115
 #, kde-format
 msgid "Reset to defaults"
-msgstr ""
+msgstr "Obnovit výchozí hodnoty"
 
 #: src/core/KLLMInterface.cpp:144
 #, kde-format
