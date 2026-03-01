@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: alpaka\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-02-27 00:47+0000\n"
-"PO-Revision-Date: 2026-02-26 11:07+0100\n"
+"PO-Revision-Date: 2026-03-01 01:53+0100\n"
 "Last-Translator: Eloy Cuadra <ecuadra@eloihr.net>\n"
 "Language-Team: Spanish <kde-l10n-es@kde.org>\n"
 "Language: es\n"
@@ -209,57 +209,57 @@ msgstr "URL del servidor Ollama"
 #: src/apps/qml/OllamaSettingsPage.qml:30
 #, kde-format
 msgid "Advanced Parameters"
-msgstr ""
+msgstr "Parámetros avanzados"
 
 #: src/apps/qml/OllamaSettingsPage.qml:34
 #, kde-format
 msgid "Context size"
-msgstr ""
+msgstr "Tamaño del contexto"
 
 #: src/apps/qml/OllamaSettingsPage.qml:42
 #, kde-format
 msgid "Repeat penalty lookback tokens"
-msgstr ""
+msgstr "Repetir tókenes de penalización retrospectiva"
 
 #: src/apps/qml/OllamaSettingsPage.qml:51
 #, kde-format
 msgid "Repeat penalization factor [scaled x10]"
-msgstr ""
+msgstr "Repetir factor de penalización (escalado x10)"
 
 #: src/apps/qml/OllamaSettingsPage.qml:61
 #, kde-format
 msgid "Temperature [scaled x10]"
-msgstr ""
+msgstr "Temperatura (escalada x10)"
 
 #: src/apps/qml/OllamaSettingsPage.qml:71
 #, kde-format
 msgid "Seed (-1 = random)"
-msgstr ""
+msgstr "Semilla (-1 = aleatoria)"
 
 #: src/apps/qml/OllamaSettingsPage.qml:79
 #, kde-format
 msgid "Maximum tokens to predict (-1 = unlimited)"
-msgstr ""
+msgstr "Número máximo de tókenes a predecir (-1 = ilimitado)"
 
 #: src/apps/qml/OllamaSettingsPage.qml:87
 #, kde-format
 msgid "Top K"
-msgstr ""
+msgstr "K superior"
 
 #: src/apps/qml/OllamaSettingsPage.qml:95
 #, kde-format
 msgid "Top P [scaled x100]"
-msgstr ""
+msgstr "P superior (escalado x100)"
 
 #: src/apps/qml/OllamaSettingsPage.qml:105
 #, kde-format
 msgid "Min P [scaled x10]"
-msgstr ""
+msgstr "P mínimo (escalado x10)"
 
 #: src/apps/qml/OllamaSettingsPage.qml:115
 #, kde-format
 msgid "Reset to defaults"
-msgstr ""
+msgstr "Restaurar valores predeterminados"
 
 #: src/core/KLLMInterface.cpp:144
 #, kde-format

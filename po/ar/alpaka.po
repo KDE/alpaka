@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: alpaka\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-02-27 00:47+0000\n"
-"PO-Revision-Date: 2026-02-13 17:21+0400\n"
+"PO-Revision-Date: 2026-02-28 13:52+0400\n"
 "Last-Translator: Zayed Al-Saidi <zayed.alsaidi@gmail.com>\n"
 "Language-Team: ar\n"
 "Language: ar\n"
@@ -101,7 +101,7 @@ msgstr "حاول مرة أخرى"
 #, kde-format
 msgctxt "@info:placeholder"
 msgid "Enter a message (Use @ to open the attachment menu)"
-msgstr ""
+msgstr "أدخل رسالة (استخدم @ لفتح قائمة المرفقات)"
 
 #: src/apps/qml/ChatView.qml:261
 #, kde-format
@@ -208,57 +208,57 @@ msgstr "عنوان خادم أولاما"
 #: src/apps/qml/OllamaSettingsPage.qml:30
 #, kde-format
 msgid "Advanced Parameters"
-msgstr ""
+msgstr "المعاملات المتقدمة"
 
 #: src/apps/qml/OllamaSettingsPage.qml:34
 #, kde-format
 msgid "Context size"
-msgstr ""
+msgstr "حجم السياق"
 
 #: src/apps/qml/OllamaSettingsPage.qml:42
 #, kde-format
 msgid "Repeat penalty lookback tokens"
-msgstr ""
+msgstr "تكرار رموز العقوبة السابقة"
 
 #: src/apps/qml/OllamaSettingsPage.qml:51
 #, kde-format
 msgid "Repeat penalization factor [scaled x10]"
-msgstr ""
+msgstr "عامل تكرار العقوبة [مضاعف 10 مرات]"
 
 #: src/apps/qml/OllamaSettingsPage.qml:61
 #, kde-format
 msgid "Temperature [scaled x10]"
-msgstr ""
+msgstr "درجة الحرارة [مقيسة × 10]"
 
 #: src/apps/qml/OllamaSettingsPage.qml:71
 #, kde-format
 msgid "Seed (-1 = random)"
-msgstr ""
+msgstr "البذرة (-1 = عشوائي)"
 
 #: src/apps/qml/OllamaSettingsPage.qml:79
 #, kde-format
 msgid "Maximum tokens to predict (-1 = unlimited)"
-msgstr ""
+msgstr "الحد الأقصى لعدد الرموز الممكنة للتنبؤ (-1 = غير محدود)"
 
 #: src/apps/qml/OllamaSettingsPage.qml:87
 #, kde-format
 msgid "Top K"
-msgstr ""
+msgstr "أعلى K"
 
 #: src/apps/qml/OllamaSettingsPage.qml:95
 #, kde-format
 msgid "Top P [scaled x100]"
-msgstr ""
+msgstr "أعلى P [مقيسة × 100]"
 
 #: src/apps/qml/OllamaSettingsPage.qml:105
 #, kde-format
 msgid "Min P [scaled x10]"
-msgstr ""
+msgstr "أدنى P [مقيسة ×10]"
 
 #: src/apps/qml/OllamaSettingsPage.qml:115
 #, kde-format
 msgid "Reset to defaults"
-msgstr ""
+msgstr "صفّر إلى المبدئيات"
 
 #: src/core/KLLMInterface.cpp:144
 #, kde-format
