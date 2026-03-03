@@ -82,10 +82,7 @@ KLLMReply *KLLMInterface::getCompletion(const KLLMRequest &request)
     req.setHeader(QNetworkRequest::ContentTypeHeader, QStringLiteral("application/json"));
     QJsonObject data;
     data["model"_L1] = request.model().isEmpty() ? m_models.constFirst() : request.model();
-    QJsonArray messagesJson;
-    for (auto t : request.context()->messages()) {
-        messagesJson.append(t.toJson());
-    }
+    QJsonArray messagesJson = request.context()->toJsonArray();
     data["messages"_L1] = messagesJson;
 
     QJsonObject opts;
