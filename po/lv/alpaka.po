@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: alpaka\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-02-27 00:47+0000\n"
+"POT-Creation-Date: 2026-03-09 00:46+0000\n"
 "PO-Revision-Date: 2026-03-04 13:11+0200\n"
 "Last-Translator: Toms Trasūns <toms.trasuns@posteo.net>\n"
 "Language-Team: Latvian <kde-i18n-doc@kde.org>\n"
@@ -260,7 +260,7 @@ msgstr "Min. P [mērogots x10]"
 msgid "Reset to defaults"
 msgstr "Atiestatīt uz noklusējumiem"
 
-#: src/core/KLLMInterface.cpp:144
+#: src/core/KLLMInterface.cpp:141
 #, kde-format
 msgctxt "%1 is an URL, %2 an error description"
 msgid "Failed to connect to interface at %1: %2"
