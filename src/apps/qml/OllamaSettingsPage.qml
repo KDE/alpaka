@@ -37,10 +37,10 @@ FormCard.FormCardPage {
             value: AlpakaSettings.numCtx
             onValueChanged: AlpakaSettings.numCtx = value
         }
-        // TODO: Uncomment descriptions when new Kirigami supporting them was released
-        FormCard.FormSpinBoxDelegate {
+
+	  FormCard.FormSpinBoxDelegate {
             label: i18n("Repeat penalty lookback tokens")
-            //description: i18n("How far back to look for repeated tokens (0 = disabled, -1 = context size)")
+            description: i18n("How far back to look for repeated tokens (0 = disabled, -1 = context size)")
             from: -1
             to: 4096
             value: AlpakaSettings.repeatLastN
@@ -49,7 +49,7 @@ FormCard.FormCardPage {
     
         FormCard.FormSpinBoxDelegate {
             label: i18n("Repeat penalization factor [scaled x10]")
-            //description: i18n("Sets how strongly to penalize repetitions (0 = disabled)")
+            description: i18n("Sets how strongly to penalize repetitions (0 = disabled)")
             from: 0
             to: 50      // 0.0 → 5.0 with 0.1 steps
             stepSize: 1
@@ -59,7 +59,7 @@ FormCard.FormCardPage {
     
         FormCard.FormSpinBoxDelegate {
             label: i18n("Temperature [scaled x10]")
-            //description: i18n("Higher = more creative/random, lower = more focused/deterministic")
+            description: i18n("Higher = more creative/random, lower = more focused/deterministic")
             from: 0
             to: 20
             stepSize: 1
@@ -93,7 +93,7 @@ FormCard.FormCardPage {
     
         FormCard.FormSpinBoxDelegate {
             label: i18n("Top P [scaled x100]")
-            //description: i18n("Nucleus sampling – consider tokens that make up this cumulative probability")
+            description: i18n("Nucleus sampling – consider tokens that make up this cumulative probability")
             from: 0
             to: 100
             stepSize: 5           // 0.05 steps
@@ -103,7 +103,7 @@ FormCard.FormCardPage {
     
         FormCard.FormSpinBoxDelegate {
             label: i18n("Min P [scaled x10]")
-            //description: i18n("Minimum probability a token must have to be considered, relative to the probability of the most likely token")
+            description: i18n("Minimum probability a token must have to be considered, relative to the probability of the most likely token")
             from: 0
             to: 100
             stepSize: 5
@@ -114,7 +114,7 @@ FormCard.FormCardPage {
         FormCard.FormButtonDelegate {
             text: i18n("Reset to defaults")
             icon.name: "edit-undo-symbolic"
-            //description: i18n("Restore all settings to their recommended default values")
+            description: i18n("Restore all settings to their recommended default values")
             onClicked: {
                 // These are very common / sensible Ollama defaults in 2025–2026
                 AlpakaSettings.numCtx       = 2048

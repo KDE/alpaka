@@ -54,6 +54,8 @@ find_package(KF6 ${KF_MIN_VERSION} REQUIRED COMPONENTS
     Crash
 )
 
+find_package(KF6KirigamiAddons 1.12 REQUIRED)
+
 # Remove it on android etc.
 if (NOT ANDROID)
     set(HAVE_WINDOWSYSTEM TRUE)
