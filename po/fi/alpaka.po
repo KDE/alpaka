@@ -1,13 +1,13 @@
 # Copyright (C) 2024 This file is copyright:
 # This file is distributed under the same license as the alpaka package.
-# SPDX-FileCopyrightText: 2023, 2024, 2025 Tommi Nieminen <translator@legisign.org>
+# SPDX-FileCopyrightText: 2023, 2024, 2025, 2026 Tommi Nieminen <translator@legisign.org>
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: alpaka\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-03-09 00:46+0000\n"
-"PO-Revision-Date: 2025-07-07 15:54+0300\n"
+"PO-Revision-Date: 2026-02-26 09:59+0200\n"
 "Last-Translator: Tommi Nieminen <translator@legisign.org>\n"
 "Language-Team: Finnish <kde-i18n-doc@kde.org>\n"
 "Language: fi\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 23.08.5\n"
+"X-Generator: Lokalize 25.04.0\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -44,8 +44,7 @@ msgid "Ollama client"
 msgstr "Ollama-asiakas"
 
 #: src/apps/main.cpp:51
-#, fuzzy, kde-format
-#| msgid "© 2023-2025 Loren Burkholder"
+#, kde-format
 msgid "© 2023–2025 Loren Burkholder"
 msgstr "© 2023–2025 Loren Burkholder"
 
@@ -57,12 +56,12 @@ msgstr "Loren Burkholder"
 #: src/apps/main.cpp:52
 #, kde-format
 msgid "Creator"
-msgstr ""
+msgstr "Luoja"
 
 #: src/apps/main.cpp:53
 #, kde-format
 msgid "Siavosh Kasravi"
-msgstr ""
+msgstr "Siavosh Kasravi"
 
 #: src/apps/main.cpp:53
 #, kde-format
@@ -159,7 +158,7 @@ msgstr "Näytä ilmoitusalueella"
 #: src/apps/qml/GeneralSettingsPage.qml:26
 #, kde-format
 msgid "Auto scroll down when a new prompt is posted"
-msgstr ""
+msgstr "Vieritä automaattisesti alas, kun uusi kehote julkaistaan"
 
 #: src/apps/qml/LLMSettingsPage.qml:31
 #, kde-format
@@ -183,22 +182,19 @@ msgid "Alpaka"
 msgstr "Alpaka"
 
 #: src/apps/qml/MessageDelegate.qml:111
-#, fuzzy, kde-format
-#| msgid "Copy"
+#, kde-format
 msgctxt "@action:inmenu"
 msgid "Copy"
 msgstr "Kopioi"
 
 #: src/apps/qml/MessageDelegate.qml:117
-#, fuzzy, kde-format
-#| msgid "Select All"
+#, kde-format
 msgctxt "@action:inmenu"
 msgid "Select All"
 msgstr "Valitse kaikki"
 
 #: src/apps/qml/MessageDelegate.qml:133
-#, fuzzy, kde-format
-#| msgid "%1 tok/s · %2 tokens · %3 seconds"
+#, kde-format
 msgctxt "'toks' is short for 'tokens'"
 msgid "%1 tok/s · %2 tokens · %3 seconds"
 msgstr "%1 mkiä/s · %2 merkkiä · %3 sekuntia"
@@ -264,11 +260,10 @@ msgid "Reset to defaults"
 msgstr ""
 
 #: src/core/KLLMInterface.cpp:141
-#, fuzzy, kde-format
-#| msgid "Failed to connect to interface at %1: %2"
+#, kde-format
 msgctxt "%1 is an URL, %2 an error description"
 msgid "Failed to connect to interface at %1: %2"
-msgstr "Yhteydenotto liitäntään osoitteessa %1 epäonnistui: %2"
+msgstr "Yhteydenotto liitäntään %1 epäonnistui: %2"
 
 #~ msgctxt "@info:placeholder"
 #~ msgid "Enter a message"
