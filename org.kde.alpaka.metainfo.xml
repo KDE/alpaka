@@ -108,6 +108,7 @@ SPDX-License-Identifier: CC0-1.0
     <p xml:lang="pl">Alpaka jest programem do usługi SI Ollama, który umożliwia uruchamianie modeli LLM takich jak Llama 2.</p>
     <p xml:lang="pt-BR">Alpaka é um cliente para o serviço Ollama AI, que permite executar modelos LLM, como o Llama 2.</p>
     <p xml:lang="sa">अल्पाका ओलामा एआइ सेवायाः क्लायन्ट् अस्ति, यत् भवन्तं ल्लामा २ इत्यादीनां LLM मॉडल् चालयितुं शक्नोति ।</p>
+    <p xml:lang="sk">Alpaka je klient pre službu Ollama AI, ktorá umožňuje spúšťať modely LLM, ako napríklad Llama 2.</p>
     <p xml:lang="sl">Alpaka je odjemalec za storitev Ollama AI, ki vam omogoča zagon modelov LLM, kot je Llama 2.</p>
     <p xml:lang="sv">Alpaka är en klient för Ollama AI-tjänsten, som låter dig kör LLM-modeller såsom Llama 2.</p>
     <p xml:lang="tr">Alpaka, Llama 2 gibi LLM modellerini çalıştırmanıza izin verin Ollama AI hizmeti için bir istemcidir.</p>
