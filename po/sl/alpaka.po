@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-03-09 00:46+0000\n"
+"POT-Creation-Date: 2026-04-24 00:47+0000\n"
 "PO-Revision-Date: 2026-02-27 09:50+0100\n"
 "Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
@@ -217,15 +217,31 @@ msgstr "Velikost konteksta"
 msgid "Repeat penalty lookback tokens"
 msgstr "Ponovi kazenske žetone povratne zanke"
 
+#: src/apps/qml/OllamaSettingsPage.qml:43
+#, kde-format
+msgid ""
+"How far back to look for repeated tokens (0 = disabled, -1 = context size)"
+msgstr ""
+
 #: src/apps/qml/OllamaSettingsPage.qml:51
 #, kde-format
 msgid "Repeat penalization factor [scaled x10]"
 msgstr "Ponovi kazenski faktor [povečano x 10]"
 
+#: src/apps/qml/OllamaSettingsPage.qml:52
+#, kde-format
+msgid "Sets how strongly to penalize repetitions (0 = disabled)"
+msgstr ""
+
 #: src/apps/qml/OllamaSettingsPage.qml:61
 #, kde-format
 msgid "Temperature [scaled x10]"
 msgstr "Temperatur [povečano x 10]"
+
+#: src/apps/qml/OllamaSettingsPage.qml:62
+#, kde-format
+msgid "Higher = more creative/random, lower = more focused/deterministic"
+msgstr ""
 
 #: src/apps/qml/OllamaSettingsPage.qml:71
 #, kde-format
@@ -247,15 +263,33 @@ msgstr "Vrhnjih K"
 msgid "Top P [scaled x100]"
 msgstr "Vrhnjih K (povečano x 100)"
 
+#: src/apps/qml/OllamaSettingsPage.qml:96
+#, kde-format
+msgid ""
+"Nucleus sampling – consider tokens that make up this cumulative probability"
+msgstr ""
+
 #: src/apps/qml/OllamaSettingsPage.qml:105
 #, kde-format
 msgid "Min P [scaled x10]"
 msgstr "Spodnjih P (povečano x 10)"
 
+#: src/apps/qml/OllamaSettingsPage.qml:106
+#, kde-format
+msgid ""
+"Minimum probability a token must have to be considered, relative to the "
+"probability of the most likely token"
+msgstr ""
+
 #: src/apps/qml/OllamaSettingsPage.qml:115
 #, kde-format
 msgid "Reset to defaults"
 msgstr "Ponastavi na privzete"
+
+#: src/apps/qml/OllamaSettingsPage.qml:117
+#, kde-format
+msgid "Restore all settings to their recommended default values"
+msgstr ""
 
 #: src/core/KLLMInterface.cpp:141
 #, kde-format

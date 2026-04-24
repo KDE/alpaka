@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: alpaka\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-03-09 00:46+0000\n"
+"POT-Creation-Date: 2026-04-24 00:47+0000\n"
 "PO-Revision-Date: 2023-12-22 19:35+0100\n"
 "Last-Translator: Roman Paholik <wizzardsk@gmail.com>\n"
 "Language-Team: Slovak <kde-sk@linux.sk>\n"
@@ -217,15 +217,31 @@ msgstr "Veľkosť kontextu"
 msgid "Repeat penalty lookback tokens"
 msgstr "Tokeny spätného pohľadu penalizácie opakovania"
 
+#: src/apps/qml/OllamaSettingsPage.qml:43
+#, kde-format
+msgid ""
+"How far back to look for repeated tokens (0 = disabled, -1 = context size)"
+msgstr ""
+
 #: src/apps/qml/OllamaSettingsPage.qml:51
 #, kde-format
 msgid "Repeat penalization factor [scaled x10]"
 msgstr "Faktor penalizácie opakovania [škálované x10]"
 
+#: src/apps/qml/OllamaSettingsPage.qml:52
+#, kde-format
+msgid "Sets how strongly to penalize repetitions (0 = disabled)"
+msgstr ""
+
 #: src/apps/qml/OllamaSettingsPage.qml:61
 #, kde-format
 msgid "Temperature [scaled x10]"
 msgstr "Teplota [škálované x10]"
+
+#: src/apps/qml/OllamaSettingsPage.qml:62
+#, kde-format
+msgid "Higher = more creative/random, lower = more focused/deterministic"
+msgstr ""
 
 #: src/apps/qml/OllamaSettingsPage.qml:71
 #, kde-format
@@ -247,15 +263,33 @@ msgstr "Top K"
 msgid "Top P [scaled x100]"
 msgstr "Top P [škálované x100]"
 
+#: src/apps/qml/OllamaSettingsPage.qml:96
+#, kde-format
+msgid ""
+"Nucleus sampling – consider tokens that make up this cumulative probability"
+msgstr ""
+
 #: src/apps/qml/OllamaSettingsPage.qml:105
 #, kde-format
 msgid "Min P [scaled x10]"
 msgstr "Min P [škálované x10]"
 
+#: src/apps/qml/OllamaSettingsPage.qml:106
+#, kde-format
+msgid ""
+"Minimum probability a token must have to be considered, relative to the "
+"probability of the most likely token"
+msgstr ""
+
 #: src/apps/qml/OllamaSettingsPage.qml:115
 #, kde-format
 msgid "Reset to defaults"
 msgstr "Vrátiť na štandardné"
+
+#: src/apps/qml/OllamaSettingsPage.qml:117
+#, kde-format
+msgid "Restore all settings to their recommended default values"
+msgstr ""
 
 #: src/core/KLLMInterface.cpp:141
 #, kde-format

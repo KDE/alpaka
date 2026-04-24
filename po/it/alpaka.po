@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: alpaka\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-03-09 00:46+0000\n"
+"POT-Creation-Date: 2026-04-24 00:47+0000\n"
 "PO-Revision-Date: 2026-02-27 14:30+0100\n"
 "Last-Translator: Vincenzo Reale <smart2128vr@gmail.com>\n"
 "Language-Team: Italian <kde-i18n-it@kde.org>\n"
@@ -220,15 +220,31 @@ msgstr "Dimensione del contesto"
 msgid "Repeat penalty lookback tokens"
 msgstr "Token di lookback per la penalità di ripetizione"
 
+#: src/apps/qml/OllamaSettingsPage.qml:43
+#, kde-format
+msgid ""
+"How far back to look for repeated tokens (0 = disabled, -1 = context size)"
+msgstr ""
+
 #: src/apps/qml/OllamaSettingsPage.qml:51
 #, kde-format
 msgid "Repeat penalization factor [scaled x10]"
 msgstr "Fattore di penalità di ripetizione [scalato x10]"
 
+#: src/apps/qml/OllamaSettingsPage.qml:52
+#, kde-format
+msgid "Sets how strongly to penalize repetitions (0 = disabled)"
+msgstr ""
+
 #: src/apps/qml/OllamaSettingsPage.qml:61
 #, kde-format
 msgid "Temperature [scaled x10]"
 msgstr "Temperatura [scalata x10]"
+
+#: src/apps/qml/OllamaSettingsPage.qml:62
+#, kde-format
+msgid "Higher = more creative/random, lower = more focused/deterministic"
+msgstr ""
 
 #: src/apps/qml/OllamaSettingsPage.qml:71
 #, kde-format
@@ -250,15 +266,33 @@ msgstr "Top K"
 msgid "Top P [scaled x100]"
 msgstr "Top P [scalato x100]"
 
+#: src/apps/qml/OllamaSettingsPage.qml:96
+#, kde-format
+msgid ""
+"Nucleus sampling – consider tokens that make up this cumulative probability"
+msgstr ""
+
 #: src/apps/qml/OllamaSettingsPage.qml:105
 #, kde-format
 msgid "Min P [scaled x10]"
 msgstr "Min P [scalato x10]"
 
+#: src/apps/qml/OllamaSettingsPage.qml:106
+#, kde-format
+msgid ""
+"Minimum probability a token must have to be considered, relative to the "
+"probability of the most likely token"
+msgstr ""
+
 #: src/apps/qml/OllamaSettingsPage.qml:115
 #, kde-format
 msgid "Reset to defaults"
 msgstr "Ripristina ai valori predefiniti"
+
+#: src/apps/qml/OllamaSettingsPage.qml:117
+#, kde-format
+msgid "Restore all settings to their recommended default values"
+msgstr ""
 
 #: src/core/KLLMInterface.cpp:141
 #, kde-format
