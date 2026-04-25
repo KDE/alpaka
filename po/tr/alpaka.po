@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: alpaka\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-04-24 00:47+0000\n"
-"PO-Revision-Date: 2026-02-27 07:56+0300\n"
+"PO-Revision-Date: 2026-04-24 16:04+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Lokalize 25.12.2\n"
+"X-Generator: Lokalize 25.12.3\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -224,6 +224,8 @@ msgstr "Penaltı geri bakış jetonlarını yinele"
 msgid ""
 "How far back to look for repeated tokens (0 = disabled, -1 = context size)"
 msgstr ""
+"Yinelenmiş jetonlar için ne kadar geriye bakılacağı (0 = devre dışı, −1 = "
+"bağlam boyutu)"
 
 #: src/apps/qml/OllamaSettingsPage.qml:51
 #, kde-format
@@ -233,7 +235,7 @@ msgstr "Penalizasyon çarpanını yinele [10× ölçekli]"
 #: src/apps/qml/OllamaSettingsPage.qml:52
 #, kde-format
 msgid "Sets how strongly to penalize repetitions (0 = disabled)"
-msgstr ""
+msgstr "Yinelemelerin ne kadar ağır cezalandırılacağı (0 = devre dışı)"
 
 #: src/apps/qml/OllamaSettingsPage.qml:61
 #, kde-format
@@ -243,7 +245,7 @@ msgstr "Sıcaklık [10× ölçekli]"
 #: src/apps/qml/OllamaSettingsPage.qml:62
 #, kde-format
 msgid "Higher = more creative/random, lower = more focused/deterministic"
-msgstr ""
+msgstr "Daha yüksek = daha yaratıcı/rastgele, daha az = daha odaklı/kararlı"
 
 #: src/apps/qml/OllamaSettingsPage.qml:71
 #, kde-format
@@ -270,6 +272,8 @@ msgstr "Üst P [100× ölçekli]"
 msgid ""
 "Nucleus sampling – consider tokens that make up this cumulative probability"
 msgstr ""
+"Çekirdek örneklemesi — bu kümülatif olasılığı oluşturan jetonları göz önünde "
+"bulundurun."
 
 #: src/apps/qml/OllamaSettingsPage.qml:105
 #, kde-format
@@ -282,6 +286,8 @@ msgid ""
 "Minimum probability a token must have to be considered, relative to the "
 "probability of the most likely token"
 msgstr ""
+"Bir jetonun dikkate alınabilmesi için sahip olması gereken en düşük "
+"olasılık, en olası jetonun olasılığına göre belirlenir."
 
 #: src/apps/qml/OllamaSettingsPage.qml:115
 #, kde-format
@@ -291,7 +297,7 @@ msgstr "Öntanımlılara Sıfırla"
 #: src/apps/qml/OllamaSettingsPage.qml:117
 #, kde-format
 msgid "Restore all settings to their recommended default values"
-msgstr ""
+msgstr "Tüm ayarları önerilen öntanımlı değerlerine sıfırla"
 
 #: src/core/KLLMInterface.cpp:141
 #, kde-format

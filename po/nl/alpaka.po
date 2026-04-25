@@ -1,13 +1,13 @@
 # Copyright (C) 2023 This file is copyright:
 # This file is distributed under the same license as the alpaka package.
 #
-# SPDX-FileCopyrightText: 2023, 2024, 2025, 2026 Freek de Kruijf <freekdekruijf@kde.nl>
+# SPDX-FileCopyrightText: 2023-2026 Freek de Kruijf <freekdekruijf@kde.nl>
 msgid ""
 msgstr ""
 "Project-Id-Version: alpaka\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-04-24 00:47+0000\n"
-"PO-Revision-Date: 2026-02-27 11:00+0100\n"
+"PO-Revision-Date: 2026-04-24 12:25+0200\n"
 "Last-Translator: Freek de Kruijf <freekdekruijf@kde.nl>\n"
 "Language-Team: \n"
 "Language: nl\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 25.12.2\n"
+"X-Generator: Lokalize 26.04.0\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -224,6 +224,8 @@ msgstr "Herhaal terugkijktokens voor straffen"
 msgid ""
 "How far back to look for repeated tokens (0 = disabled, -1 = context size)"
 msgstr ""
+"Hoe ver terug te zoeken naar herhaalde tokens (0 = uitgeschakeld, -1 = "
+"contextgrootte)"
 
 #: src/apps/qml/OllamaSettingsPage.qml:51
 #, kde-format
@@ -234,6 +236,8 @@ msgstr "Herhaal straffactor [geschaald x10]"
 #, kde-format
 msgid "Sets how strongly to penalize repetitions (0 = disabled)"
 msgstr ""
+"Hiermee wordt ingesteld hoe streng herhalingen worden bestraft (0 = "
+"uitgeschakeld)"
 
 #: src/apps/qml/OllamaSettingsPage.qml:61
 #, kde-format
@@ -243,7 +247,7 @@ msgstr "Temperatuur [geschaald x10]"
 #: src/apps/qml/OllamaSettingsPage.qml:62
 #, kde-format
 msgid "Higher = more creative/random, lower = more focused/deterministic"
-msgstr ""
+msgstr "Hoger = creatiever/spontaner, lager = meer gefocust/deterministisch"
 
 #: src/apps/qml/OllamaSettingsPage.qml:71
 #, kde-format
@@ -269,7 +273,7 @@ msgstr "Hoogste P [geschaald x100]"
 #, kde-format
 msgid ""
 "Nucleus sampling – consider tokens that make up this cumulative probability"
-msgstr ""
+msgstr "Kernsteekproeven – beschouw de tokens die deze cumulatieve kans vormen"
 
 #: src/apps/qml/OllamaSettingsPage.qml:105
 #, kde-format
@@ -282,6 +286,9 @@ msgid ""
 "Minimum probability a token must have to be considered, relative to the "
 "probability of the most likely token"
 msgstr ""
+"Minimale waarschijnlijkheid dat een token moet hebben om in aanmerking te "
+"komen, ten opzichte van de waarschijnlijkheid van het meest waarschijnlijke "
+"token"
 
 #: src/apps/qml/OllamaSettingsPage.qml:115
 #, kde-format
@@ -291,7 +298,7 @@ msgstr "Standaardwaarden herstellen"
 #: src/apps/qml/OllamaSettingsPage.qml:117
 #, kde-format
 msgid "Restore all settings to their recommended default values"
-msgstr ""
+msgstr "Herstel alle instellingen naar de aanbevolen standaardwaarden"
 
 #: src/core/KLLMInterface.cpp:141
 #, kde-format

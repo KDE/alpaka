@@ -4,7 +4,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-04-24 00:47+0000\n"
-"PO-Revision-Date: 2026-02-27 09:50+0100\n"
+"PO-Revision-Date: 2026-04-24 07:27+0200\n"
 "Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
 "Language: sl\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n%100==1 ? 1 : n%100==2 ? 2 : n%100==3 || n"
 "%100==4 ? 3 : 0);\n"
-"X-Generator: Poedit 3.8\n"
+"X-Generator: Poedit 3.9\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -222,6 +222,8 @@ msgstr "Ponovi kazenske žetone povratne zanke"
 msgid ""
 "How far back to look for repeated tokens (0 = disabled, -1 = context size)"
 msgstr ""
+"Kako daleč nazaj iskati ponovljene žetone (0 = onemogočeno, -1 = velikost "
+"konteksta)"
 
 #: src/apps/qml/OllamaSettingsPage.qml:51
 #, kde-format
@@ -231,17 +233,18 @@ msgstr "Ponovi kazenski faktor [povečano x 10]"
 #: src/apps/qml/OllamaSettingsPage.qml:52
 #, kde-format
 msgid "Sets how strongly to penalize repetitions (0 = disabled)"
-msgstr ""
+msgstr "Določa, kako močno naj se kaznujejo ponovitve (0 = onemogočeno)"
 
 #: src/apps/qml/OllamaSettingsPage.qml:61
 #, kde-format
 msgid "Temperature [scaled x10]"
-msgstr "Temperatur [povečano x 10]"
+msgstr "Temperatura [povečana x 10]"
 
 #: src/apps/qml/OllamaSettingsPage.qml:62
 #, kde-format
 msgid "Higher = more creative/random, lower = more focused/deterministic"
 msgstr ""
+"Višje = bolj ustvarjalno/naključno, nižje = bolj osredotočeno/deterministično"
 
 #: src/apps/qml/OllamaSettingsPage.qml:71
 #, kde-format
@@ -268,6 +271,7 @@ msgstr "Vrhnjih K (povečano x 100)"
 msgid ""
 "Nucleus sampling – consider tokens that make up this cumulative probability"
 msgstr ""
+"Vzorčenje jedra – upoštevaj žetone, ki sestavljajo to kumulativno verjetnost"
 
 #: src/apps/qml/OllamaSettingsPage.qml:105
 #, kde-format
@@ -280,6 +284,8 @@ msgid ""
 "Minimum probability a token must have to be considered, relative to the "
 "probability of the most likely token"
 msgstr ""
+"Minimalna verjetnost, da mora biti žeton upoštevan, glede na verjetnost "
+"najverjetnejšega žetona"
 
 #: src/apps/qml/OllamaSettingsPage.qml:115
 #, kde-format
@@ -289,7 +295,7 @@ msgstr "Ponastavi na privzete"
 #: src/apps/qml/OllamaSettingsPage.qml:117
 #, kde-format
 msgid "Restore all settings to their recommended default values"
-msgstr ""
+msgstr "Obnovi vse nastavitve na priporočene privzete vrednosti"
 
 #: src/core/KLLMInterface.cpp:141
 #, kde-format

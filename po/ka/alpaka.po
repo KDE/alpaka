@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: alpaka\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-04-24 00:47+0000\n"
-"PO-Revision-Date: 2026-02-27 05:38+0100\n"
+"PO-Revision-Date: 2026-04-24 03:46+0200\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <kde-i18n-doc@kde.org>\n"
 "Language: ka\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.8\n"
+"X-Generator: Poedit 3.9\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -226,6 +226,8 @@ msgstr "ჯარიმის გადახედვის ტოკენე�
 msgid ""
 "How far back to look for repeated tokens (0 = disabled, -1 = context size)"
 msgstr ""
+"რამდენად შორს გავიხედო გამეორებული ტოკენების შემოწმებისას (0 = გამორთულია, "
+"-1 = კონტექსტის ზომა)"
 
 #: src/apps/qml/OllamaSettingsPage.qml:51
 #, kde-format
@@ -235,7 +237,7 @@ msgstr "ჯარიმის კოეფიციენტის გამე�
 #: src/apps/qml/OllamaSettingsPage.qml:52
 #, kde-format
 msgid "Sets how strongly to penalize repetitions (0 = disabled)"
-msgstr ""
+msgstr "დააყენებს, რამდენად მკაცრად დაისჯება გამეორებები (0 = გამორთულია)"
 
 #: src/apps/qml/OllamaSettingsPage.qml:61
 #, kde-format
@@ -246,6 +248,8 @@ msgstr "ტემპერატურა [მასშტაბი x10]"
 #, kde-format
 msgid "Higher = more creative/random, lower = more focused/deterministic"
 msgstr ""
+"რაც მაღალია = მით კრეატიული/შემთხვევითი. რაც დაბალი = მით მეტი ფოკუსის მქონე/"
+"დეტერმინისტული"
 
 #: src/apps/qml/OllamaSettingsPage.qml:71
 #, kde-format
@@ -272,6 +276,8 @@ msgstr "საუკეთესო P [მასშტაბი x100]"
 msgid ""
 "Nucleus sampling – consider tokens that make up this cumulative probability"
 msgstr ""
+"ბირთვის ზონდირება - ამ დაგროვებული ალბათობის შემადგენელი ტოკენების "
+"გათვალიწინება"
 
 #: src/apps/qml/OllamaSettingsPage.qml:105
 #, kde-format
@@ -284,6 +290,8 @@ msgid ""
 "Minimum probability a token must have to be considered, relative to the "
 "probability of the most likely token"
 msgstr ""
+"მინიმალური ალბათობა, როცა ტოკენის გათვალისწინება ხდება, ყველაზე დიდი შანსის "
+"მქონე ტოკენთან ფარდობით"
 
 #: src/apps/qml/OllamaSettingsPage.qml:115
 #, kde-format
@@ -293,7 +301,7 @@ msgstr "ნაგულისხმევზე ჩამოყრა"
 #: src/apps/qml/OllamaSettingsPage.qml:117
 #, kde-format
 msgid "Restore all settings to their recommended default values"
-msgstr ""
+msgstr "ყველა პარამეტრის აღდგენა მათ რეკომენდებულ, ნაგულისხმევ მნიშვნელობებზე"
 
 #: src/core/KLLMInterface.cpp:141
 #, kde-format

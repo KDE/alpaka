@@ -3,13 +3,13 @@
 # This file is distributed under the same license as the alpaka package.
 # Automatically generated, 2023.
 #
-# SPDX-FileCopyrightText: 2023, 2024, 2025, 2026 Eloy Cuadra <ecuadra@eloihr.net>
+# SPDX-FileCopyrightText: 2023-2026 Eloy Cuadra <ecuadra@eloihr.net>
 msgid ""
 msgstr ""
 "Project-Id-Version: alpaka\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-04-24 00:47+0000\n"
-"PO-Revision-Date: 2026-03-01 01:53+0100\n"
+"PO-Revision-Date: 2026-04-24 17:42+0100\n"
 "Last-Translator: Eloy Cuadra <ecuadra@eloihr.net>\n"
 "Language-Team: Spanish <kde-l10n-es@kde.org>\n"
 "Language: es\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 25.12.2\n"
+"X-Generator: Lokalize 26.04.0\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -226,6 +226,8 @@ msgstr "Repetir tókenes de penalización retrospectiva"
 msgid ""
 "How far back to look for repeated tokens (0 = disabled, -1 = context size)"
 msgstr ""
+"¿Hasta dónde se debe retroceder para buscar tókenes repetidos? (0 = "
+"desactivado, -1 = tamaño del contexto)."
 
 #: src/apps/qml/OllamaSettingsPage.qml:51
 #, kde-format
@@ -236,6 +238,8 @@ msgstr "Repetir factor de penalización (escalado x10)"
 #, kde-format
 msgid "Sets how strongly to penalize repetitions (0 = disabled)"
 msgstr ""
+"Define la intensidad con la que se penalizan las repeticiones (0 = "
+"desactivado)."
 
 #: src/apps/qml/OllamaSettingsPage.qml:61
 #, kde-format
@@ -246,6 +250,7 @@ msgstr "Temperatura (escalada x10)"
 #, kde-format
 msgid "Higher = more creative/random, lower = more focused/deterministic"
 msgstr ""
+"Más alta = más creativa/aleatoria, más baja = más focalizada/determinista."
 
 #: src/apps/qml/OllamaSettingsPage.qml:71
 #, kde-format
@@ -272,6 +277,8 @@ msgstr "P superior (escalado x100)"
 msgid ""
 "Nucleus sampling – consider tokens that make up this cumulative probability"
 msgstr ""
+"Muestreo de núcleo (considerar los tókenes que componen esta probabilidad "
+"acumulativa)."
 
 #: src/apps/qml/OllamaSettingsPage.qml:105
 #, kde-format
@@ -284,6 +291,8 @@ msgid ""
 "Minimum probability a token must have to be considered, relative to the "
 "probability of the most likely token"
 msgstr ""
+"Probabilidad mínima que debe tener un token para ser considerado, en "
+"relación con la probabilidad del token más probable."
 
 #: src/apps/qml/OllamaSettingsPage.qml:115
 #, kde-format
@@ -294,6 +303,7 @@ msgstr "Restaurar valores predeterminados"
 #, kde-format
 msgid "Restore all settings to their recommended default values"
 msgstr ""
+"Restaurar todos los ajustes a sus valores predeterminados recomendados."
 
 #: src/core/KLLMInterface.cpp:141
 #, kde-format

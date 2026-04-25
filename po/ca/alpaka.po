@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: alpaka\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-04-24 00:47+0000\n"
-"PO-Revision-Date: 2026-02-27 07:42+0100\n"
+"PO-Revision-Date: 2026-04-24 10:12+0200\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 25.12.2\n"
+"X-Generator: Lokalize 25.04.0\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -226,6 +226,8 @@ msgstr "Segments textuals d'anticipació de penalització de repetició"
 msgid ""
 "How far back to look for repeated tokens (0 = disabled, -1 = context size)"
 msgstr ""
+"Quant de lluny enrere cercar els segments textuals repetits (0 = desactivat, "
+"-1 = mida del context)"
 
 #: src/apps/qml/OllamaSettingsPage.qml:51
 #, kde-format
@@ -236,6 +238,7 @@ msgstr "Factor de penalització de repetició [a escala x10]"
 #, kde-format
 msgid "Sets how strongly to penalize repetitions (0 = disabled)"
 msgstr ""
+"Estableix amb quina intensitat es penalitzen les repeticions (0 = desactivat)"
 
 #: src/apps/qml/OllamaSettingsPage.qml:61
 #, kde-format
@@ -245,7 +248,7 @@ msgstr "Temperatura [a escala x10]"
 #: src/apps/qml/OllamaSettingsPage.qml:62
 #, kde-format
 msgid "Higher = more creative/random, lower = more focused/deterministic"
-msgstr ""
+msgstr "Més alt = més creatiu/aleatori, més baix = més centrat/determinista"
 
 #: src/apps/qml/OllamaSettingsPage.qml:71
 #, kde-format
@@ -272,6 +275,8 @@ msgstr "Top P [a escala x100]"
 msgid ""
 "Nucleus sampling – consider tokens that make up this cumulative probability"
 msgstr ""
+"Mostreig de nuclis: considera els segments textuals que componen aquesta "
+"probabilitat acumulada"
 
 #: src/apps/qml/OllamaSettingsPage.qml:105
 #, kde-format
@@ -284,6 +289,8 @@ msgid ""
 "Minimum probability a token must have to be considered, relative to the "
 "probability of the most likely token"
 msgstr ""
+"Probabilitat mínima que ha de tenir un segment textual per a ser considerat, "
+"relativa a la probabilitat del segment textual més probable"
 
 #: src/apps/qml/OllamaSettingsPage.qml:115
 #, kde-format
@@ -294,6 +301,7 @@ msgstr "Restaura els valors predeterminats"
 #, kde-format
 msgid "Restore all settings to their recommended default values"
 msgstr ""
+"Restableix tota la configuració als seus valors predeterminats recomanats"
 
 #: src/core/KLLMInterface.cpp:141
 #, kde-format

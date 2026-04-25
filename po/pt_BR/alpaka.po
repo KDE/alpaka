@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: alpaka\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-04-24 00:47+0000\n"
-"PO-Revision-Date: 2026-02-27 07:49-0300\n"
+"PO-Revision-Date: 2026-04-24 08:59-0300\n"
 "Last-Translator: Marcus Gama <marcus.gama@gmail.com>\n"
 "Language-Team: Brazilian Portuguese <kde-i18n-pt_BR@kde.org>\n"
 "Language: pt_BR\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Lokalize 25.12.2\n"
+"X-Generator: Lokalize 26.04.0\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -226,6 +226,8 @@ msgstr "Repetir tokens de retrocesso de penalidade"
 msgid ""
 "How far back to look for repeated tokens (0 = disabled, -1 = context size)"
 msgstr ""
+"Até que ponto retroceder a busca por tokens repetidos (0 = desativado, -1 = "
+"tamanho do contexto)"
 
 #: src/apps/qml/OllamaSettingsPage.qml:51
 #, kde-format
@@ -235,7 +237,7 @@ msgstr "Repetir fator de penalização [escalonado x10]"
 #: src/apps/qml/OllamaSettingsPage.qml:52
 #, kde-format
 msgid "Sets how strongly to penalize repetitions (0 = disabled)"
-msgstr ""
+msgstr "Define a intensidade da penalização de repetições (0 = desativado)"
 
 #: src/apps/qml/OllamaSettingsPage.qml:61
 #, kde-format
@@ -245,7 +247,7 @@ msgstr "Temperatura [escalonado x10]"
 #: src/apps/qml/OllamaSettingsPage.qml:62
 #, kde-format
 msgid "Higher = more creative/random, lower = more focused/deterministic"
-msgstr ""
+msgstr "Maior = mais criativo/aleatório; menor = mais focado/determinístico"
 
 #: src/apps/qml/OllamaSettingsPage.qml:71
 #, kde-format
@@ -272,6 +274,8 @@ msgstr "P de topo [escalonado x100]"
 msgid ""
 "Nucleus sampling – consider tokens that make up this cumulative probability"
 msgstr ""
+"Amostragem de núcleo – considerar os tokens que compõem essa probabilidade "
+"cumulativa"
 
 #: src/apps/qml/OllamaSettingsPage.qml:105
 #, kde-format
@@ -284,6 +288,8 @@ msgid ""
 "Minimum probability a token must have to be considered, relative to the "
 "probability of the most likely token"
 msgstr ""
+"Probabilidade mínima que um token deve ter para ser considerado, em relação "
+"à probabilidade do token mais provável"
 
 #: src/apps/qml/OllamaSettingsPage.qml:115
 #, kde-format
@@ -293,7 +299,7 @@ msgstr "Restaurar padrões"
 #: src/apps/qml/OllamaSettingsPage.qml:117
 #, kde-format
 msgid "Restore all settings to their recommended default values"
-msgstr ""
+msgstr "Restaurar todas as configurações aos seus valores padrão recomendados"
 
 #: src/core/KLLMInterface.cpp:141
 #, kde-format

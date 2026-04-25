@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: alpaka\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-04-24 00:47+0000\n"
-"PO-Revision-Date: 2026-02-27 16:35+0200\n"
+"PO-Revision-Date: 2026-04-24 08:17+0300\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <trans-uk@lists.fedoraproject.org>\n"
 "Language: uk\n"
@@ -225,6 +225,8 @@ msgstr "Повторення записів штрафного циклу"
 msgid ""
 "How far back to look for repeated tokens (0 = disabled, -1 = context size)"
 msgstr ""
+"Наскільки слід заглиблюватися до списку повторюваних жетонів (0 = вимкнено, "
+"-1 = розмір контексту)"
 
 #: src/apps/qml/OllamaSettingsPage.qml:51
 #, kde-format
@@ -234,7 +236,7 @@ msgstr "Штрафний коефіцієнт повторення [масшта
 #: src/apps/qml/OllamaSettingsPage.qml:52
 #, kde-format
 msgid "Sets how strongly to penalize repetitions (0 = disabled)"
-msgstr ""
+msgstr "Встановлює, наскільки сильно слід запобігати повторам (0 = вимкнено)"
 
 #: src/apps/qml/OllamaSettingsPage.qml:61
 #, kde-format
@@ -245,6 +247,7 @@ msgstr "Температура [масштабована x10]"
 #, kde-format
 msgid "Higher = more creative/random, lower = more focused/deterministic"
 msgstr ""
+"Більше = більше творчості/випадковості, менше = концентрованіше/визначеніше"
 
 #: src/apps/qml/OllamaSettingsPage.qml:71
 #, kde-format
@@ -271,6 +274,7 @@ msgstr "Верх. P [масштабований x100]"
 msgid ""
 "Nucleus sampling – consider tokens that make up this cumulative probability"
 msgstr ""
+"Ядерна вибірка – розглядати жетони, які складають цю кумулятивну ймовірність"
 
 #: src/apps/qml/OllamaSettingsPage.qml:105
 #, kde-format
@@ -283,6 +287,8 @@ msgid ""
 "Minimum probability a token must have to be considered, relative to the "
 "probability of the most likely token"
 msgstr ""
+"Мінімальна ймовірність того, що жетон має бути розглянуто, відносно "
+"ймовірності найімовірнішого жетона"
 
 #: src/apps/qml/OllamaSettingsPage.qml:115
 #, kde-format
@@ -292,7 +298,7 @@ msgstr "Відновити типові параметри"
 #: src/apps/qml/OllamaSettingsPage.qml:117
 #, kde-format
 msgid "Restore all settings to their recommended default values"
-msgstr ""
+msgstr "Відновити для усіх параметрів рекомендовані типові значення"
 
 #: src/core/KLLMInterface.cpp:141
 #, kde-format
