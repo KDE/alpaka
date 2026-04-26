@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: alpaka\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-04-24 00:47+0000\n"
-"PO-Revision-Date: 2026-02-27 09:27+0200\n"
+"PO-Revision-Date: 2026-04-25 07:54+0300\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
 "Language: he\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n == 1) ? 0 : ((n == 2) ? 1 : ((n > 10 && "
 "n % 10 == 0) ? 2 : 3));\n"
-"X-Generator: Lokalize 25.12.1\n"
+"X-Generator: Lokalize 25.12.3\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -224,7 +224,7 @@ msgstr "חזרה על אסימוני מבט לאחור של ענישה"
 #, kde-format
 msgid ""
 "How far back to look for repeated tokens (0 = disabled, -1 = context size)"
-msgstr ""
+msgstr "כמה אחורה לחפש אסימונים חוזרים (0 = כבוי, ‎-1 = גודל הקשר)"
 
 #: src/apps/qml/OllamaSettingsPage.qml:51
 #, kde-format
@@ -234,7 +234,7 @@ msgstr "חזרה על מקדם ענישה [במכפלות של 10]"
 #: src/apps/qml/OllamaSettingsPage.qml:52
 #, kde-format
 msgid "Sets how strongly to penalize repetitions (0 = disabled)"
-msgstr ""
+msgstr "הגדרה כמה בחומרה להעניש חזרות (0 = כבוי)"
 
 #: src/apps/qml/OllamaSettingsPage.qml:61
 #, kde-format
@@ -244,7 +244,7 @@ msgstr "טמפרטורה [במכפלות של 10]"
 #: src/apps/qml/OllamaSettingsPage.qml:62
 #, kde-format
 msgid "Higher = more creative/random, lower = more focused/deterministic"
-msgstr ""
+msgstr "גדול יותר = יצירתי/אקראי יותר, נמוך יותר = יותר ממוקד/החלטי"
 
 #: src/apps/qml/OllamaSettingsPage.qml:71
 #, kde-format
@@ -270,7 +270,7 @@ msgstr "P המובילים [במכפלות של 100]"
 #, kde-format
 msgid ""
 "Nucleus sampling – consider tokens that make up this cumulative probability"
-msgstr ""
+msgstr "דגימה גרעינית - לשקול אסימוים שמרכיבים את הסבירות המצטברת הזאת"
 
 #: src/apps/qml/OllamaSettingsPage.qml:105
 #, kde-format
@@ -283,6 +283,8 @@ msgid ""
 "Minimum probability a token must have to be considered, relative to the "
 "probability of the most likely token"
 msgstr ""
+"הסבירות המזערית שחייבת להיות לאסימון כדי שיילקח בחשבון, ביחס לסבירות של "
+"האסימון עם ההסתברות הגבוהה ביותר"
 
 #: src/apps/qml/OllamaSettingsPage.qml:115
 #, kde-format
@@ -292,7 +294,7 @@ msgstr "איפוס לברירות המחדל"
 #: src/apps/qml/OllamaSettingsPage.qml:117
 #, kde-format
 msgid "Restore all settings to their recommended default values"
-msgstr ""
+msgstr "לשחזר את כל ההגדרות לערכי ברירת המחדל המומלצים שלהן"
 
 #: src/core/KLLMInterface.cpp:141
 #, kde-format

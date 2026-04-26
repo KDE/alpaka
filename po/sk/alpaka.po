@@ -222,6 +222,8 @@ msgstr "Tokeny spätného pohľadu penalizácie opakovania"
 msgid ""
 "How far back to look for repeated tokens (0 = disabled, -1 = context size)"
 msgstr ""
+"Ako ďaleko do minulosti hľadať opakované tokeny (0 = vypnuté, -1 = veľkosť "
+"kontextu)"
 
 #: src/apps/qml/OllamaSettingsPage.qml:51
 #, kde-format
@@ -231,7 +233,7 @@ msgstr "Faktor penalizácie opakovania [škálované x10]"
 #: src/apps/qml/OllamaSettingsPage.qml:52
 #, kde-format
 msgid "Sets how strongly to penalize repetitions (0 = disabled)"
-msgstr ""
+msgstr "Nastavuje silu penalizácie opakovaní (0 = vypnuté)"
 
 #: src/apps/qml/OllamaSettingsPage.qml:61
 #, kde-format
@@ -242,6 +244,8 @@ msgstr "Teplota [škálované x10]"
 #, kde-format
 msgid "Higher = more creative/random, lower = more focused/deterministic"
 msgstr ""
+"Vyššia = kreatívnejšie/náhodnejšie, nižšia = sústredenejšie/"
+"deterministickejšie"
 
 #: src/apps/qml/OllamaSettingsPage.qml:71
 #, kde-format
@@ -268,6 +272,7 @@ msgstr "Top P [škálované x100]"
 msgid ""
 "Nucleus sampling – consider tokens that make up this cumulative probability"
 msgstr ""
+"Vzorkovanie jadra – zvažovať tokeny tvoriac túto kumulatívnu pravdepodobnosť"
 
 #: src/apps/qml/OllamaSettingsPage.qml:105
 #, kde-format
@@ -280,6 +285,8 @@ msgid ""
 "Minimum probability a token must have to be considered, relative to the "
 "probability of the most likely token"
 msgstr ""
+"Minimálna pravdepodobnosť, ktorú musí token mať, aby bol braný do úvahy, "
+"relatívne voči pravdepodobnosti najpravdepodobnejšieho tokenu"
 
 #: src/apps/qml/OllamaSettingsPage.qml:115
 #, kde-format
@@ -289,7 +296,7 @@ msgstr "Vrátiť na štandardné"
 #: src/apps/qml/OllamaSettingsPage.qml:117
 #, kde-format
 msgid "Restore all settings to their recommended default values"
-msgstr ""
+msgstr "Obnoviť všetky nastavenia na odporúčané predvolené hodnoty"
 
 #: src/core/KLLMInterface.cpp:141
 #, kde-format
