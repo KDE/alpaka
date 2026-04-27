@@ -4,15 +4,15 @@ msgstr ""
 "Project-Id-Version: alpaka\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-04-24 00:47+0000\n"
-"PO-Revision-Date: 2026-02-28 09:43+0100\n"
+"PO-Revision-Date: 2026-04-25 08:05+0200\n"
 "Last-Translator: Xavier Besnard <xavier.besnard@kde.org>\n"
-"Language-Team: \n"
+"Language-Team: fr\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Lokalize 25.12.2\n"
+"X-Generator: Lokalize 25.12.3\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -225,6 +225,8 @@ msgstr "Répéter les jetons de pénalité en rebouclage arrière"
 msgid ""
 "How far back to look for repeated tokens (0 = disabled, -1 = context size)"
 msgstr ""
+"Jusqu'où remonter dans la recherche de jetons répétés (0 = Désactivé, -1 = "
+"Taille du contexte)"
 
 #: src/apps/qml/OllamaSettingsPage.qml:51
 #, kde-format
@@ -234,7 +236,7 @@ msgstr "Facteur de répétition de pénalisation [Multiplié par 10]"
 #: src/apps/qml/OllamaSettingsPage.qml:52
 #, kde-format
 msgid "Sets how strongly to penalize repetitions (0 = disabled)"
-msgstr ""
+msgstr "Définit l'intensité de la pénalisation des répétitions (0 = Désactivé)"
 
 #: src/apps/qml/OllamaSettingsPage.qml:61
 #, kde-format
@@ -245,6 +247,8 @@ msgstr "Température [Multipliée par 10]"
 #, kde-format
 msgid "Higher = more creative/random, lower = more focused/deterministic"
 msgstr ""
+"Plus élevé =Plus créatif / hasardeux. Plus bas = Plus concentré / "
+"déterministe"
 
 #: src/apps/qml/OllamaSettingsPage.qml:71
 #, kde-format
@@ -271,6 +275,8 @@ msgstr "Top P [Multiplié par 100]"
 msgid ""
 "Nucleus sampling – consider tokens that make up this cumulative probability"
 msgstr ""
+"Échantillonnage par noyau – considérer les jetons composant cette "
+"probabilité cumulative"
 
 #: src/apps/qml/OllamaSettingsPage.qml:105
 #, kde-format
@@ -283,6 +289,8 @@ msgid ""
 "Minimum probability a token must have to be considered, relative to the "
 "probability of the most likely token"
 msgstr ""
+"Probabilité minimale qu'un jeton doit avoir pour être considéré, par rapport "
+"à la probabilité du jeton le plus probable"
 
 #: src/apps/qml/OllamaSettingsPage.qml:115
 #, kde-format
@@ -292,7 +300,7 @@ msgstr "Réinitialiser aux valeurs par défaut"
 #: src/apps/qml/OllamaSettingsPage.qml:117
 #, kde-format
 msgid "Restore all settings to their recommended default values"
-msgstr ""
+msgstr "Rétablir tous les paramètres à leurs valeurs par défaut recommandées"
 
 #: src/core/KLLMInterface.cpp:141
 #, kde-format
