@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: alpaka\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-04-24 00:47+0000\n"
-"PO-Revision-Date: 2026-02-28 13:52+0400\n"
+"PO-Revision-Date: 2026-04-30 09:42+0400\n"
 "Last-Translator: Zayed Al-Saidi <zayed.alsaidi@gmail.com>\n"
 "Language-Team: ar\n"
 "Language: ar\n"
@@ -224,7 +224,7 @@ msgstr "تكرار رموز العقوبة السابقة"
 #, kde-format
 msgid ""
 "How far back to look for repeated tokens (0 = disabled, -1 = context size)"
-msgstr ""
+msgstr "إلى أي مدى يجب البحث عن الرموز المتكررة (0 = معطل، -1 = حجم السياق)"
 
 #: src/apps/qml/OllamaSettingsPage.qml:51
 #, kde-format
@@ -234,7 +234,7 @@ msgstr "عامل تكرار العقوبة [مضاعف 10 مرات]"
 #: src/apps/qml/OllamaSettingsPage.qml:52
 #, kde-format
 msgid "Sets how strongly to penalize repetitions (0 = disabled)"
-msgstr ""
+msgstr "يحدد مدى شدة العقوبة المفروضة على التكرار (0 = معطل)"
 
 #: src/apps/qml/OllamaSettingsPage.qml:61
 #, kde-format
@@ -245,6 +245,8 @@ msgstr "درجة الحرارة [مقيسة × 10]"
 #, kde-format
 msgid "Higher = more creative/random, lower = more focused/deterministic"
 msgstr ""
+"كلما ارتفع المؤشر = زادت الإبداعية/العشوائية، وكلما انخفض = زاد التركيز/"
+"الحتمية"
 
 #: src/apps/qml/OllamaSettingsPage.qml:71
 #, kde-format
@@ -271,6 +273,7 @@ msgstr "أعلى P [مقيسة × 100]"
 msgid ""
 "Nucleus sampling – consider tokens that make up this cumulative probability"
 msgstr ""
+"أخذ عينات من النواة – ضع في اعتبارك العناصر التي تشكل هذا الاحتمال التراكمي"
 
 #: src/apps/qml/OllamaSettingsPage.qml:105
 #, kde-format
@@ -283,6 +286,8 @@ msgid ""
 "Minimum probability a token must have to be considered, relative to the "
 "probability of the most likely token"
 msgstr ""
+"الحد الأدنى للاحتمال الذي يجب أن يتوفر في الرمز حتى يتم أخذه في الاعتبار، "
+"مقارنة باحتمال الرمز الأكثر ترجيحاً"
 
 #: src/apps/qml/OllamaSettingsPage.qml:115
 #, kde-format
@@ -292,7 +297,7 @@ msgstr "صفّر إلى المبدئيات"
 #: src/apps/qml/OllamaSettingsPage.qml:117
 #, kde-format
 msgid "Restore all settings to their recommended default values"
-msgstr ""
+msgstr "إعادة جميع الإعدادات إلى قيمها المبدئية الموصى بها"
 
 #: src/core/KLLMInterface.cpp:141
 #, kde-format
