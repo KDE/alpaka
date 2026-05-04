@@ -120,10 +120,6 @@ bool ChatModel::replyInProgress() const
 
 void ChatModel::sendMessage(const QString &message)
 {
-    QJsonObject obj;
-    obj["role"_L1] = "user"_L1;
-    obj["content"_L1] = message;
-    m_messageJsonHistory.append(obj);
     m_context->addUserMessage(message);
     KLLMRequest req{m_context};
     req.setModel(KLLMCoreSettings::model());
@@ -143,7 +139,6 @@ void ChatModel::sendMessage(const QString &message)
                              m_connections.remove(message.llmReply);
                              if (!message.llmReply->isAborted()) {
                                  message.info = message.llmReply->info();
-                                 m_messageJsonHistory.append(message.llmReply->getReplyJson()); // TODO: Summarize older chats befor appending
                              }
                              m_context->addAssistantMessage(message.content);
                              message.llmReply->deleteLater();
@@ -197,7 +192,6 @@ void ChatModel::resetConversation()
     m_connections.clear();
     Q_EMIT replyInProgressChanged();
     m_messages.clear();
-    m_messageJsonHistory = {};
     m_context->clear();
     endResetModel();
 }

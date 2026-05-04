@@ -72,7 +72,6 @@ private:
     };
 
     QList<ChatMessage> m_messages;
-    QJsonArray m_messageJsonHistory;
     KLLMCore::KLLMInterface *const m_llm;
     KLLMCore::KLLMContext *const m_context;
     QMultiHash<KLLMCore::KLLMReply *, QMetaObject::Connection> m_connections;
