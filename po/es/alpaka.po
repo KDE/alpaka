@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: alpaka\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-04-24 00:47+0000\n"
+"POT-Creation-Date: 2026-05-05 00:47+0000\n"
 "PO-Revision-Date: 2026-04-24 17:42+0100\n"
 "Last-Translator: Eloy Cuadra <ecuadra@eloihr.net>\n"
 "Language-Team: Spanish <kde-l10n-es@kde.org>\n"
@@ -29,7 +29,7 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "ecuadra@eloihr.net"
 
-#: src/apps/ChatModel.cpp:169
+#: src/apps/ChatModel.cpp:164
 #, kde-format
 msgid "Show model info."
 msgstr "Mostrar información del modelo."

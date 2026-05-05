@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: alpaka\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-04-24 00:47+0000\n"
+"POT-Creation-Date: 2026-05-05 00:47+0000\n"
 "PO-Revision-Date: 2026-04-24 08:17+0300\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <trans-uk@lists.fedoraproject.org>\n"
@@ -28,7 +28,7 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "yurchor@ukr.net"
 
-#: src/apps/ChatModel.cpp:169
+#: src/apps/ChatModel.cpp:164
 #, kde-format
 msgid "Show model info."
 msgstr "Показати дані щодо моделі."
