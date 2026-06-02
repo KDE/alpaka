@@ -1,0 +1,298 @@
+# Uyghur translation for alpaka.
+# Copyright (C) YEAR This file is copyright:
+# This file is distributed under the same license as the alpaka package.
+# Abduqadir Abliz <sahranbay@gmail.com>, 2026., YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: alpaka\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2026-05-05 00:47+0000\n"
+"PO-Revision-Date: 2026-05-28 17:01-0400\n"
+"Last-Translator: Abduqadir Abliz <sahranbay@gmail.com>\n"
+"Language-Team: Uyghur <kde-i18n-doc@kde.org>\n"
+"Language: ug\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.9\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "ئابدۇقادىر ئابلىز، غەيرەت كەنجى"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "sahranbay@gmail.com, gheyret@gmail.com"
+
+#: src/apps/ChatModel.cpp:164
+#, kde-format
+msgid "Show model info."
+msgstr ""
+
+#: src/apps/main.cpp:47 src/apps/qml/ChatView.qml:14
+#: src/apps/qml/MessageDelegate.qml:67
+#, kde-format
+msgid "Alpaka"
+msgstr "Alpaka"
+
+#: src/apps/main.cpp:49
+#, kde-format
+msgid "Ollama client"
+msgstr "Ollama خېرىدارى"
+
+#: src/apps/main.cpp:51
+#, kde-format
+msgid "© 2023–2025 Loren Burkholder"
+msgstr "© 2023–2025 Loren Burkholder"
+
+#: src/apps/main.cpp:52
+#, kde-format
+msgid "Loren Burkholder"
+msgstr "Loren Burkholder"
+
+#: src/apps/main.cpp:52
+#, kde-format
+msgid "Creator"
+msgstr "تۈزگۈچى"
+
+#: src/apps/main.cpp:53
+#, kde-format
+msgid "Siavosh Kasravi"
+msgstr "Siavosh Kasravi"
+
+#: src/apps/main.cpp:53
+#, kde-format
+msgid "Maintainer"
+msgstr "ئاسرىغۇچى"
+
+#: src/apps/main.cpp:54
+#, kde-format
+msgid "Laurent Montel"
+msgstr "Laurent Montel"
+
+#: src/apps/main.cpp:54
+#, kde-format
+msgid "Developer"
+msgstr "ئىجادكار"
+
+#: src/apps/qml/ChatView.qml:32
+#, kde-format
+msgctxt "@action:intoolbar"
+msgid "Start Over"
+msgstr "قايتىدىن باشلا"
+
+#: src/apps/qml/ChatView.qml:38
+#, kde-format
+msgctxt "@action:intoolbar"
+msgid "Settings"
+msgstr "تەڭشەك"
+
+#: src/apps/qml/ChatView.qml:53
+#, kde-format
+msgctxt "@action:button"
+msgid "Try Again"
+msgstr "قايتا سىنا"
+
+#: src/apps/qml/ChatView.qml:72
+#, kde-format
+msgctxt "@info:placeholder"
+msgid "Enter a message (Use @ to open the attachment menu)"
+msgstr ""
+
+#: src/apps/qml/ChatView.qml:261
+#, kde-format
+msgid "LLM:"
+msgstr ""
+
+#: src/apps/qml/ChatView.qml:269
+#, kde-format
+msgctxt "@action:button"
+msgid "Info"
+msgstr "ئۇچۇر"
+
+#: src/apps/qml/ChatView.qml:280
+#, kde-format
+msgctxt "@info:placeholder"
+msgid "Interface Not Found"
+msgstr ""
+
+#: src/apps/qml/ChatView.qml:281
+#, kde-format
+msgid ""
+"Make sure Ollama is installed and is running. Visit the project's website "
+"for setup information."
+msgstr ""
+
+#: src/apps/qml/ChatView.qml:284
+#, kde-format
+msgctxt "@action:button"
+msgid "Visit Website"
+msgstr ""
+
+#: src/apps/qml/ConfigurationView.qml:14
+#: src/apps/qml/GeneralSettingsPage.qml:11
+#, kde-format
+msgid "General"
+msgstr "ئادەتتىكى"
+
+#: src/apps/qml/ConfigurationView.qml:19 src/apps/qml/LLMSettingsPage.qml:12
+#, kde-format
+msgid "LLM"
+msgstr ""
+
+#: src/apps/qml/ConfigurationView.qml:24 src/apps/qml/OllamaSettingsPage.qml:11
+#, kde-format
+msgid "Ollama"
+msgstr ""
+
+#: src/apps/qml/GeneralSettingsPage.qml:16
+#, kde-format
+msgid "Show in System Tray"
+msgstr ""
+
+#: src/apps/qml/GeneralSettingsPage.qml:26
+#, kde-format
+msgid "Auto scroll down when a new prompt is posted"
+msgstr ""
+
+#: src/apps/qml/LLMSettingsPage.qml:31
+#, kde-format
+msgid "System prompt"
+msgstr ""
+
+#: src/apps/qml/LLMSettingsPage.qml:43
+#, kde-format
+msgid "No system prompt"
+msgstr ""
+
+#: src/apps/qml/LLMSettingsPage.qml:60
+#, kde-format
+msgid "Show debug information"
+msgstr ""
+
+#: src/apps/qml/Main.qml:13
+#, kde-format
+msgctxt "@title:window"
+msgid "Alpaka"
+msgstr "Alpaka"
+
+#: src/apps/qml/MessageDelegate.qml:111
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Copy"
+msgstr "كۆچۈر"
+
+#: src/apps/qml/MessageDelegate.qml:117
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Select All"
+msgstr "ھەممىنى تاللا"
+
+#: src/apps/qml/MessageDelegate.qml:133
+#, kde-format
+msgctxt "'toks' is short for 'tokens'"
+msgid "%1 tok/s · %2 tokens · %3 seconds"
+msgstr ""
+
+#: src/apps/qml/OllamaSettingsPage.qml:23
+#, kde-format
+msgid "Ollama server URL"
+msgstr ""
+
+#: src/apps/qml/OllamaSettingsPage.qml:30
+#, kde-format
+msgid "Advanced Parameters"
+msgstr ""
+
+#: src/apps/qml/OllamaSettingsPage.qml:34
+#, kde-format
+msgid "Context size"
+msgstr ""
+
+#: src/apps/qml/OllamaSettingsPage.qml:42
+#, kde-format
+msgid "Repeat penalty lookback tokens"
+msgstr ""
+
+#: src/apps/qml/OllamaSettingsPage.qml:43
+#, kde-format
+msgid ""
+"How far back to look for repeated tokens (0 = disabled, -1 = context size)"
+msgstr ""
+
+#: src/apps/qml/OllamaSettingsPage.qml:51
+#, kde-format
+msgid "Repeat penalization factor [scaled x10]"
+msgstr ""
+
+#: src/apps/qml/OllamaSettingsPage.qml:52
+#, kde-format
+msgid "Sets how strongly to penalize repetitions (0 = disabled)"
+msgstr ""
+
+#: src/apps/qml/OllamaSettingsPage.qml:61
+#, kde-format
+msgid "Temperature [scaled x10]"
+msgstr ""
+
+#: src/apps/qml/OllamaSettingsPage.qml:62
+#, kde-format
+msgid "Higher = more creative/random, lower = more focused/deterministic"
+msgstr ""
+
+#: src/apps/qml/OllamaSettingsPage.qml:71
+#, kde-format
+msgid "Seed (-1 = random)"
+msgstr ""
+
+#: src/apps/qml/OllamaSettingsPage.qml:79
+#, kde-format
+msgid "Maximum tokens to predict (-1 = unlimited)"
+msgstr ""
+
+#: src/apps/qml/OllamaSettingsPage.qml:87
+#, kde-format
+msgid "Top K"
+msgstr ""
+
+#: src/apps/qml/OllamaSettingsPage.qml:95
+#, kde-format
+msgid "Top P [scaled x100]"
+msgstr ""
+
+#: src/apps/qml/OllamaSettingsPage.qml:96
+#, kde-format
+msgid ""
+"Nucleus sampling – consider tokens that make up this cumulative probability"
+msgstr ""
+
+#: src/apps/qml/OllamaSettingsPage.qml:105
+#, kde-format
+msgid "Min P [scaled x10]"
+msgstr ""
+
+#: src/apps/qml/OllamaSettingsPage.qml:106
+#, kde-format
+msgid ""
+"Minimum probability a token must have to be considered, relative to the "
+"probability of the most likely token"
+msgstr ""
+
+#: src/apps/qml/OllamaSettingsPage.qml:115
+#, kde-format
+msgid "Reset to defaults"
+msgstr ""
+
+#: src/apps/qml/OllamaSettingsPage.qml:117
+#, kde-format
+msgid "Restore all settings to their recommended default values"
+msgstr ""
+
+#: src/core/KLLMInterface.cpp:141
+#, kde-format
+msgctxt "%1 is an URL, %2 an error description"
+msgid "Failed to connect to interface at %1: %2"
+msgstr ""
