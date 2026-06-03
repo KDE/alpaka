@@ -37,6 +37,7 @@ SPDX-License-Identifier: CC0-1.0
   <name xml:lang="sl">Alpaka</name>
   <name xml:lang="sv">Alpaka</name>
   <name xml:lang="tr">Alpaka</name>
+  <name xml:lang="ug">Alpaka</name>
   <name xml:lang="uk">Alpaka</name>
   <name xml:lang="zh-CN">Alpaka</name>
   <name xml:lang="zh-TW">Alpaka</name>
@@ -70,6 +71,7 @@ SPDX-License-Identifier: CC0-1.0
   <summary xml:lang="sl">Odjemalec klepeta z umetno inteligenco</summary>
   <summary xml:lang="sv">En AI-chattklient</summary>
   <summary xml:lang="tr">Yapay Zeka ile Sohbet İstemcisi</summary>
+  <summary xml:lang="ug">سۈنئىي ئەقىل سۆھبەت خېرىدارى</summary>
   <summary xml:lang="uk">Клієнт ШІ-спілкування</summary>
   <summary xml:lang="zh-CN">AI 聊天客户端</summary>
   <summary xml:lang="zh-TW">一個 AI 聊天機器人用戶端</summary>
