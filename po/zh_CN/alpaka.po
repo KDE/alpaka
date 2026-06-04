@@ -195,7 +195,7 @@ msgstr "全选"
 #, kde-format
 msgctxt "'toks' is short for 'tokens'"
 msgid "%1 tok/s · %2 tokens · %3 seconds"
-msgstr "%1 token/秒 · %2 tokens · %3 秒"
+msgstr "%1 词元/秒 · %2 词元 · %3 秒"
 
 #: src/apps/qml/OllamaSettingsPage.qml:23
 #, kde-format
