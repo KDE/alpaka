@@ -205,63 +205,63 @@ msgstr "Ollama 服务器 URL"
 #: src/apps/qml/OllamaSettingsPage.qml:30
 #, kde-format
 msgid "Advanced Parameters"
-msgstr ""
+msgstr "高级参数"
 
 #: src/apps/qml/OllamaSettingsPage.qml:34
 #, kde-format
 msgid "Context size"
-msgstr ""
+msgstr "上下文大小"
 
 #: src/apps/qml/OllamaSettingsPage.qml:42
 #, kde-format
 msgid "Repeat penalty lookback tokens"
-msgstr ""
+msgstr "重复惩罚回溯 Token 数"
 
 #: src/apps/qml/OllamaSettingsPage.qml:43
 #, kde-format
 msgid ""
 "How far back to look for repeated tokens (0 = disabled, -1 = context size)"
-msgstr ""
+msgstr "查找重复 Token 的回溯范围 (0 = 禁用，-1 = 上下文总长度) "
 
 #: src/apps/qml/OllamaSettingsPage.qml:51
 #, kde-format
 msgid "Repeat penalization factor [scaled x10]"
-msgstr ""
+msgstr "重复惩罚因子 [10 倍缩放]"
 
 #: src/apps/qml/OllamaSettingsPage.qml:52
 #, kde-format
 msgid "Sets how strongly to penalize repetitions (0 = disabled)"
-msgstr ""
+msgstr "设置惩罚重复的强度 (0 = 禁用)"
 
 #: src/apps/qml/OllamaSettingsPage.qml:61
 #, kde-format
 msgid "Temperature [scaled x10]"
-msgstr ""
+msgstr "温度 [10 倍缩放]"
 
 #: src/apps/qml/OllamaSettingsPage.qml:62
 #, kde-format
 msgid "Higher = more creative/random, lower = more focused/deterministic"
-msgstr ""
+msgstr "越高 = 越具创造力/随机性，越低 = 更加聚焦/确定"
 
 #: src/apps/qml/OllamaSettingsPage.qml:71
 #, kde-format
 msgid "Seed (-1 = random)"
-msgstr ""
+msgstr "种子 (-1 = 随机)"
 
 #: src/apps/qml/OllamaSettingsPage.qml:79
 #, kde-format
 msgid "Maximum tokens to predict (-1 = unlimited)"
-msgstr ""
+msgstr "最大生成 Token 数 (-1 = 无限制) "
 
 #: src/apps/qml/OllamaSettingsPage.qml:87
 #, kde-format
 msgid "Top K"
-msgstr ""
+msgstr "Top K"
 
 #: src/apps/qml/OllamaSettingsPage.qml:95
 #, kde-format
 msgid "Top P [scaled x100]"
-msgstr ""
+msgstr "Top P [100 倍缩放]"
 
 #: src/apps/qml/OllamaSettingsPage.qml:96
 #, kde-format
