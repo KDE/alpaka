@@ -287,7 +287,7 @@ msgid ""
 "probability of the most likely token"
 msgstr ""
 "الحد الأدنى للاحتمال الذي يجب أن يتوفر في الرمز حتى يتم أخذه في الاعتبار، "
-"مقارنة باحتمال الرمز الأكثر ترجيحاً"
+"مقارنة باحتمال الرمز الأكثر ترجيحًا"
 
 #: src/apps/qml/OllamaSettingsPage.qml:115
 #, kde-format
