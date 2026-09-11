@@ -31,6 +31,7 @@ ecm_target_qml_sources(alpaka
     SOURCES
         qml/ChatView.qml
         qml/ConfigurationView.qml
+        qml/FormDoubleSpinBoxDelegate.qml
         qml/GeneralSettingsPage.qml
         qml/LLMSettingsPage.qml
         qml/Main.qml

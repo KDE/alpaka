@@ -47,24 +47,26 @@ FormCard.FormCardPage {
             onValueChanged: AlpakaSettings.repeatLastN = value
         }
     
-        FormCard.FormSpinBoxDelegate {
-            label: i18n("Repeat penalization factor [scaled x10]")
+        FormDoubleSpinBoxDelegate {
+            label: i18n("Repeat penalization factor")
             description: i18n("Sets how strongly to penalize repetitions (0 = disabled)")
-            from: 0
-            to: 50      // 0.0 → 5.0 with 0.1 steps
-            stepSize: 1
-            value: Math.round(AlpakaSettings.repeatPenalty * 10)
-            onValueChanged: AlpakaSettings.repeatPenalty = value / 10
+            decimals: 1
+            realFrom: 0.0
+            realTo: 5.0
+            realStepSize: 0.1
+            realValue: AlpakaSettings.repeatPenalty
+            onRealValueModified: value => AlpakaSettings.repeatPenalty = value
         }
-    
-        FormCard.FormSpinBoxDelegate {
-            label: i18n("Temperature [scaled x10]")
+
+        FormDoubleSpinBoxDelegate {
+            label: i18n("Temperature")
             description: i18n("Higher = more creative/random, lower = more focused/deterministic")
-            from: 0
-            to: 20
-            stepSize: 1
-            value: Math.round(AlpakaSettings.temperature * 10)
-            onValueChanged: AlpakaSettings.temperature = value / 10
+            decimals: 1
+            realFrom: 0.0
+            realTo: 2.0
+            realStepSize: 0.1
+            realValue: AlpakaSettings.temperature
+            onRealValueModified: value => AlpakaSettings.temperature = value
         }
     
         FormCard.FormSpinBoxDelegate {
@@ -91,24 +93,24 @@ FormCard.FormCardPage {
             onValueChanged: AlpakaSettings.topK = value
         }
     
-        FormCard.FormSpinBoxDelegate {
-            label: i18n("Top P [scaled x100]")
+        FormDoubleSpinBoxDelegate {
+            label: i18n("Top P")
             description: i18n("Nucleus sampling – consider tokens that make up this cumulative probability")
-            from: 0
-            to: 100
-            stepSize: 5           // 0.05 steps
-            value: Math.round(AlpakaSettings.topP * 100)
-            onValueChanged: AlpakaSettings.topP = value / 100
+            realFrom: 0.0
+            realTo: 1.0
+            realStepSize: 0.05
+            realValue: AlpakaSettings.topP
+            onRealValueModified: value => AlpakaSettings.topP = value
         }
-    
-        FormCard.FormSpinBoxDelegate {
-            label: i18n("Min P [scaled x10]")
+
+        FormDoubleSpinBoxDelegate {
+            label: i18n("Min P")
             description: i18n("Minimum probability a token must have to be considered, relative to the probability of the most likely token")
-            from: 0
-            to: 100
-            stepSize: 5
-            value: Math.round(AlpakaSettings.minP * 100)
-            onValueChanged: AlpakaSettings.minP = value / 100
+            realFrom: 0.0
+            realTo: 1.0
+            realStepSize: 0.05
+            realValue: AlpakaSettings.minP
+            onRealValueModified: value => AlpakaSettings.minP = value
         }
         
         FormCard.FormButtonDelegate {
