@@ -16,7 +16,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: alpaka\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-05-05 00:47+0000\n"
+"POT-Creation-Date: 2026-09-12 00:48+0000\n"
 "PO-Revision-Date: 2026-08-16 12:03+0200\n"
 "Last-Translator: Iñigo Salvador Azurmendi <xalba@ni.eus>\n"
 "Language-Team: Basque <kde-i18n-eu@kde.org>\n"
@@ -238,8 +238,9 @@ msgstr ""
 "desgaituta, -1 = testuinguru-leihoaren neurria)"
 
 #: src/apps/qml/OllamaSettingsPage.qml:51
-#, kde-format
-msgid "Repeat penalization factor [scaled x10]"
+#, fuzzy, kde-format
+#| msgid "Repeat penalization factor [scaled x10]"
+msgid "Repeat penalization factor"
 msgstr "Errepikapen-zigorraren faktorea [×10 eskalatuta]"
 
 #: src/apps/qml/OllamaSettingsPage.qml:52
@@ -247,39 +248,41 @@ msgstr "Errepikapen-zigorraren faktorea [×10 eskalatuta]"
 msgid "Sets how strongly to penalize repetitions (0 = disabled)"
 msgstr "Errepikapenak zenbateraino zigortu ezartzen du (0 = desgaituta)"
 
-#: src/apps/qml/OllamaSettingsPage.qml:61
-#, kde-format
-msgid "Temperature [scaled x10]"
+#: src/apps/qml/OllamaSettingsPage.qml:62
+#, fuzzy, kde-format
+#| msgid "Temperature [scaled x10]"
+msgid "Temperature"
 msgstr "Tenperatura [×10 eskalatuta]"
 
-#: src/apps/qml/OllamaSettingsPage.qml:62
+#: src/apps/qml/OllamaSettingsPage.qml:63
 #, kde-format
 msgid "Higher = more creative/random, lower = more focused/deterministic"
 msgstr ""
 "Handiagoa = sortzaileagoa/ausazkoagoa; txikiagoa = bideratuagoa/"
 "deterministagoa"
 
-#: src/apps/qml/OllamaSettingsPage.qml:71
+#: src/apps/qml/OllamaSettingsPage.qml:73
 #, kde-format
 msgid "Seed (-1 = random)"
 msgstr "Hazia (-1 = ausaz)"
 
-#: src/apps/qml/OllamaSettingsPage.qml:79
+#: src/apps/qml/OllamaSettingsPage.qml:81
 #, kde-format
 msgid "Maximum tokens to predict (-1 = unlimited)"
 msgstr "Iragartzeko gehieneko token kopurua (-1 = mugagabea)"
 
-#: src/apps/qml/OllamaSettingsPage.qml:87
+#: src/apps/qml/OllamaSettingsPage.qml:89
 #, kde-format
 msgid "Top K"
 msgstr "Top K"
 
-#: src/apps/qml/OllamaSettingsPage.qml:95
-#, kde-format
-msgid "Top P [scaled x100]"
-msgstr "Top P [×100 eskalatuta]"
+#: src/apps/qml/OllamaSettingsPage.qml:97
+#, fuzzy, kde-format
+#| msgid "Top K"
+msgid "Top P"
+msgstr "Top K"
 
-#: src/apps/qml/OllamaSettingsPage.qml:96
+#: src/apps/qml/OllamaSettingsPage.qml:98
 #, kde-format
 msgid ""
 "Nucleus sampling – consider tokens that make up this cumulative probability"
@@ -287,12 +290,12 @@ msgstr ""
 "Nukleo-laginketa – probabilitate metatu hori osatzen duten tokenak kontuan "
 "hartu"
 
-#: src/apps/qml/OllamaSettingsPage.qml:105
+#: src/apps/qml/OllamaSettingsPage.qml:107
 #, kde-format
-msgid "Min P [scaled x10]"
-msgstr "Min P [×10 eskalatuta]"
+msgid "Min P"
+msgstr ""
 
-#: src/apps/qml/OllamaSettingsPage.qml:106
+#: src/apps/qml/OllamaSettingsPage.qml:108
 #, kde-format
 msgid ""
 "Minimum probability a token must have to be considered, relative to the "
@@ -301,12 +304,12 @@ msgstr ""
 "Token bat kontuan hartzeko izan behar duen gutxieneko probabilitatea, token "
 "probableenaren probabilitatearekiko"
 
-#: src/apps/qml/OllamaSettingsPage.qml:115
+#: src/apps/qml/OllamaSettingsPage.qml:117
 #, kde-format
 msgid "Reset to defaults"
 msgstr "Lehenetsietara berrezarri"
 
-#: src/apps/qml/OllamaSettingsPage.qml:117
+#: src/apps/qml/OllamaSettingsPage.qml:119
 #, kde-format
 msgid "Restore all settings to their recommended default values"
 msgstr "Ezarpen guztiak gomendatutako balio lehenetsietara leheneratu"
@@ -316,6 +319,12 @@ msgstr "Ezarpen guztiak gomendatutako balio lehenetsietara leheneratu"
 msgctxt "%1 is an URL, %2 an error description"
 msgid "Failed to connect to interface at %1: %2"
 msgstr "%1(e)ko interfazera konektatzeak huts egin du: %2"
+
+#~ msgid "Top P [scaled x100]"
+#~ msgstr "Top P [×100 eskalatuta]"
+
+#~ msgid "Min P [scaled x10]"
+#~ msgstr "Min P [×10 eskalatuta]"
 
 #~ msgctxt "@info:placeholder"
 #~ msgid "Enter a message"

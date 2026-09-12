@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: alpaka\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-05-05 00:47+0000\n"
+"POT-Creation-Date: 2026-09-12 00:48+0000\n"
 "PO-Revision-Date: 2025-07-28 11:11+0200\n"
 "Last-Translator: Philipp Kiemle <l10n.daphipz@fastmail.de>\n"
 "Language-Team: German <kde-i18n-de@kde.org>\n"
@@ -233,7 +233,7 @@ msgstr ""
 
 #: src/apps/qml/OllamaSettingsPage.qml:51
 #, kde-format
-msgid "Repeat penalization factor [scaled x10]"
+msgid "Repeat penalization factor"
 msgstr ""
 
 #: src/apps/qml/OllamaSettingsPage.qml:52
@@ -241,60 +241,60 @@ msgstr ""
 msgid "Sets how strongly to penalize repetitions (0 = disabled)"
 msgstr ""
 
-#: src/apps/qml/OllamaSettingsPage.qml:61
+#: src/apps/qml/OllamaSettingsPage.qml:62
 #, kde-format
-msgid "Temperature [scaled x10]"
+msgid "Temperature"
 msgstr ""
 
-#: src/apps/qml/OllamaSettingsPage.qml:62
+#: src/apps/qml/OllamaSettingsPage.qml:63
 #, kde-format
 msgid "Higher = more creative/random, lower = more focused/deterministic"
 msgstr ""
 
-#: src/apps/qml/OllamaSettingsPage.qml:71
+#: src/apps/qml/OllamaSettingsPage.qml:73
 #, kde-format
 msgid "Seed (-1 = random)"
 msgstr ""
 
-#: src/apps/qml/OllamaSettingsPage.qml:79
+#: src/apps/qml/OllamaSettingsPage.qml:81
 #, kde-format
 msgid "Maximum tokens to predict (-1 = unlimited)"
 msgstr ""
 
-#: src/apps/qml/OllamaSettingsPage.qml:87
+#: src/apps/qml/OllamaSettingsPage.qml:89
 #, kde-format
 msgid "Top K"
 msgstr ""
 
-#: src/apps/qml/OllamaSettingsPage.qml:95
+#: src/apps/qml/OllamaSettingsPage.qml:97
 #, kde-format
-msgid "Top P [scaled x100]"
+msgid "Top P"
 msgstr ""
 
-#: src/apps/qml/OllamaSettingsPage.qml:96
+#: src/apps/qml/OllamaSettingsPage.qml:98
 #, kde-format
 msgid ""
 "Nucleus sampling – consider tokens that make up this cumulative probability"
 msgstr ""
 
-#: src/apps/qml/OllamaSettingsPage.qml:105
+#: src/apps/qml/OllamaSettingsPage.qml:107
 #, kde-format
-msgid "Min P [scaled x10]"
+msgid "Min P"
 msgstr ""
 
-#: src/apps/qml/OllamaSettingsPage.qml:106
+#: src/apps/qml/OllamaSettingsPage.qml:108
 #, kde-format
 msgid ""
 "Minimum probability a token must have to be considered, relative to the "
 "probability of the most likely token"
 msgstr ""
 
-#: src/apps/qml/OllamaSettingsPage.qml:115
+#: src/apps/qml/OllamaSettingsPage.qml:117
 #, kde-format
 msgid "Reset to defaults"
 msgstr ""
 
-#: src/apps/qml/OllamaSettingsPage.qml:117
+#: src/apps/qml/OllamaSettingsPage.qml:119
 #, kde-format
 msgid "Restore all settings to their recommended default values"
 msgstr ""
