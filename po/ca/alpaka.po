@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: alpaka\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-09-12 00:48+0000\n"
-"PO-Revision-Date: 2026-04-24 10:12+0200\n"
+"PO-Revision-Date: 2026-09-12 10:32+0200\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca\n"
@@ -230,10 +230,9 @@ msgstr ""
 "-1 = mida del context)"
 
 #: src/apps/qml/OllamaSettingsPage.qml:51
-#, fuzzy, kde-format
-#| msgid "Repeat penalization factor [scaled x10]"
+#, kde-format
 msgid "Repeat penalization factor"
-msgstr "Factor de penalització de repetició [a escala x10]"
+msgstr "Factor de penalització de repetició"
 
 #: src/apps/qml/OllamaSettingsPage.qml:52
 #, kde-format
@@ -242,10 +241,9 @@ msgstr ""
 "Estableix amb quina intensitat es penalitzen les repeticions (0 = desactivat)"
 
 #: src/apps/qml/OllamaSettingsPage.qml:62
-#, fuzzy, kde-format
-#| msgid "Temperature [scaled x10]"
+#, kde-format
 msgid "Temperature"
-msgstr "Temperatura [a escala x10]"
+msgstr "Temperatura"
 
 #: src/apps/qml/OllamaSettingsPage.qml:63
 #, kde-format
@@ -265,13 +263,12 @@ msgstr "Màxim de segments textuals a predir (-1 = sense límit)"
 #: src/apps/qml/OllamaSettingsPage.qml:89
 #, kde-format
 msgid "Top K"
-msgstr "Top K"
+msgstr "K superiors"
 
 #: src/apps/qml/OllamaSettingsPage.qml:97
-#, fuzzy, kde-format
-#| msgid "Top K"
+#, kde-format
 msgid "Top P"
-msgstr "Top K"
+msgstr "P superiors"
 
 #: src/apps/qml/OllamaSettingsPage.qml:98
 #, kde-format
@@ -284,7 +281,7 @@ msgstr ""
 #: src/apps/qml/OllamaSettingsPage.qml:107
 #, kde-format
 msgid "Min P"
-msgstr ""
+msgstr "P mínima"
 
 #: src/apps/qml/OllamaSettingsPage.qml:108
 #, kde-format

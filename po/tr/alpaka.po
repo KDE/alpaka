@@ -1,13 +1,13 @@
 # Copyright (C) 2023 This file is copyright:
 # This file is distributed under the same license as the alpaka package.
 #
-# SPDX-FileCopyrightText: 2023, 2024, 2025, 2026 Emir SARI <emir_sari@icloud.com>
+# SPDX-FileCopyrightText: 2023-2026 Emir SARI <emir_sari@icloud.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: alpaka\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-09-12 00:48+0000\n"
-"PO-Revision-Date: 2026-04-24 16:04+0300\n"
+"PO-Revision-Date: 2026-09-12 19:55+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Lokalize 25.12.3\n"
+"X-Generator: Lokalize 26.08.0\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -228,10 +228,9 @@ msgstr ""
 "bağlam boyutu)"
 
 #: src/apps/qml/OllamaSettingsPage.qml:51
-#, fuzzy, kde-format
-#| msgid "Repeat penalization factor [scaled x10]"
+#, kde-format
 msgid "Repeat penalization factor"
-msgstr "Penalizasyon çarpanını yinele [10× ölçekli]"
+msgstr "Penaltı çarpanını yinele"
 
 #: src/apps/qml/OllamaSettingsPage.qml:52
 #, kde-format
@@ -239,10 +238,9 @@ msgid "Sets how strongly to penalize repetitions (0 = disabled)"
 msgstr "Yinelemelerin ne kadar ağır cezalandırılacağı (0 = devre dışı)"
 
 #: src/apps/qml/OllamaSettingsPage.qml:62
-#, fuzzy, kde-format
-#| msgid "Temperature [scaled x10]"
+#, kde-format
 msgid "Temperature"
-msgstr "Sıcaklık [10× ölçekli]"
+msgstr "Sıcaklık"
 
 #: src/apps/qml/OllamaSettingsPage.qml:63
 #, kde-format
@@ -265,10 +263,9 @@ msgid "Top K"
 msgstr "Üst K"
 
 #: src/apps/qml/OllamaSettingsPage.qml:97
-#, fuzzy, kde-format
-#| msgid "Top K"
+#, kde-format
 msgid "Top P"
-msgstr "Üst K"
+msgstr "En yüksek penaltı"
 
 #: src/apps/qml/OllamaSettingsPage.qml:98
 #, kde-format
@@ -281,7 +278,7 @@ msgstr ""
 #: src/apps/qml/OllamaSettingsPage.qml:107
 #, kde-format
 msgid "Min P"
-msgstr ""
+msgstr "En düşük penaltı"
 
 #: src/apps/qml/OllamaSettingsPage.qml:108
 #, kde-format

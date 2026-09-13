@@ -1,13 +1,13 @@
-# Copyright (C) YEAR This file is copyright:
+# Copyright (C) 2026 This file is copyright:
 # This file is distributed under the same license as the alpaka package.
 #
-# Yuri Chornoivan <yurchor@ukr.net>, 2023, 2024, 2025, 2026.
+# SPDX-FileCopyrightText: 2023, 2024, 2025, 2026 Yuri Chornoivan <yurchor@ukr.net>
 msgid ""
 msgstr ""
 "Project-Id-Version: alpaka\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-09-12 00:48+0000\n"
-"PO-Revision-Date: 2026-04-24 08:17+0300\n"
+"PO-Revision-Date: 2026-09-12 17:30+0300\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <trans-uk@lists.fedoraproject.org>\n"
 "Language: uk\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=n==1 ? 3 : n%10==1 && n%100!=11 ? 0 : n"
 "%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Lokalize 23.04.3\n"
+"X-Generator: Lokalize 25.12.1\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -229,10 +229,9 @@ msgstr ""
 "-1 = розмір контексту)"
 
 #: src/apps/qml/OllamaSettingsPage.qml:51
-#, fuzzy, kde-format
-#| msgid "Repeat penalization factor [scaled x10]"
+#, kde-format
 msgid "Repeat penalization factor"
-msgstr "Штрафний коефіцієнт повторення [масштабований x10]"
+msgstr "Штрафний коефіцієнт повторення"
 
 #: src/apps/qml/OllamaSettingsPage.qml:52
 #, kde-format
@@ -240,10 +239,9 @@ msgid "Sets how strongly to penalize repetitions (0 = disabled)"
 msgstr "Встановлює, наскільки сильно слід запобігати повторам (0 = вимкнено)"
 
 #: src/apps/qml/OllamaSettingsPage.qml:62
-#, fuzzy, kde-format
-#| msgid "Temperature [scaled x10]"
+#, kde-format
 msgid "Temperature"
-msgstr "Температура [масштабована x10]"
+msgstr "Температура"
 
 #: src/apps/qml/OllamaSettingsPage.qml:63
 #, kde-format
@@ -267,10 +265,9 @@ msgid "Top K"
 msgstr "Верх. K"
 
 #: src/apps/qml/OllamaSettingsPage.qml:97
-#, fuzzy, kde-format
-#| msgid "Top K"
+#, kde-format
 msgid "Top P"
-msgstr "Верх. K"
+msgstr "Верх. P"
 
 #: src/apps/qml/OllamaSettingsPage.qml:98
 #, kde-format
@@ -282,7 +279,7 @@ msgstr ""
 #: src/apps/qml/OllamaSettingsPage.qml:107
 #, kde-format
 msgid "Min P"
-msgstr ""
+msgstr "Мін. P"
 
 #: src/apps/qml/OllamaSettingsPage.qml:108
 #, kde-format

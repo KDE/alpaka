@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: alpaka\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-09-12 00:48+0000\n"
-"PO-Revision-Date: 2026-07-07 16:25+0200\n"
+"PO-Revision-Date: 2026-09-12 08:48+0200\n"
 "Last-Translator: Stefan Asserhäll <stefan.asserhall@gmail.com>\n"
 "Language-Team: Swedish <kde-i18n-doc@kde.org>\n"
 "Language: sv\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 26.04.2\n"
+"X-Generator: Lokalize 26.08.0\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -228,10 +228,9 @@ msgstr ""
 "sammanhangsstorlek)"
 
 #: src/apps/qml/OllamaSettingsPage.qml:51
-#, fuzzy, kde-format
-#| msgid "Repeat penalization factor [scaled x10]"
+#, kde-format
 msgid "Repeat penalization factor"
-msgstr "Upprepa straffaktor (skalad x10)"
+msgstr "Upprepa straffaktor"
 
 #: src/apps/qml/OllamaSettingsPage.qml:52
 #, kde-format
@@ -239,10 +238,9 @@ msgid "Sets how strongly to penalize repetitions (0 = disabled)"
 msgstr "Ställer in hur starkt upprepningar straffas (0 = inaktiverat)"
 
 #: src/apps/qml/OllamaSettingsPage.qml:62
-#, fuzzy, kde-format
-#| msgid "Temperature [scaled x10]"
+#, kde-format
 msgid "Temperature"
-msgstr "Temperatur (skalad x10]"
+msgstr "Temperatur"
 
 #: src/apps/qml/OllamaSettingsPage.qml:63
 #, kde-format
@@ -265,10 +263,9 @@ msgid "Top K"
 msgstr "Topp K"
 
 #: src/apps/qml/OllamaSettingsPage.qml:97
-#, fuzzy, kde-format
-#| msgid "Top K"
+#, kde-format
 msgid "Top P"
-msgstr "Topp K"
+msgstr "Topp P"
 
 #: src/apps/qml/OllamaSettingsPage.qml:98
 #, kde-format
@@ -281,7 +278,7 @@ msgstr ""
 #: src/apps/qml/OllamaSettingsPage.qml:107
 #, kde-format
 msgid "Min P"
-msgstr ""
+msgstr "Min P"
 
 #: src/apps/qml/OllamaSettingsPage.qml:108
 #, kde-format

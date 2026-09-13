@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: alpaka\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-09-12 00:48+0000\n"
-"PO-Revision-Date: 2026-04-24 17:42+0100\n"
+"PO-Revision-Date: 2026-09-13 00:07+0100\n"
 "Last-Translator: Eloy Cuadra <ecuadra@eloihr.net>\n"
 "Language-Team: Spanish <kde-l10n-es@kde.org>\n"
 "Language: es\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 26.04.0\n"
+"X-Generator: Lokalize 26.08.0\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -230,10 +230,9 @@ msgstr ""
 "desactivado, -1 = tamaño del contexto)."
 
 #: src/apps/qml/OllamaSettingsPage.qml:51
-#, fuzzy, kde-format
-#| msgid "Repeat penalization factor [scaled x10]"
+#, kde-format
 msgid "Repeat penalization factor"
-msgstr "Repetir factor de penalización (escalado x10)"
+msgstr "Repetir factor de penalización"
 
 #: src/apps/qml/OllamaSettingsPage.qml:52
 #, kde-format
@@ -243,10 +242,9 @@ msgstr ""
 "desactivado)."
 
 #: src/apps/qml/OllamaSettingsPage.qml:62
-#, fuzzy, kde-format
-#| msgid "Temperature [scaled x10]"
+#, kde-format
 msgid "Temperature"
-msgstr "Temperatura (escalada x10)"
+msgstr "Temperatura"
 
 #: src/apps/qml/OllamaSettingsPage.qml:63
 #, kde-format
@@ -270,10 +268,9 @@ msgid "Top K"
 msgstr "K superior"
 
 #: src/apps/qml/OllamaSettingsPage.qml:97
-#, fuzzy, kde-format
-#| msgid "Top K"
+#, kde-format
 msgid "Top P"
-msgstr "K superior"
+msgstr "P superior"
 
 #: src/apps/qml/OllamaSettingsPage.qml:98
 #, kde-format
@@ -286,7 +283,7 @@ msgstr ""
 #: src/apps/qml/OllamaSettingsPage.qml:107
 #, kde-format
 msgid "Min P"
-msgstr ""
+msgstr "P mínima"
 
 #: src/apps/qml/OllamaSettingsPage.qml:108
 #, kde-format
@@ -313,9 +310,3 @@ msgstr ""
 msgctxt "%1 is an URL, %2 an error description"
 msgid "Failed to connect to interface at %1: %2"
 msgstr "No se ha podido conectar a la interfaz en %1: %2"
-
-#~ msgid "Top P [scaled x100]"
-#~ msgstr "P superior (escalado x100)"
-
-#~ msgid "Min P [scaled x10]"
-#~ msgstr "P mínimo (escalado x10)"
