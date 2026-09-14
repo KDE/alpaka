@@ -1,13 +1,13 @@
 # Copyright (C) 2024 This file is copyright:
 # This file is distributed under the same license as the alpaka package.
 #
-# SPDX-FileCopyrightText: 2024, 2025, 2026 Yaron Shahrabani <sh.yaron@gmail.com>
+# SPDX-FileCopyrightText: 2024-2026 Yaron Shahrabani <sh.yaron@gmail.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: alpaka\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-09-12 00:48+0000\n"
-"PO-Revision-Date: 2026-04-25 07:54+0300\n"
+"PO-Revision-Date: 2026-09-13 11:30+0300\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
 "Language: he\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n == 1) ? 0 : ((n == 2) ? 1 : ((n > 10 && "
 "n % 10 == 0) ? 2 : 3));\n"
-"X-Generator: Lokalize 25.12.3\n"
+"X-Generator: Lokalize 26.08.0\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -227,10 +227,9 @@ msgid ""
 msgstr "כמה אחורה לחפש אסימונים חוזרים (0 = כבוי, ‎-1 = גודל הקשר)"
 
 #: src/apps/qml/OllamaSettingsPage.qml:51
-#, fuzzy, kde-format
-#| msgid "Repeat penalization factor [scaled x10]"
+#, kde-format
 msgid "Repeat penalization factor"
-msgstr "חזרה על מקדם ענישה [במכפלות של 10]"
+msgstr "מקדם ענישה על חזרתיות"
 
 #: src/apps/qml/OllamaSettingsPage.qml:52
 #, kde-format
@@ -238,10 +237,9 @@ msgid "Sets how strongly to penalize repetitions (0 = disabled)"
 msgstr "הגדרה כמה בחומרה להעניש חזרות (0 = כבוי)"
 
 #: src/apps/qml/OllamaSettingsPage.qml:62
-#, fuzzy, kde-format
-#| msgid "Temperature [scaled x10]"
+#, kde-format
 msgid "Temperature"
-msgstr "טמפרטורה [במכפלות של 10]"
+msgstr "טמפרטורה"
 
 #: src/apps/qml/OllamaSettingsPage.qml:63
 #, kde-format
@@ -264,10 +262,9 @@ msgid "Top K"
 msgstr "K המובילים"
 
 #: src/apps/qml/OllamaSettingsPage.qml:97
-#, fuzzy, kde-format
-#| msgid "Top K"
+#, kde-format
 msgid "Top P"
-msgstr "K המובילים"
+msgstr "P עליון"
 
 #: src/apps/qml/OllamaSettingsPage.qml:98
 #, kde-format
@@ -278,7 +275,7 @@ msgstr "דגימה גרעינית - לשקול אסימוים שמרכיבים �
 #: src/apps/qml/OllamaSettingsPage.qml:107
 #, kde-format
 msgid "Min P"
-msgstr ""
+msgstr "P תחתון"
 
 #: src/apps/qml/OllamaSettingsPage.qml:108
 #, kde-format
