@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: alpaka\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-09-12 00:48+0000\n"
-"PO-Revision-Date: 2026-04-24 11:45+0200\n"
+"PO-Revision-Date: 2026-09-14 18:28+0200\n"
 "Last-Translator: giovanni <g.sora@tiscali.it>\n"
 "Language-Team: Interlingua <kde-i18n-doc@kde.org>\n"
 "Language: ia\n"
@@ -228,10 +228,9 @@ msgstr ""
 "dishabilite, -1 = dimension del contexto)"
 
 #: src/apps/qml/OllamaSettingsPage.qml:51
-#, fuzzy, kde-format
-#| msgid "Repeat penalization factor [scaled x10]"
+#, kde-format
 msgid "Repeat penalization factor"
-msgstr "Repete factor de panalisation [scalate x10]"
+msgstr "Repete factor de penalisation [scalate x10]"
 
 #: src/apps/qml/OllamaSettingsPage.qml:52
 #, kde-format
@@ -239,10 +238,9 @@ msgid "Sets how strongly to penalize repetitions (0 = disabled)"
 msgstr "Defini quanto fortemente penalisar le repetitiones (0 = dishabilitate)"
 
 #: src/apps/qml/OllamaSettingsPage.qml:62
-#, fuzzy, kde-format
-#| msgid "Temperature [scaled x10]"
+#, kde-format
 msgid "Temperature"
-msgstr "Temperatura [scalate x10]"
+msgstr "Temperatura"
 
 #: src/apps/qml/OllamaSettingsPage.qml:63
 #, kde-format
@@ -267,10 +265,9 @@ msgid "Top K"
 msgstr "Top K (K al culmine)"
 
 #: src/apps/qml/OllamaSettingsPage.qml:97
-#, fuzzy, kde-format
-#| msgid "Top K"
+#, kde-format
 msgid "Top P"
-msgstr "Top K (K al culmine)"
+msgstr "Top P(P al culmine)"
 
 #: src/apps/qml/OllamaSettingsPage.qml:98
 #, kde-format
@@ -283,7 +280,7 @@ msgstr ""
 #: src/apps/qml/OllamaSettingsPage.qml:107
 #, kde-format
 msgid "Min P"
-msgstr ""
+msgstr "Min P"
 
 #: src/apps/qml/OllamaSettingsPage.qml:108
 #, kde-format

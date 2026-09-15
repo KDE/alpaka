@@ -1,10 +1,10 @@
-# SPDX-FileCopyrightText: 2023, 2024, 2025, 2026 Xavier Besnard <xavier.besnard@kde.org>
+# SPDX-FileCopyrightText: 2023-2026 Xavier Besnard <xavier.besnard@kde.org>
 msgid ""
 msgstr ""
 "Project-Id-Version: alpaka\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-09-12 00:48+0000\n"
-"PO-Revision-Date: 2026-04-25 08:05+0200\n"
+"PO-Revision-Date: 2026-09-13 08:55+0200\n"
 "Last-Translator: Xavier Besnard <xavier.besnard@kde.org>\n"
 "Language-Team: fr\n"
 "Language: fr\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Lokalize 25.12.3\n"
+"X-Generator: Lokalize 26.08.0\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -229,10 +229,9 @@ msgstr ""
 "Taille du contexte)"
 
 #: src/apps/qml/OllamaSettingsPage.qml:51
-#, fuzzy, kde-format
-#| msgid "Repeat penalization factor [scaled x10]"
+#, kde-format
 msgid "Repeat penalization factor"
-msgstr "Facteur de répétition de pénalisation [Multiplié par 10]"
+msgstr "Facteur de répétition de pénalisation"
 
 #: src/apps/qml/OllamaSettingsPage.qml:52
 #, kde-format
@@ -240,10 +239,9 @@ msgid "Sets how strongly to penalize repetitions (0 = disabled)"
 msgstr "Définit l'intensité de la pénalisation des répétitions (0 = Désactivé)"
 
 #: src/apps/qml/OllamaSettingsPage.qml:62
-#, fuzzy, kde-format
-#| msgid "Temperature [scaled x10]"
+#, kde-format
 msgid "Temperature"
-msgstr "Température [Multipliée par 10]"
+msgstr "Température"
 
 #: src/apps/qml/OllamaSettingsPage.qml:63
 #, kde-format
@@ -268,10 +266,9 @@ msgid "Top K"
 msgstr "Top K"
 
 #: src/apps/qml/OllamaSettingsPage.qml:97
-#, fuzzy, kde-format
-#| msgid "Top K"
+#, kde-format
 msgid "Top P"
-msgstr "Top K"
+msgstr "Top P"
 
 #: src/apps/qml/OllamaSettingsPage.qml:98
 #, kde-format
@@ -284,7 +281,7 @@ msgstr ""
 #: src/apps/qml/OllamaSettingsPage.qml:107
 #, kde-format
 msgid "Min P"
-msgstr ""
+msgstr "Min P"
 
 #: src/apps/qml/OllamaSettingsPage.qml:108
 #, kde-format

@@ -5,8 +5,8 @@ msgstr ""
 "Project-Id-Version: alpaka\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-09-12 00:48+0000\n"
-"PO-Revision-Date: 2023-12-22 19:35+0100\n"
-"Last-Translator: Roman Paholik <wizzardsk@gmail.com>\n"
+"PO-Revision-Date: 2026-09-14 20:10+0200\n"
+"Last-Translator: Roman Paholík <wizzardsk@gmail.com>\n"
 "Language-Team: Slovak <kde-sk@linux.sk>\n"
 "Language: sk\n"
 "MIME-Version: 1.0\n"
@@ -226,10 +226,9 @@ msgstr ""
 "kontextu)"
 
 #: src/apps/qml/OllamaSettingsPage.qml:51
-#, fuzzy, kde-format
-#| msgid "Repeat penalization factor [scaled x10]"
+#, kde-format
 msgid "Repeat penalization factor"
-msgstr "Faktor penalizácie opakovania [škálované x10]"
+msgstr "Faktor penalizácie opakovania"
 
 #: src/apps/qml/OllamaSettingsPage.qml:52
 #, kde-format
@@ -237,10 +236,9 @@ msgid "Sets how strongly to penalize repetitions (0 = disabled)"
 msgstr "Nastavuje silu penalizácie opakovaní (0 = vypnuté)"
 
 #: src/apps/qml/OllamaSettingsPage.qml:62
-#, fuzzy, kde-format
-#| msgid "Temperature [scaled x10]"
+#, kde-format
 msgid "Temperature"
-msgstr "Teplota [škálované x10]"
+msgstr "Teplota"
 
 #: src/apps/qml/OllamaSettingsPage.qml:63
 #, kde-format
@@ -265,10 +263,9 @@ msgid "Top K"
 msgstr "Top K"
 
 #: src/apps/qml/OllamaSettingsPage.qml:97
-#, fuzzy, kde-format
-#| msgid "Top K"
+#, kde-format
 msgid "Top P"
-msgstr "Top K"
+msgstr "Top P"
 
 #: src/apps/qml/OllamaSettingsPage.qml:98
 #, kde-format
@@ -280,7 +277,7 @@ msgstr ""
 #: src/apps/qml/OllamaSettingsPage.qml:107
 #, kde-format
 msgid "Min P"
-msgstr ""
+msgstr "Min P"
 
 #: src/apps/qml/OllamaSettingsPage.qml:108
 #, kde-format
