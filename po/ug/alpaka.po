@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: alpaka\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-09-12 00:48+0000\n"
-"PO-Revision-Date: 2026-05-28 17:01-0400\n"
+"PO-Revision-Date: 2026-09-22 18:02+0900\n"
 "Last-Translator: Abduqadir Abliz <sahranbay@gmail.com>\n"
 "Language-Team: Uyghur <kde-i18n-doc@kde.org>\n"
 "Language: ug\n"
@@ -37,7 +37,7 @@ msgstr ""
 #: src/apps/qml/MessageDelegate.qml:67
 #, kde-format
 msgid "Alpaka"
-msgstr "Alpaka"
+msgstr ""
 
 #: src/apps/main.cpp:49
 #, kde-format
@@ -47,12 +47,12 @@ msgstr "Ollama خېرىدارى"
 #: src/apps/main.cpp:51
 #, kde-format
 msgid "© 2023–2025 Loren Burkholder"
-msgstr "© 2023–2025 Loren Burkholder"
+msgstr ""
 
 #: src/apps/main.cpp:52
 #, kde-format
 msgid "Loren Burkholder"
-msgstr "Loren Burkholder"
+msgstr ""
 
 #: src/apps/main.cpp:52
 #, kde-format
@@ -62,7 +62,7 @@ msgstr "تۈزگۈچى"
 #: src/apps/main.cpp:53
 #, kde-format
 msgid "Siavosh Kasravi"
-msgstr "Siavosh Kasravi"
+msgstr ""
 
 #: src/apps/main.cpp:53
 #, kde-format
@@ -72,7 +72,7 @@ msgstr "ئاسرىغۇچى"
 #: src/apps/main.cpp:54
 #, kde-format
 msgid "Laurent Montel"
-msgstr "Laurent Montel"
+msgstr ""
 
 #: src/apps/main.cpp:54
 #, kde-format
@@ -178,7 +178,7 @@ msgstr ""
 #, kde-format
 msgctxt "@title:window"
 msgid "Alpaka"
-msgstr "Alpaka"
+msgstr ""
 
 #: src/apps/qml/MessageDelegate.qml:111
 #, kde-format
@@ -237,7 +237,7 @@ msgstr ""
 #: src/apps/qml/OllamaSettingsPage.qml:62
 #, kde-format
 msgid "Temperature"
-msgstr ""
+msgstr "تېمپېراتۇرا"
 
 #: src/apps/qml/OllamaSettingsPage.qml:63
 #, kde-format
