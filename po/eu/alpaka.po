@@ -1,14 +1,14 @@
 # Translation for alpaka.po to Euskara/Basque (eu).
 # Copyright (C) 2023-2026 This file is copyright:
 # This file is distributed under the same license as the alpaka package.
-# SPDX-FileCopyrightText: 2023-2026 KDE euskaratzeko proiektuaren arduraduna <xalba@ni.eus>
+# SPDX-FileCopyrightText: 2023-2026 KDE euskaratzeko proiektuko arduraduna <xalba@ni.eus>
 #
 # Translators:
 # SPDX-FileCopyrightText: Iñigo Salvador Azurmendi <xalba@ni.eus>, 2023, 2024, 2025, 2026.
 #
 # Egoera:
 # Proiektu osoaren berrikuspen integrala: 2026-08-16.
-# Azken berrikuspena: UUUU-HH-EE — egoera ondua mantendu da.
+# Azken berrikuspena: 2026-09-27 — egoera ondua mantendu da.
 # Terminologia, estiloa, ortotipografia, kohesioa eta koherentzia berrikusi dira.
 # Erreferentzia-gida: `kde-aa-eta-hizkuntza-ereduen_eu_itzulpen_gida.md`
 # Ikus, halaber: KDE-eu-berrikuspen-integralen-erregistroa.md
@@ -17,7 +17,7 @@ msgstr ""
 "Project-Id-Version: alpaka\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-09-12 00:48+0000\n"
-"PO-Revision-Date: 2026-08-16 12:03+0200\n"
+"PO-Revision-Date: 2026-09-27 20:38+0200\n"
 "Last-Translator: Iñigo Salvador Azurmendi <xalba@ni.eus>\n"
 "Language-Team: Basque <kde-i18n-eu@kde.org>\n"
 "Language: eu\n"
@@ -25,7 +25,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 26.04.3\n"
+"X-Generator: Lokalize 26.08.1\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -238,10 +238,9 @@ msgstr ""
 "desgaituta, -1 = testuinguru-leihoaren neurria)"
 
 #: src/apps/qml/OllamaSettingsPage.qml:51
-#, fuzzy, kde-format
-#| msgid "Repeat penalization factor [scaled x10]"
+#, kde-format
 msgid "Repeat penalization factor"
-msgstr "Errepikapen-zigorraren faktorea [×10 eskalatuta]"
+msgstr "Errepikapen-zigorraren faktorea"
 
 #: src/apps/qml/OllamaSettingsPage.qml:52
 #, kde-format
@@ -249,10 +248,9 @@ msgid "Sets how strongly to penalize repetitions (0 = disabled)"
 msgstr "Errepikapenak zenbateraino zigortu ezartzen du (0 = desgaituta)"
 
 #: src/apps/qml/OllamaSettingsPage.qml:62
-#, fuzzy, kde-format
-#| msgid "Temperature [scaled x10]"
+#, kde-format
 msgid "Temperature"
-msgstr "Tenperatura [×10 eskalatuta]"
+msgstr "Tenperatura"
 
 #: src/apps/qml/OllamaSettingsPage.qml:63
 #, kde-format
@@ -277,10 +275,9 @@ msgid "Top K"
 msgstr "Top K"
 
 #: src/apps/qml/OllamaSettingsPage.qml:97
-#, fuzzy, kde-format
-#| msgid "Top K"
+#, kde-format
 msgid "Top P"
-msgstr "Top K"
+msgstr "Top P"
 
 #: src/apps/qml/OllamaSettingsPage.qml:98
 #, kde-format
@@ -293,7 +290,7 @@ msgstr ""
 #: src/apps/qml/OllamaSettingsPage.qml:107
 #, kde-format
 msgid "Min P"
-msgstr ""
+msgstr "Min P"
 
 #: src/apps/qml/OllamaSettingsPage.qml:108
 #, kde-format
