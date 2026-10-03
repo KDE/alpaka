@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: alpaka\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-09-12 00:48+0000\n"
-"PO-Revision-Date: 2026-02-26 09:59+0200\n"
+"PO-Revision-Date: 2026-09-05 09:51+0300\n"
 "Last-Translator: Tommi Nieminen <translator@legisign.org>\n"
 "Language-Team: Finnish <kde-i18n-doc@kde.org>\n"
 "Language: fi\n"
@@ -100,7 +100,7 @@ msgstr "Yritä uudelleen"
 #, kde-format
 msgctxt "@info:placeholder"
 msgid "Enter a message (Use @ to open the attachment menu)"
-msgstr ""
+msgstr "Kirjoita viesti (@ avaa liitevalikon)"
 
 #: src/apps/qml/ChatView.qml:261
 #, kde-format
@@ -207,12 +207,12 @@ msgstr "Ollama-palvelimen osoite"
 #: src/apps/qml/OllamaSettingsPage.qml:30
 #, kde-format
 msgid "Advanced Parameters"
-msgstr ""
+msgstr "Lisäparametrit"
 
 #: src/apps/qml/OllamaSettingsPage.qml:34
 #, kde-format
 msgid "Context size"
-msgstr ""
+msgstr "Kontekstikoko"
 
 #: src/apps/qml/OllamaSettingsPage.qml:42
 #, kde-format
@@ -224,6 +224,8 @@ msgstr ""
 msgid ""
 "How far back to look for repeated tokens (0 = disabled, -1 = context size)"
 msgstr ""
+"Kuinka kaukaa takaa etsitään toistuvia merkkejä (0 = ei käytössä, -1 = "
+"kontekstin koko)"
 
 #: src/apps/qml/OllamaSettingsPage.qml:51
 #, kde-format
@@ -248,12 +250,12 @@ msgstr ""
 #: src/apps/qml/OllamaSettingsPage.qml:73
 #, kde-format
 msgid "Seed (-1 = random)"
-msgstr ""
+msgstr "Siemen (-1 = satunnainen)"
 
 #: src/apps/qml/OllamaSettingsPage.qml:81
 #, kde-format
 msgid "Maximum tokens to predict (-1 = unlimited)"
-msgstr ""
+msgstr "Ennustettavien merkkien enimmäismäärä (-1 = rajoittamaton)"
 
 #: src/apps/qml/OllamaSettingsPage.qml:89
 #, kde-format
@@ -282,16 +284,18 @@ msgid ""
 "Minimum probability a token must have to be considered, relative to the "
 "probability of the most likely token"
 msgstr ""
+"Merkin vähimmäistodennäköisyys suhteessa todennäköisimpään merkkiin "
+"tullakseen harkittavaksi"
 
 #: src/apps/qml/OllamaSettingsPage.qml:117
 #, kde-format
 msgid "Reset to defaults"
-msgstr ""
+msgstr "Palaa oletuksiin"
 
 #: src/apps/qml/OllamaSettingsPage.qml:119
 #, kde-format
 msgid "Restore all settings to their recommended default values"
-msgstr ""
+msgstr "Palauta kaikki asetukset suositeltuihin oletusarvoihinsa"
 
 #: src/core/KLLMInterface.cpp:141
 #, kde-format
