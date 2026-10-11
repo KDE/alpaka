@@ -1,0 +1,305 @@
+# Translation of alpaka into Russian.
+# This file is distributed under the same license as the alpaka package.
+# Alexander Yavorsky <kekcuha@gmail.com>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: alpaka\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2026-09-12 00:48+0000\n"
+"PO-Revision-Date: 2026-10-10 13:00+0200\n"
+"Last-Translator: Alexander Yavorsky <kekcuha@gmail.com>\n"
+"Language-Team: Russian <kde-russian@lists.kde.ru>\n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=n==1 ? 3 : n%10==1 && n%100!=11 ? 0 : n"
+"%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Александр Яворский"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "kekcuha@gmail.com"
+
+#: src/apps/ChatModel.cpp:164
+#, kde-format
+msgid "Show model info."
+msgstr "Показать сведения о модели."
+
+#: src/apps/main.cpp:47 src/apps/qml/ChatView.qml:14
+#: src/apps/qml/MessageDelegate.qml:67
+#, kde-format
+msgid "Alpaka"
+msgstr "Alpaka"
+
+#: src/apps/main.cpp:49
+#, kde-format
+msgid "Ollama client"
+msgstr "Клиент Ollama"
+
+#: src/apps/main.cpp:51
+#, kde-format
+msgid "© 2023–2025 Loren Burkholder"
+msgstr "© Loren Burkholder, 2023–2025"
+
+#: src/apps/main.cpp:52
+#, kde-format
+msgid "Loren Burkholder"
+msgstr "Loren Burkholder"
+
+#: src/apps/main.cpp:52
+#, kde-format
+msgid "Creator"
+msgstr "Создатель"
+
+#: src/apps/main.cpp:53
+#, kde-format
+msgid "Siavosh Kasravi"
+msgstr "Siavosh Kasravi"
+
+#: src/apps/main.cpp:53
+#, kde-format
+msgid "Maintainer"
+msgstr "Сопровождающий"
+
+#: src/apps/main.cpp:54
+#, kde-format
+msgid "Laurent Montel"
+msgstr "Laurent Montel"
+
+#: src/apps/main.cpp:54
+#, kde-format
+msgid "Developer"
+msgstr "Разработчик"
+
+#: src/apps/qml/ChatView.qml:32
+#, kde-format
+msgctxt "@action:intoolbar"
+msgid "Start Over"
+msgstr "Начать заново"
+
+#: src/apps/qml/ChatView.qml:38
+#, kde-format
+msgctxt "@action:intoolbar"
+msgid "Settings"
+msgstr "Параметры"
+
+#: src/apps/qml/ChatView.qml:53
+#, kde-format
+msgctxt "@action:button"
+msgid "Try Again"
+msgstr "Повторить"
+
+#: src/apps/qml/ChatView.qml:72
+#, kde-format
+msgctxt "@info:placeholder"
+msgid "Enter a message (Use @ to open the attachment menu)"
+msgstr "Введите сообщение (@ — меню вложений)"
+
+#: src/apps/qml/ChatView.qml:261
+#, kde-format
+msgid "LLM:"
+msgstr "LLM:"
+
+#: src/apps/qml/ChatView.qml:269
+#, kde-format
+msgctxt "@action:button"
+msgid "Info"
+msgstr "Сведения"
+
+#: src/apps/qml/ChatView.qml:280
+#, kde-format
+msgctxt "@info:placeholder"
+msgid "Interface Not Found"
+msgstr "Интерфейс не найден"
+
+#: src/apps/qml/ChatView.qml:281
+#, kde-format
+msgid ""
+"Make sure Ollama is installed and is running. Visit the project's website "
+"for setup information."
+msgstr ""
+"Ollama должна быть установлена и запущена. Сведения о настройке приведены на "
+"сайте проекта."
+
+#: src/apps/qml/ChatView.qml:284
+#, kde-format
+msgctxt "@action:button"
+msgid "Visit Website"
+msgstr "Посетить веб-сайт"
+
+#: src/apps/qml/ConfigurationView.qml:14
+#: src/apps/qml/GeneralSettingsPage.qml:11
+#, kde-format
+msgid "General"
+msgstr "Общие"
+
+#: src/apps/qml/ConfigurationView.qml:19 src/apps/qml/LLMSettingsPage.qml:12
+#, kde-format
+msgid "LLM"
+msgstr "LLM"
+
+#: src/apps/qml/ConfigurationView.qml:24 src/apps/qml/OllamaSettingsPage.qml:11
+#, kde-format
+msgid "Ollama"
+msgstr "Ollama"
+
+#: src/apps/qml/GeneralSettingsPage.qml:16
+#, kde-format
+msgid "Show in System Tray"
+msgstr "Показывать в системном лотке"
+
+#: src/apps/qml/GeneralSettingsPage.qml:26
+#, kde-format
+msgid "Auto scroll down when a new prompt is posted"
+msgstr "Автоматически прокручивать вниз при отправке нового запроса"
+
+#: src/apps/qml/LLMSettingsPage.qml:31
+#, kde-format
+msgid "System prompt"
+msgstr "Системная подсказка"
+
+#: src/apps/qml/LLMSettingsPage.qml:43
+#, kde-format
+msgid "No system prompt"
+msgstr "Системная подсказка не задана"
+
+#: src/apps/qml/LLMSettingsPage.qml:60
+#, kde-format
+msgid "Show debug information"
+msgstr "Показывать отладочную информацию"
+
+#: src/apps/qml/Main.qml:13
+#, kde-format
+msgctxt "@title:window"
+msgid "Alpaka"
+msgstr "Alpaka"
+
+#: src/apps/qml/MessageDelegate.qml:111
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Copy"
+msgstr "Копировать"
+
+#: src/apps/qml/MessageDelegate.qml:117
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Select All"
+msgstr "Выбрать все"
+
+#: src/apps/qml/MessageDelegate.qml:133
+#, kde-format
+msgctxt "'toks' is short for 'tokens'"
+msgid "%1 tok/s · %2 tokens · %3 seconds"
+msgstr "%1 ток/с · токенов: %2 · секунд: %3"
+
+#: src/apps/qml/OllamaSettingsPage.qml:23
+#, kde-format
+msgid "Ollama server URL"
+msgstr "URL-адрес сервера Ollama"
+
+#: src/apps/qml/OllamaSettingsPage.qml:30
+#, kde-format
+msgid "Advanced Parameters"
+msgstr "Дополнительные параметры"
+
+#: src/apps/qml/OllamaSettingsPage.qml:34
+#, kde-format
+msgid "Context size"
+msgstr "Размер контекста"
+
+#: src/apps/qml/OllamaSettingsPage.qml:42
+#, kde-format
+msgid "Repeat penalty lookback tokens"
+msgstr "Глубина поиска повторов (токенов)"
+
+#: src/apps/qml/OllamaSettingsPage.qml:43
+#, kde-format
+msgid ""
+"How far back to look for repeated tokens (0 = disabled, -1 = context size)"
+msgstr ""
+"Насколько далеко назад искать повторяющиеся токены (0 — отключено, -1 — "
+"размер контекста)"
+
+#: src/apps/qml/OllamaSettingsPage.qml:51
+#, kde-format
+msgid "Repeat penalization factor"
+msgstr "Коэффициент штрафа за повторы"
+
+#: src/apps/qml/OllamaSettingsPage.qml:52
+#, kde-format
+msgid "Sets how strongly to penalize repetitions (0 = disabled)"
+msgstr "Задаёт силу штрафа за повторы (0 — отключено)"
+
+#: src/apps/qml/OllamaSettingsPage.qml:62
+#, kde-format
+msgid "Temperature"
+msgstr "Температура"
+
+#: src/apps/qml/OllamaSettingsPage.qml:63
+#, kde-format
+msgid "Higher = more creative/random, lower = more focused/deterministic"
+msgstr "Выше — творчески и случайнее, ниже — точнее и предсказуемее"
+
+#: src/apps/qml/OllamaSettingsPage.qml:73
+#, kde-format
+msgid "Seed (-1 = random)"
+msgstr "Начальное значение (-1 — случайное)"
+
+#: src/apps/qml/OllamaSettingsPage.qml:81
+#, kde-format
+msgid "Maximum tokens to predict (-1 = unlimited)"
+msgstr "Максимум предсказываемых токенов (-1 — без ограничений)"
+
+#: src/apps/qml/OllamaSettingsPage.qml:89
+#, kde-format
+msgid "Top K"
+msgstr "Top K"
+
+#: src/apps/qml/OllamaSettingsPage.qml:97
+#, kde-format
+msgid "Top P"
+msgstr "Top P"
+
+#: src/apps/qml/OllamaSettingsPage.qml:98
+#, kde-format
+msgid ""
+"Nucleus sampling – consider tokens that make up this cumulative probability"
+msgstr ""
+"Ядерная выборка — учитывать токены, составляющие эту суммарную вероятность"
+
+#: src/apps/qml/OllamaSettingsPage.qml:107
+#, kde-format
+msgid "Min P"
+msgstr "Min P"
+
+#: src/apps/qml/OllamaSettingsPage.qml:108
+#, kde-format
+msgid ""
+"Minimum probability a token must have to be considered, relative to the "
+"probability of the most likely token"
+msgstr ""
+"Минимальная вероятность токена, при которой он учитывается, относительно "
+"вероятности наиболее вероятного токена"
+
+#: src/apps/qml/OllamaSettingsPage.qml:117
+#, kde-format
+msgid "Reset to defaults"
+msgstr "Восстановить значения по умолчанию"
+
+#: src/apps/qml/OllamaSettingsPage.qml:119
+#, kde-format
+msgid "Restore all settings to their recommended default values"
+msgstr "Восстановить рекомендуемые значения по умолчанию для всех параметров"
+
+#: src/core/KLLMInterface.cpp:141
+#, kde-format
+msgctxt "%1 is an URL, %2 an error description"
+msgid "Failed to connect to interface at %1: %2"
+msgstr "Не удалось подключиться к интерфейсу по адресу %1: %2"
