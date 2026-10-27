@@ -19,6 +19,24 @@ KLLMReply::KLLMReply(QNetworkReply *netReply, QObject *parent, RequestTypes requ
     , m_requestType{requestType}
 {
     connect(m_reply, &QNetworkReply::finished, m_reply, [this] {
+        if (!m_aborted) {
+            const auto remaining = m_reply->readAll();
+            if (!remaining.isEmpty())
+                m_incompleteTokens += remaining;
+
+            if (m_requestType == RequestTypes::Show) {
+                if (m_tokens.isEmpty() && !m_incompleteTokens.trimmed().isEmpty())
+                    m_tokens.append(QJsonDocument::fromJson(m_incompleteTokens));
+            } else if (!m_incompleteTokens.trimmed().isEmpty()) {
+                const auto chunks = m_incompleteTokens.split('\n');
+                for (const auto &chunk : std::as_const(chunks)) {
+                    if (!chunk.trimmed().isEmpty())
+                        m_tokens.append(QJsonDocument::fromJson(chunk));
+                }
+            }
+            m_incompleteTokens.clear();
+        }
+
         // Normally, we could assume that the tokens will never be empty once the request finishes, but it could be possible
         // that the request failed and we have no tokens to parse.
         if (!m_aborted && m_requestType == RequestTypes::StreamingGenerate && !m_tokens.empty()) {
@@ -38,6 +56,18 @@ KLLMReply::KLLMReply(QNetworkReply *netReply, QObject *parent, RequestTypes requ
 
             m_replyJson["content"_L1] = messageContent;
         }
+
+        for (const auto &tok : std::as_const(m_tokens)) {
+            const auto error = tok["error"_L1].toString();
+            if (!error.isEmpty()) {
+                m_errorString = error;
+                break;
+            }
+        }
+        if (m_errorString.isEmpty() && m_reply->error() != QNetworkReply::NoError)
+            m_errorString = m_reply->errorString();
+        if (!m_errorString.isEmpty())
+            qCWarning(KLLMCORE_LOG) << "Ollama request failed:" << m_errorString;
 
         qCDebug(KLLMCORE_LOG) << "Ollama response finished";
         m_finished = true;
@@ -113,6 +143,11 @@ bool KLLMReply::isFinished() const
 bool KLLMReply::isAborted() const
 {
     return m_aborted;
+}
+
+QString KLLMReply::errorString() const
+{
+    return m_errorString;
 }
 
 QJsonObject KLLMReply::getReplyJson() const

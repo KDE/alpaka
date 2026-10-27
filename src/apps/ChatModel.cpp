@@ -137,16 +137,25 @@ void ChatModel::sendMessage(const QString &message)
     m_connections.insert(rep, connect(rep, &KLLMReply::finished, this, [this, i = m_messages.size() - 1] {
                              auto &message = m_messages[i];
                              m_connections.remove(message.llmReply);
+                             bool failed = false;
                              if (!message.llmReply->isAborted()) {
                                  message.info = message.llmReply->info();
+                                 const auto error = message.llmReply->errorString();
+                                 if (!error.isEmpty()) {
+                                     message.content = i18nc("@info", "Error: %1", error);
+                                     failed = true;
+                                 }
                              }
-                             m_context->addAssistantMessage(message.content);
+                             if (!failed) {
+                                 m_context->addAssistantMessage(message.content);
+                             }
                              message.llmReply->deleteLater();
                              message.llmReply = nullptr;
                              message.inProgress = false;
-                             Q_EMIT dataChanged(index(i),
-                                                index(i),
-                                                {Roles::FinishedRole, Roles::TokensPerSecondRole, Roles::TokenCountRole, Roles::DurationRole});
+                             Q_EMIT dataChanged(
+                                 index(i),
+                                 index(i),
+                                 {Roles::MessageRole, Roles::FinishedRole, Roles::TokensPerSecondRole, Roles::TokenCountRole, Roles::DurationRole});
                              Q_EMIT replyInProgressChanged();
                          }));
     Q_EMIT replyInProgressChanged();
@@ -171,12 +180,19 @@ void ChatModel::getModelInfo()
     m_connections.insert(rep, connect(rep, &KLLMReply::finished, this, [this, i = m_messages.size() - 1] {
                              auto &message = m_messages[i];
                              m_connections.remove(message.llmReply);
+                             if (!message.llmReply->isAborted()) {
+                                 const auto error = message.llmReply->errorString();
+                                 if (!error.isEmpty()) {
+                                     message.content = i18nc("@info", "Error: %1", error);
+                                 }
+                             }
                              message.llmReply->deleteLater();
                              message.llmReply = nullptr;
                              message.inProgress = false;
-                             Q_EMIT dataChanged(index(i),
-                                                index(i),
-                                                {Roles::FinishedRole, Roles::TokensPerSecondRole, Roles::TokenCountRole, Roles::DurationRole});
+                             Q_EMIT dataChanged(
+                                 index(i),
+                                 index(i),
+                                 {Roles::MessageRole, Roles::FinishedRole, Roles::TokensPerSecondRole, Roles::TokenCountRole, Roles::DurationRole});
                              Q_EMIT replyInProgressChanged();
                          }));
     Q_EMIT replyInProgressChanged();

@@ -24,22 +24,22 @@ namespace KLLMCore
  */
 struct KLLMCORE_EXPORT KLLMReplyInfo {
     //! The total time from when the request was received by the server to when the reply was returned.
-    std::chrono::nanoseconds totalDuration;
+    std::chrono::nanoseconds totalDuration{};
 
     //! The time spent loading the model.
-    std::chrono::nanoseconds loadDuration;
+    std::chrono::nanoseconds loadDuration{};
 
     //! The number of tokens in the prompt.
-    int promptEvalTokenCount;
+    int promptEvalTokenCount = 0;
 
     //! The time spent evaluating the prompt.
-    std::chrono::nanoseconds promptEvalDuration;
+    std::chrono::nanoseconds promptEvalDuration{};
 
     //! The number of tokens in the reply.
-    int tokenCount;
+    int tokenCount = 0;
 
     //! The time spent generating the reply.
-    std::chrono::nanoseconds duration;
+    std::chrono::nanoseconds duration{};
 
     //! The reason for which the respnse has ended
     QString doneReason;
@@ -111,6 +111,8 @@ public:
      */
     [[nodiscard]] bool isAborted() const;
 
+    [[nodiscard]] QString errorString() const;
+
     /**
      * @brief Get request type.
      *
@@ -167,6 +169,7 @@ private:
     QList<QJsonDocument> m_tokens;
 
     KLLMReplyInfo m_info;
+    QString m_errorString;
     QJsonObject m_replyJson;
     RequestTypes m_requestType = RequestTypes::StreamingGenerate;
 

@@ -125,11 +125,13 @@ RowLayout {
                 Layout.fillWidth: true
                 orientation: Qt.Horizontal
                 visible: AlpakaSettings.showDebugInfo && messageDelegate.sender === ChatModel.LLM && messageDelegate.finished
+                         && messageDelegate.tokenCount > 0 && messageDelegate.duration > 0
             }
 
             Controls.Label {
                 Layout.fillWidth: true
                 visible: AlpakaSettings.showDebugInfo && messageDelegate.sender === ChatModel.LLM && messageDelegate.finished
+                         && messageDelegate.tokenCount > 0 && messageDelegate.duration > 0
                 text: i18nc("'toks' is short for 'tokens'", "%1 tok/s · %2 tokens · %3 seconds",
                            messageDelegate.tokensPerSecond.toFixed(2),
                            messageDelegate.tokenCount,
