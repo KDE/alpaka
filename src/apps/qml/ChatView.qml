@@ -276,13 +276,37 @@ Kirigami.ScrollablePage {
     Kirigami.PlaceholderMessage {
         parent: chatView
         anchors.centerIn: parent
+        width: chatView.width - (Kirigami.Units.largeSpacing * 4)
 
-        text: i18nc("@info:placeholder", "Interface Not Found")
-        explanation: i18n("Make sure Ollama is installed and is running. Visit the project's website for setup information.")
+        text: {
+            if (chat.llm.connecting) {
+                return i18nc("@info:placeholder", "Connecting to Ollama…");
+            } else if (chat.llm.hasError) {
+                return i18nc("@info:placeholder", "Ollama Not Found");
+            }
+            return i18nc("@info:placeholder", "No Models Installed");
+        }
+        explanation: {
+            if (chat.llm.connecting) {
+                return i18nc("@info", "Checking %1 for installed models.", chat.llm.ollamaUrl);
+            } else if (chat.llm.hasError) {
+                return i18nc("@info", "Alpaka could not connect to Ollama at %1. Make sure Ollama is installed and running.", chat.llm.ollamaUrl);
+            }
+            return xi18nc("@info",
+                          "Ollama is running, but no models are installed yet. Download one with <command>ollama pull &lt;model&gt;</command>, then click <interface>Check Again</interface>. Browse the <link url=\"https://ollama.com/library\">model library</link> for available models.");
+        }
+        onLinkActivated: link => Qt.openUrlExternally(link)
         helpfulAction: Kirigami.Action {
-            icon.name: "globe-symbolic"
-            text: i18nc("@action:button", "Visit Website")
-            onTriggered: Qt.openUrlExternally("https://ollama.com/")
+            icon.name: chat.llm.hasError ? "globe-symbolic" : "view-refresh"
+            text: chat.llm.hasError ? i18nc("@action:button", "Visit Website") : i18nc("@action:button", "Check Again")
+            enabled: !chat.llm.connecting
+            onTriggered: {
+                if (chat.llm.hasError) {
+                    Qt.openUrlExternally("https://ollama.com/");
+                } else {
+                    chat.llm.reload();
+                }
+            }
         }
         visible: !chat.llm.ready
     }

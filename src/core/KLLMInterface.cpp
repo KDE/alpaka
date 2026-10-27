@@ -46,6 +46,11 @@ bool KLLMInterface::hasError() const
     return m_hasError;
 }
 
+bool KLLMInterface::connecting() const
+{
+    return m_connecting;
+}
+
 QStringList KLLMInterface::models() const
 {
     return m_models;
@@ -133,10 +138,16 @@ void KLLMInterface::reload()
     if (m_ollamaCheck)
         disconnect(m_ollamaCheck);
 
+    m_connecting = true;
+    Q_EMIT connectingChanged();
+
     QNetworkRequest req{QUrl::fromUserInput(m_ollamaUrl + QStringLiteral("/api/tags"))};
     req.setHeader(QNetworkRequest::ContentTypeHeader, QStringLiteral("application/json"));
     auto rep = m_manager->get(req);
     m_ollamaCheck = connect(rep, &QNetworkReply::finished, this, [this, rep] {
+        m_connecting = false;
+        Q_EMIT connectingChanged();
+
         if (rep->error() != QNetworkReply::NoError) {
             Q_EMIT errorOccurred(i18nc("%1 is an URL, %2 an error description", "Failed to connect to interface at %1: %2", m_ollamaUrl, rep->errorString()));
             m_hasError = true;
@@ -147,10 +158,14 @@ void KLLMInterface::reload()
 
         const auto json = QJsonDocument::fromJson(rep->readAll());
         const auto models = json["models"_L1].toArray();
+        QStringList loadedModels;
         for (const QJsonValue &model : models) {
-            m_models.push_back(model["name"_L1].toString());
+            loadedModels.push_back(model["name"_L1].toString());
         }
-        Q_EMIT modelsChanged();
+        if (m_models != loadedModels) {
+            m_models = loadedModels;
+            Q_EMIT modelsChanged();
+        }
 
         m_ready = !m_models.isEmpty();
         m_hasError = false;

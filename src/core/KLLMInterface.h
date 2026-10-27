@@ -34,6 +34,7 @@ class KLLMCORE_EXPORT KLLMInterface : public QObject
 
     Q_PROPERTY(bool ready READ ready NOTIFY readyChanged FINAL)
     Q_PROPERTY(bool hasError READ hasError NOTIFY hasErrorChanged FINAL)
+    Q_PROPERTY(bool connecting READ connecting NOTIFY connectingChanged FINAL)
     Q_PROPERTY(QStringList models READ models NOTIFY modelsChanged FINAL)
     Q_PROPERTY(QString ollamaUrl READ ollamaUrl WRITE setOllamaUrl NOTIFY ollamaUrlChanged FINAL)
 
@@ -79,6 +80,16 @@ public:
      * @return Returns whether the interface is in an error state.
      */
     [[nodiscard]] bool hasError() const;
+
+    /**
+     * @brief Check whether the interface is currently connecting to the backend.
+     *
+     * This is true while a request for the list of available models is in flight. Use it to distinguish the
+     * initial connection (or a retry) from a finished connection that found no models installed.
+     *
+     * @return Returns whether the interface is currently connecting.
+     */
+    [[nodiscard]] bool connecting() const;
 
     /**
      * @brief Retrieve a list of models supported by the LLM backend.
@@ -167,6 +178,7 @@ Q_SIGNALS:
 
     void readyChanged();
     void hasErrorChanged();
+    void connectingChanged();
     void modelsChanged();
     void ollamaUrlChanged();
 
@@ -181,6 +193,7 @@ private:
     QStringList m_models;
     bool m_ready = false;
     bool m_hasError = false;
+    bool m_connecting = false;
     QString m_ollamaUrl;
     QMetaObject::Connection m_ollamaCheck;
 };
