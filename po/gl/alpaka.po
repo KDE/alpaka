@@ -183,22 +183,19 @@ msgid "Alpaka"
 msgstr "Alpaka"
 
 #: src/apps/qml/MessageDelegate.qml:111
-#, fuzzy, kde-format
-#| msgid "Copy"
+#, kde-format
 msgctxt "@action:inmenu"
 msgid "Copy"
 msgstr "Copiar"
 
 #: src/apps/qml/MessageDelegate.qml:117
-#, fuzzy, kde-format
-#| msgid "Select All"
+#, kde-format
 msgctxt "@action:inmenu"
 msgid "Select All"
 msgstr "Seleccionar todo"
 
 #: src/apps/qml/MessageDelegate.qml:133
-#, fuzzy, kde-format
-#| msgid "%1 tok/s · %2 tokens · %3 seconds"
+#, kde-format
 msgctxt "'toks' is short for 'tokens'"
 msgid "%1 tok/s · %2 tokens · %3 seconds"
 msgstr "%1 fichas/s · %2 fichas · %3 segundos"
@@ -298,8 +295,7 @@ msgid "Restore all settings to their recommended default values"
 msgstr ""
 
 #: src/core/KLLMInterface.cpp:141
-#, fuzzy, kde-format
-#| msgid "Failed to connect to interface at %1: %2"
+#, kde-format
 msgctxt "%1 is an URL, %2 an error description"
 msgid "Failed to connect to interface at %1: %2"
 msgstr "Non foi posíbel conectar coa interface en %1: %2"
