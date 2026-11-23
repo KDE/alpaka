@@ -224,10 +224,9 @@ msgid ""
 msgstr "查找重复 Token 的回溯范围 (0 = 禁用，-1 = 上下文总长度) "
 
 #: src/apps/qml/OllamaSettingsPage.qml:51
-#, fuzzy, kde-format
-#| msgid "Repeat penalization factor [scaled x10]"
+#, kde-format
 msgid "Repeat penalization factor"
-msgstr "重复惩罚因子 [10 倍缩放]"
+msgstr "重复惩罚因子"
 
 #: src/apps/qml/OllamaSettingsPage.qml:52
 #, kde-format
@@ -235,10 +234,9 @@ msgid "Sets how strongly to penalize repetitions (0 = disabled)"
 msgstr "设置惩罚重复的强度 (0 = 禁用)"
 
 #: src/apps/qml/OllamaSettingsPage.qml:62
-#, fuzzy, kde-format
-#| msgid "Temperature [scaled x10]"
+#, kde-format
 msgid "Temperature"
-msgstr "温度 [10 倍缩放]"
+msgstr "温度"
 
 #: src/apps/qml/OllamaSettingsPage.qml:63
 #, kde-format
@@ -261,44 +259,40 @@ msgid "Top K"
 msgstr "Top K"
 
 #: src/apps/qml/OllamaSettingsPage.qml:97
-#, fuzzy, kde-format
-#| msgid "Top K"
+#, kde-format
 msgid "Top P"
-msgstr "Top K"
+msgstr "Top P"
 
 #: src/apps/qml/OllamaSettingsPage.qml:98
 #, kde-format
 msgid ""
 "Nucleus sampling – consider tokens that make up this cumulative probability"
-msgstr ""
+msgstr "核采样 – 考虑构成该累积概率的 token"
 
 #: src/apps/qml/OllamaSettingsPage.qml:107
 #, kde-format
 msgid "Min P"
-msgstr ""
+msgstr "Min P"
 
 #: src/apps/qml/OllamaSettingsPage.qml:108
 #, kde-format
 msgid ""
 "Minimum probability a token must have to be considered, relative to the "
 "probability of the most likely token"
-msgstr ""
+msgstr "token 被纳入考虑所需的最小概率 (相对于最可能 token 的概率)"
 
 #: src/apps/qml/OllamaSettingsPage.qml:117
 #, kde-format
 msgid "Reset to defaults"
-msgstr ""
+msgstr "重置为默认值"
 
 #: src/apps/qml/OllamaSettingsPage.qml:119
 #, kde-format
 msgid "Restore all settings to their recommended default values"
-msgstr ""
+msgstr "重置所有设置为推荐的默认值"
 
 #: src/core/KLLMInterface.cpp:141
 #, kde-format
 msgctxt "%1 is an URL, %2 an error description"
 msgid "Failed to connect to interface at %1: %2"
 msgstr "无法连接到位于 %1 的接口：%2"
-
-#~ msgid "Top P [scaled x100]"
-#~ msgstr "Top P [100 倍缩放]"
